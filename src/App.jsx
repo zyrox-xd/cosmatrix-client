@@ -1219,7 +1219,7 @@ const Footer = ({ setCurrentPage, showToast }) => {
 
     // Construct the WhatsApp URL
     const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
-    const whatsappUrl = `https://wa.me/917899999475?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
 
     // Open WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -1241,7 +1241,7 @@ const Footer = ({ setCurrentPage, showToast }) => {
             Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
           </p>
           <div className="flex gap-4 pt-2">
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Instagram size={18} /></a>
+            <a href="https://www.instagram.com/c0smatrix?igsh=YXRrMW13b3V5OTRh&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Instagram size={18} /></a>
             <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Facebook size={18} /></a>
             <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Linkedin size={18} /></a>
           </div>
@@ -1264,11 +1264,11 @@ const Footer = ({ setCurrentPage, showToast }) => {
           <ul className="space-y-4 text-sm text-gray-400">
             <li className="flex items-start gap-3">
                 <Mail size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
-                <span>info@cosmatrix.com</span>
+                <span>cosmatriixx@gmail.com</span>
             </li>
             <li className="flex items-start gap-3">
                 <Phone size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
-                <span>+91 78999 99475</span>
+                <span>+91 99164 04202</span>
             </li>
             <li className="flex items-start gap-3">
                 <MapPin size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
@@ -1927,6 +1927,20 @@ const ProductView = ({ product, addToCart, navigateTo }) => {
                   <Button className="flex-1 h-12 text-sm uppercase tracking-wide" onClick={() => addToCart(product, qty)}>Add to Cart</Button>
               </div>
             </div>
+            
+            {/* Auto-fill WhatsApp Message for Wholesale Inquiry */}
+            <div className="mt-6">
+                <a 
+                href={`https://wa.me/919916404202?text=${encodeURIComponent(`Hello, I am interested in wholesale pricing for ${product.name}. My business type: Clinic / Salon / Reseller / Medical practitioner.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full text-center py-3 border border-[#E8A0BF] text-[#E8A0BF] hover:bg-[#E8A0BF] hover:text-black transition-colors rounded font-medium text-sm uppercase tracking-wide"
+                >
+                Ask About Wholesale Pricing
+                </a>
+                <p className="text-xs text-gray-400 mt-2 text-center">*Professional verification required for bulk rates.</p>
+            </div>
+
             {/* Spacer for mobile fixed bottom button */}
             <div className="h-20 md:hidden"></div> 
           </div>
@@ -2176,7 +2190,7 @@ const AboutView = () => {
                  </div>
                  <h3 className="font-serif text-xl mb-3">Temp-Controlled Storage</h3>
                  <p className="text-sm text-gray-500 font-light leading-relaxed">
-                    Our warehouses maintain strict 2°C - 8°C zones for peptides and growth factors, ensuring zero degradation before dispatch.
+                   Our warehouses maintain strict 2°C - 8°C zones for peptides and growth factors, ensuring zero degradation before dispatch.
                  </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
@@ -2185,7 +2199,7 @@ const AboutView = () => {
                  </div>
                  <h3 className="font-serif text-xl mb-3">Batch Verification</h3>
                  <p className="text-sm text-gray-500 font-light leading-relaxed">
-                    Every shipment is cross-referenced with manufacturer lot numbers. We employ a 3-step authentication process for every box.
+                   Every shipment is cross-referenced with manufacturer lot numbers. We employ a 3-step authentication process for every box.
                  </p>
               </div>
               <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
@@ -2194,7 +2208,7 @@ const AboutView = () => {
                  </div>
                  <h3 className="font-serif text-xl mb-3">Expedited Logistics</h3>
                  <p className="text-sm text-gray-500 font-light leading-relaxed">
-                    We utilize priority air-cargo partners to minimize transit time. Insulated packaging keeps products stable for up to 72 hours.
+                   We utilize priority air-cargo partners to minimize transit time. Insulated packaging keeps products stable for up to 72 hours.
                  </p>
               </div>
           </div>
@@ -2230,7 +2244,7 @@ const ContactView = ({ showToast }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const whatsappMessage = `New Inquiry:%0A%0AName: ${encodeURIComponent(formData.name)}%0AClinic: ${encodeURIComponent(formData.clinicName)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0AMessage: ${encodeURIComponent(formData.message)}`;
-    window.open(`https://wa.me/917899999475?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/919916404202?text=${whatsappMessage}`, '_blank');
     showToast("Opening WhatsApp...", "success");
   };
 
@@ -2267,7 +2281,7 @@ const ContactView = ({ showToast }) => {
                             </div>
                             <div>
                                 <h4 className="font-serif text-lg mb-1">Phone Support</h4>
-                                <p className="text-sm text-gray-500 mb-1">+91 78999 99475</p>
+                                <p className="text-sm text-gray-500 mb-1">+91 99164 04202</p>
                                 <p className="text-xs text-gray-400">Mon-Sat: 10am - 7pm IST</p>
                             </div>
                         </div>
@@ -2278,7 +2292,7 @@ const ContactView = ({ showToast }) => {
                             </div>
                             <div>
                                 <h4 className="font-serif text-lg mb-1">Email</h4>
-                                <p className="text-sm text-gray-500 mb-1">info@cosmatrix.com</p>
+                                <p className="text-sm text-gray-500 mb-1">cosmatriixx@gmail.com</p>
                                 <p className="text-xs text-gray-400">24/7 Digital Support</p>
                             </div>
                         </div>
@@ -2366,27 +2380,61 @@ export default function CosmatrixApp() {
   const [cartOpen, setCartOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [selectedPost, setSelectedPost] = useState(null); // State for selected blog post
+  const [selectedPost, setSelectedPost] = useState(null); 
   const [shopFilter, setShopFilter] = useState('All');
-  const [toast, setToast] = useState(null); // { message, type }
+  const [toast, setToast] = useState(null); 
 
+  // Initialize browser history state on first load
   useEffect(() => {
-    const path = window.location.pathname;
-    if (path.includes('success')) {
-        setCurrentPage('success');
-    }
+    // Replace the initial state so we have a valid history entry to pop back to
+    window.history.replaceState({ page: 'home' }, '', window.location.search);
+  }, []);
+
+  // Listen for Browser Back/Forward buttons (popstate event)
+  useEffect(() => {
+    const handlePopState = (event) => {
+      if (event.state && event.state.page) {
+        // Restore state from history
+        setCurrentPage(event.state.page);
+        if (event.state.product) setSelectedProduct(event.state.product);
+        if (event.state.post) setSelectedPost(event.state.post);
+        // Also restore filter if needed, though simpler to reset or persist in history too
+      } else {
+        // Fallback if no state exists
+        setCurrentPage('home');
+      }
+      setMobileMenuOpen(false);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   const showToast = (message, type = 'success') => {
     setToast({ message, type });
   };
 
+  // Modified navigateTo function to push history state
   const navigateTo = (page, item = null) => {
     if (page === 'product' && item) setSelectedProduct(item);
-    if (page === 'blog-post' && item) setSelectedPost(item); // Handle blog post navigation
+    if (page === 'blog-post' && item) setSelectedPost(item);
+    
     setCurrentPage(page);
     setMobileMenuOpen(false);
     window.scrollTo(0, 0);
+
+    // Push new state to browser history
+    // We construct a state object that holds necessary data to reconstruct the view
+    const stateObj = { 
+        page, 
+        product: page === 'product' ? item : null,
+        post: page === 'blog-post' ? item : null
+    };
+    
+    // Push state with a query param for visual clarity (optional, but good practice)
+    // Using query params (?page=shop) instead of path (/shop) avoids 404s on refresh in some static hosting environments
+    const url = `?page=${page}`; 
+    window.history.pushState(stateObj, '', url);
   };
 
   const addToCart = (product, quantity = 1) => {
@@ -2412,7 +2460,7 @@ export default function CosmatrixApp() {
     localStorage.setItem('temp_user', JSON.stringify(customerDetails));
 
     try {
-        const response = await fetch('http://localhost:5000/api/phonepe/pay', {
+        const response = await fetch('https://cosmatrix-server.onrender.com/api/phonepe/pay', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -2434,8 +2482,10 @@ export default function CosmatrixApp() {
         console.error("Payment Error:", error);
         const confirmSim = window.confirm("Backend unreachable. Simulate Success?");
         if(confirmSim) {
-             window.history.pushState({}, "", "/payment/success?tid=SIMULATED-123");
-             setCurrentPage('success');
+             // Use navigateTo instead of direct pushState manually here to keep consistent
+             navigateTo('success');
+             // But for success page specifically we might want to replace history
+             // window.history.pushState({}, "", "/payment/success?tid=SIMULATED-123");
              setCartOpen(false);
         }
     }

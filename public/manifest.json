@@ -1,0 +1,25 @@
+{
+  "short_name": "Cosmatrix",
+  "name": "Cosmatrix International",
+  "icons": [
+    {
+      "src": "image/logo.jpg",
+      "sizes": "64x64",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "image/logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "image/logo.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

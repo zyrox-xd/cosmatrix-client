@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ShoppingBag, Menu, X, Instagram, Facebook, Linkedin, ArrowRight, Trash2, Plus, Minus, Mail, Phone, MapPin, ShieldCheck, Building2, Stethoscope, FileText, Award, Search, ChevronRight, Filter, Check, ChevronDown, Star, Sparkles, Truck, Globe, ArrowLeft, Calendar, User, Grid, List, ArrowUpRight, ArrowUpDown, Thermometer, Clock, Map, SlidersHorizontal } from 'lucide-react';
 
 /* --- EMAILJS CONFIGURATION --- */
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "service_f4a32p2";
+const EMAILJS_TEMPLATE_ID = "template_80rehng";
+const EMAILJS_PUBLIC_KEY = "cdc4JC6h-iGdLJOCC";
 
 /* --- Data & Constants --- */
 const BRANDS_LIST = [

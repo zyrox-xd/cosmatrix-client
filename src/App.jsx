@@ -1396,7 +1396,7 @@ const Footer = ({ setCurrentPage, showToast }) => {
         
         {/* Brand Column */}
         <div className="space-y-6">
-          <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
+          <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-12 w-auto object-contain" />
           <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
             Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
           </p>

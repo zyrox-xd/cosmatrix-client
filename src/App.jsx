@@ -1368,87 +1368,119 @@ const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, che
 };
 
 const Footer = ({ setCurrentPage, showToast }) => {
-    const [phone, setPhone] = useState('');
-    const [loading, setLoading] = useState(false);
-    
-    const handleSubscribe = async () => {
-      if(!phone || phone.length < 10) {
-          showToast("Please enter a valid WhatsApp number.", "error");
-          return;
-      }
-      setLoading(true);
-      const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
-      const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
-      window.open(whatsappUrl, '_blank');
-      showToast("Opening WhatsApp...", "success");
-      setPhone('');
-      setLoading(false);
-    };
+  const [phone, setPhone] = useState('');
+  const [loading, setLoading] = useState(false);
   
-    return (
-    <footer className="bg-[#0a0a0a] text-white border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          
-          {/* Brand Column */}
-          <div className="space-y-6">
-            <img src="/image/logo.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
-            <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
-              Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
-            </p>
-          </div>
-  
-          {/* Explore */}
-          <div>
-            <h3 className="text-white font-serif text-lg mb-6">Explore</h3>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li><button onClick={() => setCurrentPage('shop')} className="hover:text-[#E8A0BF] transition-colors">All Products</button></li>
-              <li><button onClick={() => setCurrentPage('blog')} className="hover:text-[#E8A0BF] transition-colors">Clinical Journal</button></li>
-              <li><button onClick={() => setCurrentPage('about')} className="hover:text-[#E8A0BF] transition-colors">About Us</button></li>
-              <li><button onClick={() => setCurrentPage('contact')} className="hover:text-[#E8A0BF] transition-colors">Contact</button></li>
-            </ul>
-          </div>
-  
-          {/* Policies */}
-          <div>
-            <h3 className="text-white font-serif text-lg mb-6">Policies</h3>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li><button onClick={() => setCurrentPage('terms')} className="hover:text-[#E8A0BF] transition-colors">Terms & Conditions</button></li>
-              <li><button onClick={() => setCurrentPage('shipping')} className="hover:text-[#E8A0BF] transition-colors">Shipping Policy</button></li>
-              <li><button onClick={() => setCurrentPage('return-policy')} className="hover:text-[#E8A0BF] transition-colors">Return Policy</button></li>
-              <li><button onClick={() => setCurrentPage('refund-policy')} className="hover:text-[#E8A0BF] transition-colors">Refund Policy</button></li>
-              <li><button onClick={() => setCurrentPage('privacy')} className="hover:text-[#E8A0BF] transition-colors">Privacy Policy</button></li>
-            </ul>
-          </div>
-  
-          {/* Subscribe */}
-          <div>
-            <h3 className="text-white font-serif text-lg mb-6">Updates</h3>
-            <div className="flex flex-col gap-3">
-              <input 
-                  type="tel" 
-                  placeholder="WhatsApp Number" 
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  className="bg-white/5 border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E8A0BF] w-full rounded"
-              />
-              <button 
-                  onClick={handleSubscribe} 
-                  disabled={loading}
-                  className="bg-[#E8A0BF] text-black px-4 py-3 font-medium text-sm hover:bg-white transition-colors rounded uppercase tracking-wider flex justify-center items-center gap-2"
-              >
-                  {loading ? 'Subscribing...' : 'Subscribe'}
-              </button>
-            </div>
+  const handleSubscribe = async () => {
+    if(!phone || phone.length < 10) {
+        showToast("Please enter a valid WhatsApp number.", "error");
+        return;
+    }
+    setLoading(true);
+    // Construct the WhatsApp URL
+    const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
+    const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
+
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+
+    showToast("Opening WhatsApp...", "success");
+    setPhone('');
+    setLoading(false);
+  };
+
+  return (
+  <footer className="bg-[#0a0a0a] text-white border-t border-white/5">
+    <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        
+        {/* Brand Column */}
+        <div className="space-y-6">
+          <img src="/image/logo.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
+          <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
+            Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
+          </p>
+          <div className="flex gap-4 pt-2">
+            <a href="https://www.instagram.com/c0smatrix?igsh=YXRrMW13b3V5OTRh&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Instagram size={18} /></a>
+            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Facebook size={18} /></a>
+            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Linkedin size={18} /></a>
           </div>
         </div>
-        
-        <div className="border-t border-white/5 pt-8 mt-8 text-center text-xs text-gray-500">
-          <p>&copy; 2025 COSMATRIX INTERNATIONAL. All rights reserved.</p>
+
+        {/* Explore */}
+        <div>
+          <h3 className="text-white font-serif text-lg mb-6">Explore</h3>
+          <ul className="space-y-4 text-sm text-gray-400">
+            <li><button onClick={() => setCurrentPage('shop')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> All Products</button></li>
+            <li><button onClick={() => setCurrentPage('blog')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Clinical Journal</button></li>
+            <li><button onClick={() => setCurrentPage('about')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Our Story</button></li>
+            <li><button onClick={() => setCurrentPage('contact')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Partner Program</button></li>
+          </ul>
+        </div>
+
+        {/* Policies */}
+        <div>
+          <h3 className="text-white font-serif text-lg mb-6">Policies</h3>
+          <ul className="space-y-4 text-sm text-gray-400">
+            <li><button onClick={() => setCurrentPage('terms')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Terms & Conditions</button></li>
+            <li><button onClick={() => setCurrentPage('shipping')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Shipping Policy</button></li>
+            <li><button onClick={() => setCurrentPage('return-policy')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Return Policy</button></li>
+            <li><button onClick={() => setCurrentPage('refund-policy')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Refund Policy</button></li>
+            <li><button onClick={() => setCurrentPage('privacy')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Privacy Policy</button></li>
+          </ul>
+        </div>
+
+        {/* Newsletter / WhatsApp Updates */}
+        <div>
+          <h3 className="text-white font-serif text-lg mb-6">WhatsApp Updates</h3>
+          <p className="text-gray-400 text-xs mb-4">Get exclusive wholesale price lists and stock alerts directly on WhatsApp.</p>
+          <div className="flex flex-col gap-3">
+            <input 
+                type="tel" 
+                placeholder="WhatsApp Number" 
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="bg-white/5 border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E8A0BF] w-full rounded"
+            />
+            <button 
+                onClick={handleSubscribe} 
+                disabled={loading}
+                className="bg-[#E8A0BF] text-black px-4 py-3 font-medium text-sm hover:bg-white transition-colors rounded uppercase tracking-wider disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+            >
+                {loading ? 'Subscribing...' : <>Subscribe <ArrowRight size={14}/></>}
+            </button>
+          </div>
         </div>
       </div>
-    </footer>
-    );
+
+      <div className="border-t border-white/5 pt-8 mt-8 flex flex-col items-center gap-4 text-xs text-gray-500">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full gap-4">
+            <p>&copy; 2025 COSMATRIX INTERNATIONAL. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+               <span className="flex items-center gap-1">
+                   <Mail size={12} /> cosmatriixx@gmail.com
+               </span>
+            </div>
+        </div>
+        
+        {/* ZOMAXA CREDIT */}
+        <div className="mt-4 pt-4 border-t border-white/5 w-full text-center">
+            <p className="text-gray-600">
+                Designed & Developed by{' '}
+                <a 
+                    href="https://zomaxa.co" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-400 hover:text-[#E8A0BF] transition-colors font-bold tracking-wide"
+                >
+                    Zomaxa.co
+                </a>
+            </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  );
 };
 
 const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (

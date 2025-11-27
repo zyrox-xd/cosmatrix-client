@@ -3,17 +3,17 @@
   "name": "Cosmatrix International",
   "icons": [
     {
-      "src": "image/logo.jpg",
+      "src": "image/logo-t.jpg",
       "sizes": "64x64",
       "type": "image/jpeg"
     },
     {
-      "src": "image/logo.jpg",
+      "src": "image/logo-t.jpg",
       "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "image/logo.jpg",
+      "src": "image/logo-t.jpg",
       "type": "image/jpeg",
       "sizes": "512x512"
     }

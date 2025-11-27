@@ -1147,7 +1147,7 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
              <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
                 <div className="cursor-pointer flex items-center gap-2" onClick={() => setCurrentPage('home')}>
-                    <img src="/image/logo.jpg" alt="COSMATRIX" className="h-10 md:h-16 w-auto object-contain" />
+                    <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-10 md:h-16 w-auto object-contain" />
                 </div>
                 <nav className="hidden md:flex items-center gap-8">
                     {navLinks.map(link => (
@@ -1396,14 +1396,12 @@ const Footer = ({ setCurrentPage, showToast }) => {
         
         {/* Brand Column */}
         <div className="space-y-6">
-          <img src="/image/logo.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
+          <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
           <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
             Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
           </p>
           <div className="flex gap-4 pt-2">
             <a href="https://www.instagram.com/c0smatrix?igsh=YXRrMW13b3V5OTRh&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Instagram size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Facebook size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Linkedin size={18} /></a>
           </div>
         </div>
 

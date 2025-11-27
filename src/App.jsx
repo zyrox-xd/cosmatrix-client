@@ -1083,7 +1083,6 @@ const PRODUCTS = [
   }
 ];
 
-// ... (Keep CATEGORIES, Toast, Button, SectionHeader) ...
 const CATEGORIES = [
   { name: "Injection", id: "Injection" },
   { name: "Cream", id: "Cream" },
@@ -1135,7 +1134,6 @@ const SectionHeader = ({ title, subtitle, center = true }) => (
   </div>
 );
 
-// ... (Keep other Views - Navigation, Footer, etc. until ShopView) ...
 const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobileMenuOpen, setMobileMenuOpen, setShopFilter }) => {
     const navLinks = [
         { name: 'Home', id: 'home' },
@@ -1201,7 +1199,6 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
 };
 
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
-    // ... (Keep existing PaymentSuccessView) ...
     const [status, setStatus] = useState('processing'); 
 
     useEffect(() => {
@@ -1293,7 +1290,6 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
 };
 
 const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, checkout }) => {
-    // ... (Keep existing CartDrawer) ...
     const [formData, setFormData] = useState({
         name: '',
         phone: '',
@@ -1372,116 +1368,90 @@ const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, che
 };
 
 const Footer = ({ setCurrentPage, showToast }) => {
-  // ... (Keep existing Footer) ...
-  const [phone, setPhone] = useState('');
-  const [loading, setLoading] = useState(false);
+    const [phone, setPhone] = useState('');
+    const [loading, setLoading] = useState(false);
+    
+    const handleSubscribe = async () => {
+      if(!phone || phone.length < 10) {
+          showToast("Please enter a valid WhatsApp number.", "error");
+          return;
+      }
+      setLoading(true);
+      const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
+      const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+      showToast("Opening WhatsApp...", "success");
+      setPhone('');
+      setLoading(false);
+    };
   
-  const handleSubscribe = async () => {
-    if(!phone || phone.length < 10) {
-        showToast("Please enter a valid WhatsApp number.", "error");
-        return;
-    }
-
-    setLoading(true);
-
-    // Construct the WhatsApp URL
-    const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
-    const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
-
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
-
-    showToast("Opening WhatsApp...", "success");
-    setPhone('');
-    setLoading(false);
-  };
-
-  return (
-  <footer className="bg-[#0a0a0a] text-white border-t border-white/5">
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+    return (
+    <footer className="bg-[#0a0a0a] text-white border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          
+          {/* Brand Column */}
+          <div className="space-y-6">
+            <img src="/image/logo.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
+            <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
+              Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
+            </p>
+          </div>
+  
+          {/* Explore */}
+          <div>
+            <h3 className="text-white font-serif text-lg mb-6">Explore</h3>
+            <ul className="space-y-4 text-sm text-gray-400">
+              <li><button onClick={() => setCurrentPage('shop')} className="hover:text-[#E8A0BF] transition-colors">All Products</button></li>
+              <li><button onClick={() => setCurrentPage('blog')} className="hover:text-[#E8A0BF] transition-colors">Clinical Journal</button></li>
+              <li><button onClick={() => setCurrentPage('about')} className="hover:text-[#E8A0BF] transition-colors">About Us</button></li>
+              <li><button onClick={() => setCurrentPage('contact')} className="hover:text-[#E8A0BF] transition-colors">Contact</button></li>
+            </ul>
+          </div>
+  
+          {/* Policies */}
+          <div>
+            <h3 className="text-white font-serif text-lg mb-6">Policies</h3>
+            <ul className="space-y-4 text-sm text-gray-400">
+              <li><button onClick={() => setCurrentPage('terms')} className="hover:text-[#E8A0BF] transition-colors">Terms & Conditions</button></li>
+              <li><button onClick={() => setCurrentPage('shipping')} className="hover:text-[#E8A0BF] transition-colors">Shipping Policy</button></li>
+              <li><button onClick={() => setCurrentPage('return-policy')} className="hover:text-[#E8A0BF] transition-colors">Return Policy</button></li>
+              <li><button onClick={() => setCurrentPage('refund-policy')} className="hover:text-[#E8A0BF] transition-colors">Refund Policy</button></li>
+              <li><button onClick={() => setCurrentPage('privacy')} className="hover:text-[#E8A0BF] transition-colors">Privacy Policy</button></li>
+            </ul>
+          </div>
+  
+          {/* Subscribe */}
+          <div>
+            <h3 className="text-white font-serif text-lg mb-6">Updates</h3>
+            <div className="flex flex-col gap-3">
+              <input 
+                  type="tel" 
+                  placeholder="WhatsApp Number" 
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="bg-white/5 border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E8A0BF] w-full rounded"
+              />
+              <button 
+                  onClick={handleSubscribe} 
+                  disabled={loading}
+                  className="bg-[#E8A0BF] text-black px-4 py-3 font-medium text-sm hover:bg-white transition-colors rounded uppercase tracking-wider flex justify-center items-center gap-2"
+              >
+                  {loading ? 'Subscribing...' : 'Subscribe'}
+              </button>
+            </div>
+          </div>
+        </div>
         
-        {/* Brand Column */}
-        <div className="space-y-6">
-          <img src="/image/logo.jpg" alt="COSMATRIX" className="h-14 w-auto object-contain invert brightness-0 filter bg-white p-1 rounded" />
-          <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
-            Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
-          </p>
-          <div className="flex gap-4 pt-2">
-            <a href="https://www.instagram.com/c0smatrix?igsh=YXRrMW13b3V5OTRh&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Instagram size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Facebook size={18} /></a>
-            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E8A0BF] hover:text-black transition-all"><Linkedin size={18} /></a>
-          </div>
-        </div>
-
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-white font-serif text-lg mb-6">Explore</h3>
-          <ul className="space-y-4 text-sm text-gray-400">
-            <li><button onClick={() => setCurrentPage('shop')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> All Products</button></li>
-            <li><button onClick={() => setCurrentPage('blog')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Clinical Journal</button></li>
-            <li><button onClick={() => setCurrentPage('about')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Our Story</button></li>
-            <li><button onClick={() => setCurrentPage('contact')} className="hover:text-[#E8A0BF] transition-colors flex items-center gap-2"><ArrowRight size={12} /> Partner Program</button></li>
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="text-white font-serif text-lg mb-6">Contact</h3>
-          <ul className="space-y-4 text-sm text-gray-400">
-            <li className="flex items-start gap-3">
-                <Mail size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
-                <span>cosmatriixx@gmail.com</span>
-            </li>
-            <li className="flex items-start gap-3">
-                <Phone size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
-                <span>+91 99164 04202</span>
-            </li>
-            <li className="flex items-start gap-3">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-[#E8A0BF]" /> 
-                <span>123 Beauty Boulevard<br/>Bangalore, Karnataka</span>
-            </li>
-          </ul>
-        </div>
-
-        {/* Newsletter / WhatsApp Updates */}
-        <div>
-          <h3 className="text-white font-serif text-lg mb-6">WhatsApp Updates</h3>
-          <p className="text-gray-400 text-xs mb-4">Get exclusive wholesale price lists and stock alerts directly on WhatsApp.</p>
-          <div className="flex flex-col gap-3">
-            <input 
-                type="tel" 
-                placeholder="WhatsApp Number" 
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                className="bg-white/5 border border-white/10 px-4 py-3 text-white text-sm focus:outline-none focus:border-[#E8A0BF] w-full rounded"
-            />
-            <button 
-                onClick={handleSubscribe} 
-                disabled={loading}
-                className="bg-[#E8A0BF] text-black px-4 py-3 font-medium text-sm hover:bg-white transition-colors rounded uppercase tracking-wider disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
-            >
-                {loading ? 'Subscribing...' : <>Subscribe <ArrowRight size={14}/></>}
-            </button>
-          </div>
+        <div className="border-t border-white/5 pt-8 mt-8 text-center text-xs text-gray-500">
+          <p>&copy; 2025 COSMATRIX INTERNATIONAL. All rights reserved.</p>
         </div>
       </div>
-
-      <div className="border-t border-white/5 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-        <p>&copy; 2025 COSMATRIX INTERNATIONAL. All rights reserved.</p>
-        <div className="flex gap-6">
-            <button onClick={() => setCurrentPage('privacy')} className="hover:text-white">Privacy Policy</button>
-            <button onClick={() => setCurrentPage('terms')} className="hover:text-white">Terms of Service</button>
-            <button onClick={() => setCurrentPage('shipping')} className="hover:text-white">Shipping Policy</button>
-        </div>
-      </div>
-    </div>
-  </footer>
-  );
+    </footer>
+    );
 };
 
 const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (
-    // ... (Keep existing HomeView) ...
   <div className="animate-fade-in bg-[#fbfbfb]">
     {/* HERO SECTION */}
     <div className="relative w-full min-h-[85vh] bg-black flex flex-col justify-center items-center text-center overflow-hidden">
@@ -1942,7 +1912,6 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter }) => {
 };
 
 const BlogPostView = ({ post, navigateTo }) => {
-    // ... (Keep existing BlogPostView) ...
   return (
     <div className="animate-fade-in bg-white min-h-screen pb-24">
       {/* Navigation Breadcrumb */}
@@ -1976,7 +1945,6 @@ const BlogPostView = ({ post, navigateTo }) => {
 };
 
 const BlogView = ({ navigateTo }) => {
-    // ... (Keep existing BlogView) ...
   const [activeCategory, setActiveCategory] = useState('All');
   const categories = ['All', 'Clinical Science', 'Ingredient Spotlight', 'Treatment Protocols', 'Safety & Compliance'];
 
@@ -2035,7 +2003,6 @@ const BlogView = ({ navigateTo }) => {
 };
 
 const ProductView = ({ product, addToCart, navigateTo }) => {
-    // ... (Keep existing ProductView) ...
   const [qty, setQty] = useState(1);
   const [activeImg, setActiveImg] = useState(0);
   const images = [product.image, product.image, product.image, product.image];
@@ -2138,141 +2105,195 @@ const ProductView = ({ product, addToCart, navigateTo }) => {
   );
 };
 
-const PrivacyPolicyView = () => (
-  <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
-    <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
-        <div className="relative z-10 max-w-3xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-5xl mb-4">Privacy Policy</h1>
-            <p className="text-gray-400 font-light text-sm md:text-base">Last Updated: October 2025</p>
-        </div>
-    </div>
-    <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
-            <section>
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><ShieldCheck size={16}/></div>
-                    <h3 className="font-serif text-xl text-gray-900">1. Data Collection & Usage</h3>
-                </div>
-                <p>We strictly collect only the information necessary to process wholesale orders and verify professional credentials. This includes your medical license number, clinic address, and contact details. This data is used solely for order fulfillment, regulatory compliance, and account management.</p>
-            </section>
-            
-            <section>
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><FileText size={16}/></div>
-                    <h3 className="font-serif text-xl text-gray-900">2. Data Security</h3>
-                </div>
-                <p>Cosmatrix International employs industry-standard SSL encryption to protect your sensitive data during transmission. We partner with secure payment gateways and do not store credit card details on our servers. Access to personal data is restricted to authorized personnel only.</p>
-            </section>
-
-            <section>
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><Mail size={16}/></div>
-                    <h3 className="font-serif text-xl text-gray-900">3. Communications</h3>
-                </div>
-                <p>We may use your contact details to communicate important order updates, safety recalls, or exclusive wholesale offers. You retain the right to opt-out of marketing communications at any time via the unsubscribe link or by contacting support.</p>
-            </section>
-
-            <section>
-                <div className="flex items-center gap-3 mb-4">
-                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><User size={16}/></div>
-                    <h3 className="font-serif text-xl text-gray-900">4. Third-Party Disclosure</h3>
-                </div>
-                <p>We do not sell, trade, or otherwise transfer your Personally Identifiable Information to outside parties, except for trusted third parties who assist us in operating our website, conducting our business (e.g., logistics partners), or serving our users, so long as those parties agree to keep this information confidential.</p>
-            </section>
-        </div>
-    </div>
-  </div>
-);
+/* --- POLICY VIEWS --- */
 
 const TermsOfServiceView = () => (
-  <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
-    <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
-        <div className="relative z-10 max-w-3xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-5xl mb-4">Terms of Service</h1>
-            <p className="text-gray-400 font-light text-sm md:text-base">Professional Engagement Guidelines</p>
-        </div>
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Terms & Conditions</h1>
+              <p className="text-gray-400 font-light text-sm md:text-base">Professional Engagement Guidelines</p>
+          </div>
+      </div>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">1. Professional Use Only</h3>
+                  <p>By purchasing from Cosmatrix International, you explicitly certify that you are a licensed medical professional or an authorized representative of a licensed clinic. Our products, particularly injectables and professional-grade peels, are strictly for professional administration. We reserve the right to cancel orders that fail credential verification.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">2. Product Liability & Usage</h3>
+                  <p>Cosmatrix acts solely as an authorized distributor. While we guarantee the authenticity and cold-chain integrity of our products, we are not the manufacturer. Any adverse reactions should be reported to the manufacturer directly. Cosmatrix is not liable for misuse, improper administration, or off-label use of products.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">3. Pricing & Availability</h3>
+                  <p>Prices are subject to change without notice due to international exchange rates and manufacturer adjustments. We reserve the right to limit quantities per client to ensure equitable distribution of high-demand stock.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">4. Governing Law</h3>
+                  <p>These terms shall be governed by and defined following the laws of India. Cosmatrix International and yourself irrevocably consent that the courts of Karnataka shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these terms.</p>
+              </section>
+          </div>
+      </div>
     </div>
-    <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">1. Professional Use Only</h3>
-                <p>By purchasing from Cosmatrix International, you explicitly certify that you are a licensed medical professional or an authorized representative of a licensed clinic. Our products, particularly injectables and professional-grade peels, are strictly for professional administration. We reserve the right to cancel orders that fail credential verification.</p>
-            </section>
-
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">2. Product Liability & Usage</h3>
-                <p>Cosmatrix acts solely as an authorized distributor. While we guarantee the authenticity and cold-chain integrity of our products, we are not the manufacturer. Any adverse reactions should be reported to the manufacturer directly. Cosmatrix is not liable for misuse, improper administration, or off-label use of products.</p>
-            </section>
-
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">3. Returns & Refunds</h3>
-                <p>Due to the sensitive nature of medical aesthetics and strict temperature control requirements, <strong>all sales of injectables are final</strong>. We cannot accept returns once the product has left our controlled facility to ensure safety. Returns are only processed in the rare event of a proven manufacturing defect or shipping error reported within 24 hours of receipt.</p>
-            </section>
-
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">4. Pricing & Availability</h3>
-                <p>Prices are subject to change without notice due to international exchange rates and manufacturer adjustments. We reserve the right to limit quantities per client to ensure equitable distribution of high-demand stock.</p>
-            </section>
-        </div>
+  );
+  
+  const ReturnPolicyView = () => (
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Return Policy</h1>
+              <p className="text-gray-400 font-light text-sm md:text-base">Guidelines for Product Returns</p>
+          </div>
+      </div>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
+              <div className="bg-red-50 border border-red-100 p-6 rounded-xl text-sm text-red-800 mb-8">
+                  <strong>Important:</strong> Due to the temperature-sensitive nature of biological goods, standard "change of mind" returns are strictly prohibited to ensure patient safety.
+              </div>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">1. Eligibility for Returns</h3>
+                  <p>Returns are only accepted under the following conditions:</p>
+                  <ul className="list-disc pl-5 mt-2 space-y-2">
+                      <li>The product was delivered in a damaged condition (broken vials, crushed box).</li>
+                      <li>The product received does not match the invoice (wrong item sent).</li>
+                      <li>The product is expired upon receipt.</li>
+                  </ul>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">2. Return Window</h3>
+                  <p>You must report any issues within <strong>24 hours of delivery</strong>. Reports made after this window cannot be verified against our logistics data and will be rejected.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">3. Return Process</h3>
+                  <p>To initiate a return:</p>
+                  <ol className="list-decimal pl-5 mt-2 space-y-2">
+                      <li>Take clear photos/video of the unboxing and the damaged item.</li>
+                      <li>Email us at support@cosmatrix.com with your Order ID.</li>
+                      <li>Our team will verify the claim and arrange for a reverse pickup if applicable.</li>
+                  </ol>
+              </section>
+          </div>
+      </div>
     </div>
-  </div>
-);
-
-const ShippingPolicyView = () => (
-  <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
-    <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
-        <div className="relative z-10 max-w-3xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-5xl mb-4">Shipping & Logistics</h1>
-            <p className="text-gray-400 font-light text-sm md:text-base">Ensuring clinical integrity from warehouse to clinic.</p>
-        </div>
+  );
+  
+  const RefundPolicyView = () => (
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Refund Policy</h1>
+              <p className="text-gray-400 font-light text-sm md:text-base">Financial Processing & Timelines</p>
+          </div>
+      </div>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">1. Refund Approval</h3>
+                  <p>Refunds are initiated only after the returned product has reached our warehouse and passed a quality inspection. If the product is found to be used, tampered with, or not in its original condition (unless damaged during transit), the refund request will be denied.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">2. Processing Timeline</h3>
+                  <p>Once approved, the refund will be processed within <strong>5-7 business days</strong>. The amount will be credited back to the original source of payment (Credit Card, UPI, or Bank Transfer).</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">3. Cancellations</h3>
+                  <p>Orders can be cancelled for a full refund only if they have not yet been dispatched. Once the shipping label is generated and the cold-chain packaging is sealed, the order cannot be cancelled.</p>
+              </section>
+          </div>
+      </div>
     </div>
-    
-    <div className="max-w-4xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
-                <Thermometer size={24} className="text-[#E8A0BF] mx-auto mb-3" />
-                <h4 className="font-serif font-bold text-gray-900">Cold Chain</h4>
-                <p className="text-xs text-gray-500 mt-2">Insulated packaging for biologics.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
-                <Clock size={24} className="text-[#E8A0BF] mx-auto mb-3" />
-                <h4 className="font-serif font-bold text-gray-900">24h Dispatch</h4>
-                <p className="text-xs text-gray-500 mt-2">Same-day processing for orders before 2 PM.</p>
-            </div>
-            <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
-                <Truck size={24} className="text-[#E8A0BF] mx-auto mb-3" />
-                <h4 className="font-serif font-bold text-gray-900">Pan-India</h4>
-                <p className="text-xs text-gray-500 mt-2">Serviceable to 19,000+ pin codes.</p>
-            </div>
-        </div>
-
-        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4">1. Cold Chain Protocol</h3>
-                <p>Temperature-sensitive items (peptides, growth factors, certain injectables) are packed in medical-grade insulated boxes with gel ice packs. We continually monitor transit times to ensure product stability upon arrival. Please refrigerate immediately upon receipt.</p>
-            </section>
-
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4">2. Delivery Timelines</h3>
-                <ul className="list-disc pl-5 space-y-2">
-                    <li><strong>Metro Cities (Delhi, Mumbai, Bangalore, Chennai, Kolkata):</strong> 24-48 Hours.</li>
-                    <li><strong>Tier 1 & 2 Cities:</strong> 2-4 Business Days.</li>
-                    <li><strong>Rest of India / Remote Areas:</strong> 5-7 Business Days.</li>
-                </ul>
-                <p className="mt-4 text-xs bg-gray-50 p-3 rounded text-gray-500">Note: Timelines are estimates. Severe weather or political unrest may cause unavoidable delays.</p>
-            </section>
-
-            <section>
-                <h3 className="font-serif text-xl text-gray-900 mb-4">3. Damaged or Lost Shipments</h3>
-                <p>While rare, if a shipment arrives damaged, you must document it immediately. Please take clear photos of the external packaging and damaged contents and email us within 4 hours of delivery at logistics@cosmatrix.com for a replacement.</p>
-            </section>
-        </div>
+  );
+  
+  const ShippingPolicyView = () => (
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Shipping Policy</h1>
+              <p className="text-gray-400 font-light text-sm md:text-base">Ensuring clinical integrity from warehouse to clinic.</p>
+          </div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
+                  <Thermometer size={24} className="text-[#E8A0BF] mx-auto mb-3" />
+                  <h4 className="font-serif font-bold text-gray-900">Cold Chain</h4>
+                  <p className="text-xs text-gray-500 mt-2">Insulated packaging for biologics.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
+                  <Clock size={24} className="text-[#E8A0BF] mx-auto mb-3" />
+                  <h4 className="font-serif font-bold text-gray-900">24h Dispatch</h4>
+                  <p className="text-xs text-gray-500 mt-2">Same-day processing for orders before 2 PM.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
+                  <Truck size={24} className="text-[#E8A0BF] mx-auto mb-3" />
+                  <h4 className="font-serif font-bold text-gray-900">Pan-India</h4>
+                  <p className="text-xs text-gray-500 mt-2">Serviceable to 19,000+ pin codes.</p>
+              </div>
+          </div>
+  
+          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">1. Cold Chain Protocol</h3>
+                  <p>Temperature-sensitive items (peptides, growth factors, certain injectables) are packed in medical-grade insulated boxes with gel ice packs. We continually monitor transit times to ensure product stability upon arrival. Please refrigerate immediately upon receipt.</p>
+              </section>
+  
+              <section>
+                  <h3 className="font-serif text-xl text-gray-900 mb-4">2. Delivery Timelines</h3>
+                  <ul className="list-disc pl-5 space-y-2">
+                      <li><strong>Metro Cities:</strong> 24-48 Hours.</li>
+                      <li><strong>Tier 1 & 2 Cities:</strong> 2-4 Business Days.</li>
+                      <li><strong>Rest of India:</strong> 5-7 Business Days.</li>
+                  </ul>
+              </section>
+          </div>
+      </div>
     </div>
-  </div>
-);
+  );
+  
+  const PrivacyPolicyView = () => (
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-20 pointer-events-none"></div>
+          <div className="relative z-10 max-w-3xl mx-auto">
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Privacy Policy</h1>
+              <p className="text-gray-400 font-light text-sm md:text-base">Data Protection & Confidentiality</p>
+          </div>
+      </div>
+      <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
+              <section>
+                  <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><ShieldCheck size={16}/></div>
+                      <h3 className="font-serif text-xl text-gray-900">1. Data Collection</h3>
+                  </div>
+                  <p>We strictly collect only the information necessary to process wholesale orders and verify professional credentials. This includes your medical license number, clinic address, and contact details.</p>
+              </section>
+              
+              <section>
+                  <div className="flex items-center gap-3 mb-4">
+                      <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center text-[#E8A0BF]"><FileText size={16}/></div>
+                      <h3 className="font-serif text-xl text-gray-900">2. Data Usage</h3>
+                  </div>
+                  <p>We do not share your client data with any third-party marketing agencies. Your information is used strictly for invoicing, shipping (shared with logistics partners), and regulatory compliance.</p>
+              </section>
+          </div>
+      </div>
+    </div>
+  );
 
 /* IMPROVED ABOUT VIEW */
 const AboutView = () => {
@@ -2283,7 +2304,7 @@ const AboutView = () => {
       { id: 3, val: "5", label: "Distribution Hubs" },
       { id: 4, val: "24h", label: "Dispatch Time" },
     ];
-  
+   
     return (
       <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
         {/* HERO */}
@@ -2322,14 +2343,14 @@ const AboutView = () => {
                    </p>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-2 gap-6">
-                    <div>
-                        <h4 className="font-serif text-xl mb-1">Switzerland</h4>
-                        <p className="text-xs text-gray-400 uppercase tracking-widest">Sourcing Hub</p>
-                    </div>
-                    <div>
-                        <h4 className="font-serif text-xl mb-1">South Korea</h4>
-                        <p className="text-xs text-gray-400 uppercase tracking-widest">Innovation Lab</p>
-                    </div>
+                   <div>
+                       <h4 className="font-serif text-xl mb-1">Switzerland</h4>
+                       <p className="text-xs text-gray-400 uppercase tracking-widest">Sourcing Hub</p>
+                   </div>
+                   <div>
+                       <h4 className="font-serif text-xl mb-1">South Korea</h4>
+                       <p className="text-xs text-gray-400 uppercase tracking-widest">Innovation Lab</p>
+                   </div>
                 </div>
              </div>
           </div>
@@ -2403,7 +2424,7 @@ const AboutView = () => {
         </div>
       </div>
     )
-  };
+};
 
 const ContactView = ({ showToast }) => {
   const [formData, setFormData] = useState({ name: '', clinicName: '', email: '', phone: '', message: '' });
@@ -2702,9 +2723,13 @@ export default function CosmatrixApp() {
             {currentPage === 'blog-post' && selectedPost && <BlogPostView post={selectedPost} navigateTo={navigateTo} />}
             {currentPage === 'about' && <AboutView />}
             {currentPage === 'contact' && <ContactView showToast={showToast} />}
-            {currentPage === 'privacy' && <PrivacyPolicyView />}
+            
+            {/* --- POLICY ROUTES --- */}
             {currentPage === 'terms' && <TermsOfServiceView />}
+            {currentPage === 'privacy' && <PrivacyPolicyView />}
             {currentPage === 'shipping' && <ShippingPolicyView />}
+            {currentPage === 'return-policy' && <ReturnPolicyView />}
+            {currentPage === 'refund-policy' && <RefundPolicyView />}
           </main>
 
           <Footer setCurrentPage={navigateTo} showToast={showToast} />

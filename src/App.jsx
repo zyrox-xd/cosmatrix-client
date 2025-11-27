@@ -913,6 +913,173 @@ const PRODUCTS = [
     benefits: ["Anti-Melanogenic", "Melanin Inhibition", "Gold Edition", "Intense Brightening"],
     sku: "MW-EXC-GOLD",
     volume: "6 Sessions"
+  },
+  {
+    id: 25,
+    name: "Vita Glow Advanced Night Cream",
+    category: "Cream",
+    brand: "Vita Glow",
+    price: 650,
+    image: "/image/Picsart_25-11-27_19-44-06-133.jpg",
+    description: "Advanced Skin Whitening | Result in 7 Days",
+    details: `
+      <strong>Vita Glow Advanced — Skin Whitening Night Cream</strong><br/><br/>
+      Experience the power of the Advanced Gold formula. Vita Glow Night Cream is renowned for its rapid action, designed to brighten skin tone and reduce pigmentation within just 7 days of regular use.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>L-Glutathione</li>
+        <li>Kojic Acid Dipalmitate</li>
+        <li>Alpha Arbutin</li>
+        <li>Vitamin C & E</li>
+        <li>Mulberry Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Inhibits melanin production while you sleep</li>
+        <li>Detoxifies skin from environmental pollutants</li>
+        <li>Reduces dark spots and acne marks rapidly</li>
+      </ul>
+      <br/>
+      Reveal a glowing, fairer complexion in one week.<br/>
+      <em class="text-xs text-gray-400">Note: Apply at night only.</em>
+    `,
+    benefits: ["7 Day Results", "Advanced Formula", "Dark Spot Reduction", "Night Therapy"],
+    sku: "VG-ADV-BLK",
+    volume: "30g"
+  },
+  {
+    id: 26,
+    name: "Constanta Lip Treatment",
+    category: "Treatment",
+    brand: "Constanta",
+    price: 450,
+    image: "/image/Picsart_25-11-27_19-50-25-844.jpg",
+    description: "72 Hours Effect | Aloe Vera & Vitamin E",
+    details: `
+      <strong>Constanta Lip Treatment — 72 Hour Moisture</strong><br/><br/>
+      Experience the magic of color-changing hydration. This treatment turns from green to a natural pinkish hue upon application, providing deep nourishment that lasts up to 72 hours.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Aloe Vera Extract</li>
+        <li>Vitamin E (Tocopherol)</li>
+        <li>Moisturizing Lipids</li>
+        <li>Honey Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Heals dry, chapped lips instantly</li>
+        <li>Adjusts color based on body temperature</li>
+        <li>Protects against oxidative damage</li>
+      </ul>
+      <br/>
+      Reveal soft, naturally pink lips.<br/>
+      <em class="text-xs text-gray-400">Note: Color changes upon application.</em>
+    `,
+    benefits: ["Color Changing", "72Hr Moisture", "Aloe Vera", "Softens Lips"],
+    sku: "CONST-LIP-GRN",
+    volume: "2.5g"
+  },
+  {
+    id: 27,
+    name: "Vita Glow Whitening Cream (Green)",
+    category: "Cream",
+    brand: "Vita Glow",
+    price: 600,
+    image: "/image/Picsart_25-11-27_19-42-56-057.jpg",
+    description: "Original Formula | Skin Whitening & Brightening",
+    details: `
+      <strong>Vita Glow Green — The Original Whitening Cream</strong><br/><br/>
+      Experience the classic formula that started it all. The Green Box edition of Vita Glow focuses on balancing skin pH and providing a steady, uniform whitening effect.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione</li>
+        <li>Avocado Oil</li>
+        <li>Jojoba Oil</li>
+        <li>Vitamin C</li>
+        <li>Sandalwood Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Deeply moisturizes while whitening</li>
+        <li>Prevents acne formation</li>
+        <li>Removes dead skin cells for fresh radiance</li>
+      </ul>
+      <br/>
+      Reveal a smoother, brighter look.<br/>
+      <em class="text-xs text-gray-400">Note: Suitable for all skin types.</em>
+    `,
+    benefits: ["Original Formula", "Herbal Extracts", "Acne Prevention", "Daily Whitening"],
+    sku: "VG-CRM-GRN",
+    volume: "30g"
+  },
+  {
+    id: 28,
+    name: "Glowtiqa Paris Advance Care",
+    category: "Cream",
+    brand: "Glowtiqa Paris",
+    price: 1200,
+    image: "/image/Picsart_25-11-27_19-48-33-126.jpg",
+    description: "Advance Care Whitening | Strengthens Skin",
+    details: `
+      <strong>Glowtiqa Paris — Advance Care Whitening Cream</strong><br/><br/>
+      Experience Parisian elegance and strength. Glowtiqa Paris Advance Care is engineered not just to whiten, but to fortify the skin barrier against external aggressors.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Premium Whitening Complex</li>
+        <li>Ceramides</li>
+        <li>Niacinamide</li>
+        <li>French Rose Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Strengthens the skin's natural barrier</li>
+        <li>Provides a luxurious, non-greasy finish</li>
+        <li>Promotes long-term skin health and fairness</li>
+      </ul>
+      <br/>
+      Feel your own greatness.<br/>
+      <em class="text-xs text-gray-400">Note: Premium daily care.</em>
+    `,
+    benefits: ["Barrier Protection", "Advance Care", "Premium Formula", "Glowtiqa Exclusive"],
+    sku: "GLOW-PARIS-ADV",
+    volume: "30g"
+  },
+  {
+    id: 29,
+    name: "Vita Glow Glutathione Soap",
+    category: "Soap",
+    brand: "Vita Glow",
+    price: 250,
+    image: "/image/Picsart_25-11-27_19-52-21-801.jpg",
+    description: "Glutathione Skin Whitening Soap",
+    details: `
+      <strong>Vita Glow Soap — Glutathione Skin Whitening</strong><br/><br/>
+      Experience the perfect companion to your beauty regime. This soap is infused with Glutathione to cleanse pores deeply and prepare the skin for maximum absorption of night creams.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pure Glutathione</li>
+        <li>Grape Seed Extract</li>
+        <li>Vitamin C & E</li>
+        <li>Coconut Oil Base</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Exfoliates dead skin cells gently</li>
+        <li>Inhibits melanin during the cleansing process</li>
+        <li>Leaves skin feeling soft and prepped</li>
+      </ul>
+      <br/>
+      Reveal a fresh canvas every wash.<br/>
+      <em class="text-xs text-gray-400">Note: Use daily for best results.</em>
+    `,
+    benefits: ["Daily Cleanser", "Glutathione Infused", "Pore Refining", "Skin Prep"],
+    sku: "VG-SOAP-WHT",
+    volume: "135g"
   }
 ];
 
@@ -922,7 +1089,7 @@ const CATEGORIES = [
   { name: "Cream", id: "Cream" },
   { name: "Weight", id: "Weight" },
   { name: "Soap", id: "Soap" },
-  { name: "Combo", id: "Combo" },
+  { name: "Treatment", id: "Treatment" },
   { name: "Filler", id: "Filler" },
   { name: "Supplement", id: "Supplement" }
 ];

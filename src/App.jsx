@@ -195,8 +195,892 @@ const PRODUCTS = [
     benefits: ["Swiss Origin", "4-Step System", "13 Ingredients", "Complex Therapy"],
     sku: "SAINT-BLANC-13",
     volume: "4 Sets (Complete Therapy)"
+  },
+  {
+    id: 3,
+    name: "Glutax 75GX DCRP 750000",
+    category: "Injection",
+    brand: "Glutax",
+    price: 12500,
+    image: "/image/glutax-dcrp.jpg",
+    description: "DNA Cell Revitalize Process | 14 Sessions",
+    details: `
+      <strong>Glutax 75GX DCRP — DNA Cell Revitalize Process</strong><br/><br/>
+      Experience the transformative power of the Glutax 75GX DCRP. This comprehensive 14-session therapy is specifically designed to arrest aging at the cellular level using the DNA Cell Revitalize Process.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>DCRP DNA Cell Revitalize – 750,000 mg</li>
+        <li>DNA Collagen Nano – 5,000 mg</li>
+        <li>Selenium – 1,800 mg</li>
+        <li>High Grade Grape Stem Cell</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Repairs damaged cellular DNA</li>
+        <li>Provides sustained, long-term whitening</li>
+        <li>Combats oxidative stress aggressively</li>
+      </ul>
+      <br/>
+      Reveal a younger, more resilient complexion.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["DCRP Technology", "14 Sessions", "DNA Repair", "Sustained Glow"],
+    sku: "GLU-75GX-DCRP",
+    volume: "14 Sessions"
+  },
+  {
+    id: 4,
+    name: "Glutax 20000000GN+",
+    category: "Injection",
+    brand: "Glutax",
+    price: 13500,
+    image: "/image/Gluta-20000000GN.jpg",
+    description: "Pico-QuadNA ReCombined White | 20 Million mg",
+    details: `
+      <strong>Glutax 20000000GN+ — Pico-QuadNA Technology</strong><br/><br/>
+      Experience rapid absorption with the Glutax 20000000GN+. Utilizing Pico-QuadNA technology, this formulation breaks down active ingredients into microscopic particles for immediate cellular uptake.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pico-QuadNA Glutathione – 20,000,000 mg</li>
+        <li>White Elements – 5,000 mg</li>
+        <li>Epidermal Growth Factor – 4,000 mg</li>
+        <li>Multivitaminico – 3,000 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Fastest onset of whitening action</li>
+        <li>Deeply penetrates stubborn pigmentation</li>
+        <li>Enhances natural skin barrier</li>
+      </ul>
+      <br/>
+      Reveal instant radiance with precision science.<br/>
+      <em class="text-xs text-gray-400">Note: Professional administration recommended.</em>
+    `,
+    benefits: ["20 Million mg", "Pico-QuadNA Tech", "DNA/RNA Repair", "Deepest Whitening"],
+    sku: "GLU-20M-GN",
+    volume: "10 Sessions"
+  },
+  {
+    id: 5,
+    name: "Glutax 2000000GX",
+    category: "Injection",
+    brand: "Glutax",
+    price: 11500,
+    image: "/image/Glutax-2000000GX.jpg",
+    description: "DualNA Premium Recombined Cell",
+    details: `
+      <strong>Glutax 2000000GX — DualNA Premium Recombined Cell</strong><br/><br/>
+      Experience the synergy of DNA and RNA repair with Glutax 2000000GX. This balanced formulation provides a massive 2 Million GX dose while focusing on skin health and elasticity.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 2,000,000 GX</li>
+        <li>DualNA Recombined Cell Complex</li>
+        <li>Premium Collagen Extract</li>
+        <li>Ascorbic Acid</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Dual action repair and whitening</li>
+        <li>Improves skin elasticity</li>
+        <li>Reduces fine lines and wrinkles</li>
+      </ul>
+      <br/>
+      Reveal a healthy, youthful glow.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["2 Million GX", "DualNA Technology", "Recombined Cell", "Anti-Pigmentation"],
+    sku: "GLU-2M-GX",
+    volume: "10 Sessions"
+  },
+  {
+    id: 6,
+    name: "Miracle White 120,000mg",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 9200,
+    image: "/image/mw-120000.jpg",
+    description: "Royal Gold Booster | Nano Concentrated",
+    details: `
+      <strong>Miracle White 120,000mg — Royal Gold Booster</strong><br/><br/>
+      Experience the radiance of the Royal Gold edition. Miracle White utilizes Nano Concentrated technology to deliver a potent 120,000mg dose for intense brightening.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Nano Concentrated Glutathione – 120,000 mg</li>
+        <li>Kojic Acid – 4,000 mg</li>
+        <li>Ascorbic Acid – 5,000 mg</li>
+        <li>Epidermal Growth Factor – 3,000 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Targeted inhibition of tyrosinase</li>
+        <li>Boosts skin luminosity instantly</li>
+        <li>Fades dark spots and acne scars</li>
+      </ul>
+      <br/>
+      Reveal your royal glow.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["120,000mg Strength", "Royal Gold Edition", "Nano Concentrated", "Radiance Booster"],
+    sku: "MW-120K-GOLD",
+    volume: "6 Sessions"
+  },
+  {
+    id: 7,
+    name: "Miracle White 99 MIL",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 8500,
+    image: "/image/mw-99mil.jpg",
+    description: "Polypeptide Complex Glutathione 99 MIL",
+    details: `
+      <strong>Miracle White 99 MIL — Polypeptide Complex</strong><br/><br/>
+      Experience the premium holographic edition featuring a specialized Polypeptide Complex. This formula is designed not just for whitening, but for smoothing skin texture.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 99,000 mg</li>
+        <li>Polypeptide Complex</li>
+        <li>Thioctic Acid</li>
+        <li>Multivitamins</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Smoothes rough skin texture</li>
+        <li>Refines pores</li>
+        <li>Delivers a uniform skin tone</li>
+      </ul>
+      <br/>
+      Reveal flawless, porcelain skin.<br/>
+      <em class="text-xs text-gray-400">Note: Professional use only.</em>
+    `,
+    benefits: ["Polypeptide Complex", "99 MIL Glutathione", "Texture Smoothing", "Holographic Edition"],
+    sku: "MW-99MIL",
+    volume: "6 Sessions"
+  },
+  {
+    id: 8,
+    name: "Miracle White 90,000mg",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 7800,
+    image: "/image/mw-90000.jpg",
+    description: "Enhance Nano Concentrated Formula",
+    details: `
+      <strong>Miracle White 90,000mg — Enhance Formula</strong><br/><br/>
+      Experience the foundational Miracle White treatment. The Enhance series focuses on creating a uniform skin tone using a nano-concentrated formula for deep penetration.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Nano Glutathione – 90,000 mg</li>
+        <li>Vitamin C – 3,500 mg</li>
+        <li>Collagen Extract – 1,500 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Corrects uneven skin tone</li>
+        <li>Hydrates from within</li>
+        <li>Provides a natural brightening effect</li>
+      </ul>
+      <br/>
+      Reveal a balanced, beautiful complexion.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["90,000mg", "Tone Correction", "Nano Technology", "High Absorption"],
+    sku: "MW-90K",
+    volume: "6 Sessions"
+  },
+  {
+    id: 9,
+    name: "NC24 Sakura Special 22M",
+    category: "Bio-rejuvenation",
+    brand: "Nc24",
+    price: 8800,
+    image: "/image/nc24-22m.jpg",
+    description: "Japanese PDRN DNA Technology | Sakura Edition",
+    details: `
+      <strong>NC24 Sakura Special 22M — Japanese PDRN Technology</strong><br/><br/>
+      Experience the delicate power of Sakura. This Japanese formulation infuses PDRN (Salmon DNA) with Cherry Blossom extracts for a unique pinkish glow.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Sakura Extract Stem Cell – 5,000 mg</li>
+        <li>PDRN (Salmon DNA)</li>
+        <li>Glutathione – 22,000,000 mg</li>
+        <li>Collagene – 3,000 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Promotes a healthy pinkish radiance</li>
+        <li>Regenerates skin cells with PDRN</li>
+        <li>Powerful antioxidant protection</li>
+      </ul>
+      <br/>
+      Reveal the bloom of youth.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["22,000,000mg", "Japanese PDRN DNA", "Sakura Extract", "Pinkish Glow"],
+    sku: "NC24-SAKURA-22",
+    volume: "10 Sessions"
+  },
+  {
+    id: 10,
+    name: "Glutax 2000GS",
+    category: "Injection",
+    brand: "Glutax",
+    price: 9500,
+    image: "/image/gl-2000gs.jpg",
+    description: "ReCombined White with Ultrafiltration",
+    details: `
+      <strong>Glutax 2000GS — Ultrafiltration ReCombined White</strong><br/><br/>
+      Experience the purity of Ultrafiltration. Contains 2000g of refined Glutathione formulated with Epidermal Growth Factors (EGF) for barrier repair.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Ultrafiltration Glutathione – 2,000 g</li>
+        <li>Epidermal Growth Factor – 2,000 mg</li>
+        <li>Alpha Lipoic Acid – 500 mg</li>
+        <li>Pro-Vitamin Complex</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Strengthens the skin barrier</li>
+        <li>Delivers highly purified active ingredients</li>
+        <li>Repairs environmental damage</li>
+      </ul>
+      <br/>
+      Reveal protected, flawless skin.<br/>
+      <em class="text-xs text-gray-400">Note: Professional administration recommended.</em>
+    `,
+    benefits: ["Ultrafiltration Tech", "Epidermal Growth Factor", "ReCombined White", "Barrier Repair"],
+    sku: "GLU-2000GS",
+    volume: "10 Sessions"
+  },
+  {
+    id: 11,
+    name: "Glutax 5GS Micro Advance",
+    category: "Injection",
+    brand: "Glutax",
+    price: 6500,
+    image: "/image/glutax-5gs-adv.jpg",
+    description: "Cellular Ultra Skin Whitening + Anti Aging",
+    details: `
+      <strong>Glutax 5GS Micro Advance — Cellular Ultra Whitening</strong><br/><br/>
+      Experience the evolution of a classic. The 'Advance' formula upgrades the proven 5GS with Vegetal and Ovine Placenta extracts for added anti-aging benefits.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 5,000 mg</li>
+        <li>Vegetal Placenta</li>
+        <li>Ovine Placenta Extract</li>
+        <li>Ascorbic Acid – 3,000 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Combines whitening with active anti-aging</li>
+        <li>Placenta extracts regenerate tissue</li>
+        <li>Improves skin firmness</li>
+      </ul>
+      <br/>
+      Reveal timeless beauty.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["Vegetal Placenta", "Ovine Placenta", "Micro-Absorption", "Anti-Aging Focus"],
+    sku: "GLU-5GS-ADV",
+    volume: "12 Sessions"
+  },
+  {
+    id: 12,
+    name: "Glutax 5GS Micro",
+    category: "Injection",
+    brand: "Glutax",
+    price: 5500,
+    image: "/image/glutax-5gs.jpg",
+    description: "Classic Cellular Ultra Whitening",
+    details: `
+      <strong>Glutax 5GS Micro — The Classic Standard</strong><br/><br/>
+      Experience the reliable efficacy of the industry standard. Containing 5000mg of Glutathione, this is the perfect entry-level or maintenance therapy.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 5,000 mg</li>
+        <li>Ascorbic Acid – 1,500 mg</li>
+        <li>Collagen Extract – 350 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Proven, stable formulation</li>
+        <li>Maintains skin brightness</li>
+        <li>Supports general antioxidant health</li>
+      </ul>
+      <br/>
+      Reveal your natural glow.<br/>
+      <em class="text-xs text-gray-400">Note: Ideal for maintenance.</em>
+    `,
+    benefits: ["Proven Formula", "5000mg Glutathione", "Ascorbic Acid", "Collagen Extract"],
+    sku: "GLU-5GS-MICRO",
+    volume: "6 Sessions"
+  },
+  {
+    id: 13,
+    name: "Royal Ultra Booster",
+    category: "Booster",
+    brand: "Nouveaux", 
+    price: 4800,
+    image: "/image/Royal-Ultra.jpg",
+    description: "Exclusive IV Booster Shots",
+    details: `
+      <strong>Royal Ultra Booster — High-Concentration Add-on</strong><br/><br/>
+      Experience the ultimate boost. Designed by NouveauxIV, this specialized shot is intended to be added to other drips to supercharge their effects.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Concentrated Growth Factors</li>
+        <li>Bio-Active Peptides</li>
+        <li>Potent Antioxidant Blend</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Amplifies the results of standard whitening drips</li>
+        <li>Provides an instant radiance kick</li>
+        <li>100% absorption rate</li>
+      </ul>
+      <br/>
+      Reveal accelerated results.<br/>
+      <em class="text-xs text-gray-400">Note: To be used as an additive, not a standalone drip.</em>
+    `,
+    benefits: ["Instant Result", "100% Absorption", "IV Booster", "NouveauxIV Formula"],
+    sku: "ROYAL-ULTRA",
+    volume: "10ml Vials"
+  },
+  {
+    id: 14,
+    name: "Glutax 10000000GX",
+    category: "Injection",
+    brand: "Glutax",
+    price: 13500,
+    image: "/image/IMG_1827.jpg",
+    description: "DNA & RNA Premium Recombined Cell | 10 Million GX",
+    details: `
+      <strong>Glutax 10000000GX — Stem Cell Complex</strong><br/><br/>
+      Experience the rejuvenating power of Grape Stem Cells. This premium formulation combines a 10 Million GX glutathione dose with powerful botanicals for deep hydration and protection.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 10,000,000 GX</li>
+        <li>Grape Stem Cell</li>
+        <li>Apple Stem Cell</li>
+        <li>Argan Fruit Stem Cell</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Offers SPF 100 UV protection from within</li>
+        <li>Deeply hydrates dry, tired skin</li>
+        <li>Combats photo-aging</li>
+      </ul>
+      <br/>
+      Reveal protected, hydrated skin.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["10 Million GX", "Stem Cell Complex", "SPF 100 Protection", "Deep Hydration"],
+    sku: "GLU-10M-GX",
+    volume: "10 Sessions"
+  },
+  {
+    id: 15,
+    name: "Glutax 30000000GS",
+    category: "Injection",
+    brand: "Glutax",
+    price: 15500,
+    image: "/image/IMG_1821.jpg",
+    description: "Extremely Tremendous White | 30 Million GS",
+    details: `
+      <strong>Glutax 30000000GS — Extremely Tremendous White</strong><br/><br/>
+      Experience one of the highest concentrations available. The 30000000GS formula is designed for those seeking rapid, "tremendous" whitening results using Nano Absorption technology.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 30,000,000 GS</li>
+        <li>Pearl Extract</li>
+        <li>Collagen Holocell</li>
+        <li>Selenium</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>High-impact depigmentation</li>
+        <li>Pearl extract adds a lustrous sheen</li>
+        <li>Rapid uptake by skin cells</li>
+      </ul>
+      <br/>
+      Reveal tremendous radiance.<br/>
+      <em class="text-xs text-gray-400">Note: Professional administration required.</em>
+    `,
+    benefits: ["30 Million GS", "Pearl Extract", "Tremendous White", "Nano Absorption"],
+    sku: "GLU-30M-GS",
+    volume: "10 Sessions"
+  },
+  {
+    id: 16,
+    name: "Shiro Advance Pro Drip",
+    category: "Injection",
+    brand: "Shiro",
+    price: 9500,
+    image: "/image/IMG_1830.jpg",
+    description: "Japanese Whitening Formula | Pro Drip",
+    details: `
+      <strong>Shiro Advance Pro Drip — Authentic Japanese Formula</strong><br/><br/>
+      Experience the Japanese standard of crystal clear skin. "Shiro" means White, and this Pro Drip series focuses on detoxification and clarity.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Japanese Glutathione Complex</li>
+        <li>Tranexamic Acid</li>
+        <li>Thioctic Acid</li>
+        <li>High-Dose Vitamin C</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Treats melasma and redness</li>
+        <li>Detoxifies the liver for clearer skin</li>
+        <li>Promotes a translucent, "glass skin" look</li>
+      </ul>
+      <br/>
+      Reveal crystal clear beauty.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["Japanese Origin", "Pro Drip Series", "Crystal Skin", "Detoxification"],
+    sku: "SHIRO-PRO",
+    volume: "10 Sets"
+  },
+  {
+    id: 17,
+    name: "Relumins Advanced 2000mg",
+    category: "Injection",
+    brand: "Relumins",
+    price: 8500,
+    image: "/image/IMG_1833.jpg",
+    description: "Advanced Glutathione 2000mg | Vials",
+    details: `
+      <strong>Relumins Advanced 2000mg — US Clinical Standard</strong><br/><br/>
+      Experience the trusted quality of Relumins. This US-standard clinical glutathione set contains 1500mg of Lyophilized Glutathione and a separate 500mg Vitamin C ampoule for maximum stability.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Lyophilized Glutathione – 1,500 mg</li>
+        <li>Vitamin C (Ascorbic Acid) – 500 mg</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Clinical-grade purity</li>
+        <li>Separate vitamin C ensures maximum potency upon mixing</li>
+        <li>Trusted by dermatologists worldwide</li>
+      </ul>
+      <br/>
+      Reveal authentic, healthy brightness.<br/>
+      <em class="text-xs text-gray-400">Note: Requires reconstitution.</em>
+    `,
+    benefits: ["Relumins Authentic", "2000mg Potency", "Vitamin C Booster", "Clinical Grade"],
+    sku: "REL-2000-VIALS",
+    volume: "8 Vials + 8 Solvents"
+  },
+  {
+    id: 18,
+    name: "Hyaron Prefilled Injection",
+    category: "Filler", 
+    brand: "Daehan Nupharm",
+    price: 6000,
+    image: "/image/IMG_1838.jpg",
+    description: "Sodium Hyaluronate 2.5ml | Skin Booster",
+    details: `
+      <strong>Hyaron Prefilled Injection — Sodium Hyaluronate Booster</strong><br/><br/>
+      Experience the ultimate hydration with Hyaron. A powerful skin booster containing pure Sodium Hyaluronate, it delivers the "Glass Skin" effect by deeply moisturizing from within.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Sodium Hyaluronate – 25 mg / 2.5ml</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Replenishes lost moisture</li>
+        <li>Smoothes fine lines</li>
+        <li>Creates a plump, dewy texture</li>
+      </ul>
+      <br/>
+      Reveal the glass skin look.<br/>
+      <em class="text-xs text-gray-400">Note: Prefilled syringe format.</em>
+    `,
+    benefits: ["Sodium Hyaluronate", "Deep Hydration", "Glass Skin Effect", "Prefilled Syringe"],
+    sku: "HYARON-10",
+    volume: "10 Syringes (2.5ml)"
+  },
+  {
+    id: 19,
+    name: "Glutax 8000000GS",
+    category: "Injection",
+    brand: "Glutax",
+    price: 12000,
+    image: "/image/IMG_1824.jpg",
+    description: "Ultimate ReCombined White | 8 Million GS",
+    details: `
+      <strong>Glutax 8000000GS — Ultimate ReCombined White</strong><br/><br/>
+      Experience the ultimate in speed and efficacy. The 8000000GS series features high-dose glutathione combined with miRNA White Elements for fast-acting pigmentation correction.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 8,000,000 GS</li>
+        <li>miRNA White Elements</li>
+        <li>Epidermal Growth Factor</li>
+        <li>Vitamin Complex</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Rapid absorption formula</li>
+        <li>Targets gene expression for pigmentation</li>
+        <li>Provides comprehensive skin nourishment</li>
+      </ul>
+      <br/>
+      Reveal your ultimate white.<br/>
+      <em class="text-xs text-gray-400">Note: Individual results may vary.</em>
+    `,
+    benefits: ["8 Million GS", "miRNA Elements", "Ultimate White", "Fast Action"],
+    sku: "GLU-8M-GS",
+    volume: "10 Sessions"
+  },
+  {
+    id: 20,
+    name: "Aqua Skin Pure Gold Pro Max II",
+    category: "Injection",
+    brand: "Aqua Skin/Veniscy",
+    price: 11000,
+    image: "/image/IMG_1848.jpg",
+    description: "DualNA Pico-Cell Extreme Whitening",
+    details: `
+      <strong>Aqua Skin Pure Gold Pro Max II — 30th Generation</strong><br/><br/>
+      Experience the pinnacle of Swiss engineering. The 30th Generation of Aqua Skin features DualNA Pico-Cell technology for microscopic absorption and extreme whitening.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pico-Cell Glutathione</li>
+        <li>DualNA Complex</li>
+        <li>Pure Gold Extract</li>
+        <li>Vegetal Placenta</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Gold particles enhance radiance</li>
+        <li>Pico-Cell tech ensures deep penetration</li>
+        <li>Comprehensive anti-aging action</li>
+      </ul>
+      <br/>
+      Reveal a golden standard of beauty.<br/>
+      <em class="text-xs text-gray-400">Note: Swiss formulation.</em>
+    `,
+    benefits: ["Pico-Cell Tech", "Pure Gold Pro", "Max II Edition", "Swiss Formula"],
+    sku: "AQUA-MAX-II",
+    volume: "10 Sessions"
+  },
+  {
+    id: 21,
+    name: "Aqua Skin Veniscy 188",
+    category: "Injection",
+    brand: "Aqua Skin/Veniscy",
+    price: 12500,
+    image: "/image/IMG_1841.jpg",
+    description: "TriNA Pico Cell Glutathione | High Strength",
+    details: `
+      <strong>Aqua Skin Veniscy 188 — TriNA Pico Cell</strong><br/><br/>
+      Experience the power of collaboration. A potent blend from Skinnic Lab and Veniscy, containing TriNA Pico Cell absorption technology for high-strength spot correction.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>TriNA Pico Cell Glutathione</li>
+        <li>Veniscy Antiox Complex</li>
+        <li>Nonapeptide</li>
+        <li>Coenzyme Q10</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Specifically targets dark spots</li>
+        <li>TriNA tech works on 3 cellular levels</li>
+        <li>High potency antioxidant support</li>
+      </ul>
+      <br/>
+      Reveal unblemished clarity.<br/>
+      <em class="text-xs text-gray-400">Note: Professional use only.</em>
+    `,
+    benefits: ["Veniscy Collab", "TriNA Pico Cell", "High Potency", "Spot Correction"],
+    sku: "AS-VENISCY-188",
+    volume: "10 Sessions"
+  },
+  {
+    id: 22,
+    name: "Miracle White Prism Edition",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 9800,
+    image: "/image/IMG_1850.jpg",
+    description: "Exclusive Holographic Series",
+    details: `
+      <strong>Miracle White Prism Edition — Holographic Series</strong><br/><br/>
+      Experience the exclusive Prism Edition. This special release features enhanced epidermal growth factors for total skin repair and a multi-dimensional glow.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Enhanced Glutathione Complex</li>
+        <li>Prism Light Technology (Bio-actives)</li>
+        <li>Epidermal Growth Factors</li>
+        <li>Multivitamin Boost</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Repairs damaged skin structure</li>
+        <li>Refracts light for a prism-like glow</li>
+        <li>Intense hydration</li>
+      </ul>
+      <br/>
+      Reveal prismatic radiance.<br/>
+      <em class="text-xs text-gray-400">Note: Special edition.</em>
+    `,
+    benefits: ["Special Edition", "Radiance Boost", "Growth Factors", "Total Repair"],
+    sku: "MW-PRISM",
+    volume: "6 Sessions"
+  },
+  {
+    id: 23,
+    name: "Japan Beauty Booster",
+    category: "Supplement",
+    brand: "Japan Beauty Booster",
+    price: 4800,
+    image: "/image/jp-boost.jpg",
+    description: "Complexion Excellence | Daily Supplements",
+    details: `
+      <strong>Japan Beauty Booster — Daily Oral Care</strong><br/><br/>
+      Experience complexion excellence every day. A premium daily supplement formulated in Japan, designed to support and maintain the results of your aesthetic treatments.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Hydrolyzed Collagen</li>
+        <li>Glutathione</li>
+        <li>Vitamin C</li>
+        <li>Placenta Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Supports skin from the inside out</li>
+        <li>Maintains collagen levels</li>
+        <li>Daily protection against oxidation</li>
+      </ul>
+      <br/>
+      Reveal lasting excellence.<br/>
+      <em class="text-xs text-gray-400">Note: Daily dietary supplement.</em>
+    `,
+    benefits: ["Japan Formula", "Oral Booster", "Complexion Excellence", "Daily Use"],
+    sku: "JBB-60T",
+    volume: "60 Tablets"
+  },
+  {
+    id: 24,
+    name: "Miracle White EXC Gold",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 10500,
+    image: "/image/IMG_1849.jpg",
+    description: "Anti-Melanogenic Gold Edition",
+    details: `
+      <strong>Miracle White EXC Gold — Anti-Melanogenic</strong><br/><br/>
+      Experience the luxurious Gold Edition. Specifically engineered as an 'Anti-Melanogenic' treatment, it aggressively inhibits melanin production for intense brightening.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Anti-Melanogenic Glutathione</li>
+        <li>Gold Particles</li>
+        <li>Ascorbic Acid</li>
+        <li>Alpha Lipoic Acid</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Inhibits the melanogenesis pathway</li>
+        <li>Provides antioxidant protection</li>
+        <li>Gold particles aid in absorption and radiance</li>
+      </ul>
+      <br/>
+      Reveal your brightest self.<br/>
+      <em class="text-xs text-gray-400">Note: High potency formula.</em>
+    `,
+    benefits: ["Anti-Melanogenic", "Melanin Inhibition", "Gold Edition", "Intense Brightening"],
+    sku: "MW-EXC-GOLD",
+    volume: "6 Sessions"
+  },
+  {
+    id: 25,
+    name: "Vita Glow Advanced Night Cream",
+    category: "Cream",
+    brand: "Vita Glow",
+    price: 650,
+    image: "/image/Picsart_25-11-27_19-44-06-133.jpg",
+    description: "Advanced Skin Whitening | Result in 7 Days",
+    details: `
+      <strong>Vita Glow Advanced — Skin Whitening Night Cream</strong><br/><br/>
+      Experience the power of the Advanced Gold formula. Vita Glow Night Cream is renowned for its rapid action, designed to brighten skin tone and reduce pigmentation within just 7 days of regular use.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>L-Glutathione</li>
+        <li>Kojic Acid Dipalmitate</li>
+        <li>Alpha Arbutin</li>
+        <li>Vitamin C & E</li>
+        <li>Mulberry Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Inhibits melanin production while you sleep</li>
+        <li>Detoxifies skin from environmental pollutants</li>
+        <li>Reduces dark spots and acne marks rapidly</li>
+      </ul>
+      <br/>
+      Reveal a glowing, fairer complexion in one week.<br/>
+      <em class="text-xs text-gray-400">Note: Apply at night only.</em>
+    `,
+    benefits: ["7 Day Results", "Advanced Formula", "Dark Spot Reduction", "Night Therapy"],
+    sku: "VG-ADV-BLK",
+    volume: "30g"
+  },
+  {
+    id: 26,
+    name: "Constanta Lip Treatment",
+    category: "Treatment",
+    brand: "Constanta",
+    price: 450,
+    image: "/image/Picsart_25-11-27_19-50-25-844.jpg",
+    description: "72 Hours Effect | Aloe Vera & Vitamin E",
+    details: `
+      <strong>Constanta Lip Treatment — 72 Hour Moisture</strong><br/><br/>
+      Experience the magic of color-changing hydration. This treatment turns from green to a natural pinkish hue upon application, providing deep nourishment that lasts up to 72 hours.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Aloe Vera Extract</li>
+        <li>Vitamin E (Tocopherol)</li>
+        <li>Moisturizing Lipids</li>
+        <li>Honey Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Heals dry, chapped lips instantly</li>
+        <li>Adjusts color based on body temperature</li>
+        <li>Protects against oxidative damage</li>
+      </ul>
+      <br/>
+      Reveal soft, naturally pink lips.<br/>
+      <em class="text-xs text-gray-400">Note: Color changes upon application.</em>
+    `,
+    benefits: ["Color Changing", "72Hr Moisture", "Aloe Vera", "Softens Lips"],
+    sku: "CONST-LIP-GRN",
+    volume: "2.5g"
+  },
+  {
+    id: 27,
+    name: "Vita Glow Whitening Cream (Green)",
+    category: "Cream",
+    brand: "Vita Glow",
+    price: 600,
+    image: "/image/Picsart_25-11-27_19-42-56-057.jpg",
+    description: "Original Formula | Skin Whitening & Brightening",
+    details: `
+      <strong>Vita Glow Green — The Original Whitening Cream</strong><br/><br/>
+      Experience the classic formula that started it all. The Green Box edition of Vita Glow focuses on balancing skin pH and providing a steady, uniform whitening effect.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione</li>
+        <li>Avocado Oil</li>
+        <li>Jojoba Oil</li>
+        <li>Vitamin C</li>
+        <li>Sandalwood Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Deeply moisturizes while whitening</li>
+        <li>Prevents acne formation</li>
+        <li>Removes dead skin cells for fresh radiance</li>
+      </ul>
+      <br/>
+      Reveal a smoother, brighter look.<br/>
+      <em class="text-xs text-gray-400">Note: Suitable for all skin types.</em>
+    `,
+    benefits: ["Original Formula", "Herbal Extracts", "Acne Prevention", "Daily Whitening"],
+    sku: "VG-CRM-GRN",
+    volume: "30g"
+  },
+  {
+    id: 28,
+    name: "Glowtiqa Paris Advance Care",
+    category: "Cream",
+    brand: "Glowtiqa Paris",
+    price: 1200,
+    image: "/image/Picsart_25-11-27_19-48-33-126.jpg",
+    description: "Advance Care Whitening | Strengthens Skin",
+    details: `
+      <strong>Glowtiqa Paris — Advance Care Whitening Cream</strong><br/><br/>
+      Experience Parisian elegance and strength. Glowtiqa Paris Advance Care is engineered not just to whiten, but to fortify the skin barrier against external aggressors.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Premium Whitening Complex</li>
+        <li>Ceramides</li>
+        <li>Niacinamide</li>
+        <li>French Rose Extract</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Strengthens the skin's natural barrier</li>
+        <li>Provides a luxurious, non-greasy finish</li>
+        <li>Promotes long-term skin health and fairness</li>
+      </ul>
+      <br/>
+      Feel your own greatness.<br/>
+      <em class="text-xs text-gray-400">Note: Premium daily care.</em>
+    `,
+    benefits: ["Barrier Protection", "Advance Care", "Premium Formula", "Glowtiqa Exclusive"],
+    sku: "GLOW-PARIS-ADV",
+    volume: "30g"
+  },
+  {
+    id: 29,
+    name: "Vita Glow Glutathione Soap",
+    category: "Soap",
+    brand: "Vita Glow",
+    price: 250,
+    image: "/image/Picsart_25-11-27_19-52-21-801.jpg",
+    description: "Glutathione Skin Whitening Soap",
+    details: `
+      <strong>Vita Glow Soap — Glutathione Skin Whitening</strong><br/><br/>
+      Experience the perfect companion to your beauty regime. This soap is infused with Glutathione to cleanse pores deeply and prepare the skin for maximum absorption of night creams.<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pure Glutathione</li>
+        <li>Grape Seed Extract</li>
+        <li>Vitamin C & E</li>
+        <li>Coconut Oil Base</li>
+      </ul>
+      <br/>
+      <strong>Why it works:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Exfoliates dead skin cells gently</li>
+        <li>Inhibits melanin during the cleansing process</li>
+        <li>Leaves skin feeling soft and prepped</li>
+      </ul>
+      <br/>
+      Reveal a fresh canvas every wash.<br/>
+      <em class="text-xs text-gray-400">Note: Use daily for best results.</em>
+    `,
+    benefits: ["Daily Cleanser", "Glutathione Infused", "Pore Refining", "Skin Prep"],
+    sku: "VG-SOAP-WHT",
+    volume: "135g"
   }
-  // Add more products as needed
 ];
 
 const CATEGORIES = [
@@ -315,7 +1199,7 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
                             className={`cursor-pointer flex items-center gap-2 ${'absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0'}`} 
                             onClick={() => setCurrentPage('home')}
                         >
-                            <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-10 md:h-16 w-auto object-contain" />
+                            <img src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
                         </div>
 
                         {/* Desktop Nav Links */}

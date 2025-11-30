@@ -28,7 +28,7 @@ const BLOG_POSTS = [
     excerpt: "Exploring the systemic antioxidant benefits of high-dose glutathione therapies and their role in cellular detoxification and immune system support.",
     content: `
       <p class="mb-6">Glutathione, often referred to as the "master antioxidant," is a tripeptide composed of three amino acids: cysteine, glutamine, and glycine. While it is widely recognized in the aesthetic industry for its skin-whitening properties via melanogenesis inhibition, its clinical significance extends far beyond dermatology.</p>
-      
+       
       <h3 class="text-2xl font-serif mb-4 mt-8">Mechanism of Action</h3>
       <p class="mb-6">At a cellular level, glutathione exists in two states: reduced (GSH) and oxidized (GSSG). The ratio of reduced to oxidized glutathione within cells is often used as a measure of cellular toxicity. In high-dose IV therapies, we aim to bolster the body's reduced glutathione reserves, enhancing its ability to neutralize free radicals and reactive oxygen species (ROS).</p>
 
@@ -1134,7 +1134,7 @@ const SectionHeader = ({ title, subtitle, center = true }) => (
   </div>
 );
 
-const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobileMenuOpen, setMobileMenuOpen, setShopFilter }) => {
+const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobileMenuOpen, setMobileMenuOpen, setShopFilter, setSearchQuery }) => {
     const navLinks = [
         { name: 'Home', id: 'home' },
         { name: 'About', id: 'about' },
@@ -1142,30 +1142,88 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
         { name: 'Blog', id: 'blog' }, 
         { name: 'Contact', id: 'contact' },
     ];
+
+    // State for mobile menu accordions
+    const [expandedMenu, setExpandedMenu] = useState(''); // 'categories' | 'brands' | ''
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const searchInputRef = useRef(null);
+
+    const toggleAccordion = (name) => {
+        setExpandedMenu(expandedMenu === name ? '' : name);
+    };
+
+    useEffect(() => {
+        if (isSearchOpen && searchInputRef.current) {
+            searchInputRef.current.focus();
+        }
+    }, [isSearchOpen]);
+
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+        if (currentPage !== 'shop') {
+            setCurrentPage('shop');
+        }
+    };
+
     return (
         <>
             <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
-             <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
-                <div className="cursor-pointer flex items-center gap-2" onClick={() => setCurrentPage('home')}>
-                    <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-10 md:h-16 w-auto object-contain" />
-                </div>
-                <nav className="hidden md:flex items-center gap-8">
-                    {navLinks.map(link => (
-                      <button key={link.id} onClick={() => setCurrentPage(link.id)} className={`text-sm font-medium tracking-wide transition-colors duration-300 ${currentPage === link.id ? 'text-[#E8A0BF]' : 'text-gray-800 hover:text-[#E8A0BF]'}`}>
-                        {link.name}
-                      </button>
-                    ))}
-                </nav>
-                <div className="flex items-center gap-4 md:gap-6">
-                    <button onClick={() => setCurrentPage('shop')} className="hidden md:block text-gray-800 hover:text-[#E8A0BF]"><Search size={22} /></button>
-                    <button className="relative p-2 text-gray-800 hover:text-[#E8A0BF]" onClick={toggleCart}>
-                        <ShoppingBag size={22} />
-                        {cartCount > 0 && <span className="absolute -top-1 -right-1 bg-black text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">{cartCount}</span>}
-                    </button>
-                    <button className="md:hidden p-2 text-gray-800" onClick={() => setMobileMenuOpen(true)}>
-                        <Menu size={24} />
-                    </button>
-                </div>
+             <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between relative">
+                
+                {/* SEARCH OVERLAY */}
+                {isSearchOpen ? (
+                    <div className="absolute inset-0 bg-white z-20 flex items-center px-4 animate-fade-in">
+                        <Search size={20} className="text-gray-400 mr-3 shrink-0" />
+                        <input 
+                            ref={searchInputRef}
+                            type="text" 
+                            placeholder="Search for products..." 
+                            className="flex-1 h-full outline-none text-base bg-transparent placeholder:text-gray-300"
+                            onChange={handleSearchChange}
+                        />
+                        <button onClick={() => setIsSearchOpen(false)} className="p-2 ml-2 text-gray-500 hover:text-black">
+                            <X size={20} />
+                        </button>
+                    </div>
+                ) : (
+                    <>
+                        {/* Mobile: Search Icon Left */}
+                        <div className="md:hidden flex items-center justify-start flex-1">
+                            <button onClick={() => setIsSearchOpen(true)} className="text-gray-800 hover:text-[#E8A0BF]">
+                                <Search size={22} />
+                            </button>
+                        </div>
+
+                        {/* Logo: Centered on Mobile, Left on Desktop */}
+                        <div 
+                            className={`cursor-pointer flex items-center gap-2 ${'absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0'}`} 
+                            onClick={() => setCurrentPage('home')}
+                        >
+                            <img src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
+                        </div>
+
+                        {/* Desktop Nav Links */}
+                        <nav className="hidden md:flex items-center gap-8">
+                            {navLinks.map(link => (
+                            <button key={link.id} onClick={() => setCurrentPage(link.id)} className={`text-sm font-medium tracking-wide transition-colors duration-300 ${currentPage === link.id ? 'text-[#E8A0BF]' : 'text-gray-800 hover:text-[#E8A0BF]'}`}>
+                                {link.name}
+                            </button>
+                            ))}
+                        </nav>
+
+                        {/* Right Icons: Cart & Menu */}
+                        <div className="flex items-center gap-4 md:gap-6 flex-1 justify-end md:flex-initial">
+                            <button onClick={() => setIsSearchOpen(true)} className="hidden md:block text-gray-800 hover:text-[#E8A0BF]"><Search size={22} /></button>
+                            <button className="relative p-2 text-gray-800 hover:text-[#E8A0BF]" onClick={toggleCart}>
+                                <ShoppingBag size={22} />
+                                {cartCount > 0 && <span className="absolute -top-1 -right-1 bg-black text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">{cartCount}</span>}
+                            </button>
+                            <button className="md:hidden p-2 text-gray-800" onClick={() => setMobileMenuOpen(true)}>
+                                <Menu size={24} />
+                            </button>
+                        </div>
+                    </>
+                )}
              </div>
             </header>
             
@@ -1180,14 +1238,61 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
                         <div className="flex-1 overflow-y-auto py-4">
                             <div className="flex flex-col">
                                 <button onClick={() => { setShopFilter('All'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50 flex justify-between items-center">Shop All <ChevronRight size={16} className="text-gray-400"/></button>
-                                <div className="py-2">
-                                    <p className="px-6 py-2 text-xs text-gray-400 font-bold tracking-widest uppercase">Categories</p>
-                                    <button onClick={() => { setShopFilter('Injection'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="w-full px-6 py-3 text-left text-gray-600 hover:text-[#E8A0BF] transition-colors">Injections</button>
-                                    <button onClick={() => { setShopFilter('Supplement'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="w-full px-6 py-3 text-left text-gray-600 hover:text-[#E8A0BF] transition-colors">Supplements</button>
-                                    <button onClick={() => { setShopFilter('Filler'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="w-full px-6 py-3 text-left text-gray-600 hover:text-[#E8A0BF] transition-colors">Fillers</button>
+                                
+                                {/* Categories Dropdown */}
+                                <div className="border-b border-gray-50">
+                                    <button 
+                                        onClick={() => toggleAccordion('categories')} 
+                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 flex justify-between items-center"
+                                    >
+                                        Categories 
+                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'categories' ? 'rotate-180' : ''}`}/>
+                                    </button>
+                                    
+                                    <div className={`overflow-hidden transition-all duration-300 bg-gray-50/50 ${expandedMenu === 'categories' ? 'max-h-96' : 'max-h-0'}`}>
+                                        {CATEGORIES.map(cat => (
+                                            <button 
+                                                key={cat.id} 
+                                                onClick={() => { setShopFilter(cat.name); setCurrentPage('shop'); setMobileMenuOpen(false); }} 
+                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-[#E8A0BF] border-l-2 border-transparent hover:border-[#E8A0BF] transition-colors"
+                                            >
+                                                {cat.name}
+                                            </button>
+                                        ))}
+                                    </div>
                                 </div>
-                                <button onClick={() => { setCurrentPage('blog'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-t border-gray-50">BLOG</button>
-                                <button onClick={() => { setCurrentPage('about'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-t border-gray-50">ABOUT US</button>
+
+                                {/* Brands Dropdown */}
+                                <div className="border-b border-gray-50">
+                                    <button 
+                                        onClick={() => toggleAccordion('brands')} 
+                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 flex justify-between items-center"
+                                    >
+                                        Brands 
+                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'brands' ? 'rotate-180' : ''}`}/>
+                                    </button>
+                                    
+                                    <div className={`overflow-hidden transition-all duration-300 bg-gray-50/50 ${expandedMenu === 'brands' ? 'max-h-64 overflow-y-auto' : 'max-h-0'}`}>
+                                        {BRANDS_LIST.map(brand => (
+                                            <button 
+                                                key={brand} 
+                                                onClick={() => { 
+                                                    // For simple filtering we just go to shop, ideally you'd pass brand filter too
+                                                    // Assuming setShopFilter handles categories, you might need a brand filter context
+                                                    // For now, redirect to shop
+                                                    setCurrentPage('shop'); 
+                                                    setMobileMenuOpen(false); 
+                                                }} 
+                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-[#E8A0BF] border-l-2 border-transparent hover:border-[#E8A0BF] transition-colors"
+                                            >
+                                                {brand}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <button onClick={() => { setCurrentPage('blog'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">BLOG</button>
+                                <button onClick={() => { setCurrentPage('about'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">ABOUT US</button>
                                 <button onClick={() => { setCurrentPage('contact'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">CONTACT</button>
                             </div>
                         </div>
@@ -1207,18 +1312,18 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
         const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
         const queryParams = new URLSearchParams(window.location.search);
         const txnId = queryParams.get('tid') || 'DEMO-' + Date.now();
-  
+   
         if (storedCart.length === 0) {
           setStatus('error');
           return;
         }
-  
+   
         const orderItemsHTML = storedCart.map(item => 
           `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
         ).join('<br/><br/>');
-  
+   
         const totalAmount = storedCart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-  
+   
         const emailParams = {
           customer_name: storedUser.name,
           customer_email: storedUser.email || "Not Provided", 
@@ -1229,7 +1334,7 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
           payment_id: txnId,
           order_id: txnId
         };
-  
+   
         try {
           if (!window.emailjs) {
               const script = document.createElement('script');
@@ -1238,9 +1343,9 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
               document.body.appendChild(script);
               await new Promise(resolve => script.onload = resolve);
           }
-          
+             
           await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, emailParams, EMAILJS_PUBLIC_KEY);
-          
+             
           localStorage.removeItem('temp_cart');
           localStorage.removeItem('temp_user');
           setStatus('sent');
@@ -1251,10 +1356,10 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
           showToast("Payment successful but email failed.", "error");
         }
       };
-  
+   
       processOrder();
     }, []);
-  
+   
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
         {status === 'processing' && (
@@ -1263,7 +1368,7 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
             <p className="text-gray-500">Please do not close this window.</p>
           </div>
         )}
-  
+   
         {status === 'sent' && (
           <div className="animate-fade-in bg-white p-8 rounded-2xl shadow-xl border border-gray-100 max-w-md w-full">
             <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -1277,7 +1382,7 @@ const PaymentSuccessView = ({ navigateTo, showToast }) => {
             <div className="mt-4 text-xs text-gray-400">Powered by Zomaxa Agency</div>
           </div>
         )}
-  
+   
         {status === 'error' && (
           <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full">
              <h2 className="text-2xl font-serif text-red-500 mb-2">Something went wrong</h2>
@@ -1481,46 +1586,97 @@ const Footer = ({ setCurrentPage, showToast }) => {
   );
 };
 
-const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (
+
+const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  // Updated Slides with specific button text and filter actions based on the image content
+  const slides = [
+    { 
+        id: 1, 
+        image: '/image/image_1.png', 
+        btnText: 'Start Shopping', 
+        filter: 'All' 
+    }, // "Static/Circle" -> General Shop
+    { 
+        id: 2, 
+        image: '/image/image_2.png', 
+        btnText: 'Weight Management Products', 
+        filter: 'Injection' 
+    }, // "Whitening" -> Injection Category
+    { 
+        id: 3, 
+        image: '/image/image_3.png', 
+        btnText: 'anti Aging Products', 
+        filter: 'All' 
+    }, // "Thank You" -> General Shop
+    { 
+        id: 4, 
+        image: '/image/image_4.png', 
+        btnText: 'Whitening Products', 
+        filter: 'All' 
+    }, // "Choose Category" -> General Shop
+    { 
+        id: 5, 
+        image: '/image/image_5.png', 
+        btnText: 'try Now', 
+        filter: 'Weight' 
+    } // "Weight Management" -> Weight Category
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [slides.length]);
+
+  return (
   <div className="animate-fade-in bg-[#fbfbfb]">
-    {/* HERO SECTION */}
-    <div className="relative w-full min-h-[85vh] bg-black flex flex-col justify-center items-center text-center overflow-hidden">
-        <div 
-            className="absolute inset-0 z-0 bg-cover bg-center opacity-60 transition-opacity duration-1000 animate-fade-in"
-            style={{ 
-                backgroundImage: 'url("/image/ban1.jpg")',
-                backgroundPosition: 'center 20%'
-            }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/60 z-0" />
+    {/* HERO SECTION - SLIDER */}
+    <div className="relative w-full min-h-[85vh] bg-black flex flex-col justify-end items-center text-center overflow-hidden">
+        {/* Slides */}
+        {slides.map((slide, index) => (
+          <div 
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100 z-[1]' : 'opacity-0 z-0'}`}
+          >
+            <div 
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url("${slide.image}")` }}
+            />
+            {/* Subtle overlay to ensure button pop if needed, but keeping image clear as requested */}
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
+        ))}
         
-        <div className="relative z-10 max-w-5xl mx-auto px-6 w-full pt-20 pb-12">
+        {/* Dynamic Button Overlay - Positioned at Bottom Center */}
+        <div className="relative z-20 pb-20 md:pb-24 w-full flex justify-center">
             <div className="animate-slide-up">
-                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur border border-white/20 text-[#E8A0BF] text-[10px] font-bold tracking-[0.2em] uppercase mb-8">
-                    <Sparkles size={12} /> Premium Aesthetic Supply
-                </span>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-8 leading-tight">
-                    Reveal Your <br/>
-                    <span className="italic text-[#E8A0BF] font-light">True Radiance</span>
-                </h1>
-                <p className="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-10 max-w-2xl mx-auto">
-                    Shop the world's most trusted brands in skin whitening and rejuvenation. 
-                    Authorized distributor for licensed professionals.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-5">
-                    <Button onClick={() => navigateTo('shop')} variant="secondary" className="px-10 py-4 text-sm font-bold tracking-widest uppercase w-full sm:w-auto shadow-[0_0_20px_rgba(232,160,191,0.3)]">
-                        Shop Now
-                    </Button>
-                    <Button onClick={() => navigateTo('shop')} variant="outline" className="px-10 py-4 text-sm font-bold tracking-widest uppercase w-full sm:w-auto hover:bg-white hover:text-black border-white/30">
-                        View Collections
-                    </Button>
-                </div>
+                <Button 
+                    onClick={() => {
+                        setShopFilter(slides[currentSlide].filter);
+                        navigateTo('shop');
+                    }} 
+                    variant="secondary" 
+                    className="px-10 py-4 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(232,160,191,0.5)] bg-[#E8A0BF] text-black border-2 border-transparent hover:bg-white hover:scale-105 transition-all duration-300"
+                >
+                    {slides[currentSlide].btnText}
+                </Button>
             </div>
         </div>
         
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/50 animate-bounce hidden md:block">
-            <ArrowUpDown size={20} />
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentSlide ? 'bg-[#E8A0BF] w-8' : 'bg-white/50 hover:bg-white'
+              }`}
+            />
+          ))}
         </div>
     </div>
 
@@ -1611,7 +1767,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (
         <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
             {PRODUCTS.slice(0, 4).map(product => (
                  <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
-                    <div className="relative aspect-[4/5] bg-gray-50 rounded-lg overflow-hidden mb-4">
+                    <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
                         <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
@@ -1627,37 +1783,57 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (
       </div>
     </section>
 
-    {/* CLINICAL SCIENCE */}
-    <section className="py-16 md:py-24 bg-gray-900 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-[#E8A0BF] rounded-full filter blur-[80px] md:blur-[120px] opacity-10 pointer-events-none"></div>
+    {/* THE COSMATRIX STANDARD - Beauty & Aesthetics Focused */}
+    <section className="py-20 md:py-28 bg-[#FFF5F7] relative overflow-hidden">
+        {/* Soft decorative background element */}
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#ffe4ec] rounded-full mix-blend-multiply filter blur-[80px] opacity-40 animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#fff0f5] rounded-full mix-blend-multiply filter blur-[80px] opacity-60"></div>
+        
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                 <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs mb-2 block">The Cosmatrix Standard</span>
-                 <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-tight">Precision Science Meets <br/> Aesthetic Artistry</h2>
-                 <p className="text-gray-400 leading-relaxed mb-8 font-light text-base md:text-lg">
-                    We maintain a rigorous supply chain to ensure that every vial reaching your clinic performs exactly as intended.
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* Image Side - Styled like a magazine spread */}
+            <div className="order-2 lg:order-1 relative">
+                <div className="relative z-10 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
+                      <img src="/image/ban2.jpg" alt="Aesthetic Perfection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                </div>
+                {/* Decorative Frame */}
+                <div className="absolute top-6 -left-6 w-full h-full rounded-[2rem] border-2 border-[#E8A0BF] -z-10"></div>
+            </div>
+
+            {/* Text Side */}
+            <div className="order-1 lg:order-2">
+                 <div className="flex items-center gap-3 mb-4">
+                    <span className="h-px w-8 bg-[#E8A0BF]"></span>
+                    <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs">The Cosmatrix Standard</span>
+                 </div>
+                 
+                 <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900 leading-[1.1]">
+                    Curating <span className="italic font-light text-[#E8A0BF]">Timeless</span><br/> Beauty & Grace
+                 </h2>
+                 
+                 <p className="text-gray-500 leading-relaxed mb-10 font-light text-lg">
+                    We believe that true aesthetic excellence lies in the purity of the source. Our collection is not just about products; it's about providing the essential elements for radiant, luminous skin. Every formulation is a promise of quality, designed to elevate your beauty rituals.
                  </p>
-                 <div className="space-y-6">
+                 
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
                     {[
-                        { icon: Stethoscope, title: "Clinical Potency", desc: "High-concentration formulations." },
-                        { icon: Sparkles, title: "Advanced Tech", desc: "Pico-Cell & Recombinant DNA." },
-                        { icon: Building2, title: "Stable Cold Chain", desc: "Temperature-controlled storage." }
+                        { icon: Sparkles, title: "Radiant Potency", desc: "Formulations that deliver a visible, ethereal glow." },
+                        { icon: Star, title: "Premium Origins", desc: "Sourced from the world's finest aesthetic laboratories." },
+                        { icon: ShieldCheck, title: "Pure Integrity", desc: "Uncompromising quality for your peace of mind." },
+                        { icon: Clock, title: "Lasting Beauty", desc: "Solutions designed for enduring elegance." }
                     ].map((item, idx) => (
-                        <div key={idx} className="flex gap-4">
-                            <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 text-[#E8A0BF]"><item.icon size={20}/></div>
+                        <div key={idx} className="flex gap-4 group cursor-default">
+                            <div className="w-12 h-12 rounded-full bg-white shadow-sm border border-[#ffe4ec] flex items-center justify-center shrink-0 text-[#E8A0BF] group-hover:bg-[#E8A0BF] group-hover:text-white transition-all duration-500">
+                                <item.icon size={20} strokeWidth={1.5}/>
+                            </div>
                             <div>
-                                <h4 className="text-base font-serif mb-0.5">{item.title}</h4>
-                                <p className="text-xs md:text-sm text-gray-500">{item.desc}</p>
+                                <h4 className="text-lg font-serif text-gray-900 mb-1 group-hover:text-[#E8A0BF] transition-colors">{item.title}</h4>
+                                <p className="text-sm text-gray-500 font-light leading-snug">{item.desc}</p>
                             </div>
                         </div>
                     ))}
                  </div>
-            </div>
-            <div className="relative hidden md:block">
-                <div className="aspect-[4/5] rounded-lg overflow-hidden border border-white/10">
-                     <img src="/image/ban2.jpg" alt="Clinical Lab" className="w-full h-full object-cover opacity-80" />
-                </div>
             </div>
         </div>
       </div>
@@ -1677,11 +1853,12 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => (
       </div>
     </section>
   </div>
-);
+  );
+};
 
-const ShopView = ({ navigateTo, addToCart, filter, setFilter }) => {
+const ShopView = ({ navigateTo, addToCart, filter, setFilter, searchQuery, setSearchQuery }) => {
   const [brandFilter, setBrandFilter] = useState('All Brands');
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [searchQuery, setSearchQuery] = useState(''); // Removed local state
   const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'list'
   const [sortBy, setSortBy] = useState('featured'); // 'featured', 'price-asc', 'price-desc'
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -1723,24 +1900,23 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter }) => {
          </div>
       </div>
 
-      {/* MOBILE TOOLBAR (Sticky) */}
-      <div className="lg:hidden sticky top-20 z-30 bg-white border-b border-gray-100 px-4 py-3 flex gap-3 items-center shadow-sm">
-         <div className="relative flex-1">
-            <Search className="absolute left-3 top-2.5 text-gray-400" size={16} />
-            <input 
-                type="text" 
-                placeholder="Search..." 
-                value={searchQuery} 
-                onChange={(e) => setSearchQuery(e.target.value)} 
-                className="w-full pl-10 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#E8A0BF]" 
-            />
-         </div>
-         <button 
-            onClick={() => setMobileFiltersOpen(true)}
-            className="p-2 bg-black text-white rounded-lg shrink-0"
-         >
-            <SlidersHorizontal size={20} />
-         </button>
+      {/* MOBILE CATEGORY SCROLL (Replaces sticky toolbar) */}
+      <div className="lg:hidden sticky top-20 z-30 bg-white border-b border-gray-100 py-3 px-4 shadow-sm overflow-x-auto flex gap-3 scrollbar-hide">
+          <button 
+              onClick={() => setFilter('All')}
+              className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${filter === 'All' ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200'}`}
+          >
+              All
+          </button>
+          {CATEGORIES.map(cat => (
+              <button 
+                  key={cat.id}
+                  onClick={() => setFilter(cat.name)}
+                  className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${filter === cat.name ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200'}`}
+              >
+                  {cat.name}
+              </button>
+          ))}
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 lg:py-12">
@@ -1834,7 +2010,7 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter }) => {
                             className={`group cursor-pointer bg-white rounded-xl overflow-hidden border border-transparent hover:border-gray-100 hover:shadow-2xl transition-all duration-500 ${viewMode === 'list' ? 'flex gap-6 p-4 border-gray-100' : ''}`} 
                             onClick={() => navigateTo('product', product)}
                         >
-                            <div className={`relative bg-[#f8f8f8] overflow-hidden ${viewMode === 'list' ? 'w-32 h-32 rounded-lg shrink-0' : 'aspect-[4/5]'}`}>
+                            <div className={`relative bg-[#f8f8f8] overflow-hidden ${viewMode === 'list' ? 'w-32 h-32 rounded-lg shrink-0' : 'aspect-square'}`}>
                                 <img src={product.image} alt={product.name} className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105" />
                                 
                                 {viewMode === 'grid' && (
@@ -1899,44 +2075,8 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter }) => {
         </div>
       </div>
 
-      {/* MOBILE FILTER DRAWER */}
-      <div className={`fixed inset-0 z-[70] flex justify-end pointer-events-none ${mobileFiltersOpen ? 'pointer-events-auto' : ''}`}>
-         <div 
-            className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${mobileFiltersOpen ? 'opacity-100' : 'opacity-0'}`}
-            onClick={() => setMobileFiltersOpen(false)}
-         ></div>
-         <div className={`relative bg-white w-full max-w-xs h-full shadow-2xl transform transition-transform duration-300 ease-in-out flex flex-col ${mobileFiltersOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-            <div className="p-5 border-b border-gray-100 flex justify-between items-center bg-white">
-                <h3 className="font-serif text-xl">Filters</h3>
-                <button onClick={() => setMobileFiltersOpen(false)} className="text-gray-500"><X size={24}/></button>
-            </div>
-            <div className="flex-1 overflow-y-auto p-6 space-y-8">
-                {/* Mobile Categories */}
-                <div>
-                    <h4 className="font-bold text-xs uppercase tracking-widest text-gray-400 mb-4">Category</h4>
-                    <div className="space-y-2">
-                        <button onClick={() => {setFilter('All'); setMobileFiltersOpen(false);}} className={`block w-full text-left text-sm py-2 px-2 rounded ${filter === 'All' ? 'bg-gray-100 font-medium' : ''}`}>All Categories</button>
-                        {CATEGORIES.map(cat => (
-                            <button key={cat.id} onClick={() => {setFilter(cat.name); setMobileFiltersOpen(false);}} className={`block w-full text-left text-sm py-2 px-2 rounded ${filter === cat.name ? 'bg-gray-100 font-medium' : ''}`}>{cat.name}</button>
-                        ))}
-                    </div>
-                </div>
-                {/* Mobile Brands */}
-                <div>
-                    <h4 className="font-bold text-xs uppercase tracking-widest text-gray-400 mb-4">Brand</h4>
-                    <div className="space-y-2">
-                        <button onClick={() => {setBrandFilter('All Brands'); setMobileFiltersOpen(false);}} className={`block w-full text-left text-sm py-2 px-2 rounded ${brandFilter === 'All Brands' ? 'bg-gray-100 font-medium' : ''}`}>All Brands</button>
-                        {BRANDS_LIST.filter(b => b !== "All Brands").map(brand => (
-                            <button key={brand} onClick={() => {setBrandFilter(brand); setMobileFiltersOpen(false);}} className={`block w-full text-left text-sm py-2 px-2 rounded ${brandFilter === brand ? 'bg-gray-100 font-medium' : ''}`}>{brand}</button>
-                        ))}
-                    </div>
-                </div>
-            </div>
-            <div className="p-5 border-t border-gray-100 bg-gray-50">
-                <button onClick={() => setMobileFiltersOpen(false)} className="w-full bg-black text-white py-3 text-sm font-bold uppercase tracking-widest rounded-lg">View {filteredProducts.length} Results</button>
-            </div>
-         </div>
-      </div>
+      {/* MOBILE FILTER DRAWER (Hidden/Removed per request on mobile shop, but kept component if needed for tablet/desktop future use or generic filter drawer) */}
+      {/* Code kept clean, but the trigger button is removed from mobile header as requested */}
     </div>
   );
 };
@@ -2152,17 +2292,17 @@ const TermsOfServiceView = () => (
                   <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">1. Professional Use Only</h3>
                   <p>By purchasing from Cosmatrix International, you explicitly certify that you are a licensed medical professional or an authorized representative of a licensed clinic. Our products, particularly injectables and professional-grade peels, are strictly for professional administration. We reserve the right to cancel orders that fail credential verification.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">2. Product Liability & Usage</h3>
                   <p>Cosmatrix acts solely as an authorized distributor. While we guarantee the authenticity and cold-chain integrity of our products, we are not the manufacturer. Any adverse reactions should be reported to the manufacturer directly. Cosmatrix is not liable for misuse, improper administration, or off-label use of products.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">3. Pricing & Availability</h3>
                   <p>Prices are subject to change without notice due to international exchange rates and manufacturer adjustments. We reserve the right to limit quantities per client to ensure equitable distribution of high-demand stock.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4 border-l-2 border-[#E8A0BF] pl-4">4. Governing Law</h3>
                   <p>These terms shall be governed by and defined following the laws of India. Cosmatrix International and yourself irrevocably consent that the courts of Karnataka shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these terms.</p>
@@ -2171,7 +2311,7 @@ const TermsOfServiceView = () => (
       </div>
     </div>
   );
-  
+   
   const ReturnPolicyView = () => (
     <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
       <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
@@ -2186,7 +2326,7 @@ const TermsOfServiceView = () => (
               <div className="bg-red-50 border border-red-100 p-6 rounded-xl text-sm text-red-800 mb-8">
                   <strong>Important:</strong> Due to the temperature-sensitive nature of biological goods, standard "change of mind" returns are strictly prohibited to ensure patient safety.
               </div>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">1. Eligibility for Returns</h3>
                   <p>Returns are only accepted under the following conditions:</p>
@@ -2196,12 +2336,12 @@ const TermsOfServiceView = () => (
                       <li>The product is expired upon receipt.</li>
                   </ul>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">2. Return Window</h3>
                   <p>You must report any issues within <strong>24 hours of delivery</strong>. Reports made after this window cannot be verified against our logistics data and will be rejected.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">3. Return Process</h3>
                   <p>To initiate a return:</p>
@@ -2215,7 +2355,7 @@ const TermsOfServiceView = () => (
       </div>
     </div>
   );
-  
+   
   const RefundPolicyView = () => (
     <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
       <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
@@ -2231,12 +2371,12 @@ const TermsOfServiceView = () => (
                   <h3 className="font-serif text-xl text-gray-900 mb-4">1. Refund Approval</h3>
                   <p>Refunds are initiated only after the returned product has reached our warehouse and passed a quality inspection. If the product is found to be used, tampered with, or not in its original condition (unless damaged during transit), the refund request will be denied.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">2. Processing Timeline</h3>
                   <p>Once approved, the refund will be processed within <strong>5-7 business days</strong>. The amount will be credited back to the original source of payment (Credit Card, UPI, or Bank Transfer).</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">3. Cancellations</h3>
                   <p>Orders can be cancelled for a full refund only if they have not yet been dispatched. Once the shipping label is generated and the cold-chain packaging is sealed, the order cannot be cancelled.</p>
@@ -2245,7 +2385,7 @@ const TermsOfServiceView = () => (
       </div>
     </div>
   );
-  
+   
   const ShippingPolicyView = () => (
     <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
       <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
@@ -2255,7 +2395,7 @@ const TermsOfServiceView = () => (
               <p className="text-gray-400 font-light text-sm md:text-base">Ensuring clinical integrity from warehouse to clinic.</p>
           </div>
       </div>
-      
+       
       <div className="max-w-4xl mx-auto px-6 py-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-gray-100 text-center">
@@ -2274,13 +2414,13 @@ const TermsOfServiceView = () => (
                   <p className="text-xs text-gray-500 mt-2">Serviceable to 19,000+ pin codes.</p>
               </div>
           </div>
-  
+   
           <div className="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 space-y-10 text-gray-600 font-light leading-relaxed">
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">1. Cold Chain Protocol</h3>
                   <p>Temperature-sensitive items (peptides, growth factors, certain injectables) are packed in medical-grade insulated boxes with gel ice packs. We continually monitor transit times to ensure product stability upon arrival. Please refrigerate immediately upon receipt.</p>
               </section>
-  
+   
               <section>
                   <h3 className="font-serif text-xl text-gray-900 mb-4">2. Delivery Timelines</h3>
                   <ul className="list-disc pl-5 space-y-2">
@@ -2293,7 +2433,7 @@ const TermsOfServiceView = () => (
       </div>
     </div>
   );
-  
+   
   const PrivacyPolicyView = () => (
     <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
       <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
@@ -2334,7 +2474,7 @@ const AboutView = () => {
       { id: 3, val: "5", label: "Distribution Hubs" },
       { id: 4, val: "24h", label: "Dispatch Time" },
     ];
-   
+    
     return (
       <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
         {/* HERO */}
@@ -2350,7 +2490,7 @@ const AboutView = () => {
                 </p>
              </div>
         </div>
-  
+   
         {/* MISSION SPLIT */}
         <div className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -2385,7 +2525,7 @@ const AboutView = () => {
              </div>
           </div>
         </div>
-  
+   
         {/* STATS STRIP */}
         <div className="bg-black text-white py-16">
            <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
@@ -2397,7 +2537,7 @@ const AboutView = () => {
               ))}
            </div>
         </div>
-  
+   
         {/* THE COLD CHAIN PROMISE */}
         <div className="max-w-7xl mx-auto px-6 py-20 bg-white">
           <SectionHeader title="The Cold Chain Promise" subtitle="How we protect the efficacy of sensitive biologicals" />
@@ -2431,7 +2571,7 @@ const AboutView = () => {
               </div>
           </div>
         </div>
-  
+   
         {/* FAQ SECTION */}
         <div className="max-w-3xl mx-auto px-6 py-12">
           <h3 className="font-serif text-2xl mb-8 text-center">Frequently Asked Questions</h3>
@@ -2600,12 +2740,24 @@ export default function CosmatrixApp() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedPost, setSelectedPost] = useState(null); 
   const [shopFilter, setShopFilter] = useState('All');
+  const [searchQuery, setSearchQuery] = useState(''); // Global search state
   const [toast, setToast] = useState(null); 
 
   // Initialize browser history state on first load
   useEffect(() => {
     // Replace the initial state so we have a valid history entry to pop back to
     window.history.replaceState({ page: 'home' }, '', window.location.search);
+  }, []);
+
+  // Set Favicon / Browser Tab Icon
+  useEffect(() => {
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    link.href = '/image/logo-t.jpg'; // Sets the logo as the favicon
   }, []);
 
   // Listen for Browser Back/Forward buttons (popstate event)
@@ -2742,12 +2894,13 @@ export default function CosmatrixApp() {
             toggleCart={() => setCartOpen(true)}
             mobileMenuOpen={mobileMenuOpen}
             setMobileMenuOpen={setMobileMenuOpen}
-            setShopFilter={setShopFilter} 
+            setShopFilter={setShopFilter}
+            setSearchQuery={setSearchQuery}
           />
 
           <main className="flex-grow">
             {currentPage === 'home' && <HomeView navigateTo={navigateTo} addToCart={addToCart} setShopFilter={setShopFilter} />}
-            {currentPage === 'shop' && <ShopView navigateTo={navigateTo} addToCart={addToCart} filter={shopFilter} setFilter={setShopFilter} />}
+            {currentPage === 'shop' && <ShopView navigateTo={navigateTo} addToCart={addToCart} filter={shopFilter} setFilter={setShopFilter} searchQuery={searchQuery} setSearchQuery={setSearchQuery} />}
             {currentPage === 'product' && selectedProduct && <ProductView product={selectedProduct} addToCart={addToCart} navigateTo={navigateTo} />}
             {currentPage === 'blog' && <BlogView navigateTo={navigateTo} />}
             {currentPage === 'blog-post' && selectedPost && <BlogPostView post={selectedPost} navigateTo={navigateTo} />}

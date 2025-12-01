@@ -1670,6 +1670,41 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
             <div className="absolute inset-0 bg-black/10" />
           </div>
         ))}
+        {/* Slide Navigation Buttons */}
+<button 
+  onClick={() => setCurrentSlide((currentSlide - 1 + slides.length) % slides.length)}
+  className="
+    absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-30
+    w-10 h-10 md:w-12 md:h-12
+    rounded-full
+    bg-black/70
+    border border-white/20
+    shadow-[0_0_10px_rgba(255,0,150,0.4)]
+    flex items-center justify-center
+    transition-all duration-300
+    hover:bg-black/90 hover:scale-110 active:scale-95
+  "
+>
+  <span className="text-white text-xl font-bold">{'‹'}</span>
+</button>
+
+<button 
+  onClick={() => setCurrentSlide((currentSlide + 1) % slides.length)}
+  className="
+    absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-30
+    w-10 h-10 md:w-12 md:h-12
+    rounded-full
+    bg-black/70
+    border border-white/20
+    shadow-[0_0_10px_rgba(255,0,150,0.4)]
+    flex items-center justify-center
+    transition-all duration-300
+    hover:bg-black/90 hover:scale-110 active:scale-95
+  "
+>
+  <span className="text-white text-xl font-bold">{'›'}</span>
+</button>
+
         
         {/* Dynamic Button Overlay - Positioned at Bottom Center */}
         <div className="relative z-20 pb-20 md:pb-24 w-full flex justify-center">

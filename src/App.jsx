@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import { ShoppingBag, Menu, X, Instagram, Facebook, Linkedin, ArrowRight, Trash2, Plus, Minus, Mail, Phone, MapPin, ShieldCheck, Building2, Stethoscope, FileText, Award, Search, ChevronRight, Filter, Check, ChevronDown, Star, Sparkles, Truck, Globe, ArrowLeft, Calendar, User, Grid, List, ArrowUpRight, ArrowUpDown, Thermometer, Clock, Map, SlidersHorizontal } from 'lucide-react';
 
 /* --- EMAILJS CONFIGURATION --- */
@@ -2786,6 +2787,145 @@ const ContactView = ({ showToast }) => {
   );
 };
 
+/* --- SEO CONFIG --- */
+const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
+  // Base defaults
+  let title = 'Cosmatrix International | Aesthetic Injectables & Skin Whitening Distributor';
+  let description = 'Cosmatrix International supplies authentic glutathione injections, Aqua Skin, Miracle White, Korean fillers, and advanced whitening skincare to clinics and professionals.';
+  let jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Cosmatrix International',
+    url: 'https://shaatrading.in',
+    logo: 'https://shaatrading.in/image/Cosmatrix.jpg'
+  };
+
+  switch (currentPage) {
+    case 'home':
+      title = 'Cosmatrix International | Glutathione, Fillers & Clinical Skincare Distributor';
+      description = 'Discover authentic glutathione injections, Aqua Skin, Miracle White, Neuramis fillers and professional whitening skincare supplied to clinics and distributors across India.';
+      jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'LocalBusiness',
+        name: 'Cosmatrix International',
+        url: 'https://shaatrading.in',
+        image: 'https://shaatrading.in/image/Cosmatrix.jpg',
+        logo: 'https://shaatrading.in/image/Cosmatrix.jpg',
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: 'IN'
+        }
+      };
+      break;
+
+    case 'shop':
+      title = 'Shop | Glutathione Injections, Miracle White, Aqua Skin & More – Cosmatrix';
+      description = 'Browse our curated range of glutathione injections, Aqua Skin, Miracle White, Korean fillers, Vita Glow creams and clinical whitening solutions for professional use.';
+      break;
+
+    case 'about':
+      title = 'About Cosmatrix International | Professional Aesthetic Product Distributor';
+      description = 'Cosmatrix International partners with clinics and dermatologists to supply authentic injectables, glutathione drips and premium whitening skincare with a clinical focus.';
+      break;
+
+    case 'contact':
+      title = 'Contact Cosmatrix International | Wholesale & Clinic Partnerships';
+      description = 'Reach out to Cosmatrix International for wholesale price lists, clinic onboarding, and verified sourcing of glutathione injections, Korean fillers and whitening products.';
+      break;
+
+    case 'blog':
+      title = 'Clinical Journal | IV Therapy, Glutathione & PDRN Insights – Cosmatrix';
+      description = 'Read evidence-driven insights on glutathione mechanisms, PDRN, IV drips, pigmentation protocols and safety standards for aesthetic practitioners.';
+      break;
+
+    case 'blog-post':
+      if (selectedPost) {
+        title = `${selectedPost.title} | Clinical Journal – Cosmatrix International`;
+        description = selectedPost.excerpt || description;
+        jsonLd = {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: selectedPost.title,
+          description: selectedPost.excerpt,
+          author: selectedPost.author || 'Cosmatrix Editorial',
+          datePublished: selectedPost.date,
+          image: `https://shaatrading.in${selectedPost.image}`,
+          publisher: {
+            '@type': 'Organization',
+            name: 'Cosmatrix International',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://shaatrading.in/image/Cosmatrix.jpg'
+            }
+          }
+        };
+      }
+      break;
+
+    case 'product':
+      if (selectedProduct) {
+        const shortDesc = selectedProduct.description || description;
+        title = `${selectedProduct.name} | ${selectedProduct.brand} Supplier in India – Cosmatrix`;
+        description = shortDesc.length > 155 ? shortDesc.slice(0, 152) + '…' : shortDesc;
+        jsonLd = {
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: selectedProduct.name,
+          image: [`https://shaatrading.in${selectedProduct.image}`],
+          description: description,
+          brand: {
+            '@type': 'Brand',
+            name: selectedProduct.brand
+          },
+          sku: selectedProduct.sku || undefined,
+          offers: {
+            '@type': 'Offer',
+            priceCurrency: 'INR',
+            price: selectedProduct.price,
+            availability: 'https://schema.org/InStock',
+            url: 'https://shaatrading.in'
+          }
+        };
+      }
+      break;
+
+    case 'terms':
+      title = 'Terms & Conditions | Cosmatrix International';
+      description = 'Read the professional use terms, liability clauses and purchasing eligibility for Cosmatrix International clients and clinics.';
+      break;
+
+    case 'privacy':
+      title = 'Privacy Policy | Cosmatrix International';
+      description = 'Understand how Cosmatrix International handles, stores and protects your clinic and patient-related data.';
+      break;
+
+    case 'shipping':
+      title = 'Shipping Policy | Cosmatrix International';
+      description = 'Learn about domestic shipping timelines, handling, and cold-chain procedures for clinical aesthetic products.';
+      break;
+
+    case 'return-policy':
+      title = 'Return Policy | Cosmatrix International';
+      description = 'View our guidelines for damaged, incorrect or compromised products and return eligibility.';
+      break;
+
+    case 'refund-policy':
+      title = 'Refund Policy | Cosmatrix International';
+      description = 'Read our refund conditions for cancelled orders, shipping issues and rare product disputes.';
+      break;
+
+    case 'success':
+      title = 'Order Received | Cosmatrix International';
+      description = 'Your order details have been received by the Cosmatrix fulfillment team. You will be contacted shortly on WhatsApp.';
+      break;
+
+    default:
+      break;
+  }
+
+  return { title, description, jsonLd };
+};
+
 /* --- Main App --- */
 
 export default function CosmatrixApp() {
@@ -2924,8 +3064,22 @@ export default function CosmatrixApp() {
     }
   };
 
+  const { title, description, jsonLd } = getSeoConfig(currentPage, selectedProduct, selectedPost);
   return (
     <div className="font-sans text-gray-900 bg-[#fbfbfb] min-h-screen flex flex-col selection:bg-[#E8A0BF] selection:text-black">
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href="https://shaatrading.in" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content={currentPage === 'product' ? 'product' : 'website'} />
+        <meta property="og:url" content="https://shaatrading.in" />
+        <meta property="og:image" content="https://shaatrading.in/image/Cosmatrix.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@200;300;400;500;600&display=swap');
         .font-serif { font-family: 'Cormorant Garamond', serif; }

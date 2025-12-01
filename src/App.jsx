@@ -1200,7 +1200,7 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
                             className={`cursor-pointer flex items-center gap-2 ${'absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0'}`} 
                             onClick={() => setCurrentPage('home')}
                         >
-                            <img src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
+                            <img loading="lazy" src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
                         </div>
 
                         {/* Desktop Nav Links */}
@@ -1430,7 +1430,7 @@ const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, che
                             {cart.map(item => (
                                 <div key={item.id} className="flex gap-4">
                                     <div className="w-20 h-20 bg-gray-50 rounded-lg overflow-hidden shrink-0">
-                                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                                        <img loading="lazy" src={item.image} alt={item.name} className="w-full h-full object-cover" />
                                     </div>
                                     <div className="flex-1">
                                         <div className="flex justify-between items-start mb-1">
@@ -1502,7 +1502,7 @@ const Footer = ({ setCurrentPage, showToast }) => {
         
         {/* Brand Column */}
         <div className="space-y-6">
-          <img src="/image/logo-t.jpg" alt="COSMATRIX" className="h-12 w-auto object-contain" />
+          <img loading="lazy" src="/image/logo-t.jpg" alt="COSMATRIX" className="h-12 w-auto object-contain" />
           <p className="text-gray-400 text-sm leading-relaxed font-light max-w-xs">
             Authorized distributor of premium clinical beauty formulations. Bridging the gap between world-class manufacturers and aesthetic professionals.
           </p>
@@ -1776,7 +1776,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
                     className="group relative h-[250px] md:h-[400px] overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500"
                 >
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors z-10" />
-                    <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <img loading="lazy" src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20 bg-gradient-to-t from-black/90 to-transparent">
                         <h3 className="text-white font-serif text-2xl md:text-3xl mb-1 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">{cat.name}</h3>
                         <p className="text-white/80 text-xs md:text-sm font-light mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{cat.desc}</p>
@@ -1825,7 +1825,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
             {PRODUCTS.slice(0, 4).map(product => (
                  <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
                     <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
-                        <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                        <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
                     <h3 className="font-serif text-lg leading-tight mb-2 group-hover:text-[#E8A0BF] transition-colors truncate">{product.name}</h3>
@@ -1852,7 +1852,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
             {/* Image Side - Styled like a magazine spread */}
             <div className="order-2 lg:order-1 relative">
                 <div className="relative z-10 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
-                      <img src="/image/ban2.jpg" alt="Aesthetic Perfection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                      <img loading="lazy" src="/image/ban2.jpg" alt="Aesthetic Perfection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
                 </div>
                 {/* Decorative Frame */}
                 <div className="absolute top-6 -left-6 w-full h-full rounded-[2rem] border-2 border-[#E8A0BF] -z-10"></div>
@@ -2068,7 +2068,7 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter, searchQuery, setSe
                             onClick={() => navigateTo('product', product)}
                         >
                             <div className={`relative bg-[#f8f8f8] overflow-hidden ${viewMode === 'list' ? 'w-32 h-32 rounded-lg shrink-0' : 'aspect-square'}`}>
-                                <img src={product.image} alt={product.name} className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105" />
+                                <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105" />
                                 
                                 {viewMode === 'grid' && (
                                     <div className="absolute top-3 left-3 right-3 flex justify-between items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -2160,7 +2160,7 @@ const BlogPostView = ({ post, navigateTo }) => {
         </div>
 
         <div className="aspect-video w-full bg-gray-100 rounded-xl overflow-hidden mb-10 shadow-sm">
-            <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+            <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover" />
         </div>
 
         <div className="prose prose-lg prose-gray mx-auto">
@@ -2206,7 +2206,7 @@ const BlogView = ({ navigateTo }) => {
           {filteredPosts.map(post => (
              <div key={post.id} onClick={() => navigateTo('blog-post', post)} className="group cursor-pointer flex flex-col h-full">
                 <div className="relative aspect-[16/9] overflow-hidden mb-4 rounded-lg bg-gray-100">
-                   <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                   <img loading="lazy" src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                    <div className="absolute top-3 left-3 bg-white/90 backdrop-blur text-[9px] px-2 py-1 rounded-full font-bold tracking-wider uppercase shadow-sm">
                       {post.category}
                    </div>
@@ -2248,11 +2248,11 @@ const ProductView = ({ product, addToCart, navigateTo }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start">
           <div className="space-y-4">
             <div className="aspect-[4/5] bg-gray-50 rounded-xl overflow-hidden w-full relative">
-                <img src={images[activeImg]} alt={product.name} className="w-full h-full object-cover" />
+                <img loading="lazy" src={images[activeImg]} alt={product.name} className="w-full h-full object-cover" />
             </div>
             <div className="flex gap-2 overflow-x-auto pb-2">
               {images.map((img, idx) => (
-                <div key={idx} onClick={() => setActiveImg(idx)} className={`w-20 h-20 shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all ${activeImg === idx ? 'border-[#E8A0BF]' : 'border-transparent'}`}><img src={img} alt="" className="w-full h-full object-cover" /></div>
+                <div key={idx} onClick={() => setActiveImg(idx)} className={`w-20 h-20 shrink-0 rounded-lg overflow-hidden cursor-pointer border-2 transition-all ${activeImg === idx ? 'border-[#E8A0BF]' : 'border-transparent'}`}><img loading="lazy" src={img} alt="" className="w-full h-full object-cover" /></div>
               ))}
             </div>
           </div>
@@ -2317,7 +2317,7 @@ const ProductView = ({ product, addToCart, navigateTo }) => {
                     {similarProducts.map(product => (
                           <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
                             <div className="relative aspect-[4/5] bg-gray-50 rounded-lg overflow-hidden mb-4">
-                                <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                                <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                             <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
                             <h3 className="font-serif text-lg leading-tight mb-2 group-hover:text-[#E8A0BF] transition-colors truncate">{product.name}</h3>
@@ -2552,7 +2552,7 @@ const AboutView = () => {
         <div className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
              <div className="relative aspect-[4/5] md:aspect-square bg-gray-100 rounded-lg overflow-hidden">
-                <img src="/image/blog4.jpg" alt="Laboratory" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <img loading="lazy" src="/image/blog4.jpg" alt="Laboratory" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded max-w-xs shadow-lg">
                    <p className="font-serif text-lg italic">"Safety is not a feature. It is the foundation of aesthetic medicine."</p>
                    <p className="text-xs font-bold uppercase tracking-widest mt-2">— Director's Note</p>
@@ -2787,23 +2787,219 @@ const ContactView = ({ showToast }) => {
   );
 };
 
+/* --- URL & SLUG HELPERS (CLEAN PATHS) --- */
+const slugify = (str) => {
+  if (!str) return '';
+  return String(str)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+};
+
+const getProductSlug = (product) => {
+  if (!product) return '';
+  const base = slugify(product.name || '');
+  return product.id != null ? `${base}-${product.id}` : base;
+};
+
+const getPostSlug = (post) => {
+  if (!post) return '';
+  const base = slugify(post.title || '');
+  return post.id != null ? `${base}-${post.id}` : base;
+};
+
+const buildPathForPage = (page, opts = {}) => {
+  switch (page) {
+    case 'home':
+      return '/';
+    case 'shop':
+      return '/shop';
+    case 'about':
+      return '/about';
+    case 'contact':
+      return '/contact';
+    case 'blog':
+      return '/blog';
+    case 'blog-post':
+      return opts.post ? `/blog/${getPostSlug(opts.post)}` : '/blog';
+    case 'product':
+      return opts.product ? `/product/${getProductSlug(opts.product)}` : '/shop';
+    case 'terms':
+      return '/terms';
+    case 'privacy':
+      return '/privacy';
+    case 'shipping':
+      return '/shipping';
+    case 'return-policy':
+      return '/return-policy';
+    case 'refund-policy':
+      return '/refund-policy';
+    case 'success':
+      return '/order-success';
+    default:
+      return '/';
+  }
+};
+
+/**
+ * Derive initial route (page + entities) from the current URL.
+ * Supports both new clean paths (/product/slug) and legacy ?page=product&id= syntax.
+ */
+const getRouteFromLocation = () => {
+  if (typeof window === 'undefined') {
+    return { page: 'home', product: null, post: null, path: '/' };
+  }
+
+  const { pathname, search } = window.location;
+  const cleanPath = pathname.replace(/\/+$|^$/g, '') || '/';
+  const segments = cleanPath.split('/').filter(Boolean);
+  const params = new URLSearchParams(search || '');
+  const pageParam = params.get('page');
+  const idParam = params.get('id');
+
+  let page = 'home';
+  let product = null;
+  let post = null;
+
+  if (segments.length === 0) {
+    // No path segments – fall back to legacy query params if present
+    if (pageParam === 'product' && idParam) {
+      const found = PRODUCTS.find(p => String(p.id) === String(idParam));
+      if (found) {
+        page = 'product';
+        product = found;
+        return { page, product, post, path: buildPathForPage('product', { product }) };
+      }
+    } else if (pageParam === 'blog-post' && idParam) {
+      const foundPost = BLOG_POSTS.find(p => String(p.id) === String(idParam));
+      if (foundPost) {
+        page = 'blog-post';
+        post = foundPost;
+        return { page, product, post, path: buildPathForPage('blog-post', { post }) };
+      }
+    } else if (pageParam === 'shop') {
+      page = 'shop';
+    } else if (pageParam === 'about') {
+      page = 'about';
+    } else if (pageParam === 'contact') {
+      page = 'contact';
+    } else if (pageParam === 'blog') {
+      page = 'blog';
+    } else if (pageParam === 'terms') {
+      page = 'terms';
+    } else if (pageParam === 'privacy') {
+      page = 'privacy';
+    } else if (pageParam === 'shipping') {
+      page = 'shipping';
+    } else if (pageParam === 'return-policy') {
+      page = 'return-policy';
+    } else if (pageParam === 'refund-policy') {
+      page = 'refund-policy';
+    } else if (pageParam === 'success') {
+      page = 'success';
+    } else {
+      page = 'home';
+    }
+
+    return { page, product, post, path: buildPathForPage(page, { product, post }) };
+  }
+
+  const [first, second] = segments;
+
+  switch (first) {
+    case '':
+      page = 'home';
+      break;
+    case 'shop':
+      page = 'shop';
+      break;
+    case 'about':
+      page = 'about';
+      break;
+    case 'contact':
+      page = 'contact';
+      break;
+    case 'blog':
+      if (second) {
+        const slug = second;
+        const foundPost = BLOG_POSTS.find(p => getPostSlug(p) === slug);
+        if (foundPost) {
+          page = 'blog-post';
+          post = foundPost;
+        } else {
+          page = 'blog';
+        }
+      } else {
+        page = 'blog';
+      }
+      break;
+    case 'product':
+      if (second) {
+        const slug = second;
+        const found = PRODUCTS.find(p => getProductSlug(p) === slug);
+        if (found) {
+          page = 'product';
+          product = found;
+        } else {
+          page = 'shop';
+        }
+      } else {
+        page = 'shop';
+      }
+      break;
+    case 'terms':
+      page = 'terms';
+      break;
+    case 'privacy':
+      page = 'privacy';
+      break;
+    case 'shipping':
+      page = 'shipping';
+      break;
+    case 'return-policy':
+      page = 'return-policy';
+      break;
+    case 'refund-policy':
+      page = 'refund-policy';
+      break;
+    case 'order-success':
+      page = 'success';
+      break;
+    default:
+      page = 'home';
+      break;
+  }
+
+  const path = buildPathForPage(page, { product, post });
+  return { page, product, post, path };
+};
+
 /* --- SEO CONFIG --- */
 const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
   // Base defaults
   let title = 'Cosmatrix International | Aesthetic Injectables & Skin Whitening Distributor';
-  let description = 'Cosmatrix International supplies authentic glutathione injections, Aqua Skin, Miracle White, Korean fillers, and advanced whitening skincare to clinics and professionals.';
+  let description =
+    'Cosmatrix International supplies authentic injectables, wellness drips, and advanced whitening skincare to clinics and professionals.';
   let jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Cosmatrix International',
     url: 'https://shaatrading.in',
-    logo: 'https://shaatrading.in/image/Cosmatrix.jpg'
+    logo: 'https://shaatrading.in/image/Cosmatrix.jpg',
   };
+  let keywords =
+    'Cosmatrix International, aesthetic injectables distributor, glutathione injections India, Aqua Skin, Glutax, Miracle White, Neuramis fillers, clinical skincare supplier';
+  let canonical = 'https://shaatrading.in/';
+  let robots = 'index,follow';
 
   switch (currentPage) {
     case 'home':
       title = 'Cosmatrix International | Glutathione, Fillers & Clinical Skincare Distributor';
-      description = 'Discover authentic glutathione injections, Aqua Skin, Miracle White, Neuramis fillers and professional whitening skincare supplied to clinics and distributors across India.';
+      description =
+        'Discover authentic glutathione injections, Aqua Skin, Miracle White, Neuramis fillers and clinical-grade whitening skincare supplied to clinics and distributors across India.';
+      canonical = 'https://shaatrading.in/';
+      keywords =
+        'Cosmatrix International, glutathione distributor, whitening injections, Aqua Skin, Glutax, Miracle White, Neuramis fillers, clinic distributor India';
       jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
@@ -2813,41 +3009,59 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
         logo: 'https://shaatrading.in/image/Cosmatrix.jpg',
         address: {
           '@type': 'PostalAddress',
-          addressCountry: 'IN'
-        }
+          addressCountry: 'IN',
+        },
       };
       break;
 
     case 'shop':
       title = 'Shop | Glutathione Injections, Miracle White, Aqua Skin & More – Cosmatrix';
-      description = 'Browse our curated range of glutathione injections, Aqua Skin, Miracle White, Korean fillers, Vita Glow creams and clinical whitening solutions for professional use.';
+      description =
+        'Browse our curated range of glutathione injections, IV drips, Miracle White, Aqua Skin, whitening creams and clinical whitening solutions for professional use.';
+      canonical = `https://shaatrading.in${buildPathForPage('shop')}`;
+      keywords =
+        'buy glutathione injections India, Aqua Skin supplier, Miracle White injection, clinical whitening products, Cosmatrix shop, clinic supply injectables';
       break;
 
     case 'about':
       title = 'About Cosmatrix International | Professional Aesthetic Product Distributor';
-      description = 'Cosmatrix International partners with clinics and dermatologists to supply authentic injectables, glutathione drips and premium whitening skincare with a clinical focus.';
+      description =
+        'Cosmatrix International partners with clinics and resellers to supply verified glutathione injectables, IV drips and premium whitening skincare with a clinical focus.';
+      canonical = `https://shaatrading.in${buildPathForPage('about')}`;
+      keywords =
+        'about Cosmatrix International, aesthetic distributor India, glutathione wholesaler, clinic-focused skincare supplier';
       break;
 
     case 'contact':
       title = 'Contact Cosmatrix International | Wholesale & Clinic Partnerships';
-      description = 'Reach out to Cosmatrix International for wholesale price lists, clinic onboarding, and verified sourcing of glutathione injections, Korean fillers and whitening products.';
+      description =
+        'Reach out to Cosmatrix International for wholesale price lists, clinic onboarding and verified sourcing of glutathione injections, Korean fillers and whitening products.';
+      canonical = `https://shaatrading.in${buildPathForPage('contact')}`;
+      keywords =
+        'contact Cosmatrix, clinic partnership, glutathione wholesale enquiry, whitening injection distributor contact';
       break;
 
     case 'blog':
       title = 'Clinical Journal | IV Therapy, Glutathione & PDRN Insights – Cosmatrix';
-      description = 'Read evidence-driven insights on glutathione mechanisms, PDRN, IV drips, pigmentation protocols and safety standards for aesthetic practitioners.';
+      description =
+        'Read evidence-driven insights on glutathione science, IV infusion therapy, PDRN and clinical whitening protocols and safety standards for aesthetic practitioners.';
+      canonical = `https://shaatrading.in${buildPathForPage('blog')}`;
+      keywords =
+        'glutathione science, IV therapy insights, PDRN information, clinical whitening guidance, Cosmatrix clinical journal';
       break;
 
     case 'blog-post':
       if (selectedPost) {
         title = `${selectedPost.title} | Clinical Journal – Cosmatrix International`;
         description = selectedPost.excerpt || description;
+        canonical = `https://shaatrading.in${buildPathForPage('blog-post', { post: selectedPost })}`;
+        keywords = `${selectedPost.title}, ${selectedPost.category}, glutathione articles, IV therapy education, Cosmatrix blog`;
         jsonLd = {
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: selectedPost.title,
           description: selectedPost.excerpt,
-          author: selectedPost.author || 'Cosmatrix Editorial',
+          author: selectedPost.author || 'Cosmatrix Clinical Team',
           datePublished: selectedPost.date,
           image: `https://shaatrading.in${selectedPost.image}`,
           publisher: {
@@ -2855,9 +3069,9 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
             name: 'Cosmatrix International',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://shaatrading.in/image/Cosmatrix.jpg'
-            }
-          }
+              url: 'https://shaatrading.in/image/Cosmatrix.jpg',
+            },
+          },
         };
       }
       break;
@@ -2867,15 +3081,26 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
         const shortDesc = selectedProduct.description || description;
         title = `${selectedProduct.name} | ${selectedProduct.brand} Supplier in India – Cosmatrix`;
         description = shortDesc.length > 155 ? shortDesc.slice(0, 152) + '…' : shortDesc;
+        canonical = `https://shaatrading.in${buildPathForPage('product', { product: selectedProduct })}`;
+        const baseKeywords = [
+          selectedProduct.name,
+          selectedProduct.brand,
+          selectedProduct.category,
+          'glutathione injection',
+          'whitening injectable',
+          'clinic supply',
+          'Cosmatrix International',
+        ].filter(Boolean);
+        keywords = baseKeywords.join(', ');
         jsonLd = {
           '@context': 'https://schema.org',
           '@type': 'Product',
           name: selectedProduct.name,
           image: [`https://shaatrading.in${selectedProduct.image}`],
-          description: description,
+          description,
           brand: {
             '@type': 'Brand',
-            name: selectedProduct.brand
+            name: selectedProduct.brand,
           },
           sku: selectedProduct.sku || undefined,
           offers: {
@@ -2883,50 +3108,78 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
             priceCurrency: 'INR',
             price: selectedProduct.price,
             availability: 'https://schema.org/InStock',
-            url: 'https://shaatrading.in'
-          }
+            url: canonical,
+          },
         };
       }
       break;
 
     case 'terms':
       title = 'Terms & Conditions | Cosmatrix International';
-      description = 'Read the professional use terms, liability clauses and purchasing eligibility for Cosmatrix International clients and clinics.';
+      description =
+        'Review the professional use terms, responsibilities and purchasing eligibility for Cosmatrix International clients, clinics and resellers.';
+      canonical = `https://shaatrading.in${buildPathForPage('terms')}`;
+      keywords =
+        'Cosmatrix terms and conditions, clinic supply terms, whitening injection terms, professional use policies';
+      robots = 'noindex,follow';
       break;
 
     case 'privacy':
       title = 'Privacy Policy | Cosmatrix International';
-      description = 'Understand how Cosmatrix International handles, stores and protects your clinic and patient-related data.';
+      description =
+        'Understand how Cosmatrix International handles, stores and protects your clinic and patient-related data.';
+      canonical = `https://shaatrading.in${buildPathForPage('privacy')}`;
+      keywords =
+        'Cosmatrix privacy policy, data protection, clinic data handling, patient data';
+      robots = 'noindex,follow';
       break;
 
     case 'shipping':
       title = 'Shipping Policy | Cosmatrix International';
-      description = 'Learn about domestic shipping timelines, handling, and cold-chain procedures for clinical aesthetic products.';
+      description =
+        'Learn about domestic shipping timelines, handling, packaging and cold-chain procedures for clinical aesthetic products from Cosmatrix.';
+      canonical = `https://shaatrading.in${buildPathForPage('shipping')}`;
+      keywords =
+        'Cosmatrix shipping policy, delivery of injectables, cold-chain handling, clinic supply logistics';
+      robots = 'noindex,follow';
       break;
 
     case 'return-policy':
       title = 'Return Policy | Cosmatrix International';
-      description = 'View our guidelines for damaged, incorrect or compromised products and return eligibility.';
+      description =
+        'View our guidelines for damaged, incorrect or compromised products and return eligibility for clinics and resellers.';
+      canonical = `https://shaatrading.in${buildPathForPage('return-policy')}`;
+      keywords =
+        'Cosmatrix return policy, damaged injectable return, clinic returns, whitening product returns';
+      robots = 'noindex,follow';
       break;
 
     case 'refund-policy':
       title = 'Refund Policy | Cosmatrix International';
-      description = 'Read our refund conditions for cancelled orders, shipping issues and rare product disputes.';
+      description =
+        'Read our refund conditions for cancelled orders, shipping issues and rare product disputes.';
+      canonical = `https://shaatrading.in${buildPathForPage('refund-policy')}`;
+      keywords =
+        'Cosmatrix refund policy, order refund, payment dispute resolution';
+      robots = 'noindex,follow';
       break;
 
     case 'success':
       title = 'Order Received | Cosmatrix International';
-      description = 'Your order details have been received by the Cosmatrix fulfillment team. You will be contacted shortly on WhatsApp.';
+      description =
+        'Your order details have been received by the Cosmatrix fulfillment team. You will be contacted shortly on WhatsApp for confirmation.';
+      canonical = `https://shaatrading.in${buildPathForPage('success')}`;
+      keywords =
+        'Cosmatrix order confirmation, payment success, clinic order placed';
+      robots = 'noindex,follow';
       break;
 
     default:
       break;
   }
 
-  return { title, description, jsonLd };
+  return { title, description, jsonLd, keywords, canonical, robots };
 };
-
-/* --- Main App --- */
 
 export default function CosmatrixApp() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -2939,76 +3192,71 @@ export default function CosmatrixApp() {
   const [searchQuery, setSearchQuery] = useState(''); // Global search state
   const [toast, setToast] = useState(null); 
 
-  // Initialize browser history state on first load
-  useEffect(() => {
-    // Replace the initial state so we have a valid history entry to pop back to
-    window.history.replaceState({ page: 'home' }, '', window.location.search);
-  }, []);
+  // Initialize and sync route with browser history (clean URLs + legacy support)
+  useEffect(() => {
+    const initialRoute = getRouteFromLocation();
+    setCurrentPage(initialRoute.page);
+    if (initialRoute.product) setSelectedProduct(initialRoute.product);
+    if (initialRoute.post) setSelectedPost(initialRoute.post);
 
-  // Set Favicon / Browser Tab Icon (Robust Fix with Cache Busting)
-  useEffect(() => {
-    // 1. Find all existing favicon links and remove them
-    const existingIcons = document.querySelectorAll("link[rel*='icon']");
-    existingIcons.forEach(el => el.remove());
+    const initialState = {
+      page: initialRoute.page,
+      product: initialRoute.product || null,
+      post: initialRoute.post || null,
+    };
+    window.history.replaceState(initialState, '', initialRoute.path);
 
-    // 2. Create a new link element
-    const link = document.createElement('link');
-    link.type = 'image/jpeg'; 
-    link.rel = 'shortcut icon';
-    
-    // 3. Add a timestamp query param to force browser to ignore cache and reload the image
-    link.href = `/image/logo-t.jpg?v=${new Date().getTime()}`; 
-    
-    // 4. Append it to the document head
-    document.head.appendChild(link);
-  }, []);
+    const handlePopState = (event) => {
+      if (event.state && event.state.page) {
+        setCurrentPage(event.state.page);
+        setSelectedProduct(event.state.product || null);
+        setSelectedPost(event.state.post || null);
+      } else {
+        const route = getRouteFromLocation();
+        setCurrentPage(route.page);
+        setSelectedProduct(route.product || null);
+        setSelectedPost(route.post || null);
+      }
+      setMobileMenuOpen(false);
+    };
 
-  // Listen for Browser Back/Forward buttons (popstate event)
-  useEffect(() => {
-    const handlePopState = (event) => {
-      if (event.state && event.state.page) {
-        // Restore state from history
-        setCurrentPage(event.state.page);
-        if (event.state.product) setSelectedProduct(event.state.product);
-        if (event.state.post) setSelectedPost(event.state.post);
-        // Also restore filter if needed, though simpler to reset or persist in history too
-      } else {
-        // Fallback if no state exists
-        setCurrentPage('home');
-      }
-      setMobileMenuOpen(false);
-    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  // Set Favicon / Browser Tab Icon (Robust Fix with Cache Busting)
+  useEffect(() => {
+    const existingIcons = document.querySelectorAll("link[rel*='icon']");
+    existingIcons.forEach(el => el.remove());
+
+    const link = document.createElement('link');
+    link.type = 'image/jpeg';
+    link.rel = 'shortcut icon';
+    link.href = `/image/logo-t.jpg?v=${new Date().getTime()}`;
+    document.head.appendChild(link);
+  }, []);
 
   const showToast = (message, type = 'success') => {
     setToast({ message, type });
   };
 
-  // Modified navigateTo function to push history state
-  const navigateTo = (page, item = null) => {
-    if (page === 'product' && item) setSelectedProduct(item);
-    if (page === 'blog-post' && item) setSelectedPost(item);
-    
-    setCurrentPage(page);
-    setMobileMenuOpen(false);
-    window.scrollTo(0, 0);
+  // Navigation helper that also updates browser history with clean paths
+  const navigateTo = (page, item = null) => {
+    if (page === 'product' && item) setSelectedProduct(item);
+    if (page === 'blog-post' && item) setSelectedPost(item);
 
-    // Push new state to browser history
-    // We construct a state object that holds necessary data to reconstruct the view
-    const stateObj = { 
-        page, 
-        product: page === 'product' ? item : null,
-        post: page === 'blog-post' ? item : null
-    };
-    
-    // Push state with a query param for visual clarity (optional, but good practice)
-    // Using query params (?page=shop) instead of path (/shop) avoids 404s on refresh in some static hosting environments
-    const url = `?page=${page}`; 
-    window.history.pushState(stateObj, '', url);
-  };
+    setCurrentPage(page);
+    setMobileMenuOpen(false);
+    window.scrollTo(0, 0);
+
+    const stateObj = {
+      page,
+      product: page === 'product' ? item : null,
+      post: page === 'blog-post' ? item : null,
+    };
+    const path = buildPathForPage(page, { product: stateObj.product, post: stateObj.post });
+    window.history.pushState(stateObj, '', path);
+  };
 
   const addToCart = (product, quantity = 1) => {
     setCart(prev => {
@@ -3064,17 +3312,19 @@ export default function CosmatrixApp() {
     }
   };
 
-  const { title, description, jsonLd } = getSeoConfig(currentPage, selectedProduct, selectedPost);
+  const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);
   return (
     <div className="font-sans text-gray-900 bg-[#fbfbfb] min-h-screen flex flex-col selection:bg-[#E8A0BF] selection:text-black">
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <link rel="canonical" href="https://shaatrading.in" />
+        {keywords && <meta name="keywords" content={keywords} />}
+        {robots && <meta name="robots" content={robots} />}
+        <link rel="canonical" href={canonical} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content={currentPage === 'product' ? 'product' : 'website'} />
-        <meta property="og:url" content="https://shaatrading.in" />
+        <meta property="og:url" content={canonical} />
         <meta property="og:image" content="https://shaatrading.in/image/Cosmatrix.jpg" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}

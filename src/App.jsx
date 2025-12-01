@@ -1588,272 +1588,293 @@ const Footer = ({ setCurrentPage, showToast }) => {
 
 
 const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  
-  // Updated Slides with specific button text and filter actions based on the image content
-  const slides = [
-    { 
-        id: 1, 
-        image: '/image/image_1.png', 
-        btnText: 'Start Shopping', 
-        filter: 'All' 
-    }, // "Static/Circle" -> General Shop
-    { 
-        id: 2, 
-        image: '/image/image_2.png', 
-        btnText: 'Weight Management Products', 
-        filter: 'Injection' 
-    }, // "Whitening" -> Injection Category
-    { 
-        id: 3, 
-        image: '/image/image_3.png', 
-        btnText: 'anti Aging Products', 
-        filter: 'All' 
-    }, // "Thank You" -> General Shop
-    { 
-        id: 4, 
-        image: '/image/image_4.png', 
-        btnText: 'Whitening Products', 
-        filter: 'All' 
-    }, // "Choose Category" -> General Shop
-    { 
-        id: 5, 
-        image: '/image/image_5.png', 
-        btnText: 'try Now', 
-        filter: 'Weight' 
-    } // "Weight Management" -> Weight Category
-  ];
+  const [currentSlide, setCurrentSlide] = useState(0);
+   
+  // Updated Slides: Configured for 6 slides with separate Mobile (sl-) and Desktop (pc-) images
+  // Assumed .jpg extension for these files.
+  const slides = [
+    { 
+        id: 1, 
+        mobile: '/image/sl-1.jpg', 
+        desktop: '/image/pc-1.jpg', 
+        btnText: 'Start Shopping', 
+        filter: 'All' 
+    }, 
+    { 
+        id: 2, 
+        mobile: '/image/sl-2.jpg', 
+        desktop: '/image/pc-2.jpg', 
+        btnText: 'Weight Management', 
+        filter: 'Injection' 
+    }, 
+    { 
+        id: 3, 
+        mobile: '/image/sl-3.jpg', 
+        desktop: '/image/pc-3.jpg', 
+        btnText: 'Anti Aging Products', 
+        filter: 'All' 
+    }, 
+    { 
+        id: 4, 
+        mobile: '/image/sl-4.jpg', 
+        desktop: '/image/pc-4.jpg', 
+        btnText: 'Whitening Products', 
+        filter: 'All' 
+    }, 
+    { 
+        id: 5, 
+        mobile: '/image/sl-5.jpg', 
+        desktop: '/image/pc-5.jpg', 
+        btnText: 'Try Now', 
+        filter: 'Weight' 
+    },
+    { 
+        id: 6, 
+        mobile: '/image/sl-6.jpg', 
+        desktop: '/image/pc-6.jpg', 
+        btnText: 'Explore Collection', 
+        filter: 'All' 
+    }
+  ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
-    return () => clearTimeout(timer);
-  }, [slides.length]);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, [slides.length]);
 
-  return (
-  <div className="animate-fade-in bg-[#fbfbfb]">
-    {/* HERO SECTION - SLIDER */}
-    <div className="relative w-full min-h-[85vh] bg-black flex flex-col justify-end items-center text-center overflow-hidden">
-        {/* Slides */}
-        {slides.map((slide, index) => (
-          <div 
-            key={slide.id}
-            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100 z-[1]' : 'opacity-0 z-0'}`}
-          >
-            <div 
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url("${slide.image}")` }}
-            />
-            {/* Subtle overlay to ensure button pop if needed, but keeping image clear as requested */}
-            <div className="absolute inset-0 bg-black/10" />
-          </div>
-        ))}
-        
-        {/* Dynamic Button Overlay - Positioned at Bottom Center */}
-        <div className="relative z-20 pb-20 md:pb-24 w-full flex justify-center">
-            <div className="animate-slide-up">
-                <Button 
-                    onClick={() => {
-                        setShopFilter(slides[currentSlide].filter);
-                        navigateTo('shop');
-                    }} 
-                    variant="secondary" 
-                    className="px-10 py-4 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(232,160,191,0.5)] bg-[#E8A0BF] text-black border-2 border-transparent hover:bg-white hover:scale-105 transition-all duration-300"
-                >
-                    {slides[currentSlide].btnText}
-                </Button>
-            </div>
-        </div>
-        
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentSlide ? 'bg-[#E8A0BF] w-8' : 'bg-white/50 hover:bg-white'
-              }`}
-            />
-          ))}
-        </div>
-    </div>
+  return (
+  <div className="animate-fade-in bg-[#fbfbfb]">
+    {/* HERO SECTION - SLIDER */}
+    <div className="relative w-full min-h-[85vh] bg-black flex flex-col justify-end items-center text-center overflow-hidden">
+        {/* Slides */}
+        {slides.map((slide, index) => (
+          <div 
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100 z-[1]' : 'opacity-0 z-0'}`}
+          >
+            {/* MOBILE IMAGE (Visible on small screens) */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center md:hidden"
+              style={{ backgroundImage: `url("${slide.mobile}")` }}
+            />
+            
+            {/* DESKTOP IMAGE (Visible on medium+ screens) */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center hidden md:block"
+              style={{ backgroundImage: `url("${slide.desktop}")` }}
+            />
 
-    {/* TICKER - UPDATED FOR PAN INDIA */}
-    <div className="bg-black text-white/80 py-3 border-b border-white/10 overflow-hidden relative z-20">
-        <div className="flex items-center gap-8 md:gap-12 animate-marquee whitespace-nowrap min-w-full px-4 text-[10px] md:text-xs tracking-widest uppercase font-medium">
-            <span className="flex items-center gap-2"><ShieldCheck size={14} className="text-[#E8A0BF]"/> 100% Authentic</span>
-            <span className="flex items-center gap-2"><Truck size={14} className="text-[#E8A0BF]"/> Pan India Shipping</span>
-            <span className="flex items-center gap-2"><Award size={14} className="text-[#E8A0BF]"/> Authorized Distributor</span>
-            <span className="flex items-center gap-2"><MapPin size={14} className="text-[#E8A0BF]"/> 24-48h Dispatch</span>
-            <span className="flex items-center gap-2"><Globe size={14} className="text-[#E8A0BF]"/> Direct Sourcing</span>
-            {/* Duplicated for smooth loop on wide screens */}
-            <span className="flex items-center gap-2"><ShieldCheck size={14} className="text-[#E8A0BF]"/> 100% Authentic</span>
-            <span className="flex items-center gap-2"><Truck size={14} className="text-[#E8A0BF]"/> Pan India Shipping</span>
-        </div>
-    </div>
+            {/* Subtle overlay to ensure button pop if needed */}
+            <div className="absolute inset-0 bg-black/10" />
+          </div>
+        ))}
+        
+        {/* Dynamic Button Overlay - Positioned at Bottom Center */}
+        <div className="relative z-20 pb-20 md:pb-24 w-full flex justify-center">
+            <div className="animate-slide-up">
+                <Button 
+                    onClick={() => {
+                        setShopFilter(slides[currentSlide].filter);
+                        navigateTo('shop');
+                    }} 
+                    variant="secondary" 
+                    className="px-10 py-4 text-sm font-bold tracking-widest uppercase shadow-[0_0_20px_rgba(232,160,191,0.5)] bg-[#E8A0BF] text-black border-2 border-transparent hover:bg-white hover:scale-105 transition-all duration-300"
+                >
+                    {slides[currentSlide].btnText}
+                </Button>
+            </div>
+        </div>
+        
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentSlide ? 'bg-[#E8A0BF] w-8' : 'bg-white/50 hover:bg-white'
+              }`}
+            />
+          ))}
+        </div>
+    </div>
 
-    {/* BRAND MARQUEE */}
-    <section className="py-8 md:py-12 bg-white border-b border-gray-100 overflow-hidden">
-        <p className="text-center text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mb-6">Trusted Brand Partners</p>
-        <div className="flex gap-8 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 justify-center flex-wrap px-6">
-            {['Glutax', 'Miracle White', 'Aqua Skin', 'Nc24', 'Relumins', 'Daehan'].map(brand => (
-                <span key={brand} className="text-lg md:text-2xl font-serif font-bold text-gray-800 cursor-default">{brand}</span>
-            ))}
-        </div>
-    </section>
+    {/* TICKER - UPDATED FOR PAN INDIA */}
+    <div className="bg-black text-white/80 py-3 border-b border-white/10 overflow-hidden relative z-20">
+        <div className="flex items-center gap-8 md:gap-12 animate-marquee whitespace-nowrap min-w-full px-4 text-[10px] md:text-xs tracking-widest uppercase font-medium">
+            <span className="flex items-center gap-2"><ShieldCheck size={14} className="text-[#E8A0BF]"/> 100% Authentic</span>
+            <span className="flex items-center gap-2"><Truck size={14} className="text-[#E8A0BF]"/> Pan India Shipping</span>
+            <span className="flex items-center gap-2"><Award size={14} className="text-[#E8A0BF]"/> Authorized Distributor</span>
+            <span className="flex items-center gap-2"><MapPin size={14} className="text-[#E8A0BF]"/> 24-48h Dispatch</span>
+            <span className="flex items-center gap-2"><Globe size={14} className="text-[#E8A0BF]"/> Direct Sourcing</span>
+            {/* Duplicated for smooth loop on wide screens */}
+            <span className="flex items-center gap-2"><ShieldCheck size={14} className="text-[#E8A0BF]"/> 100% Authentic</span>
+            <span className="flex items-center gap-2"><Truck size={14} className="text-[#E8A0BF]"/> Pan India Shipping</span>
+        </div>
+    </div>
 
-    {/* CURATED CATEGORIES */}
-    <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto">
-        <SectionHeader title="Curated Collections" subtitle="Explore our specialized range of aesthetic formulations" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-                { name: 'Whitening Injections', img: '/image/Glutax-50000000GS.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
-                { name: 'Dermal Fillers', img: '/image/IMG_1838.jpg', desc: 'HA & PDRN Boosters', filter: 'Filler' },
-                { name: 'Oral Supplements', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
-            ].map((cat, idx) => (
-                <div 
-                    key={idx}
-                    onClick={() => { setShopFilter(cat.filter); navigateTo('shop'); }}
-                    className="group relative h-[250px] md:h-[400px] overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500"
-                >
-                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors z-10" />
-                    <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20 bg-gradient-to-t from-black/90 to-transparent">
-                        <h3 className="text-white font-serif text-2xl md:text-3xl mb-1 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">{cat.name}</h3>
-                        <p className="text-white/80 text-xs md:text-sm font-light mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{cat.desc}</p>
-                        <span className="text-[#E8A0BF] text-[10px] font-bold tracking-widest uppercase flex items-center gap-2 group-hover:gap-3 transition-all">Shop Now <ArrowRight size={12}/></span>
-                    </div>
-                </div>
-            ))}
-        </div>
-    </section>
+    {/* BRAND MARQUEE */}
+    <section className="py-8 md:py-12 bg-white border-b border-gray-100 overflow-hidden">
+        <p className="text-center text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mb-6">Trusted Brand Partners</p>
+        <div className="flex gap-8 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 justify-center flex-wrap px-6">
+            {['Glutax', 'Miracle White', 'Aqua Skin', 'Nc24', 'Relumins', 'Daehan'].map(brand => (
+                <span key={brand} className="text-lg md:text-2xl font-serif font-bold text-gray-800 cursor-default">{brand}</span>
+            ))}
+        </div>
+    </section>
 
-    {/* NEW SECTION: TRUSTED BY INDIA */}
-    <section className="py-16 md:py-20 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-            <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-4">Trusted Across India</h2>
-            <p className="text-gray-500 font-light max-w-2xl mx-auto mb-10">From Bangalore to Delhi, Mumbai to Kolkata. We serve over 500+ premium clinics with guaranteed authentic supplies.</p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-                {[
-                    { label: "Partner Clinics", val: "500+" },
-                    { label: "Cities Covered", val: "40+" },
-                    { label: "Years of Trust", val: "5+" },
-                    { label: "Happy Clients", val: "10k+" },
-                ].map((stat, idx) => (
-                    <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <div className="text-3xl font-serif text-gray-900 mb-1">{stat.val}</div>
-                        <div className="text-[10px] uppercase tracking-widest text-[#E8A0BF] font-bold">{stat.label}</div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </section>
+    {/* CURATED CATEGORIES */}
+    <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto">
+        <SectionHeader title="Curated Collections" subtitle="Explore our specialized range of aesthetic formulations" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+                { name: 'Whitening Injections', img: '/image/Glutax-50000000GS.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
+                { name: 'Dermal Fillers', img: '/image/IMG_1838.jpg', desc: 'HA & PDRN Boosters', filter: 'Filler' },
+                { name: 'Oral Supplements', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
+            ].map((cat, idx) => (
+                <div 
+                    key={idx}
+                    onClick={() => { setShopFilter(cat.filter); navigateTo('shop'); }}
+                    className="group relative h-[250px] md:h-[400px] overflow-hidden rounded-xl cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500"
+                >
+                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors z-10" />
+                    <img src={cat.img} alt={cat.name} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 z-20 bg-gradient-to-t from-black/90 to-transparent">
+                        <h3 className="text-white font-serif text-2xl md:text-3xl mb-1 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">{cat.name}</h3>
+                        <p className="text-white/80 text-xs md:text-sm font-light mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">{cat.desc}</p>
+                        <span className="text-[#E8A0BF] text-[10px] font-bold tracking-widest uppercase flex items-center gap-2 group-hover:gap-3 transition-all">Shop Now <ArrowRight size={12}/></span>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
 
-    {/* BEST SELLERS GRID */}
-    <section className="py-12 md:py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-end mb-8 md:mb-10">
-            <div>
-                <h2 className="font-serif text-2xl md:text-3xl text-gray-900">Bestselling Formulations</h2>
-                <div className="h-0.5 w-12 bg-[#E8A0BF] mt-3"></div>
-            </div>
-            <button onClick={() => navigateTo('shop')} className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-[#E8A0BF] transition-colors">View All <ArrowRight size={16}/></button>
-        </div>
-        
-        {/* Mobile Horizontal Scroll */}
-        <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
-            {PRODUCTS.slice(0, 4).map(product => (
-                 <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
-                    <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
-                        <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                    </div>
-                    <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
-                    <h3 className="font-serif text-lg leading-tight mb-2 group-hover:text-[#E8A0BF] transition-colors truncate">{product.name}</h3>
-                    <p className="text-gray-900 font-medium">₹{product.price.toLocaleString()}</p>
-                 </div>
-            ))}
-        </div>
-        
-        <div className="mt-6 text-center md:hidden">
-            <button onClick={() => navigateTo('shop')} className="inline-flex items-center gap-2 text-sm font-medium border-b border-black pb-1">View All Products <ArrowRight size={14}/></button>
-        </div>
-      </div>
-    </section>
+    {/* NEW SECTION: TRUSTED BY INDIA */}
+    <section className="py-16 md:py-20 bg-gray-50 border-y border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-4">Trusted Across India</h2>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto mb-10">From Bangalore to Delhi, Mumbai to Kolkata. We serve over 500+ premium clinics with guaranteed authentic supplies.</p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                {[
+                    { label: "Partner Clinics", val: "500+" },
+                    { label: "Cities Covered", val: "40+" },
+                    { label: "Years of Trust", val: "5+" },
+                    { label: "Happy Clients", val: "10k+" },
+                ].map((stat, idx) => (
+                    <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div className="text-3xl font-serif text-gray-900 mb-1">{stat.val}</div>
+                        <div className="text-[10px] uppercase tracking-widest text-[#E8A0BF] font-bold">{stat.label}</div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
 
-    {/* THE COSMATRIX STANDARD - Beauty & Aesthetics Focused */}
-    <section className="py-20 md:py-28 bg-[#FFF5F7] relative overflow-hidden">
-        {/* Soft decorative background element */}
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#ffe4ec] rounded-full mix-blend-multiply filter blur-[80px] opacity-40 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#fff0f5] rounded-full mix-blend-multiply filter blur-[80px] opacity-60"></div>
-        
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-            
-            {/* Image Side - Styled like a magazine spread */}
-            <div className="order-2 lg:order-1 relative">
-                <div className="relative z-10 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
-                      <img src="/image/ban2.jpg" alt="Aesthetic Perfection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
-                </div>
-                {/* Decorative Frame */}
-                <div className="absolute top-6 -left-6 w-full h-full rounded-[2rem] border-2 border-[#E8A0BF] -z-10"></div>
-            </div>
+    {/* BEST SELLERS GRID */}
+    <section className="py-12 md:py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex justify-between items-end mb-8 md:mb-10">
+            <div>
+                <h2 className="font-serif text-2xl md:text-3xl text-gray-900">Bestselling Formulations</h2>
+                <div className="h-0.5 w-12 bg-[#E8A0BF] mt-3"></div>
+            </div>
+            <button onClick={() => navigateTo('shop')} className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-[#E8A0BF] transition-colors">View All <ArrowRight size={16}/></button>
+        </div>
+        
+        {/* Mobile Horizontal Scroll */}
+        <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+            {PRODUCTS.slice(0, 4).map(product => (
+                 <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
+                    <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
+                    <h3 className="font-serif text-lg leading-tight mb-2 group-hover:text-[#E8A0BF] transition-colors truncate">{product.name}</h3>
+                    <p className="text-gray-900 font-medium">₹{product.price.toLocaleString()}</p>
+                 </div>
+            ))}
+        </div>
+        
+        <div className="mt-6 text-center md:hidden">
+            <button onClick={() => navigateTo('shop')} className="inline-flex items-center gap-2 text-sm font-medium border-b border-black pb-1">View All Products <ArrowRight size={14}/></button>
+        </div>
+      </div>
+    </section>
 
-            {/* Text Side */}
-            <div className="order-1 lg:order-2">
-                 <div className="flex items-center gap-3 mb-4">
-                    <span className="h-px w-8 bg-[#E8A0BF]"></span>
-                    <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs">The Cosmatrix Standard</span>
-                 </div>
-                 
-                 <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900 leading-[1.1]">
-                    Curating <span className="italic font-light text-[#E8A0BF]">Timeless</span><br/> Beauty & Grace
-                 </h2>
-                 
-                 <p className="text-gray-500 leading-relaxed mb-10 font-light text-lg">
-                    We believe that true aesthetic excellence lies in the purity of the source. Our collection is not just about products; it's about providing the essential elements for radiant, luminous skin. Every formulation is a promise of quality, designed to elevate your beauty rituals.
-                 </p>
-                 
-                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
-                    {[
-                        { icon: Sparkles, title: "Radiant Potency", desc: "Formulations that deliver a visible, ethereal glow." },
-                        { icon: Star, title: "Premium Origins", desc: "Sourced from the world's finest aesthetic laboratories." },
-                        { icon: ShieldCheck, title: "Pure Integrity", desc: "Uncompromising quality for your peace of mind." },
-                        { icon: Clock, title: "Lasting Beauty", desc: "Solutions designed for enduring elegance." }
-                    ].map((item, idx) => (
-                        <div key={idx} className="flex gap-4 group cursor-default">
-                            <div className="w-12 h-12 rounded-full bg-white shadow-sm border border-[#ffe4ec] flex items-center justify-center shrink-0 text-[#E8A0BF] group-hover:bg-[#E8A0BF] group-hover:text-white transition-all duration-500">
-                                <item.icon size={20} strokeWidth={1.5}/>
-                            </div>
-                            <div>
-                                <h4 className="text-lg font-serif text-gray-900 mb-1 group-hover:text-[#E8A0BF] transition-colors">{item.title}</h4>
-                                <p className="text-sm text-gray-500 font-light leading-snug">{item.desc}</p>
-                            </div>
-                        </div>
-                    ))}
-                 </div>
-            </div>
-        </div>
-      </div>
-    </section>
+    {/* THE COSMATRIX STANDARD - Beauty & Aesthetics Focused */}
+    <section className="py-20 md:py-28 bg-[#FFF5F7] relative overflow-hidden">
+        {/* Soft decorative background element */}
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#ffe4ec] rounded-full mix-blend-multiply filter blur-[80px] opacity-40 animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-[#fff0f5] rounded-full mix-blend-multiply filter blur-[80px] opacity-60"></div>
+        
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            
+            {/* Image Side - Styled like a magazine spread */}
+            <div className="order-2 lg:order-1 relative">
+                <div className="relative z-10 aspect-[3/4] rounded-[2rem] overflow-hidden shadow-xl border-8 border-white">
+                      <img src="/image/ban2.jpg" alt="Aesthetic Perfection" className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" />
+                </div>
+                {/* Decorative Frame */}
+                <div className="absolute top-6 -left-6 w-full h-full rounded-[2rem] border-2 border-[#E8A0BF] -z-10"></div>
+            </div>
 
-    {/* CTA SECTION */}
-    <section className="py-16 md:py-24 bg-black text-center px-6 relative overflow-hidden border-t border-white/10">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E8A0BF] rounded-full filter blur-[150px] opacity-10 pointer-events-none"></div>
-      
-      <div className="max-w-3xl mx-auto relative z-10">
-        <h2 className="font-serif text-3xl md:text-4xl mb-4 text-white">Partner With Excellence</h2>
-        <p className="text-gray-400 mb-8 font-light text-base md:text-lg">Join over 500+ clinics sourcing their premium inventory from Cosmatrix.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button onClick={() => navigateTo('contact')} variant="secondary" className="py-4 w-full sm:w-auto font-medium">Register Wholesale Account</Button>
-            <Button onClick={() => navigateTo('shop')} variant="outline" className="py-4 w-full sm:w-auto border-white/20 hover:bg-white hover:text-black">Browse Catalog</Button>
-        </div>
-      </div>
-    </section>
-  </div>
-  );
+            {/* Text Side */}
+            <div className="order-1 lg:order-2">
+                 <div className="flex items-center gap-3 mb-4">
+                    <span className="h-px w-8 bg-[#E8A0BF]"></span>
+                    <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs">The Cosmatrix Standard</span>
+                 </div>
+                 
+                 <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 text-gray-900 leading-[1.1]">
+                    Curating <span className="italic font-light text-[#E8A0BF]">Timeless</span><br/> Beauty & Grace
+                 </h2>
+                 
+                 <p className="text-gray-500 leading-relaxed mb-10 font-light text-lg">
+                    We believe that true aesthetic excellence lies in the purity of the source. Our collection is not just about products; it's about providing the essential elements for radiant, luminous skin. Every formulation is a promise of quality, designed to elevate your beauty rituals.
+                 </p>
+                 
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+                    {[
+                        { icon: Sparkles, title: "Radiant Potency", desc: "Formulations that deliver a visible, ethereal glow." },
+                        { icon: Star, title: "Premium Origins", desc: "Sourced from the world's finest aesthetic laboratories." },
+                        { icon: ShieldCheck, title: "Pure Integrity", desc: "Uncompromising quality for your peace of mind." },
+                        { icon: Clock, title: "Lasting Beauty", desc: "Solutions designed for enduring elegance." }
+                    ].map((item, idx) => (
+                        <div key={idx} className="flex gap-4 group cursor-default">
+                            <div className="w-12 h-12 rounded-full bg-white shadow-sm border border-[#ffe4ec] flex items-center justify-center shrink-0 text-[#E8A0BF] group-hover:bg-[#E8A0BF] group-hover:text-white transition-all duration-500">
+                                <item.icon size={20} strokeWidth={1.5}/>
+                            </div>
+                            <div>
+                                <h4 className="text-lg font-serif text-gray-900 mb-1 group-hover:text-[#E8A0BF] transition-colors">{item.title}</h4>
+                                <p className="text-sm text-gray-500 font-light leading-snug">{item.desc}</p>
+                            </div>
+                        </div>
+                    ))}
+                 </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA SECTION */}
+    <section className="py-16 md:py-24 bg-black text-center px-6 relative overflow-hidden border-t border-white/10">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E8A0BF] rounded-full filter blur-[150px] opacity-10 pointer-events-none"></div>
+      
+      <div className="max-w-3xl mx-auto relative z-10">
+        <h2 className="font-serif text-3xl md:text-4xl mb-4 text-white">Partner With Excellence</h2>
+        <p className="text-gray-400 mb-8 font-light text-base md:text-lg">Join over 500+ clinics sourcing their premium inventory from Cosmatrix.</p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button onClick={() => navigateTo('contact')} variant="secondary" className="py-4 w-full sm:w-auto font-medium">Register Wholesale Account</Button>
+            <Button onClick={() => navigateTo('shop')} variant="outline" className="py-4 w-full sm:w-auto border-white/20 hover:bg-white hover:text-black">Browse Catalog</Button>
+        </div>
+      </div>
+    </section>
+  </div>
+  );
 };
 
 const ShopView = ({ navigateTo, addToCart, filter, setFilter, searchQuery, setSearchQuery }) => {

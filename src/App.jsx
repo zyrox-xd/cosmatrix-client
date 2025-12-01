@@ -1604,28 +1604,28 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         id: 2, 
         mobile: '/image/sl-2.jpg', 
         desktop: '/image/pc-2.jpg', 
-        btnText: 'Weight Management', 
+        btnText: 'Whitening',
         filter: 'Injection' 
     }, 
     { 
         id: 3, 
         mobile: '/image/sl-3.jpg', 
         desktop: '/image/pc-3.jpg', 
-        btnText: 'Anti Aging Products', 
+        btnText: 'Weight Management',
         filter: 'All' 
     }, 
     { 
         id: 4, 
         mobile: '/image/sl-4.jpg', 
         desktop: '/image/pc-4.jpg', 
-        btnText: 'Whitening Products', 
-        filter: 'All' 
+        btnText: 'Anti-Aging',
+        filter: 'All'
     }, 
     { 
         id: 5, 
         mobile: '/image/sl-5.jpg', 
         desktop: '/image/pc-5.jpg', 
-        btnText: 'Try Now', 
+        btnText: 'Hair Care',
         filter: 'Weight' 
     },
     { 

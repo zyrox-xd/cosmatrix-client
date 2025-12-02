@@ -1307,89 +1307,67 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
   const [status, setStatus] = useState('processing'); 
 
-  useEffect(() => {
-    const processOrder = async () => {
-      const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
-      const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
-      const queryParams = new URLSearchParams(window.location.search);
-      const orderId = queryParams.get('order_id') || 'DEMO-' + Date.now();
+ useEffect(() => {
+  const verifyPayment = async () => {
+    const cart = JSON.parse(localStorage.getItem("temp_cart") || "[]");
+    const user = JSON.parse(localStorage.getItem("temp_user") || "{}");
 
-      if (storedCart.length === 0) {
-        setStatus('error');
-        return;
+    const orderId = new URLSearchParams(window.location.search).get("order_id");
+
+    if (!orderId || cart.length === 0) {
+      setStatus("error");
+      return;
+    }
+
+    const res = await fetch(`https://api.cosmatrix.in/api/cashfree/status/${orderId}`);
+    const data = await res.json();
+
+    if (data.order_status !== "PAID") {
+      setStatus("error");
+      return;
+    }
+
+    // EMAIL RECEIPT
+    const emailHTML = cart
+      .map(item => `• <b>${item.name}</b> — Qty: ${item.quantity} | ₹${item.price}`)
+      .join("<br/><br/>");
+
+    try {
+      if (!window.emailjs) {
+        await new Promise(resolve => {
+          const s = document.createElement("script");
+          s.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
+          s.onload = resolve;
+          document.body.appendChild(s);
+        });
       }
 
-      // 1) Verify with backend -> Cashfree
-      try {
-        const res = await fetch(`https://cosmatrix-server.onrender.com/api/cashfree/status/${orderId}`);
-        const data = await res.json();
-
-        // If not paid, don't send email, show error instead
-        if (!data || data.order_status !== 'PAID') {
-          console.warn("Order not PAID, status:", data?.order_status);
-          setStatus('error');
-          return;
-        }
-      } catch (e) {
-        console.error("Status check failed:", e);
-        setStatus('error');
-        return;
-      }
-
-      // 2) Build email content from local storage
-      const orderItemsHTML = storedCart
-        .map(
-          (item) =>
-            `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
-        )
-        .join("<br/><br/>");
-
-      const totalAmount = storedCart.reduce(
-        (sum, item) => sum + item.price * item.quantity,
-        0
-      );
-
-      const emailParams = {
-        customer_name: storedUser.name,
-        customer_email: storedUser.email || "Not Provided",
-        customer_phone: storedUser.phone,
-        shipping_address: storedUser.address,
-        order_items: orderItemsHTML,
-        total_amount: totalAmount.toLocaleString(),
+      await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        customer_name: user.name,
+        customer_email: user.email,
+        customer_phone: user.phone,
+        shipping_address: user.address,
+        order_items: emailHTML,
+        total_amount: cart.reduce((s, i) => s + i.price * i.quantity, 0),
         payment_id: orderId,
-        order_id: orderId,
-      };
+        order_id: orderId
+      });
 
-      try {
-        if (!window.emailjs) {
-          const script = document.createElement("script");
-          script.src =
-            "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
-          script.async = true;
-          document.body.appendChild(script);
-          await new Promise((resolve) => (script.onload = resolve));
-        }
+      localStorage.removeItem("temp_cart");
+      localStorage.removeItem("temp_user");
 
-        await window.emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID,
-          emailParams,
-          EMAILJS_PUBLIC_KEY
-        );
+      setStatus("sent");
+      showToast("Order confirmed!", "success");
 
-        localStorage.removeItem("temp_cart");
-        localStorage.removeItem("temp_user");
-        setStatus("sent");
-        showToast("Order confirmed and email sent!", "success");
-      } catch (error) {
-        console.error("Email Failed:", error);
-        setStatus("error");
-        showToast("Payment successful but email failed.", "error");
-      }
-    };
+    } catch (e) {
+      console.log("Email error", e);
+      setStatus("error");
+    }
+  };
 
-    processOrder();
-  }, []);
+  verifyPayment();
+}, []);
+
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
@@ -3319,42 +3297,43 @@ export default function CosmatrixApp() {
     setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item));
   };
 
- const handlePayment = async (customerDetails) => {
-  const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+const handlePayment = async (customerDetails) => {
+  const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
 
-  localStorage.setItem('temp_cart', JSON.stringify(cart));
-  localStorage.setItem('temp_user', JSON.stringify(customerDetails));
+  localStorage.setItem("temp_cart", JSON.stringify(cart));
+  localStorage.setItem("temp_user", JSON.stringify(customerDetails));
 
   try {
-      const orderId = "ORD_" + Date.now(); // unique per checkout
+    const orderId = "ORD_" + Date.now();
 
-      const response = await fetch('https://cosmatrix-server.onrender.com/api/cashfree/pay', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-              name: customerDetails.name,
-              mobile: customerDetails.phone,
-              amount: total,
-              orderId: orderId
-          }),
-      });
+    const response = await fetch("https://api.cosmatrix.in/api/cashfree/pay", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: customerDetails.name,
+        mobile: customerDetails.phone,
+        amount: total,
+        orderId
+      })
+    });
 
-      const data = await response.json();
+    const data = await response.json();
 
-      if (data.success && data.payment_url) {
-          window.location.href = data.payment_url; // Go to Cashfree hosted checkout
-      } else {
-          showToast('Payment initiation failed', 'error');
-      }
-  } catch (error) {
-      console.error("Payment Error:", error);
-      const confirmSim = window.confirm("Backend unreachable. Simulate Success?");
-      if(confirmSim) {
-          navigateTo('success');
-          setCartOpen(false);
-      }
+    if (data.success && data.payment_url) {
+      window.location.href = data.payment_url;
+    } else {
+      showToast("Payment failed", "error");
+    }
+
+  } catch (err) {
+    console.error(err);
+    if (window.confirm("Backend unreachable. Simulate success?")) {
+      navigateTo("success");
+      setCartOpen(false);
+    }
   }
 };
+
 
 
   const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);

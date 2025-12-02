@@ -1305,95 +1305,140 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
 };
 
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
-    const [status, setStatus] = useState('processing'); 
+  const [status, setStatus] = useState('processing'); 
 
-    useEffect(() => {
-      const processOrder = async () => {
-        const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
-        const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
-        const queryParams = new URLSearchParams(window.location.search);
-        const txnId = queryParams.get('tid') || 'DEMO-' + Date.now();
-   
-        if (storedCart.length === 0) {
-          setStatus('error');
-          return;
-        }
-   
-        const orderItemsHTML = storedCart.map(item => 
-          `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
-        ).join('<br/><br/>');
-   
-        const totalAmount = storedCart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-   
-        const emailParams = {
-          customer_name: storedUser.name,
-          customer_email: storedUser.email || "Not Provided", 
-          customer_phone: storedUser.phone,
-          shipping_address: storedUser.address,
-          order_items: orderItemsHTML,
-          total_amount: totalAmount.toLocaleString(),
-          payment_id: txnId,
-          order_id: txnId
-        };
-   
-        try {
-          if (!window.emailjs) {
-              const script = document.createElement('script');
-              script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
-              script.async = true;
-              document.body.appendChild(script);
-              await new Promise(resolve => script.onload = resolve);
-          }
-             
-          await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, emailParams, EMAILJS_PUBLIC_KEY);
-             
-          localStorage.removeItem('temp_cart');
-          localStorage.removeItem('temp_user');
-          setStatus('sent');
-          showToast("Order confirmed and email sent!", "success");
-        } catch (error) {
-          console.error('Email Failed:', error);
-          setStatus('error'); 
-          showToast("Payment successful but email failed.", "error");
-        }
-      };
-   
-      processOrder();
-    }, []);
-   
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
-        {status === 'processing' && (
-          <div className="animate-pulse">
-            <h2 className="text-2xl font-serif mb-2">Verifying Payment...</h2>
-            <p className="text-gray-500">Please do not close this window.</p>
-          </div>
-        )}
-   
-        {status === 'sent' && (
-          <div className="animate-fade-in bg-white p-8 rounded-2xl shadow-xl border border-gray-100 max-w-md w-full">
-            <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check size={32} />
-            </div>
-            <h2 className="text-3xl font-serif mb-2">Order Confirmed!</h2>
-            <p className="text-gray-600 mb-6">Thank you for shopping with COSMATRIX. Your order details have been sent to our admin team.</p>
-            <Button onClick={() => { window.history.replaceState(null, "", "/"); navigateTo('home'); }} className="w-full">
-              Return to Home
-            </Button>
-            <div className="mt-4 text-xs text-gray-400">Powered by Zomaxa Agency</div>
-          </div>
-        )}
-   
-        {status === 'error' && (
-          <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full">
-             <h2 className="text-2xl font-serif text-red-500 mb-2">Something went wrong</h2>
-             <p className="text-gray-500 mb-6">We received your payment, but couldn't generate the order receipt automatically. Please contact support.</p>
-             <Button onClick={() => navigateTo('contact')}>Contact Support</Button>
-          </div>
-        )}
-      </div>
-    );
+  useEffect(() => {
+    const processOrder = async () => {
+      const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
+      const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
+      const queryParams = new URLSearchParams(window.location.search);
+      const orderId = queryParams.get('order_id') || 'DEMO-' + Date.now();
+
+      if (storedCart.length === 0) {
+        setStatus('error');
+        return;
+      }
+
+      // 1) Verify with backend -> Cashfree
+      try {
+        const res = await fetch(`https://cosmatrix-server.onrender.com/api/cashfree/status/${orderId}`);
+        const data = await res.json();
+
+        // If not paid, don't send email, show error instead
+        if (!data || data.order_status !== 'PAID') {
+          console.warn("Order not PAID, status:", data?.order_status);
+          setStatus('error');
+          return;
+        }
+      } catch (e) {
+        console.error("Status check failed:", e);
+        setStatus('error');
+        return;
+      }
+
+      // 2) Build email content from local storage
+      const orderItemsHTML = storedCart
+        .map(
+          (item) =>
+            `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
+        )
+        .join("<br/><br/>");
+
+      const totalAmount = storedCart.reduce(
+        (sum, item) => sum + item.price * item.quantity,
+        0
+      );
+
+      const emailParams = {
+        customer_name: storedUser.name,
+        customer_email: storedUser.email || "Not Provided",
+        customer_phone: storedUser.phone,
+        shipping_address: storedUser.address,
+        order_items: orderItemsHTML,
+        total_amount: totalAmount.toLocaleString(),
+        payment_id: orderId,
+        order_id: orderId,
+      };
+
+      try {
+        if (!window.emailjs) {
+          const script = document.createElement("script");
+          script.src =
+            "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
+          script.async = true;
+          document.body.appendChild(script);
+          await new Promise((resolve) => (script.onload = resolve));
+        }
+
+        await window.emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          emailParams,
+          EMAILJS_PUBLIC_KEY
+        );
+
+        localStorage.removeItem("temp_cart");
+        localStorage.removeItem("temp_user");
+        setStatus("sent");
+        showToast("Order confirmed and email sent!", "success");
+      } catch (error) {
+        console.error("Email Failed:", error);
+        setStatus("error");
+        showToast("Payment successful but email failed.", "error");
+      }
+    };
+
+    processOrder();
+  }, []);
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
+      {status === "processing" && (
+        <div className="animate-pulse">
+          <h2 className="text-2xl font-serif mb-2">Verifying Payment.</h2>
+          <p className="text-gray-500">Please do not close this window.</p>
+        </div>
+      )}
+
+      {status === "sent" && (
+        <div className="animate-fade-in bg-white p-8 rounded-2xl shadow-xl border border-gray-100 max-w-md w-full">
+          <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <Check size={32} />
+          </div>
+          <h2 className="text-3xl font-serif mb-2">Order Confirmed!</h2>
+          <p className="text-gray-600 mb-6">
+            Thank you for shopping with COSMATRIX. Your order details have been
+            sent to our admin team.
+          </p>
+          <Button
+            onClick={() => {
+              window.history.replaceState(null, "", "/");
+              navigateTo("home");
+            }}
+            className="w-full"
+          >
+            Return to Home
+          </Button>
+          <div className="mt-4 text-xs text-gray-400">Powered by Zomaxa Agency</div>
+        </div>
+      )}
+
+      {status === "error" && (
+        <div className="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full">
+          <h2 className="text-2xl font-serif text-red-500 mb-2">
+            Something went wrong
+          </h2>
+          <p className="text-gray-500 mb-6">
+            We could not verify your payment successfully. If amount is debited,
+            please contact support with your payment reference.
+          </p>
+          <Button onClick={() => navigateTo("contact")}>Contact Support</Button>
+        </div>
+      )}
+    </div>
+  );
 };
+
 
 const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, checkout }) => {
     const [formData, setFormData] = useState({
@@ -3274,43 +3319,43 @@ export default function CosmatrixApp() {
     setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item));
   };
 
-  const handlePayment = async (customerDetails) => {
-    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+ const handlePayment = async (customerDetails) => {
+  const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-    localStorage.setItem('temp_cart', JSON.stringify(cart));
-    localStorage.setItem('temp_user', JSON.stringify(customerDetails));
+  localStorage.setItem('temp_cart', JSON.stringify(cart));
+  localStorage.setItem('temp_user', JSON.stringify(customerDetails));
 
-    try {
-        const response = await fetch('https://cosmatrix-server.onrender.com/api/phonepe/pay', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                name: customerDetails.name,
-                mobile: customerDetails.phone,
-                amount: total, 
-                MUID: "MUID" + Date.now(), 
-                transactionId: "T" + Date.now(), 
-            }),
-        });
-        const data = await response.json();
-        
-        if (data.url) {
-            window.location.href = data.url; 
-        } else {
-            showToast('Payment initiation failed', 'error');
-        }
-    } catch (error) {
-        console.error("Payment Error:", error);
-        const confirmSim = window.confirm("Backend unreachable. Simulate Success?");
-        if(confirmSim) {
-             // Use navigateTo instead of direct pushState manually here to keep consistent
-             navigateTo('success');
-             // But for success page specifically we might want to replace history
-             // window.history.pushState({}, "", "/payment/success?tid=SIMULATED-123");
-             setCartOpen(false);
-        }
-    }
-  };
+  try {
+      const orderId = "ORD_" + Date.now(); // unique per checkout
+
+      const response = await fetch('https://cosmatrix-server.onrender.com/api/cashfree/pay', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+              name: customerDetails.name,
+              mobile: customerDetails.phone,
+              amount: total,
+              orderId: orderId
+          }),
+      });
+
+      const data = await response.json();
+
+      if (data.success && data.payment_url) {
+          window.location.href = data.payment_url; // Go to Cashfree hosted checkout
+      } else {
+          showToast('Payment initiation failed', 'error');
+      }
+  } catch (error) {
+      console.error("Payment Error:", error);
+      const confirmSim = window.confirm("Backend unreachable. Simulate Success?");
+      if(confirmSim) {
+          navigateTo('success');
+          setCartOpen(false);
+      }
+  }
+};
+
 
   const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);
   return (

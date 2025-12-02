@@ -1307,67 +1307,89 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
   const [status, setStatus] = useState('processing'); 
 
- useEffect(() => {
-  const verifyPayment = async () => {
-    const cart = JSON.parse(localStorage.getItem("temp_cart") || "[]");
-    const user = JSON.parse(localStorage.getItem("temp_user") || "{}");
+  useEffect(() => {
+    const processOrder = async () => {
+      const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
+      const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
+      const queryParams = new URLSearchParams(window.location.search);
+      const orderId = queryParams.get('order_id') || 'DEMO-' + Date.now();
 
-    const orderId = new URLSearchParams(window.location.search).get("order_id");
-
-    if (!orderId || cart.length === 0) {
-      setStatus("error");
-      return;
-    }
-
-    const res = await fetch(`https://api.cosmatrix.in/api/cashfree/status/${orderId}`);
-    const data = await res.json();
-
-    if (data.order_status !== "PAID") {
-      setStatus("error");
-      return;
-    }
-
-    // EMAIL RECEIPT
-    const emailHTML = cart
-      .map(item => `• <b>${item.name}</b> — Qty: ${item.quantity} | ₹${item.price}`)
-      .join("<br/><br/>");
-
-    try {
-      if (!window.emailjs) {
-        await new Promise(resolve => {
-          const s = document.createElement("script");
-          s.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
-          s.onload = resolve;
-          document.body.appendChild(s);
-        });
+      if (storedCart.length === 0) {
+        setStatus('error');
+        return;
       }
 
-      await window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
-        customer_name: user.name,
-        customer_email: user.email,
-        customer_phone: user.phone,
-        shipping_address: user.address,
-        order_items: emailHTML,
-        total_amount: cart.reduce((s, i) => s + i.price * i.quantity, 0),
+      // 1) Verify with backend -> Cashfree
+      try {
+        const res = await fetch(`https://cosmatrix-server.onrender.com/api/cashfree/status/${orderId}`);
+        const data = await res.json();
+
+        // If not paid, don't send email, show error instead
+        if (!data || data.order_status !== 'PAID') {
+          console.warn("Order not PAID, status:", data?.order_status);
+          setStatus('error');
+          return;
+        }
+      } catch (e) {
+        console.error("Status check failed:", e);
+        setStatus('error');
+        return;
+      }
+
+      // 2) Build email content from local storage
+      const orderItemsHTML = storedCart
+        .map(
+          (item) =>
+            `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
+        )
+        .join("<br/><br/>");
+
+      const totalAmount = storedCart.reduce(
+        (sum, item) => sum + item.price * item.quantity,
+        0
+      );
+
+      const emailParams = {
+        customer_name: storedUser.name,
+        customer_email: storedUser.email || "Not Provided",
+        customer_phone: storedUser.phone,
+        shipping_address: storedUser.address,
+        order_items: orderItemsHTML,
+        total_amount: totalAmount.toLocaleString(),
         payment_id: orderId,
-        order_id: orderId
-      });
+        order_id: orderId,
+      };
 
-      localStorage.removeItem("temp_cart");
-      localStorage.removeItem("temp_user");
+      try {
+        if (!window.emailjs) {
+          const script = document.createElement("script");
+          script.src =
+            "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
+          script.async = true;
+          document.body.appendChild(script);
+          await new Promise((resolve) => (script.onload = resolve));
+        }
 
-      setStatus("sent");
-      showToast("Order confirmed!", "success");
+        await window.emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          emailParams,
+          EMAILJS_PUBLIC_KEY
+        );
 
-    } catch (e) {
-      console.log("Email error", e);
-      setStatus("error");
-    }
-  };
+        localStorage.removeItem("temp_cart");
+        localStorage.removeItem("temp_user");
+        setStatus("sent");
+        showToast("Order confirmed and email sent!", "success");
+      } catch (error) {
+        console.error("Email Failed:", error);
+        setStatus("error");
+        showToast("Payment successful but email failed.", "error");
+      }
+    };
 
-  verifyPayment();
-}, []);
-
+    processOrder();
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
@@ -2998,38 +3020,42 @@ const getRouteFromLocation = () => {
 };
 
 /* --- SEO CONFIG --- */
+// Consolidated and corrected SEO configuration helper
 const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
-  // Base defaults
-  let title = 'Cosmatrix International | Aesthetic Injectables & Skin Whitening Distributor';
+  const siteBase = 'https://cosmatrix.in';
+  const defaultImage = `${siteBase}/image/cosmatrix-og.jpg`;
+
+  let title = 'Cosmatrix – Premium Skincare Products, Injectables & Wellness';
   let description =
-    'Cosmatrix International supplies authentic injectables, wellness drips, and advanced whitening skincare to clinics and professionals.';
-  let jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Cosmatrix International',
-    url: 'https://shaatrading.in',
-    logo: 'https://shaatrading.in/image/Cosmatrix.jpg',
-  };
+    'Cosmatrix offers high-quality skincare products, injectables, skin boosters, and aesthetic wellness solutions with safe and trusted formulations.';
+  let image = defaultImage;
+  let canonical = `${siteBase}/`;
   let keywords =
-    'Cosmatrix International, aesthetic injectables distributor, glutathione injections India, Aqua Skin, Glutax, Miracle White, Neuramis fillers, clinical skincare supplier';
-  let canonical = 'https://shaatrading.in/';
+    'Cosmatrix International, aesthetic injectables distributor, glutathione injections India, Aqua Skin, Glutax, Miracle White, clinical skincare supplier';
   let robots = 'index,follow';
+  let jsonLd = null;
+
+  const setCanonical = (path) => {
+    // ensure path starts with '/'
+    if (!path || path === '/') return `${siteBase}/`;
+    return `${siteBase}${path}`;
+  };
 
   switch (currentPage) {
     case 'home':
       title = 'Cosmatrix International | Glutathione, Fillers & Clinical Skincare Distributor';
       description =
         'Discover authentic glutathione injections, Aqua Skin, Miracle White, Neuramis fillers and clinical-grade whitening skincare supplied to clinics and distributors across India.';
-      canonical = 'https://shaatrading.in/';
+      canonical = setCanonical('/');
       keywords =
-        'Cosmatrix International, glutathione distributor, whitening injections, Aqua Skin, Glutax, Miracle White, Neuramis fillers, clinic distributor India';
+        'Cosmatrix International, glutathione distributor, whitening injections, Aqua Skin, Glutax, Miracle White, clinical skincare distributor India';
       jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
         name: 'Cosmatrix International',
-        url: 'https://shaatrading.in',
-        image: 'https://shaatrading.in/image/Cosmatrix.jpg',
-        logo: 'https://shaatrading.in/image/Cosmatrix.jpg',
+        url: siteBase,
+        image: `${siteBase}/image/Cosmatrix.jpg`,
+        logo: `${siteBase}/image/Cosmatrix.jpg`,
         address: {
           '@type': 'PostalAddress',
           addressCountry: 'IN',
@@ -3041,7 +3067,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Shop | Glutathione Injections, Miracle White, Aqua Skin & More – Cosmatrix';
       description =
         'Browse our curated range of glutathione injections, IV drips, Miracle White, Aqua Skin, whitening creams and clinical whitening solutions for professional use.';
-      canonical = `https://shaatrading.in${buildPathForPage('shop')}`;
+      canonical = setCanonical(buildPathForPage('shop'));
       keywords =
         'buy glutathione injections India, Aqua Skin supplier, Miracle White injection, clinical whitening products, Cosmatrix shop, clinic supply injectables';
       break;
@@ -3050,7 +3076,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'About Cosmatrix International | Professional Aesthetic Product Distributor';
       description =
         'Cosmatrix International partners with clinics and resellers to supply verified glutathione injectables, IV drips and premium whitening skincare with a clinical focus.';
-      canonical = `https://shaatrading.in${buildPathForPage('about')}`;
+      canonical = setCanonical(buildPathForPage('about'));
       keywords =
         'about Cosmatrix International, aesthetic distributor India, glutathione wholesaler, clinic-focused skincare supplier';
       break;
@@ -3058,8 +3084,8 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
     case 'contact':
       title = 'Contact Cosmatrix International | Wholesale & Clinic Partnerships';
       description =
-        'Reach out to Cosmatrix International for wholesale price lists, clinic onboarding and verified sourcing of glutathione injections, Korean fillers and whitening products.';
-      canonical = `https://shaatrading.in${buildPathForPage('contact')}`;
+        'Reach out to Cosmatrix International for wholesale price lists, clinic onboarding and verified sourcing of glutathione injections, fillers and whitening products.';
+      canonical = setCanonical(buildPathForPage('contact'));
       keywords =
         'contact Cosmatrix, clinic partnership, glutathione wholesale enquiry, whitening injection distributor contact';
       break;
@@ -3068,7 +3094,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Clinical Journal | IV Therapy, Glutathione & PDRN Insights – Cosmatrix';
       description =
         'Read evidence-driven insights on glutathione science, IV infusion therapy, PDRN and clinical whitening protocols and safety standards for aesthetic practitioners.';
-      canonical = `https://shaatrading.in${buildPathForPage('blog')}`;
+      canonical = setCanonical(buildPathForPage('blog'));
       keywords =
         'glutathione science, IV therapy insights, PDRN information, clinical whitening guidance, Cosmatrix clinical journal';
       break;
@@ -3076,23 +3102,24 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
     case 'blog-post':
       if (selectedPost) {
         title = `${selectedPost.title} | Clinical Journal – Cosmatrix International`;
-        description = selectedPost.excerpt || description;
-        canonical = `https://shaatrading.in${buildPathForPage('blog-post', { post: selectedPost })}`;
+        description = selectedPost.excerpt || selectedPost.summary || description;
+        image = selectedPost.image || defaultImage;
+        canonical = setCanonical(buildPathForPage('blog-post', { post: selectedPost }));
         keywords = `${selectedPost.title}, ${selectedPost.category}, glutathione articles, IV therapy education, Cosmatrix blog`;
         jsonLd = {
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: selectedPost.title,
-          description: selectedPost.excerpt,
+          description: selectedPost.excerpt || selectedPost.summary || '',
           author: selectedPost.author || 'Cosmatrix Clinical Team',
           datePublished: selectedPost.date,
-          image: `https://shaatrading.in${selectedPost.image}`,
+          image: setCanonical(selectedPost.image || '/image/Cosmatrix.jpg'),
           publisher: {
             '@type': 'Organization',
             name: 'Cosmatrix International',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://shaatrading.in/image/Cosmatrix.jpg',
+              url: `${siteBase}/image/Cosmatrix.jpg`,
             },
           },
         };
@@ -3104,8 +3131,9 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
         const shortDesc = selectedProduct.description || description;
         title = `${selectedProduct.name} | ${selectedProduct.brand} Supplier in India – Cosmatrix`;
         description = shortDesc.length > 155 ? shortDesc.slice(0, 152) + '…' : shortDesc;
-        canonical = `https://shaatrading.in${buildPathForPage('product', { product: selectedProduct })}`;
-        const baseKeywords = [
+        image = selectedProduct.image || defaultImage;
+        canonical = setCanonical(buildPathForPage('product', { product: selectedProduct }));
+        keywords = [
           selectedProduct.name,
           selectedProduct.brand,
           selectedProduct.category,
@@ -3113,13 +3141,14 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
           'whitening injectable',
           'clinic supply',
           'Cosmatrix International',
-        ].filter(Boolean);
-        keywords = baseKeywords.join(', ');
+        ]
+          .filter(Boolean)
+          .join(', ');
         jsonLd = {
           '@context': 'https://schema.org',
           '@type': 'Product',
           name: selectedProduct.name,
-          image: [`https://shaatrading.in${selectedProduct.image}`],
+          image: [setCanonical(selectedProduct.image || '/image/Cosmatrix.jpg')],
           description,
           brand: {
             '@type': 'Brand',
@@ -3141,7 +3170,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Terms & Conditions | Cosmatrix International';
       description =
         'Review the professional use terms, responsibilities and purchasing eligibility for Cosmatrix International clients, clinics and resellers.';
-      canonical = `https://shaatrading.in${buildPathForPage('terms')}`;
+      canonical = setCanonical(buildPathForPage('terms'));
       keywords =
         'Cosmatrix terms and conditions, clinic supply terms, whitening injection terms, professional use policies';
       robots = 'noindex,follow';
@@ -3151,7 +3180,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Privacy Policy | Cosmatrix International';
       description =
         'Understand how Cosmatrix International handles, stores and protects your clinic and patient-related data.';
-      canonical = `https://shaatrading.in${buildPathForPage('privacy')}`;
+      canonical = setCanonical(buildPathForPage('privacy'));
       keywords =
         'Cosmatrix privacy policy, data protection, clinic data handling, patient data';
       robots = 'noindex,follow';
@@ -3161,7 +3190,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Shipping Policy | Cosmatrix International';
       description =
         'Learn about domestic shipping timelines, handling, packaging and cold-chain procedures for clinical aesthetic products from Cosmatrix.';
-      canonical = `https://shaatrading.in${buildPathForPage('shipping')}`;
+      canonical = setCanonical(buildPathForPage('shipping'));
       keywords =
         'Cosmatrix shipping policy, delivery of injectables, cold-chain handling, clinic supply logistics';
       robots = 'noindex,follow';
@@ -3171,7 +3200,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Return Policy | Cosmatrix International';
       description =
         'View our guidelines for damaged, incorrect or compromised products and return eligibility for clinics and resellers.';
-      canonical = `https://shaatrading.in${buildPathForPage('return-policy')}`;
+      canonical = setCanonical(buildPathForPage('return-policy'));
       keywords =
         'Cosmatrix return policy, damaged injectable return, clinic returns, whitening product returns';
       robots = 'noindex,follow';
@@ -3181,7 +3210,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Refund Policy | Cosmatrix International';
       description =
         'Read our refund conditions for cancelled orders, shipping issues and rare product disputes.';
-      canonical = `https://shaatrading.in${buildPathForPage('refund-policy')}`;
+      canonical = setCanonical(buildPathForPage('refund-policy'));
       keywords =
         'Cosmatrix refund policy, order refund, payment dispute resolution';
       robots = 'noindex,follow';
@@ -3191,7 +3220,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       title = 'Order Received | Cosmatrix International';
       description =
         'Your order details have been received by the Cosmatrix fulfillment team. You will be contacted shortly on WhatsApp for confirmation.';
-      canonical = `https://shaatrading.in${buildPathForPage('success')}`;
+      canonical = setCanonical(buildPathForPage('success'));
       keywords =
         'Cosmatrix order confirmation, payment success, clinic order placed';
       robots = 'noindex,follow';
@@ -3201,7 +3230,7 @@ const getSeoConfig = (currentPage, selectedProduct, selectedPost) => {
       break;
   }
 
-  return { title, description, jsonLd, keywords, canonical, robots };
+  return { title, description, image, jsonLd, keywords, canonical, robots };
 };
 
 export default function CosmatrixApp() {
@@ -3297,8 +3326,8 @@ export default function CosmatrixApp() {
     setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item));
   };
 
-const handlePayment = async (customerDetails) => {
-  const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+ const handlePayment = async (customerDetails) => {
+  const total = cart.reduce((t, item) => t + item.price * item.quantity, 0);
 
   localStorage.setItem("temp_cart", JSON.stringify(cart));
   localStorage.setItem("temp_user", JSON.stringify(customerDetails));
@@ -3306,34 +3335,35 @@ const handlePayment = async (customerDetails) => {
   try {
     const orderId = "ORD_" + Date.now();
 
-    const response = await fetch("https://api.cosmatrix.in/api/cashfree/pay", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: customerDetails.name,
-        mobile: customerDetails.phone,
-        amount: total,
-        orderId
-      })
-    });
+    const response = await fetch(
+      "https://cosmatrix-server.onrender.com/api/cashfree/pay",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: customerDetails.name,
+          mobile: customerDetails.phone,
+          amount: total,
+          orderId,
+        }),
+      }
+    );
 
     const data = await response.json();
 
     if (data.success && data.payment_url) {
       window.location.href = data.payment_url;
     } else {
-      showToast("Payment failed", "error");
+      showToast("Payment failed. Try again.", "error");
     }
-
   } catch (err) {
-    console.error(err);
-    if (window.confirm("Backend unreachable. Simulate success?")) {
+    console.error("Payment error:", err);
+    if (window.confirm("Backend unreachable. Simulate successful payment?")) {
       navigateTo("success");
       setCartOpen(false);
     }
   }
 };
-
 
 
   const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);

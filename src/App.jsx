@@ -441,41 +441,7 @@ const PRODUCTS = [
     sku: "NC24-SAKURA-22",
     volume: "10 Sessions"
   },
-  {
-    id: 9,
-    name: "NC24 Japan Sakura Special edition 22,000,000mg Glutathione",
-    category: "Bio-rejuvenation",
-    brand: "Nc24",
-    price: 10800,
-    image: "/image/nc24-22m.jpg",
-    description: "Japanese PDRN DNA Technology | Sakura Edition",
-    details: `
-      <strong>NC24 Sakura Special — Japanese Bio-Rejuvenation Technology</strong><br/><br/>
-      This Japanese formulation combines polydeoxyribonucleotide (PDRN) technology with traditional botanicals. PDRN, derived from salmon DNA, contains nucleotides that may support tissue repair and regeneration[citation:10].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>PDRN (Polydeoxyribonucleotide) – 5.625 mg/mL (salmon DNA-derived)</li>
-        <li>Prunus Serrulata (Sakura) Flower Extract – 1,000 mg</li>
-        <li>Reduced L-Glutathione – 1,000 mg</li>
-        <li>Hydrolyzed Collagen – 2,000 mg</li>
-        <li>Adenosine – 20 mg (supports cellular energy)</li>
-      </ul>
-      <br/>
-      <strong>PDRN Technology:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>PDRN may activate adenosine A2A receptors, supporting tissue repair</li>
-        <li>Contains nucleotides that could support cellular regeneration</li>
-        <li>Sakura extract provides antioxidant polyphenols</li>
-        <li>Combination designed for both brightening and skin quality improvement</li>
-      </ul>
-      <br/>
-      This Japanese approach emphasizes holistic skin improvement with attention to both scientific innovation and traditional botanical wisdom.<br/>
-      <em class="text-xs text-gray-400">Medical Note: PDRN is generally well-tolerated but individuals with fish allergies should exercise caution. Clinical studies on PDRN show benefits for wound healing and tissue regeneration.</em>
-    `,
-    benefits: ["PDRN Technology", "Japanese Innovation", "Tissue Regeneration Support", "Botanical Antioxidants"],
-    sku: "NC24-SAKURA-22",
-    volume: "10 Sessions"
-  },
+  
   {
     id: 10,
     name: "Glutax 2000gs Recombined White Injections",
@@ -513,10 +479,10 @@ const PRODUCTS = [
   },
   {
     id: 11,
-    name: "Glutax 5gs Micro Advance Glutathione 5000mg",
+    name: "Glutax 5gs Micro Advance Glutathione 12 sessions",
     category: "Injection",
     brand: "Glutax",
-    price: 8000,
+    price: 14300,
     image: "/image/glutax-5gs-adv.jpg",
     description: "Cellular Ultra Skin Whitening + Anti Aging",
     details: `
@@ -548,10 +514,10 @@ const PRODUCTS = [
   },
   {
     id: 12,
-    name: "Glutax 5gs Micro Advance Glutathione 5000mg 12 Sessions",
+    name: "Glutax 5gs Micro Glutathione 5000mg 10 sessions",
     category: "Injection",
     brand: "Glutax",
-    price: 14300,
+    price: 10200,
     image: "/image/glutax-5gs.jpg",
     description: "Classic Cellular Ultra Whitening",
     details: `
@@ -1479,14 +1445,15 @@ const Toast = ({ message, type, onClose }) => {
 };
 
 const Button = ({ children, variant = "primary", className = "", onClick, ...props }) => {
-  const baseStyles = "inline-flex items-center justify-center px-8 py-3 transition-all duration-300 font-medium tracking-wide text-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed rounded-md";
-  const variants = {
-    primary: "bg-black text-white hover:bg-gray-800 active:scale-95 shadow-sm hover:shadow-lg",
-    secondary: "bg-[#E8A0BF] text-black hover:bg-[#FADADD] active:scale-95 shadow-sm hover:shadow-md",
-    outline: "bg-transparent border border-white text-white hover:bg-white hover:text-black active:scale-95",
-    ghost: "text-black hover:bg-gray-100"
-  };
-  return <button className={`${baseStyles} ${variants[variant]} ${className}`} onClick={onClick} {...props}>{children}</button>;
+  const baseStyles = "inline-flex items-center justify-center px-6 py-3 transition-all duration-300 font-medium tracking-wide text-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed rounded-lg";
+  const variants = {
+    primary: "bg-black text-white hover:bg-gray-800 active:scale-95 shadow-sm hover:shadow-lg",
+    secondary: "bg-transparent border border-white text-white hover:bg-white hover:text-black active:scale-95",
+    outline: "bg-transparent border border-white text-white hover:bg-white hover:text-black active:scale-95",
+    ghost: "bg-transparent text-white hover:text-white/80 hover:bg-white/10",
+    transparent: "bg-transparent text-white hover:opacity-80 border-0"
+  };
+  return <button className={`${baseStyles} ${variants[variant]} ${className}`} onClick={onClick} {...props}>{children}</button>;
 };
 
 const SectionHeader = ({ title, subtitle, center = true }) => (
@@ -1498,172 +1465,183 @@ const SectionHeader = ({ title, subtitle, center = true }) => (
 );
 
 const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobileMenuOpen, setMobileMenuOpen, setShopFilter, setSearchQuery }) => {
-    const navLinks = [
-        { name: 'Home', id: 'home' },
-        { name: 'About', id: 'about' },
-        { name: 'Shop', id: 'shop' },
-        { name: 'Blog', id: 'blog' }, 
-        { name: 'Contact', id: 'contact' },
-    ];
+    const navLinks = [
+        { name: 'Home', id: 'home' },
+        { name: 'About', id: 'about' },
+        { name: 'Shop', id: 'shop' },
+        { name: 'Blog', id: 'blog' }, 
+        { name: 'Contact', id: 'contact' },
+    ];
 
-    // State for mobile menu accordions
-    const [expandedMenu, setExpandedMenu] = useState(''); // 'categories' | 'brands' | ''
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const searchInputRef = useRef(null);
+    // State for mobile menu accordions
+    const [expandedMenu, setExpandedMenu] = useState(''); // 'categories' | 'brands' | ''
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const searchInputRef = useRef(null);
 
-    const toggleAccordion = (name) => {
-        setExpandedMenu(expandedMenu === name ? '' : name);
-    };
+    const toggleAccordion = (name) => {
+        setExpandedMenu(expandedMenu === name ? '' : name);
+    };
 
-    useEffect(() => {
-        if (isSearchOpen && searchInputRef.current) {
-            searchInputRef.current.focus();
-        }
-    }, [isSearchOpen]);
+    useEffect(() => {
+        if (isSearchOpen && searchInputRef.current) {
+            searchInputRef.current.focus();
+        }
+    }, [isSearchOpen]);
 
-    const handleSearchChange = (e) => {
-        setSearchQuery(e.target.value);
-        if (currentPage !== 'shop') {
-            setCurrentPage('shop');
-        }
-    };
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+        if (currentPage !== 'shop') {
+            setCurrentPage('shop');
+        }
+    };
 
-    return (
-        <>
-            <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
-             <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between relative">
-                
-                {/* SEARCH OVERLAY */}
-                {isSearchOpen ? (
-                    <div className="absolute inset-0 bg-white z-20 flex items-center px-4 animate-fade-in">
-                        <Search size={20} className="text-gray-400 mr-3 shrink-0" />
-                        <input 
-                            ref={searchInputRef}
-                            type="text" 
-                            placeholder="Search for products..." 
-                            className="flex-1 h-full outline-none text-base bg-transparent placeholder:text-gray-300"
-                            onChange={handleSearchChange}
-                        />
-                        <button onClick={() => setIsSearchOpen(false)} className="p-2 ml-2 text-gray-500 hover:text-black">
-                            <X size={20} />
-                        </button>
-                    </div>
-                ) : (
-                    <>
-                        {/* Mobile: Search Icon Left */}
-                        <div className="md:hidden flex items-center justify-start flex-1">
-                            <button onClick={() => setIsSearchOpen(true)} className="text-gray-800 hover:text-[#E8A0BF]">
-                                <Search size={22} />
-                            </button>
-                        </div>
+    return (
+        <>
+            <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300">
+             <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between relative">
+                
+                {/* SEARCH OVERLAY */}
+                {isSearchOpen ? (
+                    <div className="absolute inset-0 bg-white z-20 flex items-center px-4 animate-fade-in">
+                        <Search size={20} className="text-gray-400 mr-3 shrink-0" />
+                        <input 
+                            ref={searchInputRef}
+                            type="text" 
+                            placeholder="Search for products..." 
+                            className="flex-1 h-full outline-none text-base bg-transparent placeholder:text-gray-300"
+                            onChange={handleSearchChange}
+                        />
+                        <button onClick={() => setIsSearchOpen(false)} className="p-2 ml-2 text-gray-500 hover:text-black">
+                            <X size={20} />
+                        </button>
+                    </div>
+                ) : (
+                    <>
+                        {/* Mobile: Search Icon Left */}
+                        <div className="md:hidden flex items-center justify-start flex-1">
+                            <button onClick={() => setIsSearchOpen(true)} className="text-gray-800 hover:text-[#E8A0BF]">
+                                <Search size={22} />
+                            </button>
+                        </div>
 
-                        {/* Logo: Centered on Mobile, Left on Desktop */}
-                        <div 
-                            className={`cursor-pointer flex items-center gap-2 ${'absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0'}`} 
-                            onClick={() => setCurrentPage('home')}
-                        >
-                            <img loading="lazy" src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
-                        </div>
+                        {/* Logo: Centered on Mobile, Left on Desktop */}
+                        <div 
+                            className={`cursor-pointer flex items-center gap-2 ${'absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0'}`} 
+                            onClick={() => setCurrentPage('home')}
+                        >
+                            <img loading="lazy" src="/image/Cosmatrix.jpg" alt="COSMATRIX" className="w-32 md:w-40 object-contain" />
+                        </div>
 
-                        {/* Desktop Nav Links */}
-                        <nav className="hidden md:flex items-center gap-8">
-                            {navLinks.map(link => (
-                            <button key={link.id} onClick={() => setCurrentPage(link.id)} className={`text-sm font-medium tracking-wide transition-colors duration-300 ${currentPage === link.id ? 'text-[#E8A0BF]' : 'text-gray-800 hover:text-[#E8A0BF]'}`}>
-                                {link.name}
-                            </button>
-                            ))}
-                        </nav>
+                        {/* Desktop Nav Links - UPDATED: REMOVED ALL BACKGROUNDS */}
+                        <nav className="hidden md:flex items-center gap-8">
+                            {navLinks.map(link => (
+                            <button 
+                                key={link.id} 
+                                onClick={() => setCurrentPage(link.id)} 
+                                className={`
+                                    text-sm font-medium tracking-wide 
+                                    transition-colors duration-300 
+                                    px-1 py-1
+                                    ${currentPage === link.id 
+                                        ? 'text-black font-semibold' 
+                                        : 'text-gray-800 hover:text-black'
+                                    }
+                                `}
+                            >
+                                {link.name}
+                            </button>
+                            ))}
+                        </nav>
 
-                        {/* Right Icons: Cart & Menu */}
-                        <div className="flex items-center gap-4 md:gap-6 flex-1 justify-end md:flex-initial">
-                            <button onClick={() => setIsSearchOpen(true)} className="hidden md:block text-gray-800 hover:text-[#E8A0BF]"><Search size={22} /></button>
-                            <button className="relative p-2 text-gray-800 hover:text-[#E8A0BF]" onClick={toggleCart}>
-                                <ShoppingBag size={22} />
-                                {cartCount > 0 && <span className="absolute -top-1 -right-1 bg-black text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">{cartCount}</span>}
-                            </button>
-                            <button className="md:hidden p-2 text-gray-800" onClick={() => setMobileMenuOpen(true)}>
-                                <Menu size={24} />
-                            </button>
-                        </div>
-                    </>
-                )}
-             </div>
-            </header>
-            
-            <div className={`fixed inset-0 z-[60] flex ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
-                <div className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => setMobileMenuOpen(false)} />
-                <div className={`relative bg-white w-[85%] max-w-xs h-full shadow-2xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-                    <div className="flex flex-col h-full">
-                        <div className="p-6 flex justify-between items-center border-b border-gray-100">
-                            <span className="text-xl font-serif tracking-wide">MENU</span>
-                            <button onClick={() => setMobileMenuOpen(false)} className="text-gray-500 hover:text-black"><X size={24} /></button>
-                        </div>
-                        <div className="flex-1 overflow-y-auto py-4">
-                            <div className="flex flex-col">
-                                <button onClick={() => { setShopFilter('All'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50 flex justify-between items-center">Shop All <ChevronRight size={16} className="text-gray-400"/></button>
-                                
-                                {/* Categories Dropdown */}
-                                <div className="border-b border-gray-50">
-                                    <button 
-                                        onClick={() => toggleAccordion('categories')} 
-                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 flex justify-between items-center"
-                                    >
-                                        Categories 
-                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'categories' ? 'rotate-180' : ''}`}/>
-                                    </button>
-                                    
-                                    <div className={`overflow-hidden transition-all duration-300 bg-gray-50/50 ${expandedMenu === 'categories' ? 'max-h-96' : 'max-h-0'}`}>
-                                        {CATEGORIES.map(cat => (
-                                            <button 
-                                                key={cat.id} 
-                                                onClick={() => { setShopFilter(cat.name); setCurrentPage('shop'); setMobileMenuOpen(false); }} 
-                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-[#E8A0BF] border-l-2 border-transparent hover:border-[#E8A0BF] transition-colors"
-                                            >
-                                                {cat.name}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
+                        {/* Right Icons: Cart & Menu */}
+                        <div className="flex items-center gap-4 md:gap-6 flex-1 justify-end md:flex-initial">
+                            <button onClick={() => setIsSearchOpen(true)} className="hidden md:block text-gray-800 hover:text-black"><Search size={22} /></button>
+                            <button className="relative p-2 text-gray-800 hover:text-black" onClick={toggleCart}>
+                                <ShoppingBag size={22} />
+                                {cartCount > 0 && <span className="absolute -top-1 -right-1 bg-black text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">{cartCount}</span>}
+                            </button>
+                            <button className="md:hidden p-2 text-gray-800" onClick={() => setMobileMenuOpen(true)}>
+                                <Menu size={24} />
+                            </button>
+                        </div>
+                    </>
+                )}
+             </div>
+            </header>
+            
+            <div className={`fixed inset-0 z-[60] flex ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+                <div className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => setMobileMenuOpen(false)} />
+                <div className={`relative bg-white w-[85%] max-w-xs h-full shadow-2xl transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+                    <div className="flex flex-col h-full">
+                        <div className="p-6 flex justify-between items-center border-b border-gray-100">
+                            <span className="text-xl font-serif tracking-wide">MENU</span>
+                            <button onClick={() => setMobileMenuOpen(false)} className="text-gray-500 hover:text-black"><X size={24} /></button>
+                        </div>
+                        <div className="flex-1 overflow-y-auto py-4">
+                            <div className="flex flex-col">
+                                {/* Shop All button - UPDATED: NO BACKGROUND */}
+                                <button onClick={() => { setShopFilter('All'); setCurrentPage('shop'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium border-b border-gray-50 hover:text-black flex justify-between items-center">Shop All <ChevronRight size={16} className="text-gray-400"/></button>
+                                
+                                {/* Categories Dropdown - UPDATED: NO BACKGROUND */}
+                                <div className="border-b border-gray-50">
+                                    <button 
+                                        onClick={() => toggleAccordion('categories')} 
+                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:text-black flex justify-between items-center"
+                                    >
+                                        Categories 
+                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'categories' ? 'rotate-180' : ''}`}/>
+                                    </button>
+                                    
+                                    <div className={`overflow-hidden transition-all duration-300 ${expandedMenu === 'categories' ? 'max-h-96' : 'max-h-0'}`}>
+                                        {CATEGORIES.map(cat => (
+                                            <button 
+                                                key={cat.id} 
+                                                onClick={() => { setShopFilter(cat.name); setCurrentPage('shop'); setMobileMenuOpen(false); }} 
+                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-black border-l-2 border-transparent hover:border-gray-300 transition-colors"
+                                            >
+                                                {cat.name}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
 
-                                {/* Brands Dropdown */}
-                                <div className="border-b border-gray-50">
-                                    <button 
-                                        onClick={() => toggleAccordion('brands')} 
-                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 flex justify-between items-center"
-                                    >
-                                        Brands 
-                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'brands' ? 'rotate-180' : ''}`}/>
-                                    </button>
-                                    
-                                    <div className={`overflow-hidden transition-all duration-300 bg-gray-50/50 ${expandedMenu === 'brands' ? 'max-h-64 overflow-y-auto' : 'max-h-0'}`}>
-                                        {BRANDS_LIST.map(brand => (
-                                            <button 
-                                                key={brand} 
-                                                onClick={() => { 
-                                                    // For simple filtering we just go to shop, ideally you'd pass brand filter too
-                                                    // Assuming setShopFilter handles categories, you might need a brand filter context
-                                                    // For now, redirect to shop
-                                                    setCurrentPage('shop'); 
-                                                    setMobileMenuOpen(false); 
-                                                }} 
-                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-[#E8A0BF] border-l-2 border-transparent hover:border-[#E8A0BF] transition-colors"
-                                            >
-                                                {brand}
-                                            </button>
-                                        ))}
-                                    </div>
-                                </div>
+                                {/* Brands Dropdown - UPDATED: NO BACKGROUND */}
+                                <div className="border-b border-gray-50">
+                                    <button 
+                                        onClick={() => toggleAccordion('brands')} 
+                                        className="w-full px-6 py-4 text-left text-gray-800 font-medium hover:text-black flex justify-between items-center"
+                                    >
+                                        Brands 
+                                        <ChevronDown size={16} className={`text-gray-400 transition-transform duration-300 ${expandedMenu === 'brands' ? 'rotate-180' : ''}`}/>
+                                    </button>
+                                    
+                                    <div className={`overflow-hidden transition-all duration-300 ${expandedMenu === 'brands' ? 'max-h-64 overflow-y-auto' : 'max-h-0'}`}>
+                                        {BRANDS_LIST.map(brand => (
+                                            <button 
+                                                key={brand} 
+                                                onClick={() => { 
+                                                    setCurrentPage('shop'); 
+                                                    setMobileMenuOpen(false); 
+                                                }} 
+                                                className="w-full px-10 py-3 text-left text-sm text-gray-600 hover:text-black border-l-2 border-transparent hover:border-gray-300 transition-colors"
+                                            >
+                                                {brand}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
 
-                                <button onClick={() => { setCurrentPage('blog'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">BLOG</button>
-                                <button onClick={() => { setCurrentPage('about'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">ABOUT US</button>
-                                <button onClick={() => { setCurrentPage('contact'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium hover:bg-gray-50 border-b border-gray-50">CONTACT</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
+                                {/* Main Navigation Links - UPDATED: NO BACKGROUND */}
+                                <button onClick={() => { setCurrentPage('blog'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium border-b border-gray-50 hover:text-black">BLOG</button>
+                                <button onClick={() => { setCurrentPage('about'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium border-b border-gray-50 hover:text-black">ABOUT US</button>
+                                <button onClick={() => { setCurrentPage('contact'); setMobileMenuOpen(false); }} className="px-6 py-4 text-left text-gray-800 font-medium border-b border-gray-50 hover:text-black">CONTACT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
 };
 
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
@@ -2185,7 +2163,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
             {[
                 { name: 'Whitening Injections', img: '/image/Glutax-50000000GS.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
                 { name: 'Dermal Fillers', img: '/image/IMG_1838.jpg', desc: 'HA & PDRN Boosters', filter: 'Filler' },
-                { name: 'Oral Supplements', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
+                { name: 'Whitening tablets/capsules', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
             ].map((cat, idx) => (
                 <div 
                     key={idx}

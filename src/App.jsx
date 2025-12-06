@@ -2024,7 +2024,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 60000);
     return () => clearTimeout(timer);
   }, [slides.length]);
 
@@ -2162,7 +2162,7 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
                 { name: 'Whitening Injections', img: '/image/Glutax-50000000GS.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
-                { name: 'Dermal Fillers', img: '/image/IMG_1838.jpg', desc: 'HA & PDRN Boosters', filter: 'Filler' },
+                { name: 'Whitening Creams', img: '/image/Picsart_25-11-27_19-48-33-126.jpg', desc: 'Topical Formulations', filter: 'Cream' },
                 { name: 'Whitening tablets/capsules', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
             ].map((cat, idx) => (
                 <div 

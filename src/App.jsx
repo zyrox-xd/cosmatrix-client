@@ -1583,21 +1583,21 @@ const PRODUCTS = [
   {    
     id: 42,
     name: "L-carnitine 20g",
-    category: "Supplement",
+    category: "injection",
     brand: "Ratiopharma",
-    price: 2500,
+    price: 5000,
     image: "/image/lcar20mg.jpg",
-    description: "L-Carnitine 20g Powder | Fat Metabolism Support",
+    description: "L-Carnitine 20g Injection | Fat Metabolism Support",
     details: `
-      <strong>Ratiopharma L-Carnitine 20g — Premium Fat Metabolism Supplement</strong><br/><br/>
-      This high-purity L-Carnitine powder is designed to support fat metabolism and energy production. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:43].<br/><br/>
+      <strong>Ratiopharma L-Carnitine 20g Injection — Fat Metabolism Enhancer</strong><br/><br/>
+      This injectable L-Carnitine formulation is designed to support fat metabolism and energy production. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:43].<br/><br/>
       <strong>Key Features:</strong><br/>
       <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Pure L-Carnitine Powder – 20 grams per container</li>
+        <li>L-Carnitine Injection – 20 grams per vial</li>
         <li>Supports Fatty Acid Oxidation</li>
         <li>Enhances Energy Production</li>
         <li>May Aid in Weight Management</li>
-        <li>Suitable for Athletes and Fitness Enthusiasts</li>
+        <li>Rapid Absorption via Injection</li>
       </ul>
       <br/>
       <strong>Mechanism of Action:</strong>
@@ -1607,31 +1607,31 @@ const PRODUCTS = [
         <li>May improve exercise performance and recovery</li>
       </ul>
       <br/>
-      Ideal for individuals looking to enhance their metabolic health and support weight management efforts.<br/>
-      <em class="text-xs text-gray-400">Note: Consult with a healthcare professional before starting any new supplement regimen, especially if you have underlying health conditions.</em>
+      Ideal for individuals seeking to enhance their metabolic health and support weight management efforts.<br/>
+      <em class="text-xs text-gray-400">Important: This product should be administered by a healthcare professional. Consult with a healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>
     `,
-    benefits: ["Fat Metabolism Support", "Energy Production", "Weight Management Aid", "High-Purity Supplement"],
+    benefits: ["Fat Metabolism Support", "Rapid Absorption", "Energy Production", "Weight Management Support"],
     sku: "RATIO-LCARNITINE-20G",
-    volume: "20g Powder"
+    volume: "20g Injection"
   },
   {    
     id: 43,
     name: "L-carnitine 35g",
-    category: "Supplement",
+    category: "injection",
     brand: "Ratiopharma",
-    price: 4000,
+    price: 8500,
     image: "/image/lcar35mg.jpg",
-    description: "L-Carnitine 35g Powder | Enhanced Fat Metabolism Support",
+    description: "L-Carnitine 35g Injection | Enhanced Fat Metabolism",
     details: `
-      <strong>Ratiopharma L-Carnitine 35g — Advanced Fat Metabolism Supplement</strong><br/><br/>
-      This larger quantity of high-purity L-Carnitine powder is designed for individuals seeking enhanced support for fat metabolism and energy production. L-Carnitine is essential for transporting fatty acids into the mitochondria for oxidation[citation:44].<br/><br/>
+      <strong>Ratiopharma L-Carnitine 35g Injection — Advanced Fat Metabolism Therapy</strong><br/><br/>
+      This injectable L-Carnitine formulation is designed for rapid absorption and enhanced fat metabolism. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:44].<br/><br/>
       <strong>Key Features:</strong><br/>
       <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Pure L-Carnitine Powder – 35 grams per container</li>
+        <li>High-Dose L-Carnitine Injection – 35 grams per vial</li>
         <li>Supports Fatty Acid Oxidation</li>
         <li>Enhances Energy Production</li>
         <li>May Aid in Weight Management</li>
-        <li>Suitable for Athletes and Fitness Enthusiasts</li>
+        <li>Rapid Absorption via Injection</li>
       </ul>
       <br/>
       <strong>Mechanism of Action:</strong>
@@ -1641,12 +1641,12 @@ const PRODUCTS = [
         <li>May improve exercise performance and recovery</li>
       </ul>
       <br/>
-      Ideal for individuals looking to enhance their metabolic health and support weight management efforts.<br/>
-      <em class="text-xs text-gray-400">Note: Consult with a healthcare professional before starting any new supplement regimen, especially if you have underlying health conditions.</em>
+      Ideal for individuals seeking a more immediate effect on metabolic health and weight management.<br/>
+      <em class="text-xs text-gray-400">Important: This product should be administered by a healthcare professional. Consult with a healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>
     `,
-    benefits: ["Enhanced Fat Metabolism Support", "Energy Production", "Weight Management Aid", "High-Purity Supplement"],
+    benefits: ["Enhanced Fat Metabolism", "Rapid Absorption", "Energy Production", "Weight Management Support"],
     sku: "RATIO-LCARNITINE-35G",
-    volume: "35g Powder"
+    volume: "35g Injection"
   },
   {
     id: 44,

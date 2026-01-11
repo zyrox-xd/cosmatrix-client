@@ -1408,6 +1408,314 @@ const PRODUCTS = [
     benefits: ["Gene-Targeted Approach", "High-Concentration Glutathione (600mg/vial)", "Cutting-Edge Technology", "Multiple Mechanism Action"],
     sku: "ISKIN-SLC24A5-PH9",
     volume: "10 Sessions (600mg/vial)"
+  },
+  {
+    id: 37,
+    name: "iskin Radianz Blue NAD+",
+    category: "Injection",
+    brand: "iSkin",
+    price: 13500,
+    image: "/image/IMG_1951.jpg",
+    description: "Future Skin-Tech | Advanced Cellular Renewal",
+    details: `
+      <strong>iSkin Future Skin-Tech — Next Generation Bio-Revitalization</strong><br/><br/>
+      This minimalist blue edition from iSkin focuses on the "Future Skin-Tech" platform, utilizing advanced delivery systems to ensure maximum absorption of active ingredients. It is designed to reset the skin's biological age through deep cellular hydration and repair[citation:38].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Concentrated L-Glutathione – High purity grade</li>
+        <li>DNA/RNA Complex – Supports cellular repair mechanisms</li>
+        <li>Epidermal Growth Factors (EGF) – Promotes tissue regeneration</li>
+        <li>Hyaluronic Acid Complex – Multi-depth hydration</li>
+        <li>Pro-Vitamin B5 & E – Barrier strengthening</li>
+      </ul>
+      <br/>
+      <strong>Tech-Driven Skincare:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Focuses on biomimetic ingredients that replicate natural skin components</li>
+        <li>Advanced stabilization technology prevents oxidation of active ingredients</li>
+        <li>Designed for "Glass Skin" clarity and texture refinement</li>
+      </ul>
+      <br/>
+      A premium choice for those seeking the reputable iSkin Swiss/German formulation standards in a concentrated maintenance therapy.<br/>
+      <em class="text-xs text-gray-400">Note: This product emphasizes skin quality and texture alongside brightening. Results are best seen with consistent weekly applications.</em>
+    `,
+    benefits: ["Future Skin-Tech", "Cellular Reset", "Deep Hydration", "Swiss Formulation"],
+    sku: "ISKIN-BLUE-TECH",
+    volume: "10 Sets"
+  },
+  {
+    id: 38,
+    name: "Aqua Skin Veniscy 138 TriNA Pico-Cell",
+    category: "Injection",
+    brand: "Aqua Skin/Veniscy",
+    price: 12500,
+    image: "/image/IMG_2001.jpg",
+    description: "TriNA Pico-Cell Pro Max Absorption | Matrixyl 9000",
+    details: `
+      <strong>Aqua Skin Veniscy 138 — High-Performance Peptide Matrix</strong><br/><br/>
+      The 138th iteration of the famous collaboration between Aqua Skin and Veniscy introduces "TriNA Pico-Cell" technology. This formulation is heavily fortified with peptides (Matrixyl 9000) and high-dose glutathione for aggressive anti-aging and whitening[citation:39].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Ultimate Glutathione – 18,000,000 mg (Nano-concentration)</li>
+        <li>Nonapeptide & Matrixyl 9000 – Potent anti-aging peptide complex</li>
+        <li>Vegetal Placenta – Plant-derived bio-stimulants</li>
+        <li>DMAE (Dimethylaminoethanol) – Skin firming agent</li>
+        <li>Pro Coenzyme Q10 – Mitochondrial energy support</li>
+      </ul>
+      <br/>
+      <strong>Mechanism of Action:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li><strong>Matrixyl 9000:</strong> Signals fibroblasts to produce significantly more collagen</li>
+        <li><strong>TriNA Pico-Cell:</strong> Ensures ingredients penetrate the cell wall efficiently</li>
+        <li><strong>DMAE & ALA:</strong> Provide an immediate lifting and tightening effect</li>
+      </ul>
+      <br/>
+      This is a "Pro Max" absorption formula, ideal for users who have hit a plateau with standard injections.<br/>
+      <em class="text-xs text-gray-400">Clinical Note: The high peptide content makes this excellent for mature skin showing signs of sagging or deep wrinkles.</em>
+    `,
+    benefits: ["Matrixyl 9000 Peptides", "TriNA Pico-Cell", "Lifting Effect", "Aggressive Whitening"],
+    sku: "AS-VENISCY-138",
+    volume: "10 Sets"
+  },
+  {
+    id: 39,
+    name: "Miracle White 80,000",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 11800,
+    image: "/image/IMG_1954.jpg",
+    description: "Signature Radiance | Integral Whitening Care",
+    details: `
+      <strong>Miracle White Signature — The All-in-One Perfector</strong><br/><br/>
+      Miracle White "Signature Radiance Integral Care" is designed as a complete solution covering the three pillars of skin aesthetics: Whitening, Moisturizing, and Antioxidant protection. It uses an "exclusive combination" to smooth skin tone to perfection[citation:40].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Nano-Concentrated Glutathione – Rapid absorption formula</li>
+        <li>Integral Whitening Complex – Kojic Acid + Ascorbic Acid synergy</li>
+        <li>Epidermal Repair Factors – Smooths rough texture</li>
+        <li>Thioctic Acid (ALA) – Universal antioxidant</li>
+        <li>Multi-Vitamin Cocktail – For overall skin health</li>
+      </ul>
+      <br/>
+      <strong>Integral Care Approach:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Treats hyperpigmentation at the source (melanocyte inhibition)</li>
+        <li>Provides deep dermal hydration to reflect light (Radiance effect)</li>
+        <li>Creates a protective antioxidant shield against pollution</li>
+      </ul>
+      <br/>
+      Suitable for those starting their journey or looking for a reliable, balanced whitening treatment without overly aggressive peeling agents.<br/>
+      <em class="text-xs text-gray-400">Note: "Integral Care" implies a holistic approach. It is formulated to be gentle enough for sensitive skin while delivering visible radiance.</em>
+    `,
+    benefits: ["Signature Formula", "Integral Care", "Sensitive Skin Friendly", "Radiance Booster"],
+    sku: "MW-SIGNATURE",
+    volume: "6 Sets"
+  },
+  {
+    id: 40,
+    name: "Biocell Revital Pro",
+    category: "Injection",
+    brand: "Biocell",
+    price: 10500,
+    image: "/image/IMG_1999.jpg",
+    description: "Renovation with Glutathione 150 Million mg",
+    details: `
+      <strong>Biocell Revital Pro — Genetic & Cellular Renovation</strong><br/><br/>
+      Manufactured in Switzerland, Biocell Revital Pro boasts a massive 150,000,000mg (150 Million) glutathione designation. It features a unique "Renovation" complex including Argan Stem Cells and Chromosome signaling factors to rejuvenate skin at the genetic level[citation:41].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione (Nano Extract) – 150,000,000 mg designation</li>
+        <li>Argan Stem Cell – Vitalizes dermal stem cells</li>
+        <li>Chromosome & Q10 – Genetic protection and energy</li>
+        <li>Citrus Aurantium Extract – Natural skin brightener</li>
+        <li>Collagen (Natural) – 100,000 mg</li>
+      </ul>
+      <br/>
+      <strong>Revital Technology:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li><strong>Argan Stem Cells:</strong> Known to improve skin density and reduce wrinkle depth</li>
+        <li><strong>Aminox Essential Amino Acids:</strong> Provides the building blocks for new protein synthesis</li>
+        <li><strong>High-Dose Collagen:</strong> Restores elasticity and bounce to the skin</li>
+      </ul>
+      <br/>
+      This formula is particularly strong on "renovation"—meaning it is excellent for repairing sun-damaged or aged skin.<br/>
+      <em class="text-xs text-gray-400">Important: The "150 Million" figure refers to the molecular scale/potency of the proprietary complex, not physical weight. Requires professional administration.</em>
+    `,
+    benefits: ["Argan Stem Cells", "Genetic Renovation", "High-Dose Designation", "Swiss Quality"],
+    sku: "BIO-REVITAL-PRO",
+    volume: "10 Sets"
+  },
+  {
+    id: 41,
+    name: "NC24 90,000 Glutathione Injection",
+    category: "Injection",
+    brand: "NC24",
+    price: 11000,
+    image: "/image/nc2490k.jpg",
+    description: "NC24™ Advanced Whitening | 90,000mg Glutathione",
+    details: `
+      <strong>NC24 90,000 — Advanced Whitening Formula</strong><br/><br/>
+      NC24 90,000 is a high-potency glutathione injection designed for effective skin lightening and antioxidant protection. The formula combines glutathione with complementary agents to enhance its efficacy[citation:42].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 900 mg per vial (90,000 mg designation)</li>
+        <li>Alpha Lipoic Acid – 100 mg (antioxidant synergy)</li>
+        <li>Vitamin C – 500 mg (enhances glutathione recycling)</li>
+        <li>Collagen Peptides – 200 mg (skin structure support)</li>
+        <li>Multi-Vitamin Blend</li>
+      </ul>
+      <br/>
+      <strong>Whitening Mechanism:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
+        <li>Alpha lipoic acid regenerates other antioxidants, enhancing overall effect</li>
+        <li>Vitamin C supports collagen synthesis and skin brightening</li>
+        <li>Collagen peptides improve skin texture and elasticity</li>
+      </ul>
+      <br/>
+      Ideal for individuals seeking a balanced approach to skin lightening with added antioxidant benefits.<br/>
+      <em class="text-xs text-gray-400">Note: The "90,000" designation refers to the potency level of the formulation, not the actual weight of glutathione. Consistent treatments yield best results.</em>
+    `,
+    benefits: ["Advanced Whitening", "Antioxidant Synergy", "Skin Structure Support", "Balanced Formula"],
+    sku: "NC24-90000",
+    volume: "10 Sets"
+  },
+  {    
+    id: 42,
+    name: "L-carnitine 20g",
+    category: "Supplement",
+    brand: "Ratiopharma",
+    price: 2500,
+    image: "/image/lcar20mg.jpg",
+    description: "L-Carnitine 20g Powder | Fat Metabolism Support",
+    details: `
+      <strong>Ratiopharma L-Carnitine 20g — Premium Fat Metabolism Supplement</strong><br/><br/>
+      This high-purity L-Carnitine powder is designed to support fat metabolism and energy production. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:43].<br/><br/>
+      <strong>Key Features:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pure L-Carnitine Powder – 20 grams per container</li>
+        <li>Supports Fatty Acid Oxidation</li>
+        <li>Enhances Energy Production</li>
+        <li>May Aid in Weight Management</li>
+        <li>Suitable for Athletes and Fitness Enthusiasts</li>
+      </ul>
+      <br/>
+      <strong>Mechanism of Action:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>L-Carnitine transports long-chain fatty acids into mitochondria</li>
+        <li>Facilitates the conversion of fat into usable energy (ATP)</li>
+        <li>May improve exercise performance and recovery</li>
+      </ul>
+      <br/>
+      Ideal for individuals looking to enhance their metabolic health and support weight management efforts.<br/>
+      <em class="text-xs text-gray-400">Note: Consult with a healthcare professional before starting any new supplement regimen, especially if you have underlying health conditions.</em>
+    `,
+    benefits: ["Fat Metabolism Support", "Energy Production", "Weight Management Aid", "High-Purity Supplement"],
+    sku: "RATIO-LCARNITINE-20G",
+    volume: "20g Powder"
+  },
+  {    
+    id: 43,
+    name: "L-carnitine 35g",
+    category: "Supplement",
+    brand: "Ratiopharma",
+    price: 4000,
+    image: "/image/lcar35mg.jpg",
+    description: "L-Carnitine 35g Powder | Enhanced Fat Metabolism Support",
+    details: `
+      <strong>Ratiopharma L-Carnitine 35g — Advanced Fat Metabolism Supplement</strong><br/><br/>
+      This larger quantity of high-purity L-Carnitine powder is designed for individuals seeking enhanced support for fat metabolism and energy production. L-Carnitine is essential for transporting fatty acids into the mitochondria for oxidation[citation:44].<br/><br/>
+      <strong>Key Features:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pure L-Carnitine Powder – 35 grams per container</li>
+        <li>Supports Fatty Acid Oxidation</li>
+        <li>Enhances Energy Production</li>
+        <li>May Aid in Weight Management</li>
+        <li>Suitable for Athletes and Fitness Enthusiasts</li>
+      </ul>
+      <br/>
+      <strong>Mechanism of Action:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>L-Carnitine transports long-chain fatty acids into mitochondria</li>
+        <li>Facilitates the conversion of fat into usable energy (ATP)</li>
+        <li>May improve exercise performance and recovery</li>
+      </ul>
+      <br/>
+      Ideal for individuals looking to enhance their metabolic health and support weight management efforts.<br/>
+      <em class="text-xs text-gray-400">Note: Consult with a healthcare professional before starting any new supplement regimen, especially if you have underlying health conditions.</em>
+    `,
+    benefits: ["Enhanced Fat Metabolism Support", "Energy Production", "Weight Management Aid", "High-Purity Supplement"],
+    sku: "RATIO-LCARNITINE-35G",
+    volume: "35g Powder"
+  },
+  {
+    id: 44,
+    name: "Relumins 3500mg Glutathione Capsule",
+    category: "Supplement",
+    brand: "Relumins",
+    price: 3000,
+    image: "/image/Relumins3500.jpg",
+    description: "Relumins 3500mg Glutathione Capsules | Skin Brightening & Antioxidant Support",
+    details: `
+      <strong>Relumins 3500mg Glutathione Capsules — Premium Skin Brightening Supplement</strong><br/><br/>
+      Relumins 3500mg Glutathione Capsules are designed to provide high-dose oral glutathione for skin brightening and antioxidant support. Glutathione is a powerful antioxidant that plays a key role in reducing melanin production and protecting cells from oxidative stress[citation:45].<br/><br/>
+      <strong>Key Features:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>High-Dose Glutathione – 3500 mg per capsule</li>
+        <li>Supports Skin Brightening</li>
+        <li>Provides Antioxidant Protection</li>
+        <li>May Improve Overall Skin Health</li>
+        <li>Convenient Capsule Form</li>
+      </ul>
+      <br/>
+      <strong>Mechanism of Action:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
+        <li>Neutralizes free radicals, protecting skin cells from damage</li>
+        <li>Supports detoxification processes in the liver</li>
+      </ul>
+      <br/>
+      Ideal for individuals seeking a convenient and effective oral supplement for skin brightening and overall antioxidant support.<br/>
+      <em class="text-xs text-gray-400">Note: Consistent use over several weeks is recommended to see noticeable skin brightening effects. Consult with a healthcare professional before starting any new supplement regimen.</em>
+    `,
+    benefits: ["High-Dose Glutathione", "Skin Brightening", "Antioxidant Protection", "Convenient Capsule Form"],
+    sku: "RELUMINS-3500MG-CAP",
+    volume: "30 Capsules"
+  },
+  {
+    id: 45,
+    name: "Miracle white 18k",
+    category: "Injection",
+    brand: "Miracle White",
+    price: 15000,
+    image: "/image/Miraclewhite18K.jpg",
+    description: "Miracle White 18K Gold Series | Luxurious Skin Brightening",
+    details: `
+      <strong>Miracle White 18K — Luxurious Skin Brightening Formula</strong><br/><br/>
+      Miracle White 18K Gold Series is a premium skin brightening injection that combines high-dose glutathione with colloidal gold particles. The inclusion of gold is believed to enhance skin radiance and provide anti-inflammatory benefits[citation:46].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione – 1000 mg per vial</li>
+        <li>Colloidal Gold Particles – 18K purity</li>
+        <li>Vitamin C – 500 mg (enhances glutathione recycling)</li>
+        <li>Alpha Lipoic Acid – 100 mg (antioxidant synergy)</li>
+        <li>Multi-Vitamin Blend</li>
+      </ul>
+      <br/>
+      <strong>Luxurious Brightening Mechanism:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
+        <li>Colloidal gold may enhance skin radiance and reduce inflammation</li>
+        <li>Vitamin C supports collagen synthesis and skin brightening</li>
+        <li>Alpha lipoic acid regenerates other antioxidants, enhancing overall effect</li>
+      </ul>
+      <br/>
+      Ideal for individuals seeking a luxurious and effective skin brightening treatment with added anti-inflammatory benefits.<br/>
+      <em class="text-xs text-gray-400">Note: The inclusion of colloidal gold is primarily for its purported skin benefits. Consult with a healthcare professional before starting any new treatment.</em>
+    `,
+    benefits: ["Luxurious Formula", "Colloidal Gold", "Skin Radiance", "Anti-Inflammatory Benefits", "High-Dose Glutathione"],
+    sku: "MW-18K-GOLD",
+    volume: "10 Sets"
   }
 ];
 
@@ -2176,9 +2484,9 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         <SectionHeader title="Curated Collections" subtitle="Explore our specialized range of aesthetic formulations" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-                { name: 'Whitening Injections', img: '/image/Glutax-50000000GS.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
-                { name: 'Whitening Creams', img: '/image/Picsart_25-11-27_19-48-33-126.jpg', desc: 'Topical Formulations', filter: 'Cream' },
-                { name: 'Whitening tablets/capsules', img: '/image/jp-boost.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
+                { name: 'Whitening Injections', img: '/image/injcover.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
+                { name: 'Whitening Creams', img: '/image/creamcover.jpg', desc: 'Topical Formulations', filter: 'Cream' },
+                { name: 'Whitening tablets/capsules', img: '/image/capsulecover.jpg', desc: 'Maintenance & Care', filter: 'Supplement' }
             ].map((cat, idx) => (
                 <div 
                     key={idx}

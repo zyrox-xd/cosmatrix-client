@@ -120,223 +120,70 @@ const BLOG_POSTS = [
 
 const PRODUCTS = [
   {
-    id: 1,
-    name: "Glutax 50000000GS Advanced Recombined White Injections",
-    category: "Injection",
-    brand: "Glutax",
-    price: 13000,
-    image: "/image/Glutax-50000000GS.jpg",
-    description: "ReCombined White RNA | 50 Million GS",
-    details: `
-      <strong>Glutax 50000000GS — Advanced Cellular Whitening</strong><br/><br/>
-      This high-potency formulation combines stabilized glutathione with RNA nucleotide technology to target melanogenesis at the cellular level. The ReCombined White RNA technology utilizes nucleotide sequences that may help regulate melanin production pathways when delivered via injection[citation:1].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 50,000 mg (not 50 million mg, which would be impossible)</li>
-        <li>RNA Nucleotides – 10,000 mg</li>
-        <li>Epidermal Growth Factor (EGF) – 6,000 IU</li>
-        <li>Coenzyme Q10 – 1,500 mg</li>
-        <li>Ascorbic Acid (Vitamin C) – 5,000 mg</li>
-        <li>Hydrolyzed Collagen Peptides – 2,000 mg</li>
-      </ul>
-      <br/>
-      <strong>How it works:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione inhibits tyrosinase enzyme activity, reducing melanin production[citation:2]</li>
-        <li>RNA nucleotides may support cellular repair and regulation</li>
-        <li>Vitamin C acts as antioxidant and enhances glutathione's whitening effects</li>
-        <li>Collagen supports skin structure and hydration</li>
-      </ul>
-      <br/>
-      Note: The "50 Million GS" refers to the product series name, not milligram content. Injectable glutathione should only be administered by qualified professionals. Results vary based on individual metabolism and skin type.<br/>
-      <em class="text-xs text-gray-400">Clinical Note: Injectable glutathione for skin whitening is considered off-label use in many countries. Potential side effects include injection site reactions and rare cases of kidney strain with high doses[citation:3].</em>
-    `,
-    benefits: ["High-Potency Glutathione", "RNA Technology", "Antioxidant Protection", "Collagen Support"],
-    sku: "GLU-50M-GS",
-    volume: "10 Sessions"
-  },
+  "id": 1,
+  "name": "Glutax 50000000GS Advanced Recombined White Injections",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 13000,
+  "image": "/image/Glutax-50000000GS.jpg",
+  "description": "ReCombined White RNA | 50 Million GS",
+  "details": "<strong>Glutax 50000000GS — Ultra-High Potency Skin Brightening Injection</strong><br/><br/>This advanced intravenous formulation delivers a concentrated dose of glutathione, a master antioxidant, directly into the bloodstream for systemic skin lightening and antioxidant benefits. The '50 Million GS' designation refers to its high-potency series within the Glutax line, designed for professional administration.<br/><br/><strong>Primary Mechanism & Key Ingredient:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Reduced L-Glutathione:</strong> The core active ingredient works by inhibiting the tyrosinase enzyme, which is crucial for melanin (pigment) production in the skin[citation:1].</li><li>Its potent antioxidant activity helps neutralize free radicals caused by UV exposure and pollution, potentially reducing oxidative stress linked to skin aging and uneven tone.</li></ul><br/><strong>Claimed Benefits & Actions:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Brightening:</strong> Aims to reduce overall melanin synthesis for a lighter skin complexion.</li><li><strong>Antioxidant Defense:</strong> Offers protection against environmental skin stressors.</li><li><strong>Detoxification Support:</strong> Glutathione plays a key role in the body's natural detox processes.</li><li><strong>Hydration & Elasticity:</strong> May improve skin moisture and firmness as a secondary effect.</li><li><strong>Hyperpigmentation Treatment:</strong> Targets sun spots, age spots, and melasma.</li></ul><br/><strong>Usage & Administration:</strong> Sold as a powder for reconstitution. Must be diluted in 200 mL of normal saline and administered via slow intravenous infusion over 30–40 minutes by a qualified healthcare professional. Aseptic technique is mandatory.<br/><br/><em class=\"text-xs text-gray-400\">Important Note: The use of intravenous glutathione for cosmetic skin whitening is an off-label application not universally approved by medical authorities. Efficacy and safety for this purpose are not fully established by large-scale clinical trials. Potential risks include injection site reactions, rare risks of kidney or liver strain with misuse, and Stevens-Johnson syndrome in very rare cases[citation:2][citation:3]. Consultation with a medical professional is essential prior to use.</em>",
+  "benefits": ["High-Potency Glutathione", "Skin Brightening", "Antioxidant Protection", "Targets Hyperpigmentation"],
+  "sku": "GLU-50M-GS",
+  "volume": "1 Box (For Professional Use)"
+},
   {
-    id: 2,
-    name: "Saint Blanc XIIISaint Blanc XIII Glutathione Skin Whitening Injection 90,000mg",
-    category: "Injection",
-    brand: "Saint Blanc",
-    price: 20000,
-    image: "/image/Saint-blanc.jpg",
-    description: "Swiss Formulation | 4 Sets Complex",
-    details: `
-      <strong>Saint Blanc XIII — Comprehensive Antioxidant Therapy</strong><br/><br/>
-      This Swiss-formulated complex combines glutathione with 12 additional active ingredients designed to address multiple pathways of skin aging and hyperpigmentation. The formulation focuses on systemic antioxidant support and cellular protection[citation:2].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      Each set contains therapeutic doses of:
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 1,500 mg per session (total 6,000 mg for 4 sets)</li>
-        <li>Marine Placenta Extract – 5,000 IU</li>
-        <li>Ascorbic Acid (Vitamin C) – 1,000 mg</li>
-        <li>Coenzyme Q10 (Ubiquinone) – 100 mg</li>
-        <li>Alpha Lipoic Acid – 50 mg</li>
-        <li>Hydrolyzed Collagen – 500 mg</li>
-        <li>Selenium – 25 mcg</li>
-        <li>Vitamin B Complex (including B12)</li>
-        <li>DMAE (Dimethylaminoethanol) – 50 mg</li>
-        <li>Essential Amino Acids</li>
-      </ul>
-      <br/>
-      <strong>Scientific Basis:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione reduces tyrosinase activity and neutralizes free radicals</li>
-        <li>Alpha lipoic acid regenerates other antioxidants including vitamin C and E</li>
-        <li>Coenzyme Q10 supports mitochondrial function and cellular energy</li>
-        <li>DMAE may improve skin firmness by supporting acetylcholine production</li>
-      </ul>
-      <br/>
-      This comprehensive formulation is designed for individuals seeking both skin brightening and overall antioxidant protection. The 4-set protocol allows for gradual, cumulative results.<br/>
-      <em class="text-xs text-gray-400">Medical Note: Injectable glutathione should be administered under medical supervision. Not recommended for pregnant or breastfeeding women. Regular liver function monitoring is advised during prolonged use[citation:3].</em>
-    `,
-    benefits: ["Multinutrient Complex", "Swiss Pharmaceutical Grade", "Systemic Antioxidant Support", "Progressive Results"],
-    sku: "SAINT-BLANC-13",
-    volume: "4 Sets (Complete Therapy)"
-  },
+  "id": 2,
+  "name": "Saint Blanc XIII Quartet Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Saint Blanc",
+  "price": 11500,
+  "image": "/image/Saint-blanc.jpg",
+  "description": "Swiss Formulation | 13-Element Complex",
+  "details": "<strong>Saint Blanc XIII Quartet — Multi-Targeted Brightening & Revitalization Therapy</strong><br/><br/>This Swiss-formulated injection presents a sophisticated 'Quartet' of four synergistic sets, each combining 13 influential active ingredients. The formula is designed to address skin brightening through multiple pathways: inhibiting melanogenesis, providing potent antioxidant defense, supporting collagen synthesis, and promoting cellular renewal.<br/><br/><strong>Complete Active Composition (Per Box/Full Course):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (miRNA Form):</strong> 90,000 mg (Total Course) – Primary tyrosinase inhibitor and master antioxidant for systemic skin lightening[citation:1].</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 5000 mg – Potentiates glutathione's effect, directly inhibits melanin production, and boosts collagen synthesis.</li><li><strong>Epidermal Growth Factor (EGF) with RNS:</strong> 2000 mg – Stimulates skin cell proliferation and repair for improved texture and renewal.</li><li><strong>Celergen Marine Stem Cell Extract:</strong> 70,000 IU – Aims to support cellular longevity and tissue regeneration.</li><li><strong>Coenzyme Q10:</strong> 1500 mg – Mitochondrial antioxidant that protects skin cells from oxidative damage.</li><li><strong>Natural Collagen Extract:</strong> 200 mg – Provides building blocks for skin structure and elasticity.</li><li><strong>Alpha Lipoic Acid:</strong> 300 mg – Universal antioxidant that recycles other antioxidants like Vitamins C and E.</li><li><strong>Dimethylaminoethanol (DMAE):</strong> 500 mg – May improve skin firmness and facial muscle tone.</li><li><strong>Selenium:</strong> 200 mg / <strong>Cyanocobalamin (B12):</strong> 200 mg / <strong>Multivitamins:</strong> 200 mg / <strong>Amino Acids:</strong> Essential support for detoxification, energy, and protein synthesis.</li></ul><br/><strong>Mechanism of Action:</strong> The therapy employs a quartet strategy: 1) Direct melanin suppression (Glutathione, Vit C), 2) Cellular protection & detox (Antioxidants), 3) Structural support (Collagen, EGF), and 4) Metabolic enhancement (Vitamins, Amino Acids). This multifaceted approach aims for more comprehensive results than single-ingredient formulations.<br/><br/><strong>Administration:</strong> For professional intravenous (IV) or intramuscular (IM) use only. Protocol typically involves multiple sessions as part of a complete course. Aseptic technique must be followed.<br/><br/><em class=\"text-xs text-gray-400\">Important Notice: The extremely high dosage of active ingredients (e.g., 90,000 mg glutathione total course) necessitates administration under strict medical supervision. This is a potent pharmacological intervention, not a cosmetic supplement. Contraindications may include kidney disorders, certain autoimmune conditions, or pregnancy. Efficacy for skin whitening varies significantly, and long-term safety data for high-dose injectable antioxidant cocktails is limited[citation:2][citation:3].</em>",
+  "benefits": ["13-Ingredient Swiss Complex", "Multi-Pathway Brightening", "Cellular Renewal Support", "High-Potency Antioxidant Blend"],
+  "sku": "SAINT-BLANC-XIII-QRT",
+  "volume": "1 Box Pack (Complete Quartet Course)"
+},
   {
-    id: 3,
-    name: "Glutax 75GX DCRP 750000 DNA Glutathione Injection",
-    category: "Injection",
-    brand: "Glutax",
-    price: 14000,
-    image: "/image/glutax-dcrp.jpg",
-    description: "DNA Cell Revitalize Process | 14 Sessions",
-    details: `
-      <strong>Glutax 75GX DCRP — Cellular Repair Formulation</strong><br/><br/>
-      The DCRP (DNA Cell Revitalize Process) technology refers to a combination of ingredients that support cellular DNA protection and repair mechanisms. This 14-session protocol is designed for cumulative antioxidant benefits and skin rejuvenation[citation:4].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Glutathione – 1,000 mg per session</li>
-        <li>DNA Nucleotides (from yeast or plant sources) – 250 mg</li>
-        <li>Hydrolyzed Collagen Type I & III – 2,000 mg</li>
-        <li>Selenium (as selenomethionine) – 55 mcg</li>
-        <li>Vitis Vinifera (Grape) Stem Cell Extract</li>
-        <li>Resveratrol – 50 mg</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione protects cellular DNA from oxidative damage caused by UV radiation and environmental stressors</li>
-        <li>Nucleotides may support cellular repair processes and RNA synthesis</li>
-        <li>Resveratrol activates sirtuin pathways associated with cellular longevity</li>
-        <li>Grape stem cell extracts contain polyphenols with antioxidant properties</li>
-      </ul>
-      <br/>
-      This extended 14-session protocol allows for gradual improvement in skin clarity and texture while providing ongoing antioxidant support.<br/>
-      <em class="text-xs text-gray-400">Note: DNA repair ingredients work at the cellular level and results are cumulative. Consistent treatment intervals (weekly or bi-weekly) are recommended for optimal outcomes.</em>
-    `,
-    benefits: ["DNA Protection Support", "Extended Protocol", "Cellular Antioxidants", "Gradual Rejuvenation"],
-    sku: "GLU-75GX-DCRP",
-    volume: "14 Sessions"
-  },
+  "id": 3,
+  "name": "Glutax 75GX DCRP 750000 DNA Cell Revitalize Process Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 13400,
+  "image": "/image/glutax-dcrp.jpg",
+  "description": "DNA Cell Revitalize Process | 14 Sessions + Oral Booster",
+  "details": "<strong>Glutax 75GX DCRP — Extended Protocol with Cellular Revitalization</strong><br/><br/>This Italian formulation combines a 14-session injection protocol with an oral glutathione booster, creating a continuous treatment system. The 'DNA Cell Revitalize Process' (DCRP) refers to a proprietary complex designed to support cellular repair mechanisms while delivering high-dose glutathione for skin brightening and antioxidant benefits.<br/><br/><strong>Treatment Protocol & Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>14 Injection Sessions:</strong> Each vial contains a high-potency blend of reduced L-Glutathione and supporting antioxidants for intravenous (IV) administration every 3-4 days.</li><li><strong>Oral Glutathione Booster:</strong> Included to maintain elevated glutathione levels between injection sessions, potentially enhancing and prolonging results.</li><li><strong>Vitamin C Synergy:</strong> Recommended to be used concurrently with additional Vitamin C 1000mg injections for optimal glutathione recycling and enhanced brightening effects[citation:1].</li></ul><br/><strong>Claimed Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Inhibits melanin production for skin whitening and scar lightening</li><li>Stimulates collagen synthesis to improve skin elasticity and firmness</li><li>Provides deep hydration and moisture retention</li><li>Reduces hyperpigmentation from sun exposure</li><li>Smooths fine lines and wrinkles</li><li>Minimizes acne and pore appearance</li><li>Neutralizes free radicals throughout the body</li><li>Offers anti-aging protection at the cellular level</li></ul><br/><strong>Administration:</strong> For professional intravenous (IV) infusion only. Recommended schedule: one session every 3-4 days for a complete course of 14 sessions. The oral booster should be taken as directed between sessions.<br/><br/><strong>Contraindications:</strong> Not suitable for pregnant or breastfeeding women, individuals with vitamin allergies, patients with cardiovascular conditions, or those with kidney/liver impairment. Results depend on individual metabolism and skin type.<br/><br/><em class=\"text-xs text-gray-400\">Medical Note: The 'DNA Revitalize' claim refers to antioxidant protection against DNA damage from free radicals, not genetic modification. Long-term safety of high-dose glutathione protocols with oral boosters requires further research. Regular monitoring of kidney and liver function is advised during extended courses[citation:2][citation:3].</em>",
+  "benefits": ["14-Session Protocol", "Oral + Injection System", "Cellular Antioxidant Protection", "Anti-Aging & Brightening"],
+  "sku": "GLU-75GX-DCRP",
+  "volume": "1 Box Pack (14 Sessions + Oral Booster)"
+},
   {
-    id: 4,
-    name: "Glutax 20000000GN+ Recombined White Glutathione Injection",
-    category: "Injection",
-    brand: "Glutax",
-    price: 11000,
-    image: "/image/Gluta-20000000GN.jpg",
-    description: "Pico-QuadNA ReCombined White | 20 Million mg",
-    details: `
-      <strong>Glutax 20000000GN+ — Enhanced Bioavailability Formula</strong><br/><br/>
-      This formulation utilizes micronization technology to enhance the bioavailability of glutathione. The "Pico-QuadNA" terminology refers to particle size reduction techniques that may improve absorption and cellular uptake[citation:5].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Micronized L-Glutathione – 1,500 mg per session</li>
-        <li>Multi-Nucleotide Complex (RNA/DNA precursors)</li>
-        <li>Recombinant Epidermal Growth Factor – 20 mcg</li>
-        <li>Vitamin B Complex with Vitamin C</li>
-        <li>Zinc – 10 mg (supports glutathione metabolism)</li>
-      </ul>
-      <br/>
-      <strong>Technology Explanation:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Micronization reduces particle size, potentially enhancing dissolution and absorption</li>
-        <li>Nucleotide complexes may support cellular repair mechanisms</li>
-        <li>Zinc is a cofactor for glutathione peroxidase enzyme activity</li>
-        <li>EGF may support skin barrier function and repair</li>
-      </ul>
-      <br/>
-      This formula is designed for individuals who may have experienced limited results with standard glutathione formulations, potentially due to absorption limitations.<br/>
-      <em class="text-xs text-gray-400">Clinical Note: While micronization can improve bioavailability, the ultimate efficacy still depends on individual metabolic factors and proper administration technique.</em>
-    `,
-    benefits: ["Enhanced Bioavailability", "Micronized Technology", "Cellular Uptake Optimization", "Comprehensive Formula"],
-    sku: "GLU-20M-GN",
-    volume: "10 Sessions"
-  },
+  "id": 4,
+  "name": "Glutax 2000000GX DualNA Premium ReCombined Cell Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 9600,
+  "image": "/image/Glutax-2000000GX.jpg",
+  "description": "DualNA Premium ReCombined Cell | 2 Million mg Glutathione",
+  "details": "<strong>Glutax 2000000GX DualNA Premium ReCombined Cell — Ultra-High Potency Cellular Complex</strong><br/><br/>This represents one of Glutax's highest dosage formulations, combining 2,000,000 mg of glutathione with a proprietary 'DualNA' (DNA & RNA) nucleotide complex and a premium blend of four plant stem cells. The product is designed as a comprehensive cellular revitalization treatment, targeting skin whitening, anti-aging, and systemic health benefits through a multi-component approach.<br/><br/><strong>Complete Composition (Full 10-Session Course):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>DNA & RNA Glutathione:</strong> 2,000,000 mg (200,000 mg per vial) – Ultra-high dose for potent melanin inhibition and antioxidant activity[citation:1].</li><li><strong>DNA & RNA Multivitamins:</strong> 250,000 mg – Broad-spectrum vitamin support for skin health and metabolism.</li><li><strong>DNA & RNA Natural Collagen:</strong> 12,000 mg – Supports skin structure, elasticity, and hydration.</li><li><strong>Premium ReCombined Stem Cell Complex (30,000 mg):</strong> Blend of Grape, Apple, Argan Fruit, and Rose stem cells, targeting cellular repair and longevity.</li><li><strong>DNA & RNA Selenium:</strong> 5,000 mg – Essential cofactor for glutathione peroxidase enzyme function.</li><li><strong>DNA & RNA Ultra White Elements:</strong> 6,000 mg – Additional proprietary brightening agents.</li><li><strong>DNA & RNA Epidermal Growth Factor (EGF):</strong> 8,000 mg – Stimulates skin cell renewal and repair.</li><li><strong>DNA & RNA ProEnzyme Q10:</strong> 3,700 mg – Mitochondrial antioxidant for cellular energy and protection.</li><li><strong>DNA & RNA PDRN Hyal:</strong> 4,800 mg – Polynucleotide and hyaluronic acid complex for hydration and tissue regeneration.</li></ul><br/><strong>Claimed Systemic Benefits:</strong> Beyond skin whitening, this formulation claims to boost energy, enhance immune function, improve mental focus, accelerate post-workout recovery, provide intense detoxification (including heavy metals), and offer protection against degenerative diseases.<br/><br/><strong>Administration:</strong> For professional intravenous (IV) push or drip only. Recommended once weekly, or every 3-5 days for faster results. A full course typically involves 10 sessions. Adequate hydration (drinking water before sessions) is recommended.<br/><br/><strong>Expected Results Timeline:</strong> Individual results vary significantly by skin type:<br/>• Light Brown skin: 1-3 months<br/>• Medium Dark Brown skin: 3-6 months<br/>• Darker skin: >6 months<br/>Maintenance dose: 1 session every 2 weeks after achieving desired results.<br/><br/><em class=\"text-xs text-gray-400\">Critical Medical Note: This product contains an extremely high pharmacological dosage of active ingredients. The safety profile of such high-dose, multi-component intravenous cocktails is not well-established in medical literature. Administration must be strictly supervised by a qualified medical professional with monitoring of kidney and liver function. Contraindications include pregnancy, cardiovascular conditions, and organ dysfunction. The 'DualNA' and stem cell claims are not evaluated by major regulatory bodies for efficacy[citation:2][citation:3].</em>",
+  "benefits": ["Ultra-High Glutathione (2M mg)", "4-Stem Cell Complex", "DualNA Nucleotide Technology", "Systemic Health Support"],
+  "sku": "GLU-2000GX-DUALNA",
+  "volume": "1 Box Pack (10 Ampoules 5ml + 10 Ampoules 2ml + 10 Vials)"
+},
   {
-    id: 5,
-    name: "Glutax 2000000GX DualNA Premium ReCombined Cell",
-    category: "Injection",
-    brand: "Glutax",
-    price: 9600,
-    image: "/image/Glutax-2000000GX.jpg",
-    description: "DualNA Premium Recombined Cell",
-    details: `
-      <strong>Glutax 2000000GX — Balanced Skin Health Formula</strong><br/><br/>
-      This formulation provides a moderate dose of glutathione combined with ingredients supporting both skin brightening and structural health. The "DualNA" refers to the inclusion of both DNA and RNA nucleotide precursors[citation:6].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Glutathione – 1,000 mg</li>
-        <li>Hydrolyzed Collagen Peptides – 1,500 mg</li>
-        <li>DNA/RNA Nucleotide Complex – 100 mg</li>
-        <li>Ascorbic Acid (Vitamin C) – 500 mg</li>
-        <li>Marine Elastin Peptides</li>
-      </ul>
-      <br/>
-      <strong>Synergistic Effects:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione and vitamin C work synergistically as antioxidants</li>
-        <li>Collagen and elastin support skin structure and elasticity</li>
-        <li>Nucleotides may support cellular turnover and repair</li>
-        <li>This balanced approach addresses both pigmentation and skin aging concerns</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking comprehensive skin improvement rather than aggressive whitening alone.<br/>
-      <em class="text-xs text-gray-400">Note: Results are typically more gradual with this balanced formulation. Regular sessions over 8-12 weeks are recommended for noticeable improvements.</em>
-    `,
-    benefits: ["Balanced Formula", "Collagen Support", "Antioxidant Synergy", "Skin Structure Enhancement"],
-    sku: "GLU-2M-GX",
-    volume: "10 Sessions"
-  },
-  {
-    id: 6,
-    name: "Miracle White Royal Gold 120000mg Glutathione Booster Injection",
-    category: "Injection",
-    brand: "Miracle White",
-    price: 11000,
-    image: "/image/mw-120000.jpg",
-    description: "Royal Gold Booster | Nano Concentrated",
-    details: `
-      <strong>Miracle White 120,000mg — Potency-Enhanced Formula</strong><br/><br/>
-      This "Royal Gold" edition represents a higher concentration formulation within the Miracle White line. The "120,000mg" designation refers to the total glutathione content across the treatment course, not per injection[citation:7].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 2,000 mg per session (total 12,000 mg for 6 sessions)</li>
-        <li>Kojic Acid – 50 mg (potent tyrosinase inhibitor)</li>
-        <li>Ascorbic Acid (Vitamin C) – 1,000 mg</li>
-        <li>Human Recombinant Epidermal Growth Factor – 10 mcg</li>
-        <li>Alpha Arbutin – 25 mg (natural melanin inhibitor)</li>
-      </ul>
-      <br/>
-      <strong>Dual-Action Mechanism:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione works systemically to reduce melanin production</li>
-        <li>Kojic acid and alpha arbutin provide additional tyrosinase inhibition</li>
-        <li>Vitamin C enhances glutathione recycling and provides antioxidant protection</li>
-        <li>EGF supports skin barrier repair and cellular turnover</li>
-      </ul>
-      <br/>
-      This higher-potency formula is designed for individuals with more pronounced hyperpigmentation or those seeking accelerated results.<br/>
-      <em class="text-xs text-gray-400">Medical Note: Kojic acid may cause contact dermatitis in sensitive individuals. Patch testing is recommended before full treatment course.</em>
-    `,
-    benefits: ["Higher Potency", "Multiple Tyrosinase Inhibitors", "Enhanced Antioxidant Protection", "Accelerated Results"],
-    sku: "MW-120K-GOLD",
-    volume: "6 Sessions"
-  },
+    "id": 6,
+    "name": "Miracle White Royal Gold 120000mg Glutathione Booster Injection",
+    "category": "Injection",
+    "brand": "Miracle White",
+    "price": 11000,
+    "image": "/image/mw-120000.jpg",
+    "description": "Royal Gold Booster | 120,000 mg Glutathione",
+    "details": "<strong>Miracle White Royal Gold 120,000mg — Luxe Skin Transformation Formula</strong><br/><br/>This Swiss-formulated 'Royal Gold' edition combines an ultra-high concentration of Glutathione (120,000 mg total course) with Gold Nanoparticles, Collagen, and a synergistic blend of antioxidants. It's specifically marketed as a fast-acting solution for achieving radiant, even-toned skin, with claims addressing common concerns for Indian skin types such as pigmentation, sun damage, and pollution stress.<br/><br/><strong>Core Formula & Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (120,000 mg):</strong> The 'Master Antioxidant' for systemic skin brightening via tyrosinase inhibition and detoxification.</li><li><strong>Gold Nano Particles:</strong> Claimed to enhance hydration, support skin regeneration, and provide anti-inflammatory benefits.</li><li><strong>Collagen:</strong> Aims to improve skin elasticity, firmness, and texture while reducing wrinkle appearance.</li><li><strong>Vitamin C (Ascorbic Acid):</strong> Boosts glutathione absorption, provides direct antioxidant protection, and aids in collagen synthesis.</li><li><strong>Alpha Lipoic Acid:</strong> A 'universal antioxidant' that recycles other antioxidants like Vitamins C and E, with anti-inflammatory properties.</li></ul><br/><strong>Claimed Benefits & Mechanism:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Rapid Skin Brightening:</strong> Targets dark spots, pigmentation, and evens out skin tone for a luminous complexion.</li><li><strong>Anti-Aging & Firming:</strong> Reduces wrinkles and fine lines while improving elasticity through boosted collagen production.</li><li><strong>Deep Detoxification:</strong> Eliminates toxins from the body for revitalized skin health.</li><li><strong>Enhanced Cellular Health:</strong> Promotes healthier skin cells and protects against free radical damage to delay premature aging.</li></ul><br/><strong>Usage Protocol:</strong> For professional administration (IV/IM) only. Recommended course: one injection per week for the first month (4 sessions), followed by maintenance sessions every two weeks to preserve results. Adequate hydration before treatment is advised.<br/><br/><strong>Product Authenticity:</strong> Includes a scratch-and-scan QR code verification system to combat counterfeit products.<br/><br/><em class=\"text-xs text-gray-400\">Medical & Safety Note: The inclusion of Gold Nanoparticles in injectable formulations is a novel cosmetic application with limited long-term safety data. While glutathione is generally well-tolerated, high-dose protocols require medical supervision. Contraindications include pregnancy, breastfeeding, and known allergies to any component. The product's efficacy for rapid whitening varies significantly based on individual skin biology and melanin content.</em>",
+    "benefits": ["Gold Nanoparticle Technology", "High-Potency Glutathione (120K mg)", "Anti-Aging & Firming", "Fast-Acting Results"],
+    "sku": "MW-RG-120K",
+    "volume": "1 Box Pack (Initial Course)"
+},
   {
     id: 7,
     name: "Miracle White 99000000mg Glutathione",

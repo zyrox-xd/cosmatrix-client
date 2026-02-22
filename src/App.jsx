@@ -205,19 +205,44 @@ const PRODUCTS = [
     sku: "COSDAC-MELSMON-QUAT",
     volume: "10 Sessions"
   },
-  {
-  "id": 4,
-  "name": "Glutax 2000000GX DualNA Premium ReCombined Cell Injection",
-  "category": "Injection",
-  "brand": "Glutax",
-  "price": 9600,
-  "image": "/image/Glutax-2000000GX.jpg",
-  "description": "DualNA Premium ReCombined Cell | 2 Million mg Glutathione",
-  "details": "<strong>Glutax 2000000GX DualNA Premium ReCombined Cell — Ultra-High Potency Cellular Complex</strong><br/><br/>This represents one of Glutax's highest dosage formulations, combining 2,000,000 mg of glutathione with a proprietary 'DualNA' (DNA & RNA) nucleotide complex and a premium blend of four plant stem cells. The product is designed as a comprehensive cellular revitalization treatment, targeting skin whitening, anti-aging, and systemic health benefits through a multi-component approach.<br/><br/><strong>Complete Composition (Full 10-Session Course):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>DNA & RNA Glutathione:</strong> 2,000,000 mg (200,000 mg per vial) – Ultra-high dose for potent melanin inhibition and antioxidant activity[citation:1].</li><li><strong>DNA & RNA Multivitamins:</strong> 250,000 mg – Broad-spectrum vitamin support for skin health and metabolism.</li><li><strong>DNA & RNA Natural Collagen:</strong> 12,000 mg – Supports skin structure, elasticity, and hydration.</li><li><strong>Premium ReCombined Stem Cell Complex (30,000 mg):</strong> Blend of Grape, Apple, Argan Fruit, and Rose stem cells, targeting cellular repair and longevity.</li><li><strong>DNA & RNA Selenium:</strong> 5,000 mg – Essential cofactor for glutathione peroxidase enzyme function.</li><li><strong>DNA & RNA Ultra White Elements:</strong> 6,000 mg – Additional proprietary brightening agents.</li><li><strong>DNA & RNA Epidermal Growth Factor (EGF):</strong> 8,000 mg – Stimulates skin cell renewal and repair.</li><li><strong>DNA & RNA ProEnzyme Q10:</strong> 3,700 mg – Mitochondrial antioxidant for cellular energy and protection.</li><li><strong>DNA & RNA PDRN Hyal:</strong> 4,800 mg – Polynucleotide and hyaluronic acid complex for hydration and tissue regeneration.</li></ul><br/><strong>Claimed Systemic Benefits:</strong> Beyond skin whitening, this formulation claims to boost energy, enhance immune function, improve mental focus, accelerate post-workout recovery, provide intense detoxification (including heavy metals), and offer protection against degenerative diseases.<br/><br/><strong>Administration:</strong> For professional intravenous (IV) push or drip only. Recommended once weekly, or every 3-5 days for faster results. A full course typically involves 10 sessions. Adequate hydration (drinking water before sessions) is recommended.<br/><br/><strong>Expected Results Timeline:</strong> Individual results vary significantly by skin type:<br/>• Light Brown skin: 1-3 months<br/>• Medium Dark Brown skin: 3-6 months<br/>• Darker skin: >6 months<br/>Maintenance dose: 1 session every 2 weeks after achieving desired results.<br/><br/><em class=\"text-xs text-gray-400\">Critical Medical Note: This product contains an extremely high pharmacological dosage of active ingredients. The safety profile of such high-dose, multi-component intravenous cocktails is not well-established in medical literature. Administration must be strictly supervised by a qualified medical professional with monitoring of kidney and liver function. Contraindications include pregnancy, cardiovascular conditions, and organ dysfunction. The 'DualNA' and stem cell claims are not evaluated by major regulatory bodies for efficacy[citation:2][citation:3].</em>",
-  "benefits": ["Ultra-High Glutathione (2M mg)", "4-Stem Cell Complex", "DualNA Nucleotide Technology", "Systemic Health Support"],
-  "sku": "GLU-2000GX-DUALNA",
-  "volume": "1 Box Pack (10 Ampoules 5ml + 10 Ampoules 2ml + 10 Vials)"
-},
+ {
+    id: 4,
+    name: "Cindyrella Celebrity Drip with NAD plus Glutathione Injection",
+    category: "Injection",
+    brand: "Cindyrella",
+    price: 12000,
+    image: "/image/IMG_1897.JPG",
+    description: "Celebrity Edition IV Formula | Enhanced Potency NAD+ | 15 Vials",
+    details: `
+      <strong>Cindyrella Celebrity Drip — Premium IV NAD+ Therapy</strong><br/><br/>
+      This premium version features enhanced NAD+ bioavailability and additional supportive nutrients. Higher NAD+ concentrations may provide more pronounced effects on cellular energy and repair mechanisms[citation:35].<br/><br/>
+      <strong>Key Active Components (per vial):</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Pharmaceutical Grade Glutathione – 1500 mg</li>
+        <li>Stabilized NAD+ Complex – 300 mg (higher concentration)</li>
+        <li>Coenzyme Q10 (Ubiquinol) – 100 mg</li>
+        <li>Vitamin C (as ascorbic acid) – 2000 mg</li>
+        <li>B-Complex with Methylcobalamin (B12)</li>
+        <li>Magnesium Glycinate – 50 mg</li>
+        <li>L-Glutamine – 500 mg</li>
+      </ul>
+      <br/>
+      <strong>Premium Formulation Rationale:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Higher NAD+ concentration may more effectively support sirtuin activation</li>
+        <li>Ubiquinol (reduced CoQ10) is more bioavailable than ubiquinone</li>
+        <li>Magnesium glycinate is highly absorbable and supports enzyme function</li>
+        <li>L-Glutamine supports glutathione synthesis and gut health</li>
+        <li>Designed for rapid, noticeable results in demanding schedules</li>
+      </ul>
+      <br/>
+      This premium formulation is intended for intensive treatment protocols or individuals seeking maximum results in minimal time.<br/>
+      <em class="text-xs text-gray-400">Critical: Higher NAD+ doses increase risk of side effects including anxiety, palpitations, and flushing during infusion. Must be administered by experienced medical personnel with appropriate monitoring equipment. Not for individuals with cardiovascular conditions, severe anxiety disorders, or during pregnancy/lactation.</em>
+    `,
+    benefits: ["Enhanced NAD+ Potency", "Premium Ingredients", "Rapid Results", "Comprehensive Cellular Support"],
+    sku: "CINDY-CELEB-NAD",
+    volume: "15 Vials (IV Infusion)"
+  },
   {
     "id": 5,
     "name": "Miracle White Royal Gold 120000mg Glutathione Booster Injection",
@@ -907,44 +932,19 @@ const PRODUCTS = [
     sku: "AQUA-DIAMOND-MAX80",
     volume: "10 Sessions"
   },
-  {
-    id: 34,
-    name: "Cindyrella Celebrity Drip with NAD plus Glutathione Injection",
-    category: "Injection",
-    brand: "Cindyrella",
-    price: 12000,
-    image: "/image/IMG_1897.JPG",
-    description: "Celebrity Edition IV Formula | Enhanced Potency NAD+ | 15 Vials",
-    details: `
-      <strong>Cindyrella Celebrity Drip — Premium IV NAD+ Therapy</strong><br/><br/>
-      This premium version features enhanced NAD+ bioavailability and additional supportive nutrients. Higher NAD+ concentrations may provide more pronounced effects on cellular energy and repair mechanisms[citation:35].<br/><br/>
-      <strong>Key Active Components (per vial):</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Pharmaceutical Grade Glutathione – 1500 mg</li>
-        <li>Stabilized NAD+ Complex – 300 mg (higher concentration)</li>
-        <li>Coenzyme Q10 (Ubiquinol) – 100 mg</li>
-        <li>Vitamin C (as ascorbic acid) – 2000 mg</li>
-        <li>B-Complex with Methylcobalamin (B12)</li>
-        <li>Magnesium Glycinate – 50 mg</li>
-        <li>L-Glutamine – 500 mg</li>
-      </ul>
-      <br/>
-      <strong>Premium Formulation Rationale:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Higher NAD+ concentration may more effectively support sirtuin activation</li>
-        <li>Ubiquinol (reduced CoQ10) is more bioavailable than ubiquinone</li>
-        <li>Magnesium glycinate is highly absorbable and supports enzyme function</li>
-        <li>L-Glutamine supports glutathione synthesis and gut health</li>
-        <li>Designed for rapid, noticeable results in demanding schedules</li>
-      </ul>
-      <br/>
-      This premium formulation is intended for intensive treatment protocols or individuals seeking maximum results in minimal time.<br/>
-      <em class="text-xs text-gray-400">Critical: Higher NAD+ doses increase risk of side effects including anxiety, palpitations, and flushing during infusion. Must be administered by experienced medical personnel with appropriate monitoring equipment. Not for individuals with cardiovascular conditions, severe anxiety disorders, or during pregnancy/lactation.</em>
-    `,
-    benefits: ["Enhanced NAD+ Potency", "Premium Ingredients", "Rapid Results", "Comprehensive Cellular Support"],
-    sku: "CINDY-CELEB-NAD",
-    volume: "15 Vials (IV Infusion)"
-  },
+   {
+  "id": 35,
+  "name": "Glutax 2000000GX DualNA Premium ReCombined Cell Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 9600,
+  "image": "/image/Glutax-2000000GX.jpg",
+  "description": "DualNA Premium ReCombined Cell | 2 Million mg Glutathione",
+  "details": "<strong>Glutax 2000000GX DualNA Premium ReCombined Cell — Ultra-High Potency Cellular Complex</strong><br/><br/>This represents one of Glutax's highest dosage formulations, combining 2,000,000 mg of glutathione with a proprietary 'DualNA' (DNA & RNA) nucleotide complex and a premium blend of four plant stem cells. The product is designed as a comprehensive cellular revitalization treatment, targeting skin whitening, anti-aging, and systemic health benefits through a multi-component approach.<br/><br/><strong>Complete Composition (Full 10-Session Course):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>DNA & RNA Glutathione:</strong> 2,000,000 mg (200,000 mg per vial) – Ultra-high dose for potent melanin inhibition and antioxidant activity[citation:1].</li><li><strong>DNA & RNA Multivitamins:</strong> 250,000 mg – Broad-spectrum vitamin support for skin health and metabolism.</li><li><strong>DNA & RNA Natural Collagen:</strong> 12,000 mg – Supports skin structure, elasticity, and hydration.</li><li><strong>Premium ReCombined Stem Cell Complex (30,000 mg):</strong> Blend of Grape, Apple, Argan Fruit, and Rose stem cells, targeting cellular repair and longevity.</li><li><strong>DNA & RNA Selenium:</strong> 5,000 mg – Essential cofactor for glutathione peroxidase enzyme function.</li><li><strong>DNA & RNA Ultra White Elements:</strong> 6,000 mg – Additional proprietary brightening agents.</li><li><strong>DNA & RNA Epidermal Growth Factor (EGF):</strong> 8,000 mg – Stimulates skin cell renewal and repair.</li><li><strong>DNA & RNA ProEnzyme Q10:</strong> 3,700 mg – Mitochondrial antioxidant for cellular energy and protection.</li><li><strong>DNA & RNA PDRN Hyal:</strong> 4,800 mg – Polynucleotide and hyaluronic acid complex for hydration and tissue regeneration.</li></ul><br/><strong>Claimed Systemic Benefits:</strong> Beyond skin whitening, this formulation claims to boost energy, enhance immune function, improve mental focus, accelerate post-workout recovery, provide intense detoxification (including heavy metals), and offer protection against degenerative diseases.<br/><br/><strong>Administration:</strong> For professional intravenous (IV) push or drip only. Recommended once weekly, or every 3-5 days for faster results. A full course typically involves 10 sessions. Adequate hydration (drinking water before sessions) is recommended.<br/><br/><strong>Expected Results Timeline:</strong> Individual results vary significantly by skin type:<br/>• Light Brown skin: 1-3 months<br/>• Medium Dark Brown skin: 3-6 months<br/>• Darker skin: >6 months<br/>Maintenance dose: 1 session every 2 weeks after achieving desired results.<br/><br/><em class=\"text-xs text-gray-400\">Critical Medical Note: This product contains an extremely high pharmacological dosage of active ingredients. The safety profile of such high-dose, multi-component intravenous cocktails is not well-established in medical literature. Administration must be strictly supervised by a qualified medical professional with monitoring of kidney and liver function. Contraindications include pregnancy, cardiovascular conditions, and organ dysfunction. The 'DualNA' and stem cell claims are not evaluated by major regulatory bodies for efficacy[citation:2][citation:3].</em>",
+  "benefits": ["Ultra-High Glutathione (2M mg)", "4-Stem Cell Complex", "DualNA Nucleotide Technology", "Systemic Health Support"],
+  "sku": "GLU-2000GX-DUALNA",
+  "volume": "1 Box Pack (10 Ampoules 5ml + 10 Ampoules 2ml + 10 Vials)"
+},
   {
   "id": 36,
   "name": "Glutax 75GX DCRP 750000 DNA Cell Revitalize Process Injection",
@@ -1246,8 +1246,6 @@ const PRODUCTS = [
     volume: "10 Sets"
   }
 ];
-
-
 const CATEGORIES = [
   { name: "Injection", id: "Injection" },
   { name: "Cream", id: "Cream" },
@@ -1842,7 +1840,6 @@ const Footer = ({ setCurrentPage, showToast }) => {
   );
 };
 
-
 const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
    
@@ -2048,6 +2045,41 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         
         <div className="mt-6 text-center md:hidden">
             <button onClick={() => navigateTo('shop')} className="inline-flex items-center gap-2 text-sm font-medium border-b border-black pb-1">View All Products <ArrowRight size={14}/></button>
+        </div>
+      </div>
+    </section>
+
+    {/* NEW ARRIVALS GRID */}
+    <section className="py-12 md:py-16 bg-[#fbfbfb]">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex justify-between items-end mb-8 md:mb-10">
+            <div>
+                <h2 className="font-serif text-2xl md:text-3xl text-gray-900">New Arrivals</h2>
+                <div className="h-0.5 w-12 bg-[#E8A0BF] mt-3"></div>
+            </div>
+            <button onClick={() => navigateTo('shop')} className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-[#E8A0BF] transition-colors">Shop New <ArrowRight size={16}/></button>
+        </div>
+        
+        {/* Mobile Horizontal Scroll */}
+        <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+            {/* Note: This takes items 4, 5, and 6 from your PRODUCTS array. Adjust the slice numbers if needed based on your array length! */}
+            {PRODUCTS.slice(3, 6).map(product => (
+                 <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
+                    <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
+                        {/* NEW Badge overlay */}
+                        <div className="absolute top-3 left-3 bg-black text-white text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded z-10">New</div>
+                        
+                        <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div className="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-1">{product.brand}</div>
+                    <h3 className="font-serif text-lg leading-tight mb-2 group-hover:text-[#E8A0BF] transition-colors truncate">{product.name}</h3>
+                    <p className="text-gray-900 font-medium">₹{product.price.toLocaleString()}</p>
+                 </div>
+            ))}
+        </div>
+        
+        <div className="mt-6 text-center md:hidden">
+            <button onClick={() => navigateTo('shop')} className="inline-flex items-center gap-2 text-sm font-medium border-b border-black pb-1">Shop New <ArrowRight size={14}/></button>
         </div>
       </div>
     </section>
@@ -2884,15 +2916,7 @@ const ContactView = ({ showToast }) => {
                     </div>
                 </div>
 
-                {/* Social Proof / Trust */}
-                <div className="pt-10 border-t border-gray-100">
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Trusted By Professionals</h4>
-                    <div className="flex gap-8 opacity-50 grayscale hover:grayscale-0 transition-all">
-                         <span className="font-serif text-xl text-gray-800 font-bold">Glutax</span>
-                         <span className="font-serif text-xl text-gray-800 font-bold">Veniscy</span>
-                         <span className="font-serif text-xl text-gray-800 font-bold">Miracle White</span>
-                    </div>
-                </div>
+                
             </div>
 
             {/* Form Column */}

@@ -119,19 +119,42 @@ const BLOG_POSTS = [
 ];
 
 const PRODUCTS = [
-  {
-  "id": 1,
-  "name": "Glutax 50000000GS Advanced Recombined White Injections",
-  "category": "Injection",
-  "brand": "Glutax",
-  "price": 13000,
-  "image": "/image/Glutax-50000000GS.jpg",
-  "description": "ReCombined White RNA | 50 Million GS",
-  "details": "<strong>Glutax 50000000GS — Ultra-High Potency Skin Brightening Injection</strong><br/><br/>This advanced intravenous formulation delivers a concentrated dose of glutathione, a master antioxidant, directly into the bloodstream for systemic skin lightening and antioxidant benefits. The '50 Million GS' designation refers to its high-potency series within the Glutax line, designed for professional administration.<br/><br/><strong>Primary Mechanism & Key Ingredient:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Reduced L-Glutathione:</strong> The core active ingredient works by inhibiting the tyrosinase enzyme, which is crucial for melanin (pigment) production in the skin[citation:1].</li><li>Its potent antioxidant activity helps neutralize free radicals caused by UV exposure and pollution, potentially reducing oxidative stress linked to skin aging and uneven tone.</li></ul><br/><strong>Claimed Benefits & Actions:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Brightening:</strong> Aims to reduce overall melanin synthesis for a lighter skin complexion.</li><li><strong>Antioxidant Defense:</strong> Offers protection against environmental skin stressors.</li><li><strong>Detoxification Support:</strong> Glutathione plays a key role in the body's natural detox processes.</li><li><strong>Hydration & Elasticity:</strong> May improve skin moisture and firmness as a secondary effect.</li><li><strong>Hyperpigmentation Treatment:</strong> Targets sun spots, age spots, and melasma.</li></ul><br/><strong>Usage & Administration:</strong> Sold as a powder for reconstitution. Must be diluted in 200 mL of normal saline and administered via slow intravenous infusion over 30–40 minutes by a qualified healthcare professional. Aseptic technique is mandatory.<br/><br/><em class=\"text-xs text-gray-400\">Important Note: The use of intravenous glutathione for cosmetic skin whitening is an off-label application not universally approved by medical authorities. Efficacy and safety for this purpose are not fully established by large-scale clinical trials. Potential risks include injection site reactions, rare risks of kidney or liver strain with misuse, and Stevens-Johnson syndrome in very rare cases[citation:2][citation:3]. Consultation with a medical professional is essential prior to use.</em>",
-  "benefits": ["High-Potency Glutathione", "Skin Brightening", "Antioxidant Protection", "Targets Hyperpigmentation"],
-  "sku": "GLU-50M-GS",
-  "volume": "1 Box (For Professional Use)"
-},
+ {
+    id: 1,
+    name: "Iskin SLC24A5 Chromosome Phase IX Glutathione Whitening Injection",
+    category: "Injection",
+    brand: "iSkin",
+    price: 24000,
+    image: "/image/IMG_1910.JPG",
+    description: "Gene-Targeted Whitening | SLC24A5 Inhibitor | 600mg/Vial Z-Glutathione",
+    details: `
+      <strong>iSkin SLC24A5 Phase IX — Genetic Pathway Modulation</strong><br/><br/>
+      This advanced formulation targets the SLC24A5 gene, which encodes the NCKX5 protein involved in melanin synthesis. The approach combines glutathione with oligonucleotides or small molecules that may modulate gene expression[citation:37].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Z-Form Stabilized Glutathione – 600 mg/vial (higher concentration per vial)</li>
+        <li>SLC24A5 Pathway Modulators (proprietary)</li>
+        <li>TriNA Hydrate System (nucleotide delivery technology)</li>
+        <li>DNA Protection Antioxidants</li>
+        <li>Penetration Enhancing Complex</li>
+      </ul>
+      <br/>
+      <strong>Genetic Science Background:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>SLC24A5 variations are associated with skin pigmentation differences in human populations</li>
+        <li>NCKX5 protein is involved in potassium-dependent sodium/calcium exchange in melanosomes</li>
+        <li>Modulating this pathway represents a novel approach to skin lightening</li>
+        <li>Combined with high-dose glutathione for multiple mechanisms of action</li>
+        <li>This represents cutting-edge research in cosmetic science</li>
+      </ul>
+      <br/>
+      This advanced, research-based formulation is for individuals seeking the most innovative approaches to skin lightening.<br/>
+      <em class="text-xs text-gray-400">Critical Note: Gene modulation therapies are experimental in cosmetic applications. Long-term effects and safety profiles are not fully established. Should only be administered by specialists with genetic counseling available. Not for pregnant/nursing women. Requires thorough informed consent regarding experimental nature. Monitor closely for unexpected reactions.</em>
+    `,
+    benefits: ["Gene-Targeted Approach", "High-Concentration Glutathione (600mg/vial)", "Cutting-Edge Technology", "Multiple Mechanism Action"],
+    sku: "ISKIN-SLC24A5-PH9",
+    volume: "10 Sessions (600mg/vial)"
+  },
   {
   "id": 2,
   "name": "Saint Blanc XIII Quartet Glutathione Skin Whitening Injection",
@@ -146,18 +169,42 @@ const PRODUCTS = [
   "volume": "1 Box Pack (Complete Quartet Course)"
 },
   {
-  "id": 3,
-  "name": "Glutax 75GX DCRP 750000 DNA Cell Revitalize Process Injection",
-  "category": "Injection",
-  "brand": "Glutax",
-  "price": 13400,
-  "image": "/image/glutax-dcrp.jpg",
-  "description": "DNA Cell Revitalize Process | 14 Sessions + Oral Booster",
-  "details": "<strong>Glutax 75GX DCRP — Extended Protocol with Cellular Revitalization</strong><br/><br/>This Italian formulation combines a 14-session injection protocol with an oral glutathione booster, creating a continuous treatment system. The 'DNA Cell Revitalize Process' (DCRP) refers to a proprietary complex designed to support cellular repair mechanisms while delivering high-dose glutathione for skin brightening and antioxidant benefits.<br/><br/><strong>Treatment Protocol & Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>14 Injection Sessions:</strong> Each vial contains a high-potency blend of reduced L-Glutathione and supporting antioxidants for intravenous (IV) administration every 3-4 days.</li><li><strong>Oral Glutathione Booster:</strong> Included to maintain elevated glutathione levels between injection sessions, potentially enhancing and prolonging results.</li><li><strong>Vitamin C Synergy:</strong> Recommended to be used concurrently with additional Vitamin C 1000mg injections for optimal glutathione recycling and enhanced brightening effects[citation:1].</li></ul><br/><strong>Claimed Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Inhibits melanin production for skin whitening and scar lightening</li><li>Stimulates collagen synthesis to improve skin elasticity and firmness</li><li>Provides deep hydration and moisture retention</li><li>Reduces hyperpigmentation from sun exposure</li><li>Smooths fine lines and wrinkles</li><li>Minimizes acne and pore appearance</li><li>Neutralizes free radicals throughout the body</li><li>Offers anti-aging protection at the cellular level</li></ul><br/><strong>Administration:</strong> For professional intravenous (IV) infusion only. Recommended schedule: one session every 3-4 days for a complete course of 14 sessions. The oral booster should be taken as directed between sessions.<br/><br/><strong>Contraindications:</strong> Not suitable for pregnant or breastfeeding women, individuals with vitamin allergies, patients with cardiovascular conditions, or those with kidney/liver impairment. Results depend on individual metabolism and skin type.<br/><br/><em class=\"text-xs text-gray-400\">Medical Note: The 'DNA Revitalize' claim refers to antioxidant protection against DNA damage from free radicals, not genetic modification. Long-term safety of high-dose glutathione protocols with oral boosters requires further research. Regular monitoring of kidney and liver function is advised during extended courses[citation:2][citation:3].</em>",
-  "benefits": ["14-Session Protocol", "Oral + Injection System", "Cellular Antioxidant Protection", "Anti-Aging & Brightening"],
-  "sku": "GLU-75GX-DCRP",
-  "volume": "1 Box Pack (14 Sessions + Oral Booster)"
-},
+    id: 3,
+    name: "Quattrox Complexion 12 Infusion 4 Sessions Skin Whitening Injection",
+    category: "Injection",
+    brand: "Quattrox",
+    price: 14500,
+    image: "/image/IMG_1907.JPG",
+    description: "Quattrox™ Technology with Melsmon Extract | Complexion Perfector",
+    details: `
+      <strong>Quattrox Complexion — Holistic Skin Quality Formulation</strong><br/><br/>
+      This formulation utilizes Melsmon, a placental extract, alongside the Quattrox H.E.R.C. system (Hydration, Evenness, Radiance, Clarity). Placental extracts contain various growth factors, amino acids, and nutrients[citation:36].<br/><br/>
+      <strong>Key Active Components:</strong><br/>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Melsmon Placental Extract (porcine source) – 2 mL</li>
+        <li>Glutathione – 1000 mg</li>
+        <li>Hyaluronic Acid (multi-weight) – 50 mg</li>
+        <li>Licorice Root Extract (Glabridin) – 50 mg</li>
+        <li>Centella Asiatica Extract – 100 mg (soothing, healing)</li>
+        <li>Niacinamide – 100 mg</li>
+      </ul>
+      <br/>
+      <strong>Placental Extract Science:</strong>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Placental extracts contain various growth factors (EGF, FGF, TGF-β)</li>
+        <li>Rich in amino acids, vitamins, and minerals</li>
+        <li>May support tissue repair and regeneration</li>
+        <li>Traditionally used in some Asian aesthetic medicine for rejuvenation</li>
+        <li>Combined with glutathione for comprehensive complexion improvement</li>
+      </ul>
+      <br/>
+      This holistic approach is designed for overall skin quality improvement rather than focused whitening alone.<br/>
+      <em class="text-xs text-gray-400">Important: Placental extracts are biological materials. Ensure proper screening for allergies and infectious diseases. Not suitable for vegetarians/vegans. Use with caution in individuals with autoimmune conditions. Requires medical supervision.</em>
+    `,
+    benefits: ["Placental Extract Rejuvenation", "Holistic Complexion Focus", "Multi-Pathway Improvement", "Skin Quality Enhancement"],
+    sku: "COSDAC-MELSMON-QUAT",
+    volume: "10 Sessions"
+  },
   {
   "id": 4,
   "name": "Glutax 2000000GX DualNA Premium ReCombined Cell Injection",
@@ -327,76 +374,32 @@ const PRODUCTS = [
   "sku": "REL-2000-BOOST",
   "volume": "1 Box Pack (8 Sets + 30 Booster Capsules)"
 },
-  
   {
-    id: 18,
-    name: "Hieron Prefilled Injection",
-    category: "Filler",
-    brand: "Daehan Nupharm",
-    price: 12500,
-    image: "/image/IMG_1838.jpg",
-    description: "Sodium Hyaluronate 2.5ml | Skin Booster",
-    details: `
-      <strong>Hyaron (Hieron) Prefilled Injection — Hyaluronic Acid Dermal Booster</strong><br/><br/>
-      This is a non-crosslinked hyaluronic acid (sodium hyaluronate) dermal booster designed for mesotherapy. Unlike dermal fillers that provide structural support, skin boosters aim to improve skin quality through hydration and stimulation of collagen production[citation:19].<br/><br/>
-      <strong>Key Specifications:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Sodium Hyaluronate – 20 mg/mL (non-crosslinked, low molecular weight)</li>
-        <li>Volume – 2.5 mL per syringe</li>
-        <li>pH – 7.0-7.5 (physiological range)</li>
-        <li>Osmolality – Isotonic (approximately 300 mOsm/kg)</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Hyaluronic acid binds up to 1000 times its weight in water, providing intense hydration</li>
-        <li>Low molecular weight HA may stimulate fibroblast activity and collagen synthesis</li>
-        <li>Improves skin elasticity and reduces the appearance of fine lines through hydration</li>
-        <li>Creates a "glass skin" effect by enhancing skin transparency and light reflection</li>
-      </ul>
-      <br/>
-      Recommended for individuals with dehydrated, dull skin or as adjunctive therapy to improve overall skin quality.<br/>
-      <em class="text-xs text-gray-400">Medical Note: As with all injectables, risk of bruising, swelling, and rare vascular complications exist. Should be administered by trained professionals familiar with facial anatomy. Avoid in individuals with active skin infections or hypersensitivity to hyaluronic acid.</em>
-    `,
-    benefits: ["Non-Crosslinked HA", "Deep Hydration", "Collagen Stimulation", "Skin Quality Improvement"],
-    sku: "HYARON-10",
-    volume: "10 Syringes (2.5ml)"
-  },
-  {
-    id: 19,
-    name: "Glutax 8000000GS Ultimate Recombined White Glutathione Skin Whitening Injection",
-    category: "Injection",
-    brand: "Glutax",
-    price: 10600,
-    image: "/image/IMG_1824.jpg",
-    description: "Ultimate ReCombined White | 8 Million GS",
-    details: `
-      <strong>Glutax 8000000GS — miRNA-Enhanced Formulation</strong><br/><br/>
-      This formulation incorporates microRNA (miRNA) technology alongside glutathione. miRNAs are small non-coding RNA molecules that can regulate gene expression, including genes involved in melanogenesis. However, the stability and delivery of therapeutic miRNAs remain challenging[citation:20].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 1,200 mg per session</li>
-        <li>miRNA Complex (targeting MITF or tyrosinase pathways) – proprietary amount</li>
-        <li>Recombinant Epidermal Growth Factor (EGF) – 15 mcg</li>
-        <li>Vitamin B Complex with Vitamin E</li>
-        <li>L-Glutamine – 100 mg (supports glutathione synthesis)</li>
-      </ul>
-      <br/>
-      <strong>miRNA Technology Concept:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Certain miRNAs (like miR-25, miR-137) have been shown to regulate melanogenesis in vitro</li>
-        <li>miRNAs may downregulate melanogenic enzymes or transcription factors</li>
-        <li>Formulation challenges include protecting miRNAs from degradation and ensuring cellular uptake</li>
-        <li>This represents an experimental approach combining traditional and emerging technologies</li>
-      </ul>
-      <br/>
-      This advanced formulation is positioned for individuals interested in cutting-edge approaches to skin brightening.<br/>
-      <em class="text-xs text-gray-400">Important Note: miRNA-based therapies for skin lightening are experimental. Clinical evidence in humans is limited. This should be considered an innovative but unproven approach beyond the established effects of glutathione.</em>
-    `,
-    benefits: ["miRNA Technology", "Gene Regulation Approach", "EGF Enhanced", "Innovative Formulation"],
-    sku: "GLU-8M-GS",
-    volume: "10 Sessions"
-  },
+  "id": 17,
+  "name": "Hyaron Sodium Hyaluronate Prefilled Mesotherapy Injection",
+  "category": "Mesotherapy",
+  "brand": "Dongkook",
+  "price": 13000,
+  "image": "/image/IMG_1838.jpg",
+  "description": "Korean Skin Booster | 10 x 2.5ml Syringes",
+  "details": "<strong>Hyaron — Korean Non-Crosslinked Sodium Hyaluronate Skin Booster</strong><br/><br/>Hyaron is a specialized mesotherapy product from South Korea, distinct from traditional dermal fillers. It contains non-crosslinked, low molecular weight Sodium Hyaluronate (20mg per syringe) designed for superficial injection to intensely hydrate the skin, stimulate collagen, and improve overall skin quality, texture, and tone.<br/><br/><strong>Core Specifications & Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Active Ingredient:</strong> Sodium Hyaluronate 20.0 mg</li><li><strong>Other Components:</strong> Sodium Chloride 17.0 mg, Monobasic Sodium Phosphate 1.2 mg, Water for injection up to 2.5 mL.</li><li><strong>Form:</strong> Transparent gel in a prefilled syringe.</li><li><strong>Volume:</strong> 2.5mL per syringe. The standard pack contains <strong>10 syringes</strong> for a full treatment course.</li><li><strong>Manufacturer & Origin:</strong> DongKook Pharmaceutical Co., Ltd., South Korea.</li><li><strong>Shelf Life & Storage:</strong> 36 months. Store sealed at 1~30°C, away from direct sunlight.</li></ul><br/><strong>Mechanism & Application:</strong><br/>As a mesotherapy product, Hyaron is injected very superficially (approx. 1mm) into the skin using a fine 30G needle. Its smooth, fluid consistency allows for even distribution to:<br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Bind water for <strong>deep, lasting hydration</strong>.</li><li>Stimulate the skin's own <strong>collagen and elastin production</strong>.</li><li>Improve skin elasticity, smoothness, and radiance.</li></ul><br/><strong>Treatment Protocol & Results:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Recommended Course:</strong> 4-5 procedures, administered <strong>every 10-14 days</strong>.</li><li><strong>Onset of Effects:</strong> Improvement in fine surface wrinkles may be seen quickly, but the full <strong>hydrating and rejuvenating effects</strong> build towards the end of the course.</li><li><strong>Duration:</strong> Results typically last from <strong>6 to 12 months</strong>.</li></ul><br/><strong>Key Benefits & Indications:</strong><br/>Primarily used for: improving superficial wrinkles, hydrating dry/dehydrated skin, rejuvenating dull skin, boosting skin elasticity, and improving skin tone issues related to acne scars, sun damage, and pigmentation. It is noted for having <strong>no allergic reactions</strong> (as HA is biocompatible) and a long-lasting effect.<br/><br/><em class=\"text-xs text-gray-400\">Important Medical Notice: Hyaron is a prescription medical device for injection by qualified professionals only. It is contraindicated in cases of active skin infection at the injection site, known hypersensitivity to hyaluronic acid or any component, or during pregnancy/lactation unless deemed necessary by a physician. Proper injection technique is crucial to avoid complications.</em>",
+  "benefits": ["Deep Skin Hydration", "Collagen & Elastin Stimulation", "Improves Skin Texture & Tone", "Long-Lasting Results (6-12 months)"],
+  "sku": "HYARON-2.5ML-10",
+  "volume": "1 Box (10 Prefilled Syringes of 2.5ml each)"
+},
+ {
+    "id": 18,
+    "name": "Glutax 8000000GS Ultimate Recombined White Glutathione Injection",
+    "category": "Injection",
+    "brand": "Glutax",
+    "price": 11000,
+    "image": "/image/IMG_1824.jpg",
+    "description": "Ultimate ReCombined White | 8 Million GS",
+    "details": "<strong>Glutax 8000000GS Ultimate — Premium Skin Whitening & Antioxidant Formula</strong><br/><br/>This Italian formulation is positioned as a high-end, multi-ingredient solution for skin whitening and anti-aging. It combines an extremely high concentration of Ultrafiltration Glutathione with a synergistic blend of antioxidants, vitamins, marine extracts, and signaling molecules (miRNA) designed to target melanin production, promote cellular repair, and provide comprehensive antioxidant protection.<br/><br/><strong>Full Ingredient Composition (Per Box / 10 Sets):</strong><br/>The formula includes the following active components, typically detailed across 10 injection sets (each set contains 2 vials + 2 ampoules) [citation:1][citation:3][citation:6]:<br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ultrafiltration Glutathione:</strong> 8,000,000 mg – The primary agent for skin brightening and detoxification.</li><li><strong>Crithmum Maritimum Cells CIC2:</strong> 100,000 mg – A marine plant extract for skin regeneration and hydration.</li><li><strong>Alpha Lipoic Acid:</strong> 100,000 mg & <strong>SOD (Superoxide Dismutase):</strong> 8,000 mg – Potent antioxidants to fight free radicals and environmental damage.</li><li><strong>miRNA White Element:</strong> 50,000 mg – A proprietary complex claimed to regulate skin health and enhance radiance.</li><li><strong>Epidermal Growth Factor (EGF):</strong> 5,000 mg – Aims to stimulate skin cell renewal and repair.</li><li><strong>Kojic Acid:</strong> 20,000 mg & <strong>Multivitamin:</strong> 80,000 mg – Target dark spots and nourish the skin.</li><li><strong>Natural Collagen:</strong> 40,000 mg & <strong>Selenium:</strong> 20,000 mg – Support skin elasticity and provide protective benefits.</li></ul><br/><strong>Usage & Administration:</strong> For professional use only. It is administered via <strong>intravenous (IV) or intramuscular (IM) injection</strong>. The standard recommended frequency is <strong>once per week</strong> [citation:1][citation:6]. A full box constitutes a 10-session course.<br/><br/><strong>Contraindications (Not Suitable For):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Breastfeeding women.</li><li>Administration during the menstrual period.</li><li>Individuals with any vitamin allergy.</li><li>Patients with cardiovascular problems.</li><li>Individuals below 18 years of age [citation:1].</li></ul><br/><strong>Manufacturer & Origin:</strong> Manufactured by **Derma Medical Skin Sciences** in **Italy** [citation:1].<br/><br/><em class=\"text-xs text-gray-400\">Important Notice: All seller listings strongly emphasize that a consultation with a dermatologist or doctor is essential before use, as results depend on individual body metabolism [citation:1]. The use of injectable glutathione for cosmetic skin whitening is an off-label application with potential risks and is not approved for this purpose by major regulatory bodies like the U.S. FDA.</em>",
+    "benefits": ["Ultra-High Potency Glutathione", "Marine & Antioxidant Complex", "miRNA Technology", "EGF for Cellular Renewal"],
+    "sku": "GLU-8M-GS-ULT",
+    "volume": "1 Box (10 Injection Sets)"
+},
   {
     id: 20,
     name: "Aqua Skin Pure Gold Pro II 30th Glutathione Whitening Injection",
@@ -943,78 +946,18 @@ const PRODUCTS = [
     volume: "15 Vials (IV Infusion)"
   },
   {
-    id: 35,
-    name: "Quattrox Complexion 12 Infusion 4 Sessions Skin Whitening Injection",
-    category: "Injection",
-    brand: "Quattrox",
-    price: 14500,
-    image: "/image/IMG_1907.JPG",
-    description: "Quattrox™ Technology with Melsmon Extract | Complexion Perfector",
-    details: `
-      <strong>Quattrox Complexion — Holistic Skin Quality Formulation</strong><br/><br/>
-      This formulation utilizes Melsmon, a placental extract, alongside the Quattrox H.E.R.C. system (Hydration, Evenness, Radiance, Clarity). Placental extracts contain various growth factors, amino acids, and nutrients[citation:36].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Melsmon Placental Extract (porcine source) – 2 mL</li>
-        <li>Glutathione – 1000 mg</li>
-        <li>Hyaluronic Acid (multi-weight) – 50 mg</li>
-        <li>Licorice Root Extract (Glabridin) – 50 mg</li>
-        <li>Centella Asiatica Extract – 100 mg (soothing, healing)</li>
-        <li>Niacinamide – 100 mg</li>
-      </ul>
-      <br/>
-      <strong>Placental Extract Science:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Placental extracts contain various growth factors (EGF, FGF, TGF-β)</li>
-        <li>Rich in amino acids, vitamins, and minerals</li>
-        <li>May support tissue repair and regeneration</li>
-        <li>Traditionally used in some Asian aesthetic medicine for rejuvenation</li>
-        <li>Combined with glutathione for comprehensive complexion improvement</li>
-      </ul>
-      <br/>
-      This holistic approach is designed for overall skin quality improvement rather than focused whitening alone.<br/>
-      <em class="text-xs text-gray-400">Important: Placental extracts are biological materials. Ensure proper screening for allergies and infectious diseases. Not suitable for vegetarians/vegans. Use with caution in individuals with autoimmune conditions. Requires medical supervision.</em>
-    `,
-    benefits: ["Placental Extract Rejuvenation", "Holistic Complexion Focus", "Multi-Pathway Improvement", "Skin Quality Enhancement"],
-    sku: "COSDAC-MELSMON-QUAT",
-    volume: "10 Sessions"
-  },
-  {
-    id: 36,
-    name: "Iskin SLC24A5 Chromosome Phase IX Glutathione Whitening Injection",
-    category: "Injection",
-    brand: "iSkin",
-    price: 24000,
-    image: "/image/IMG_1910.JPG",
-    description: "Gene-Targeted Whitening | SLC24A5 Inhibitor | 600mg/Vial Z-Glutathione",
-    details: `
-      <strong>iSkin SLC24A5 Phase IX — Genetic Pathway Modulation</strong><br/><br/>
-      This advanced formulation targets the SLC24A5 gene, which encodes the NCKX5 protein involved in melanin synthesis. The approach combines glutathione with oligonucleotides or small molecules that may modulate gene expression[citation:37].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Z-Form Stabilized Glutathione – 600 mg/vial (higher concentration per vial)</li>
-        <li>SLC24A5 Pathway Modulators (proprietary)</li>
-        <li>TriNA Hydrate System (nucleotide delivery technology)</li>
-        <li>DNA Protection Antioxidants</li>
-        <li>Penetration Enhancing Complex</li>
-      </ul>
-      <br/>
-      <strong>Genetic Science Background:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>SLC24A5 variations are associated with skin pigmentation differences in human populations</li>
-        <li>NCKX5 protein is involved in potassium-dependent sodium/calcium exchange in melanosomes</li>
-        <li>Modulating this pathway represents a novel approach to skin lightening</li>
-        <li>Combined with high-dose glutathione for multiple mechanisms of action</li>
-        <li>This represents cutting-edge research in cosmetic science</li>
-      </ul>
-      <br/>
-      This advanced, research-based formulation is for individuals seeking the most innovative approaches to skin lightening.<br/>
-      <em class="text-xs text-gray-400">Critical Note: Gene modulation therapies are experimental in cosmetic applications. Long-term effects and safety profiles are not fully established. Should only be administered by specialists with genetic counseling available. Not for pregnant/nursing women. Requires thorough informed consent regarding experimental nature. Monitor closely for unexpected reactions.</em>
-    `,
-    benefits: ["Gene-Targeted Approach", "High-Concentration Glutathione (600mg/vial)", "Cutting-Edge Technology", "Multiple Mechanism Action"],
-    sku: "ISKIN-SLC24A5-PH9",
-    volume: "10 Sessions (600mg/vial)"
-  },
+  "id": 36,
+  "name": "Glutax 75GX DCRP 750000 DNA Cell Revitalize Process Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 13400,
+  "image": "/image/glutax-dcrp.jpg",
+  "description": "DNA Cell Revitalize Process | 14 Sessions + Oral Booster",
+  "details": "<strong>Glutax 75GX DCRP — Extended Protocol with Cellular Revitalization</strong><br/><br/>This Italian formulation combines a 14-session injection protocol with an oral glutathione booster, creating a continuous treatment system. The 'DNA Cell Revitalize Process' (DCRP) refers to a proprietary complex designed to support cellular repair mechanisms while delivering high-dose glutathione for skin brightening and antioxidant benefits.<br/><br/><strong>Treatment Protocol & Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>14 Injection Sessions:</strong> Each vial contains a high-potency blend of reduced L-Glutathione and supporting antioxidants for intravenous (IV) administration every 3-4 days.</li><li><strong>Oral Glutathione Booster:</strong> Included to maintain elevated glutathione levels between injection sessions, potentially enhancing and prolonging results.</li><li><strong>Vitamin C Synergy:</strong> Recommended to be used concurrently with additional Vitamin C 1000mg injections for optimal glutathione recycling and enhanced brightening effects[citation:1].</li></ul><br/><strong>Claimed Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Inhibits melanin production for skin whitening and scar lightening</li><li>Stimulates collagen synthesis to improve skin elasticity and firmness</li><li>Provides deep hydration and moisture retention</li><li>Reduces hyperpigmentation from sun exposure</li><li>Smooths fine lines and wrinkles</li><li>Minimizes acne and pore appearance</li><li>Neutralizes free radicals throughout the body</li><li>Offers anti-aging protection at the cellular level</li></ul><br/><strong>Administration:</strong> For professional intravenous (IV) infusion only. Recommended schedule: one session every 3-4 days for a complete course of 14 sessions. The oral booster should be taken as directed between sessions.<br/><br/><strong>Contraindications:</strong> Not suitable for pregnant or breastfeeding women, individuals with vitamin allergies, patients with cardiovascular conditions, or those with kidney/liver impairment. Results depend on individual metabolism and skin type.<br/><br/><em class=\"text-xs text-gray-400\">Medical Note: The 'DNA Revitalize' claim refers to antioxidant protection against DNA damage from free radicals, not genetic modification. Long-term safety of high-dose glutathione protocols with oral boosters requires further research. Regular monitoring of kidney and liver function is advised during extended courses[citation:2][citation:3].</em>",
+  "benefits": ["14-Session Protocol", "Oral + Injection System", "Cellular Antioxidant Protection", "Anti-Aging & Brightening"],
+  "sku": "GLU-75GX-DCRP",
+  "volume": "1 Box Pack (14 Sessions + Oral Booster)"
+},
   {
     id: 37,
     name: "iskin Radianz Blue NAD+",
@@ -1255,39 +1198,18 @@ const PRODUCTS = [
     volume: "35g Injection"
   },
   {
-    id: 44,
-    name: "Relumins 3500mg Glutathione Capsule",
-    category: "Supplement",
-    brand: "Relumins",
-    price: 3000,
-    image: "/image/Relumins3500.jpg",
-    description: "Relumins 3500mg Glutathione Capsules | Skin Brightening & Antioxidant Support",
-    details: `
-      <strong>Relumins 3500mg Glutathione Capsules — Premium Skin Brightening Supplement</strong><br/><br/>
-      Relumins 3500mg Glutathione Capsules are designed to provide high-dose oral glutathione for skin brightening and antioxidant support. Glutathione is a powerful antioxidant that plays a key role in reducing melanin production and protecting cells from oxidative stress[citation:45].<br/><br/>
-      <strong>Key Features:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>High-Dose Glutathione – 3500 mg per capsule</li>
-        <li>Supports Skin Brightening</li>
-        <li>Provides Antioxidant Protection</li>
-        <li>May Improve Overall Skin Health</li>
-        <li>Convenient Capsule Form</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
-        <li>Neutralizes free radicals, protecting skin cells from damage</li>
-        <li>Supports detoxification processes in the liver</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking a convenient and effective oral supplement for skin brightening and overall antioxidant support.<br/>
-      <em class="text-xs text-gray-400">Note: Consistent use over several weeks is recommended to see noticeable skin brightening effects. Consult with a healthcare professional before starting any new supplement regimen.</em>
-    `,
-    benefits: ["High-Dose Glutathione", "Skin Brightening", "Antioxidant Protection", "Convenient Capsule Form"],
-    sku: "RELUMINS-3500MG-CAP",
-    volume: "30 Capsules"
-  },
+  "id": 44,
+  "name": "Relumins 3500mg Glutathione Set MAX with Vitamin C & Boosters",
+  "category": "Injection",
+  "brand": "Relumins",
+  "price": 17500,
+  "image": "/image/Relumins3500.jpg",
+  "description": "FDA Registered Skin Whitening System | 3000mg L-Glutathione + 500mg Vitamin C + Oral Boosters",
+  "details": "<strong>Relumins 3500mg Glutathione — Complete Skin Whitening System</strong><br/><br/>Relumins is an FDA-registered skin whitening brand offering a comprehensive Glutathione system combining high-dose injectables with oral boosters to maintain elevated levels between treatments.<br/><br/><strong>Complete Set Includes:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione (Reduced):</strong> 3000mg per vial (5 vials) — Inhibits melanin synthesis by blocking tyrosine oxidation and tyrosinase activity.</li><li><strong>Vitamin C:</strong> 500mg per ampule (5 ampules) — Enhances absorption, boosts collagen for skin firming.</li><li><strong>Glutathione Booster Capsules:</strong> 30 veggie caps — Maintains high GSH levels between treatments.</li></ul><br/><strong>Booster Key Actives:</strong> NAC 200mg, Alpha Lipoic Acid 150mg, L-Methionine 100mg, Vitamin E 100 IU, Vitamin B 5mg, Selenomethionine 200mcg — Work synergistically to enhance natural glutathione production and recycling.<br/><br/><strong>Usage Protocol:</strong> Administer IV/IM once weekly. For oral use: Mix Vitamin C solution with Glutathione powder, take 1ml twice daily for 2.5 days, then 1-day break. Take 1 Booster capsule daily. Evaluate results every 3 months. Maintenance: 800mg oral Glutathione with boosters daily.<br/><br/><strong>Safety:</strong> Consult physician if pregnant/nursing. Not for chemotherapy patients. Expiry: 01/2028.<br/><br/><em class=\"text-xs text-gray-400\">Results vary by individual. Professional supervision recommended.</em>",
+  "benefits": ["FDA Registered Brand", "3000mg L-Glutathione per Vial", "Complete System with Oral Boosters", "Melanin Synthesis Inhibition", "Skin Firming & Rejuvenation"],
+  "sku": "REL-3500-MAX",
+  "volume": "5 Vials + 5 Ampules + 30 Capsules"
+},
   {
     id: 45,
     name: "Miracle white 18k",
@@ -1820,11 +1742,8 @@ const Footer = ({ setCurrentPage, showToast }) => {
     }
     setLoading(true);
     // Construct the WhatsApp URL
-    const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
-    const whatsappUrl = `https://wa.me/919916404202?text=${encodeURIComponent(message)}`;
-
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank');
+  const message = `Hi, I'd like to subscribe to Cosmatrix wholesale updates. My number is: ${phone}`;
+  const whatsappUrl = `https://wa.me/8123453510?text=${encodeURIComponent(message)}`;
 
     showToast("Opening WhatsApp...", "success");
     setPhone('');
@@ -2075,19 +1994,9 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         </div>
     </div>
 
-    {/* BRAND MARQUEE */}
-    <section className="py-8 md:py-12 bg-white border-b border-gray-100 overflow-hidden">
-        <p className="text-center text-[10px] text-gray-400 font-bold tracking-[0.2em] uppercase mb-6">Trusted Brand Partners</p>
-        <div className="flex gap-8 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 justify-center flex-wrap px-6">
-            {['Glutax', 'Miracle White', 'Aqua Skin', 'Nc24', 'Relumins', 'Daehan'].map(brand => (
-                <span key={brand} className="text-lg md:text-2xl font-serif font-bold text-gray-800 cursor-default">{brand}</span>
-            ))}
-        </div>
-    </section>
 
     {/* CURATED CATEGORIES */}
     <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto">
-        <SectionHeader title="Curated Collections" subtitle="Explore our specialized range of aesthetic formulations" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
                 { name: 'Whitening Injections', img: '/image/injcover.jpg', desc: 'Glutathione & Stem Cell', filter: 'Injection' },
@@ -2111,27 +2020,6 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         </div>
     </section>
 
-    {/* TRUSTED BY INDIA */}
-    <section className="py-16 md:py-20 bg-gray-50 border-y border-gray-100">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-            <h2 className="font-serif text-2xl md:text-3xl text-gray-900 mb-4">Trusted Across India</h2>
-            <p className="text-gray-500 font-light max-w-2xl mx-auto mb-10">From Bangalore to Delhi, Mumbai to Kolkata. We serve over 500+ premium clinics with guaranteed authentic supplies.</p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-                {[
-                    { label: "Partner Clinics", val: "500+" },
-                    { label: "Cities Covered", val: "40+" },
-                    { label: "Years of Trust", val: "5+" },
-                    { label: "Happy Clients", val: "10k+" },
-                ].map((stat, idx) => (
-                    <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-                        <div className="text-3xl font-serif text-gray-900 mb-1">{stat.val}</div>
-                        <div className="text-[10px] uppercase tracking-widest text-[#E8A0BF] font-bold">{stat.label}</div>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </section>
 
     {/* BEST SELLERS GRID */}
     <section className="py-12 md:py-16 bg-white">
@@ -2145,8 +2033,8 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
         </div>
         
         {/* Mobile Horizontal Scroll */}
-        <div className="flex md:grid md:grid-cols-4 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
-            {PRODUCTS.slice(0, 4).map(product => (
+        <div className="flex md:grid md:grid-cols-3 gap-6 overflow-x-auto md:overflow-visible pb-6 md:pb-0 snap-x snap-mandatory scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
+            {PRODUCTS.slice(0, 3).map(product => (
                  <div key={product.id} className="group cursor-pointer min-w-[260px] md:min-w-0 snap-start" onClick={() => navigateTo('product', product)}>
                     <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden mb-4">
                         <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -2164,54 +2052,6 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
       </div>
     </section>
 
-    {/* NEW SECTION: TESTIMONIALS (Replaces The Cosmatrix Standard) */}
-    <section className="py-20 md:py-24 bg-[#FFF5F7] border-y border-white/50 relative overflow-hidden">
-        {/* Soft decorative background element */}
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#ffe4ec] rounded-full mix-blend-multiply filter blur-[80px] opacity-40"></div>
-        
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <SectionHeader title="Professional Endorsements" subtitle="Trusted by leading dermatologists and clinics" center={true} />
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                {TESTIMONIALS.map((t) => (
-                    <div key={t.id} className="bg-white p-8 rounded-2xl shadow-sm border border-pink-50 hover:shadow-lg transition-all duration-300 relative group">
-                        <div className="absolute -top-4 -left-2 text-6xl text-[#E8A0BF] opacity-20 font-serif">“</div>
-                        <p className="text-gray-600 font-light italic leading-relaxed mb-6 relative z-10">
-                            {t.quote}
-                        </p>
-                        <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 font-serif font-bold text-lg">
-                                {t.name.charAt(0)}
-                            </div>
-                            <div>
-                                <h4 className="font-bold text-sm text-gray-900">{t.name}</h4>
-                                <p className="text-xs text-[#E8A0BF] font-medium tracking-wide">{t.role}</p>
-                                <p className="text-[10px] text-gray-400 uppercase tracking-widest mt-0.5">{t.clinic}</p>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            
-            <div className="mt-12 text-center">
-                <p className="text-sm text-gray-500 font-light">Join our network of over 500+ satisfied partners.</p>
-            </div>
-        </div>
-    </section>
-
-    {/* CTA SECTION */}
-    <section className="py-16 md:py-24 bg-black text-center px-6 relative overflow-hidden border-t border-white/10">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#E8A0BF] rounded-full filter blur-[150px] opacity-10 pointer-events-none"></div>
-      
-      <div className="max-w-3xl mx-auto relative z-10">
-        <h2 className="font-serif text-3xl md:text-4xl mb-4 text-white">Partner With Excellence</h2>
-        <p className="text-gray-400 mb-8 font-light text-base md:text-lg">Join over 500+ clinics sourcing their premium inventory from Cosmatrix.</p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button onClick={() => navigateTo('contact')} variant="secondary" className="py-4 w-full sm:w-auto font-medium">Register Wholesale Account</Button>
-            <Button onClick={() => navigateTo('shop')} variant="outline" className="py-4 w-full sm:w-auto border-white/20 hover:bg-white hover:text-black">Browse Catalog</Button>
-        </div>
-      </div>
-    </section>
   </div>
   );
 };
@@ -2248,15 +2088,13 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter, brandFilter, setBr
   return (
     <div className="animate-fade-in bg-[#fbfbfb] min-h-screen pb-24">
       {/* HERO */}
-      <div className="bg-black text-white pt-32 pb-16 px-6 text-center relative overflow-hidden">
-         <div className="absolute inset-0 opacity-30 bg-[url('/image/ban1.jpg')] bg-cover bg-center pointer-events-none"></div>
-         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none"></div>
-         <div className="relative z-10 max-w-4xl mx-auto">
-            <span className="text-[#E8A0BF] tracking-[0.3em] uppercase text-[10px] font-bold mb-3 block animate-slide-up">Authorized Distribution</span>
-            <h1 className="font-serif text-4xl md:text-6xl mb-4 animate-slide-up" style={{animationDelay: '0.1s'}}>The Collection</h1>
-            <p className="text-gray-400 font-light max-w-lg mx-auto text-sm md:text-base animate-slide-up" style={{animationDelay: '0.2s'}}>Curated clinical formulations for professional aesthetic use.</p>
-         </div>
-      </div>
+      <div className="bg-black text-white py-8 px-6 text-center relative overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none"></div>
+    <div className="relative z-10 max-w-4xl mx-auto">
+        {/* Removed 'mb-4' so the text sits perfectly centered in the thinner strip */}
+        <h1 className="font-serif text-4xl md:text-6xl animate-slide-up" style={{animationDelay: '0.1s'}}>The Collection</h1>
+    </div>
+</div>
 
       {/* MOBILE CATEGORY SCROLL */}
       <div className="lg:hidden sticky top-20 z-30 bg-white border-b border-gray-100 py-3 px-4 shadow-sm overflow-x-auto flex gap-3 scrollbar-hide">
@@ -2588,15 +2426,15 @@ const ProductView = ({ product, addToCart, navigateTo }) => {
             </div>
             
             {/* Auto-fill WhatsApp Message for Wholesale Inquiry */}
-            <div className="mt-6">
-                <a 
-                href={`https://wa.me/919916404202?text=${encodeURIComponent(`Hello, I am interested in wholesale pricing for ${product.name}. My business type: Clinic / Salon / Reseller / Medical practitioner.`)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center py-3 border border-[#E8A0BF] text-[#E8A0BF] hover:bg-[#E8A0BF] hover:text-black transition-colors rounded font-medium text-sm uppercase tracking-wide"
-                >
-                Ask About Wholesale Pricing
-                </a>
+      <div className="mt-6">
+        <a 
+        href={`https://wa.me/8123453510?text=${encodeURIComponent(`Hello, I am interested in wholesale pricing for ${product.name}. My business type: Clinic / Salon / Reseller / Medical practitioner.`)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block w-full text-center py-3 border border-[#E8A0BF] text-[#E8A0BF] hover:bg-[#E8A0BF] hover:text-black transition-colors rounded font-medium text-sm uppercase tracking-wide"
+        >
+        Ask About Wholesale Pricing
+        </a>
                 <p className="text-xs text-gray-400 mt-2 text-center">*Professional verification required for bulk rates.</p>
             </div>
 
@@ -2821,134 +2659,154 @@ const TermsOfServiceView = () => (
   );
 
 /* IMPROVED ABOUT VIEW */
-const AboutView = () => {
-    const [openFaq, setOpenFaq] = useState(null);
-    const stats = [
-      { id: 1, val: "500+", label: "Partner Clinics" },
-      { id: 2, val: "100%", label: "Authentic Guarantee" },
-      { id: 3, val: "5", label: "Distribution Hubs" },
-      { id: 4, val: "24h", label: "Dispatch Time" },
-    ];
-    
-    return (
-      <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
-        {/* HERO */}
-        <div className="relative bg-[#0a0a0a] text-white py-28 px-6 overflow-hidden">
-             <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-30 mix-blend-luminosity pointer-events-none"></div>
-             <div className="relative z-10 max-w-4xl mx-auto text-center">
-                <span className="text-[#E8A0BF] tracking-[0.3em] uppercase text-[10px] md:text-xs font-bold mb-4 block animate-slide-up">Established 2020</span>
-                <h1 className="font-serif text-5xl md:text-7xl mb-6 leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
-                  Redefining <br/><span className="italic text-gray-400 font-light">Supply Chain Purity</span>
-                </h1>
-                <p className="text-gray-400 font-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.2s'}}>
-                  Cosmatrix bridges the gap between elite Swiss & Asian laboratories and India's leading aesthetic clinics.
-                </p>
-             </div>
-        </div>
-   
-        {/* MISSION SPLIT */}
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-             <div className="relative aspect-[4/5] md:aspect-square bg-gray-100 rounded-lg overflow-hidden">
-                <img loading="lazy" src="/image/blog4.jpg" alt="Laboratory" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded max-w-xs shadow-lg">
-                   <p className="font-serif text-lg italic">"Safety is not a feature. It is the foundation of aesthetic medicine."</p>
-                   <p className="text-xs font-bold uppercase tracking-widest mt-2">— Director's Note</p>
-                </div>
-             </div>
-             <div>
-                <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs mb-3 block">Our Mission</span>
-                <h2 className="font-serif text-3xl md:text-5xl mb-6 text-gray-900 leading-tight">Beyond Distribution: <br/>Guardians of Quality</h2>
-                <div className="space-y-6 text-gray-600 font-light leading-relaxed">
-                   <p>
-                     In an industry often clouded by uncertainty, Cosmatrix stands as a beacon of authenticity. We don't just move boxes. We verify cold-chain integrity, audit batch numbers, and ensure that every vial performs exactly as intended.
-                   </p>
-                   <p>
-                     Founded by a team of pharmacists and logistics experts, we recognized a critical gap in the market: the disconnect between premium manufacturers and the clinics that need them. We closed that gap.
-                   </p>
-                </div>
-                <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-2 gap-6">
-                   <div>
-                       <h4 className="font-serif text-xl mb-1">Switzerland</h4>
-                       <p className="text-xs text-gray-400 uppercase tracking-widest">Sourcing Hub</p>
-                   </div>
-                   <div>
-                       <h4 className="font-serif text-xl mb-1">South Korea</h4>
-                       <p className="text-xs text-gray-400 uppercase tracking-widest">Innovation Lab</p>
-                   </div>
-                </div>
-             </div>
-          </div>
-        </div>
-   
-        {/* STATS STRIP */}
-        <div className="bg-black text-white py-16">
-           <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
-              {stats.map(stat => (
-                 <div key={stat.id} className="p-2">
-                    <div className="font-serif text-4xl md:text-5xl text-[#E8A0BF] mb-2">{stat.val}</div>
-                    <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-400">{stat.label}</div>
-                 </div>
-              ))}
-           </div>
-        </div>
-   
-        {/* THE COLD CHAIN PROMISE */}
-        <div className="max-w-7xl mx-auto px-6 py-20 bg-white">
-          <SectionHeader title="The Cold Chain Promise" subtitle="How we protect the efficacy of sensitive biologicals" />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
-                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                    <Thermometer size={24} className="text-[#E8A0BF]" />
-                 </div>
-                 <h3 className="font-serif text-xl mb-3">Temp-Controlled Storage</h3>
-                 <p className="text-sm text-gray-500 font-light leading-relaxed">
-                   Our warehouses maintain strict 2°C - 8°C zones for peptides and growth factors, ensuring zero degradation before dispatch.
-                 </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
-                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                    <ShieldCheck size={24} className="text-[#E8A0BF]" />
-                 </div>
-                 <h3 className="font-serif text-xl mb-3">Batch Verification</h3>
-                 <p className="text-sm text-gray-500 font-light leading-relaxed">
-                   Every shipment is cross-referenced with manufacturer lot numbers. We employ a 3-step authentication process for every box.
-                 </p>
-              </div>
-              <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
-                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                    <Clock size={24} className="text-[#E8A0BF]" />
-                 </div>
-                 <h3 className="font-serif text-xl mb-3">Expedited Logistics</h3>
-                 <p className="text-sm text-gray-500 font-light leading-relaxed">
-                   We utilize priority air-cargo partners to minimize transit time. Insulated packaging keeps products stable for up to 72 hours.
-                 </p>
-              </div>
-          </div>
-        </div>
-   
-        {/* FAQ SECTION */}
-        <div className="max-w-3xl mx-auto px-6 py-12">
-          <h3 className="font-serif text-2xl mb-8 text-center">Frequently Asked Questions</h3>
-          <div className="space-y-4">
-              {FAQS.map((faq, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white overflow-hidden transition-all hover:border-gray-300">
-                      <button 
-                          className="w-full px-6 py-5 text-left flex justify-between items-center group"
-                          onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                      >
-                          <span className={`font-serif text-lg ${openFaq === index ? 'text-[#E8A0BF]' : 'text-gray-900'} transition-colors`}>{faq.q}</span>
-                          <ChevronDown size={18} className={`text-gray-400 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} />
-                      </button>
-                      <div className={`px-6 overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
-                          <p className="text-sm text-gray-500 font-light leading-relaxed border-t border-gray-100 pt-4">{faq.a}</p>
-                      </div>
-                  </div>
-              ))}
-          </div>
-        </div>
-      </div>
-    )
+const AboutView = ({ navigateTo }) => {
+  const [openFaq, setOpenFaq] = useState(null);
+  
+  // Updated stats based on your provided data
+  const stats = [
+    { id: 1, val: "2013", label: "Year Established" },
+    { id: 2, val: "100+", label: "Products Available" },
+    { id: 3, val: "20+", label: "Premium Brands" },
+    { id: 4, val: "4.8/5", label: "Customer Rating" },
+  ];
+  
+  return (
+    <div className="animate-fade-in pb-24 bg-[#fbfbfb]">
+      {/* HERO */}
+      <div className="relative bg-[#0a0a0a] text-white py-28 px-6 overflow-hidden">
+           <div className="absolute inset-0 bg-[url('/image/ban2.jpg')] bg-cover bg-center opacity-30 mix-blend-luminosity pointer-events-none"></div>
+           <div className="relative z-10 max-w-4xl mx-auto text-center">
+              <span className="text-[#E8A0BF] tracking-[0.3em] uppercase text-[10px] md:text-xs font-bold mb-4 block animate-slide-up">Established 2013</span>
+              <h1 className="font-serif text-5xl md:text-7xl mb-6 leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
+                Cosmatrix <br/><span className="italic text-gray-400 font-light">International</span>
+              </h1>
+              <p className="text-gray-400 font-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed animate-slide-up" style={{animationDelay: '0.2s'}}>
+                Premium Trader, Retailer, and Wholesaler of Glutathione Injections, Skin Creams, and Aesthetic Fillers based in Bengaluru.
+              </p>
+           </div>
+      </div>
+  
+      {/* MISSION SPLIT */}
+      <div className="max-w-7xl mx-auto px-6 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+           <div className="relative aspect-[4/5] md:aspect-square bg-gray-100 rounded-lg overflow-hidden">
+              <img loading="lazy" src="/image/iv-abt.jpg" alt="Company Operations" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-4 rounded max-w-xs shadow-lg">
+                 <p className="font-serif text-lg italic">"We follow moral business policies and crystal pure transparency in all our transactions."</p>
+                 <p className="text-xs font-bold uppercase tracking-widest mt-2">— Arish, CEO</p>
+              </div>
+           </div>
+           <div>
+              <span className="text-[#E8A0BF] font-bold tracking-widest uppercase text-xs mb-3 block">Our Mission</span>
+              <h2 className="font-serif text-3xl md:text-5xl mb-6 text-gray-900 leading-tight">Catering to Expectations <br/>with Excellence</h2>
+              <div className="space-y-6 text-gray-600 font-light leading-relaxed">
+                 <p>
+                   We direct all our activities to cater to the expectations of our customers by providing them with excellent quality products as per their gratification. Since 2013, we have focused on building long-term relationships by being responsive, easy to reach, and dependable.
+                 </p>
+                 <p>
+                   For our accomplishment story, we are deeply grateful to Arhan, whose continual backing and direction have been instrumental in attaining our exponential development in the current market.
+                 </p>
+              </div>
+              <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-2 gap-6">
+                 <div>
+                     <h4 className="font-serif text-xl mb-1">Bengaluru, India</h4>
+                     <p className="text-xs text-gray-400 uppercase tracking-widest">Headquarters</p>
+                 </div>
+                 <div>
+                     <h4 className="font-serif text-xl mb-1">100% Satisfaction</h4>
+                     <p className="text-xs text-gray-400 uppercase tracking-widest">Quality Guarantee</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+      </div>
+  
+      {/* STATS STRIP */}
+      <div className="bg-black text-white py-16">
+         <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+            {stats.map(stat => (
+               <div key={stat.id} className="p-2">
+                  <div className="font-serif text-4xl md:text-5xl text-[#E8A0BF] mb-2">{stat.val}</div>
+                  <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-400">{stat.label}</div>
+               </div>
+            ))}
+         </div>
+      </div>
+  
+      {/* WHY US (Replaced Cold Chain with Company Ethos) */}
+      <div className="max-w-7xl mx-auto px-6 py-20 bg-white">
+        <div className="text-center mb-12">
+            <h2 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Why Choose Cosmatrix?</h2>
+            <p className="text-gray-500 font-light">Dedicated to customer support, accessibility, and uncompromised quality.</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
+               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                  <ShieldCheck size={24} className="text-[#E8A0BF]" />
+               </div>
+               <h3 className="font-serif text-xl mb-3">Reliable Sourcing</h3>
+               <p className="text-sm text-gray-500 font-light leading-relaxed">
+                 Dependable sourcing of authentic glutathione injections, fillers, and weight management products from top global brands.
+               </p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
+               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                  <Clock size={24} className="text-[#E8A0BF]" />
+               </div>
+               <h3 className="font-serif text-xl mb-3">Client Accessibility</h3>
+               <p className="text-sm text-gray-500 font-light leading-relaxed">
+                 We pride ourselves on personalized service, clear communication, and being easy to reach at every stage of the client journey.
+               </p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl border border-gray-100 text-center hover:shadow-lg transition-all group">
+               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                  <Award size={24} className="text-[#E8A0BF]" />
+               </div>
+               <h3 className="font-serif text-xl mb-3">Crystal Pure Transparency</h3>
+               <p className="text-sm text-gray-500 font-light leading-relaxed">
+                 Operating with strictly moral business policies and complete transparency in all our transactions to maintain healthy client relations.
+               </p>
+            </div>
+        </div>
+      </div>
+
+      {/* BRANDS WE DEAL IN STRIP */}
+      <div className="border-y border-gray-100 bg-[#fbfbfb] py-12 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 text-center mb-8">
+            <h3 className="font-serif text-2xl text-gray-900">Brands We Deal In</h3>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto px-6 text-sm text-gray-500 font-medium">
+            {['Glutax', 'Aqua Skin', 'Relumins', 'Bio-Rae', 'Lucchini', 'Core Switzerland', 'St Blanc', 'Neuramis', 'Dr James', 'Gluta c', 'Filorga', 'Juvederm', 'Daehan Nupharm', 'Monalisa', 'Bellast', 'Restylane', 'Vita Glow', 'Glowtiqa Paris', 'Ratiopharm', 'Allergan', 'Medytox', 'Botulax'].map((brand, idx) => (
+                <span key={idx} className="bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100 hover:border-[#E8A0BF] hover:text-[#E8A0BF] transition-colors cursor-default">
+                    {brand}
+                </span>
+            ))}
+        </div>
+      </div>
+  
+      {/* FAQ SECTION */}
+      <div className="max-w-3xl mx-auto px-6 py-20">
+        <h3 className="font-serif text-2xl mb-8 text-center">Frequently Asked Questions</h3>
+        <div className="space-y-4">
+            {FAQS.map((faq, index) => (
+                <div key={index} className="border border-gray-200 rounded-lg bg-white overflow-hidden transition-all hover:border-gray-300">
+                    <button 
+                        className="w-full px-6 py-5 text-left flex justify-between items-center group"
+                        onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                    >
+                        <span className={`font-serif text-lg ${openFaq === index ? 'text-[#E8A0BF]' : 'text-gray-900'} transition-colors`}>{faq.q}</span>
+                        <ChevronDown size={18} className={`text-gray-400 transition-transform duration-300 ${openFaq === index ? 'rotate-180' : ''}`} />
+                    </button>
+                    <div className={`px-6 overflow-hidden transition-all duration-300 ${openFaq === index ? 'max-h-40 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <p className="text-sm text-gray-500 font-light leading-relaxed border-t border-gray-100 pt-4">{faq.a}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+      </div>
+    </div>
+  )
 };
 
 const ContactView = ({ showToast }) => {
@@ -2956,8 +2814,8 @@ const ContactView = ({ showToast }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    const whatsappMessage = `New Inquiry:%0A%0AName: ${encodeURIComponent(formData.name)}%0AClinic: ${encodeURIComponent(formData.clinicName)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0AMessage: ${encodeURIComponent(formData.message)}`;
-    window.open(`https://wa.me/919916404202?text=${whatsappMessage}`, '_blank');
+  const whatsappMessage = `New Inquiry:%0A%0AName: ${encodeURIComponent(formData.name)}%0AClinic: ${encodeURIComponent(formData.clinicName)}%0AEmail: ${encodeURIComponent(formData.email)}%0APhone: ${encodeURIComponent(formData.phone)}%0AMessage: ${encodeURIComponent(formData.message)}`;
+  window.open(`https://wa.me/8123453510?text=${whatsappMessage}`, '_blank');
     showToast("Opening WhatsApp...", "success");
   };
 
@@ -2994,7 +2852,7 @@ const ContactView = ({ showToast }) => {
                             </div>
                             <div>
                                 <h4 className="font-serif text-lg mb-1">Phone Support</h4>
-                                <p className="text-sm text-gray-500 mb-1">+91 99164 04202</p>
+                                <p className="text-sm text-gray-500 mb-1">+91 81234 53510</p>
                                 <p className="text-xs text-gray-400">Mon-Sat: 10am - 7pm IST</p>
                             </div>
                         </div>
@@ -3017,8 +2875,8 @@ const ContactView = ({ showToast }) => {
                             <div>
                                 <h4 className="font-serif text-lg mb-1">Headquarters</h4>
                                 <p className="text-sm text-gray-500 leading-relaxed">
-                                    123 Beauty Boulevard, Koramangala<br/>
-                                    Bangalore, Karnataka 560034<br/>
+                                    Richards town<br/>
+                                    Bangalore, Karnataka<br/>
                                     India
                                 </p>
                             </div>

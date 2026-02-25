@@ -120,41 +120,18 @@ const BLOG_POSTS = [
 
 const PRODUCTS = [
  {
-    id: 1,
-    name: "Iskin SLC24A5 Chromosome Phase IX Glutathione Whitening Injection",
-    category: "Injection",
-    brand: "iSkin",
-    price: 24000,
-    image: "/image/IMG_1910.JPG",
-    description: "Gene-Targeted Whitening | SLC24A5 Inhibitor | 600mg/Vial Z-Glutathione",
-    details: `
-      <strong>iSkin SLC24A5 Phase IX — Genetic Pathway Modulation</strong><br/><br/>
-      This advanced formulation targets the SLC24A5 gene, which encodes the NCKX5 protein involved in melanin synthesis. The approach combines glutathione with oligonucleotides or small molecules that may modulate gene expression[citation:37].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Z-Form Stabilized Glutathione – 600 mg/vial (higher concentration per vial)</li>
-        <li>SLC24A5 Pathway Modulators (proprietary)</li>
-        <li>TriNA Hydrate System (nucleotide delivery technology)</li>
-        <li>DNA Protection Antioxidants</li>
-        <li>Penetration Enhancing Complex</li>
-      </ul>
-      <br/>
-      <strong>Genetic Science Background:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>SLC24A5 variations are associated with skin pigmentation differences in human populations</li>
-        <li>NCKX5 protein is involved in potassium-dependent sodium/calcium exchange in melanosomes</li>
-        <li>Modulating this pathway represents a novel approach to skin lightening</li>
-        <li>Combined with high-dose glutathione for multiple mechanisms of action</li>
-        <li>This represents cutting-edge research in cosmetic science</li>
-      </ul>
-      <br/>
-      This advanced, research-based formulation is for individuals seeking the most innovative approaches to skin lightening.<br/>
-      <em class="text-xs text-gray-400">Critical Note: Gene modulation therapies are experimental in cosmetic applications. Long-term effects and safety profiles are not fully established. Should only be administered by specialists with genetic counseling available. Not for pregnant/nursing women. Requires thorough informed consent regarding experimental nature. Monitor closely for unexpected reactions.</em>
-    `,
-    benefits: ["Gene-Targeted Approach", "High-Concentration Glutathione (600mg/vial)", "Cutting-Edge Technology", "Multiple Mechanism Action"],
-    sku: "ISKIN-SLC24A5-PH9",
-    volume: "10 Sessions (600mg/vial)"
-  },
+  "id": 1,
+  "name": "Iskin SLC24A5 Chromosome Phase IX Glutathione Whitening Injection",
+  "category": "Injection",
+  "brand": "iSkin",
+  "price": 24000,
+  "image": "/image/IMG_1910.JPG",
+  "description": "Gene-Targeted Whitening | SLC24A5 Pathway Modulator | High-Concentration Glutathione",
+  "details": "<strong>iSkin SLC24A5 Phase IX — Advanced Genetic Pathway Modulation</strong><br/><br/>This cutting-edge formulation targets the SLC24A5 gene, which encodes the NCKX5 protein involved in melanin synthesis. Combined with high-concentration glutathione, it represents a breakthrough in skin whitening science at the molecular level.<br/><br/><strong>Key Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>High-Concentration Glutathione:</strong> Potent antioxidant that inhibits melanin synthesis and neutralizes free radicals</li><li><strong>SLC24A5 Pathway Modulators:</strong> Proprietary compounds targeting pigmentation at the genetic level</li><li><strong>TriNA Hydrate System:</strong> Advanced nucleotide delivery technology for enhanced absorption</li><li><strong>DNA Protection Complex:</strong> Shields skin cells from oxidative damage and premature aging</li></ul><br/><strong>The Science:</strong> The SLC24A5 gene plays a key role in human pigmentation. This innovative formula combines genetic-targeting technology with high-dose glutathione for multiple mechanisms of action—addressing dark spots, uneven tone, and signs of aging while promoting a naturally radiant complexion.<br/><br/><strong>Origin & Purity:</strong> Swiss-formulated. Paraben-free and organic composition.<br/><br/><strong>Usage:</strong> Professional administration only. Results evaluated after full course. Maintenance protocol recommended after achieving desired tone.<br/><br/><em class=\"text-xs text-gray-400\">Critical Note: Gene modulation in cosmetics is an emerging field with limited long-term safety data. For experimental use under strict medical supervision only. Not for pregnant/nursing women. Results vary by individual. Thorough informed consent required.</em>",
+  "benefits": ["Gene-Targeted Technology", "High-Concentration Glutathione", "Swiss-Formulated", "Paraben-Free & Organic", "Multi-Mechanism Action"],
+  "sku": "ISKIN-SLC24A5-PH9",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+},
   {
   "id": 2,
   "name": "Saint Blanc XIII Quartet Glutathione Skin Whitening Injection",
@@ -169,80 +146,31 @@ const PRODUCTS = [
   "volume": "1 Box Pack (Complete Quartet Course)"
 },
   {
-    id: 3,
-    name: "Quattrox Complexion 12 Infusion 4 Sessions Skin Whitening Injection",
-    category: "Injection",
-    brand: "Quattrox",
-    price: 14500,
-    image: "/image/IMG_1907.JPG",
-    description: "Quattrox™ Technology with Melsmon Extract | Complexion Perfector",
-    details: `
-      <strong>Quattrox Complexion — Holistic Skin Quality Formulation</strong><br/><br/>
-      This formulation utilizes Melsmon, a placental extract, alongside the Quattrox H.E.R.C. system (Hydration, Evenness, Radiance, Clarity). Placental extracts contain various growth factors, amino acids, and nutrients[citation:36].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Melsmon Placental Extract (porcine source) – 2 mL</li>
-        <li>Glutathione – 1000 mg</li>
-        <li>Hyaluronic Acid (multi-weight) – 50 mg</li>
-        <li>Licorice Root Extract (Glabridin) – 50 mg</li>
-        <li>Centella Asiatica Extract – 100 mg (soothing, healing)</li>
-        <li>Niacinamide – 100 mg</li>
-      </ul>
-      <br/>
-      <strong>Placental Extract Science:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Placental extracts contain various growth factors (EGF, FGF, TGF-β)</li>
-        <li>Rich in amino acids, vitamins, and minerals</li>
-        <li>May support tissue repair and regeneration</li>
-        <li>Traditionally used in some Asian aesthetic medicine for rejuvenation</li>
-        <li>Combined with glutathione for comprehensive complexion improvement</li>
-      </ul>
-      <br/>
-      This holistic approach is designed for overall skin quality improvement rather than focused whitening alone.<br/>
-      <em class="text-xs text-gray-400">Important: Placental extracts are biological materials. Ensure proper screening for allergies and infectious diseases. Not suitable for vegetarians/vegans. Use with caution in individuals with autoimmune conditions. Requires medical supervision.</em>
-    `,
-    benefits: ["Placental Extract Rejuvenation", "Holistic Complexion Focus", "Multi-Pathway Improvement", "Skin Quality Enhancement"],
-    sku: "COSDAC-MELSMON-QUAT",
-    volume: "10 Sessions"
-  },
+  "id": 3,
+  "name": "Quatrrox Complexion 12 Glutathione Whitening Injections",
+  "category": "Injection",
+  "brand": "Quattrox",
+  "price": 17500,
+  "image": "/image/IMG_1907.JPG",
+  "description": "Korean-Formulated Skin Whitening System | Multi-Component Glutathione Complex",
+  "details": "<strong>Quatrrox Complexion 12 — Premium Korean Skin Whitening Infusion</strong><br/><br/>Quattrox Complexion 12 is a comprehensive glutathione-based whitening system preferred by top spas and dermatological clinics globally. This multi-component formula combines advanced JM Prowhite EGF HP DNA technology with essential vitamins and active ingredients for complete skin transformation.<br/><br/><strong>Complete Composition (Per Box Pack - 4 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>JM Prowhite EGF HP DNA Glutathione:</strong> 80,000mg — High-potency reduced glutathione for melanin inhibition</li><li><strong>JM Prowhite EGF HP DNA Ultra Lyophilized Cell:</strong> 10,000IU — Advanced cellular regeneration complex</li><li><strong>JM Prowhite EGF HP DNA Poly Deoxy RiboNucleotide (PDRN):</strong> 9,000mg — Tissue repair and regeneration</li><li><strong>JM Prowhite EGF HP DNA Vitamin B Complex:</strong> 200mg — Essential for skin metabolism</li><li><strong>Melsmon Human Placenta:</strong> Bioactive rejuvenating compounds</li><li><strong>Bio-Rae Ascorbic Acid (Vitamin C):</strong> 15,000mg — Boosts glutathione absorption and collagen synthesis</li><li><strong>Bio-Rae Tranexamic Acid:</strong> 1,000mg — Targets pigmentation and melasma</li><li><strong>Bio-Rae Amino Acid Complex:</strong> 1,500mg — Supports skin protein synthesis</li><li><strong>Bio-Rae Cyanocobalamine (Vitamin B12):</strong> 4,000mcg — Energy metabolism and skin health</li><li><strong>Daehan New Pharm Thioctic Acid (Alpha Lipoic Acid):</strong> 25mg — Universal antioxidant</li><li><strong>Daehan New Pharm Ginkgo Leaf Extract:</strong> 17.5mg — Improves microcirculation</li><li><strong>Daehan New Pharm Multivita:</strong> Comprehensive vitamin support</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Enhances skin tightness and elasticity</li><li>Minimizes pigmentation and dark spots</li><li>Provides UV damage protection</li><li>Clears and prevents acne formation</li><li>Reduces pore size and refines skin texture</li><li>Detoxifies and purifies skin at cellular level</li><li>Suitable for all skin types</li></ul><br/><strong>Usage Protocol:</strong> 1-2 injections per week, tailored to individual skin conditions. Professional administration recommended.<br/><br/><strong>Packaging:</strong> Each box contains 4 complete session sets (4 vials + 8 ampoules).<br/><br/><strong>Safety Guidelines:</strong> Store in cool, dry place (1-30℃). Not recommended for pregnant/breastfeeding women, individuals with cardiovascular conditions, or those allergic to vitamins. Consult physician before use.<br/><br/><em class=\"text-xs text-gray-400\">Product authenticity verifiable via barcode scanning. Results may vary from person to person.</em>",
+  "benefits": ["Korean-Formulated", "Multi-Component Complex (15+ Actives)", "Includes PDRN & Placenta", "Acne Prevention & Scar Reduction", "UV Protection & Detoxification"],
+  "sku": "QUAT-C12-GSH",
+  "volume": "1 Box Pack (4 Vials + 8 Ampoules per Session)"
+},
  {
-    id: 4,
-    name: "Cindyrella Celebrity Drip with NAD plus Glutathione Injection",
-    category: "Injection",
-    brand: "Cindyrella",
-    price: 12000,
-    image: "/image/IMG_1897.JPG",
-    description: "Celebrity Edition IV Formula | Enhanced Potency NAD+ | 15 Vials",
-    details: `
-      <strong>Cindyrella Celebrity Drip — Premium IV NAD+ Therapy</strong><br/><br/>
-      This premium version features enhanced NAD+ bioavailability and additional supportive nutrients. Higher NAD+ concentrations may provide more pronounced effects on cellular energy and repair mechanisms[citation:35].<br/><br/>
-      <strong>Key Active Components (per vial):</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Pharmaceutical Grade Glutathione – 1500 mg</li>
-        <li>Stabilized NAD+ Complex – 300 mg (higher concentration)</li>
-        <li>Coenzyme Q10 (Ubiquinol) – 100 mg</li>
-        <li>Vitamin C (as ascorbic acid) – 2000 mg</li>
-        <li>B-Complex with Methylcobalamin (B12)</li>
-        <li>Magnesium Glycinate – 50 mg</li>
-        <li>L-Glutamine – 500 mg</li>
-      </ul>
-      <br/>
-      <strong>Premium Formulation Rationale:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Higher NAD+ concentration may more effectively support sirtuin activation</li>
-        <li>Ubiquinol (reduced CoQ10) is more bioavailable than ubiquinone</li>
-        <li>Magnesium glycinate is highly absorbable and supports enzyme function</li>
-        <li>L-Glutamine supports glutathione synthesis and gut health</li>
-        <li>Designed for rapid, noticeable results in demanding schedules</li>
-      </ul>
-      <br/>
-      This premium formulation is intended for intensive treatment protocols or individuals seeking maximum results in minimal time.<br/>
-      <em class="text-xs text-gray-400">Critical: Higher NAD+ doses increase risk of side effects including anxiety, palpitations, and flushing during infusion. Must be administered by experienced medical personnel with appropriate monitoring equipment. Not for individuals with cardiovascular conditions, severe anxiety disorders, or during pregnancy/lactation.</em>
-    `,
-    benefits: ["Enhanced NAD+ Potency", "Premium Ingredients", "Rapid Results", "Comprehensive Cellular Support"],
-    sku: "CINDY-CELEB-NAD",
-    volume: "15 Vials (IV Infusion)"
-  },
+  "id": 9,
+  "name": "Cindyrella Celebrity Drip with NAD plus Glutathione Injection",
+  "category": "Injection",
+  "brand": "Cindyrella",
+  "price": 13000,
+  "image": "/image/IMG_1897.JPG",
+  "description": "Swiss-Inspired Aesthetic Formula | NAD+ Enhanced | Multi-Active Complex",
+  "details": "<strong>Cindyrella Celebrity Drip — Premium NAD+ Enhanced Aesthetic Formula</strong><br/><br/>Cindyrella Celebrity Drip is a Swiss-inspired aesthetic formulation designed for professional beauty environments. This luxury blend combines high-strength antioxidants with NAD+ technology for comprehensive skin vitality and radiance support.<br/><br/><strong>Key Ingredient Profile:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione Complex:</strong> Master antioxidant for skin brightening and detoxification</li><li><strong>NAD+ (Nicotinamide Adenine Dinucleotide):</strong> Supports cellular energy and vitality</li><li><strong>Vitamin C:</strong> Enhances glutathione absorption and collagen synthesis</li><li><strong>Marine & Bovine Collagen:</strong> Maintains skin firmness and smooth appearance</li><li><strong>Coenzyme Q10:</strong> Mitochondrial antioxidant for energy-focused support</li><li><strong>Hyaluronic Acid:</strong> Deep hydration for supple-looking complexion</li><li><strong>Kojic Acid:</strong> Brightening support for even skin tone</li><li><strong>Vitamin B Complex:</strong> Essential for skin metabolism</li><li><strong>Aloe Vera Extract:</strong> Soothing and refreshing properties</li><li><strong>RNA:</strong> Cellular support complex</li></ul><br/><strong>Key Highlights:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>High-Strength Antioxidant Blend:</strong> Concentrated Glutathione for advanced aesthetic routines</li><li><strong>Radiance & Glow Support:</strong> Enhances overall skin brightness and clarity</li><li><strong>Firmness Support:</strong> Collagen components for smoother-looking skin</li><li><strong>Hydration Complex:</strong> Hyaluronic Acid for refreshed, supple appearance</li><li><strong>NAD+ Integration:</strong> Supports skin vitality and energy-focused protocols</li></ul><br/><strong>Professional Use Only:</strong> Designed exclusively for professional aesthetic administration. Not for self-use or consumer application.<br/><br/><strong>Origin:</strong> Made in Korea | Swiss-inspired formulation<br/><br/><em class=\"text-xs text-gray-400\">Important: For professional aesthetic use only. Not positioned as a medical or therapeutic treatment. Not intended to diagnose, treat, cure, or prevent any condition. Results vary by individual. Professional supervision required.</em>",
+  "benefits": ["NAD+ Enhanced Formula", "Swiss-Inspired Premium Blend", "Complete Antioxidant Complex", "Hydration & Firmness Support", "Professional-Grade Aesthetic Formula"],
+  "sku": "CINDY-CELEB-NAD",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+},
   {
     "id": 5,
     "name": "Miracle White Royal Gold 120000mg Glutathione Booster Injection",
@@ -426,7 +354,7 @@ const PRODUCTS = [
     "volume": "1 Box (10 Injection Sets)"
 },
   {
-    id: 20,
+    id: 19,
     name: "Aqua Skin Pure Gold Pro II 30th Glutathione Whitening Injection",
     category: "Injection",
     brand: "Aqua Skin/Veniscy",
@@ -460,76 +388,32 @@ const PRODUCTS = [
     sku: "AQUA-MAX-II",
     volume: "10 Sessions"
   },
+ {
+  "id": 20,
+  "name": "Aqua Skin Veniscy 188 TriNa Pico Cell Glutathione Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin/Veniscy",
+  "price": 12500,
+  "image": "/image/IMG_1841.jpg",
+  "description": "TriNa Pico Cell Technology | High-Potency Glutathione | Triple-Action Formula",
+  "details": "<strong>Aqua Skin Veniscy 188 — Tri-Pathway Skin Transformation</strong><br/><br/>This advanced formulation combines high-potency glutathione with signal peptide technology and mitochondrial support for comprehensive skin rejuvenation. The TriNa designation represents three synergistic pathways: antioxidant protection, peptide signaling, and metabolic enhancement.<br/><br/><strong>Key Active Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione:</strong> 1,800mg high-concentration master antioxidant for melanin inhibition and detoxification</li><li><strong>Palmitoyl Oligopeptide (Nonapeptide):</strong> 20mg signal peptide that stimulates collagen and elastin production</li><li><strong>Coenzyme Q10 (Ubiquinol form):</strong> 100mg lipid-soluble antioxidant for mitochondrial membrane protection</li><li><strong>Alpha Lipoic Acid:</strong> 150mg universal antioxidant that recycles glutathione and CoQ10</li><li><strong>Veniscy Complex:</strong> Proprietary antioxidant blend for enhanced protection</li></ul><br/><strong>Comprehensive Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Brightening:</strong> Reduces pigmentation and uneven tone for luminous complexion</li><li><strong>Anti-Aging:</strong> Minimizes wrinkles, fine lines, and signs of aging</li><li><strong>Cell Renewal:</strong> Promotes fresh, vibrant skin through cellular regeneration</li><li><strong>Texture Improvement:</strong> Enhances hydration, softness, and skin firmness</li><li><strong>Acne Clearance:</strong> Helps prevent and clear breakouts for flawless look</li><li><strong>Detoxification:</strong> Eliminates free radicals and environmental toxins</li></ul><br/><strong>Triple-Action Mechanism:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pathway 1:</strong> Glutathione provides systemic antioxidant protection and tyrosinase inhibition</li><li><strong>Pathway 2:</strong> Palmitoyl oligopeptide signals fibroblasts to produce collagen and elastin</li><li><strong>Pathway 3:</strong> CoQ10 and alpha lipoic acid support mitochondrial energy and antioxidant recycling</li></ul><br/><strong>Safety Profile:</strong> Paraben-free and organic composition. Non-surgical IV infusion with minimal discomfort. Free from adverse reactions when professionally administered.<br/><br/><strong>Usage:</strong> Professional administration only. Results evaluated after full course.<br/><br/><em class=\"text-xs text-gray-400\">Note: Peptides like Palmitoyl Oligopeptide are typically more effective in topical formulations. Injectable efficacy for specific peptides requires further research. Results vary by individual. Professional supervision required.</em>",
+  "benefits": ["High-Potency Glutathione (1800mg)", "Signal Peptide Technology", "Mitochondrial Support (CoQ10)", "Triple-Action Formula", "Paraben-Free & Organic"],
+  "sku": "AS-VENISCY-188",
+  "volume": "1 Box Pack (10 Sessions)"
+},
   {
-    id: 21,
-    name: "Aqua Skin Veniscy 188 TriNa Pico Cell Glutathione Injection",
-    category: "Injection",
-    brand: "Aqua Skin/Veniscy",
-    price: 11500,
-    image: "/image/IMG_1841.jpg",
-    description: "TriNA Pico Cell Glutathione | High Strength",
-    details: `
-      <strong>Aqua Skin Veniscy 188 — Tri-Pathway Formulation</strong><br/><br/>
-      This collaborative formulation combines glutathione with a nonapeptide (specifically, Palmitoyl Oligopeptide) and antioxidant complex. The "TriNA" designation suggests three pathways of action: antioxidant, peptide signaling, and metabolic support[citation:22].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Glutathione – 1,800 mg (higher concentration)</li>
-        <li>Palmitoyl Oligopeptide (nonapeptide) – 20 mg (signal peptide for collagen)</li>
-        <li>Coenzyme Q10 (Ubiquinol form) – 100 mg (lipid-soluble antioxidant)</li>
-        <li>Veniscy Complex (proprietary antioxidant blend)</li>
-        <li>Alpha Lipoic Acid – 150 mg (universal antioxidant)</li>
-      </ul>
-      <br/>
-      <strong>Triple Action Approach:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione provides systemic antioxidant and tyrosinase inhibition</li>
-        <li>Palmitoyl oligopeptide may signal fibroblasts to produce collagen and elastin</li>
-        <li>Coenzyme Q10 (ubiquinol) protects mitochondrial membranes from oxidative damage</li>
-        <li>Alpha lipoic acid recycles both glutathione and CoQ10</li>
-      </ul>
-      <br/>
-      This comprehensive formula addresses hyperpigmentation while also supporting skin structure and cellular energy production.<br/>
-      <em class="text-xs text-gray-400">Note: Peptides like Palmitoyl Oligopeptide are typically more effective in topical formulations where they can interact with surface receptors. Injectable efficacy for specific peptides requires further research.</em>
-    `,
-    benefits: ["High-Potency Glutathione", "Signal Peptide Technology", "Mitochondrial Support", "Comprehensive Antioxidant Protection"],
-    sku: "AS-VENISCY-188",
-    volume: "10 Sessions"
-  },
-  {
-    id: 22,
-    name: "Miracle White Purple 60000mg Glutathione Injection Prism Edition",
-    category: "Injection",
-    brand: "Miracle White",
-    price: 11000,
-    image: "/image/IMG_1850.jpg",
-    description: "Exclusive Holographic Series",
-    details: `
-      <strong>Miracle White Prism Edition — Multidimensional Skin Enhancement</strong><br/><br/>
-      This special edition formulation combines glutathione with light-diffusing technologies and enhanced growth factors. The "Prism" concept refers to creating multidimensional skin improvement through hydration, tone correction, and texture refinement[citation:23].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 1,000 mg</li>
-        <li>Growth Factor Complex (TGF-β, FGF, VEGF analogs) – proprietary blend</li>
-        <li>Hyaluronic Acid (multi-molecular weight) – 50 mg</li>
-        <li>Vitamin C (tetrahexyldecyl ascorbate) – 500 mg (stable, lipid-soluble form)</li>
-        <li>Silica Microspheres – minimal amount (for optical diffusion)</li>
-      </ul>
-      <br/>
-      <strong>Multidimensional Effects:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Growth factors may support skin repair and regeneration processes</li>
-        <li>Multi-weight hyaluronic acid provides both surface and deep hydration</li>
-        <li>Silica microspheres (if present) can refract light to create optical smoothing</li>
-        <li>Stable vitamin C ester provides prolonged antioxidant activity</li>
-      </ul>
-      <br/>
-      Designed for individuals seeking comprehensive skin improvement beyond simple lightening, focusing on overall skin health and appearance.<br/>
-      <em class="text-xs text-gray-400">Note: Growth factors are powerful biological agents. Ensure proper sourcing and purification. Not recommended for individuals with history of keloids or abnormal scarring.</em>
-    `,
-    benefits: ["Growth Factor Enhanced", "Multi-Dimensional Improvement", "Optical Diffusion Technology", "Skin Health Focus"],
-    sku: "MW-PRISM",
-    volume: "6 Sessions"
-  },
+  "id": 21,
+  "name": "Miracle White Purple 60000mg Glutathione Injection",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 12000,
+  "image": "/image/miracle-white-purple.jpg",
+  "description": "High-Dose Swiss Formula | 60,000mg Glutathione Complex | With Oral Boosters",
+  "details": "<strong>Miracle White Purple 60000mg — Advanced Skin Whitening System</strong><br/><br/>Developed after years of Swiss research, Miracle White combines innovative skin science with high-dose glutathione technology. This comprehensive formula lightens skin tone, smooths blemishes, and delivers powerful anti-aging benefits with each session.<br/><br/><strong>Complete Ingredient Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Concentrated Glutathione:</strong> 60,000mg — High-potency master antioxidant for melanin inhibition</li><li><strong>Kojic Acid:</strong> 5,500mg — Natural brightening agent that reduces pigmentation</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 4,950mg — Boosts glutathione absorption and collagen synthesis</li><li><strong>Epidermal Growth Factor (EGF):</strong> 3,500mg — Stimulates skin cell renewal and repair</li><li><strong>SLC24A5 Inhibitor:</strong> 1,000mg — Targets pigmentation at genetic level</li><li><strong>Coenzyme Q10:</strong> 2,000mg — Mitochondrial antioxidant for cellular energy</li><li><strong>Marine Peptide Collagen:</strong> 300mg — Supports skin elasticity and firmness</li><li><strong>Leontopodium Alpinum (Edelweiss) Callus Culture Extract:</strong> 500mg — Alpine stem cell technology for protection</li><li><strong>Tomato Stem Cell Extract:</strong> 380mg — Antioxidant and anti-aging support</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 1,280mg — Universal antioxidant</li><li><strong>White Cell Enhancer:</strong> 800mg — Brightening complex</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 700mg — Energy and metabolism support</li><li><strong>Multivitamin Complex:</strong> 1,500mg — Comprehensive nutritional support</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Whitens skin and lightens scars dramatically</li><li>Nourishes and firms skin for enhanced elasticity</li><li>Decreases pigmentation caused by sun exposure</li><li>Smooths fine lines, wrinkles, and blemishes</li><li>Reduces pore size and improves overall complexion</li><li>Moisturizes and hydrates for supple texture</li><li>Eliminates free radicals that cause aging and organ malfunction</li><li>Includes oral boosters to maintain glutathione levels between treatments</li></ul><br/><strong>Dosage & Administration:</strong> Intravenous IV infusion (drip) once every 5 days. Professional administration only. For best results, consult your physician.<br/><br/><strong>Storage:</strong> Keep in cool, dry place away from sunlight and heat. Keep out of reach of children.<br/><br/><strong>Not Appropriate For:</strong> Pregnant women, breastfeeding mothers, individuals with vitamin allergies.<br/><br/><strong>Expiry:</strong> December 2026<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person. Professional medical supervision required. Product authenticity verifiable.</em>",
+  "benefits": ["High-Dose 60,000mg Glutathione", "Swiss-Formulated", "Comprehensive Multi-Ingredient Formula", "Includes Oral Boosters", "Anti-Aging & Pigmentation Control"],
+  "sku": "MW-PURPLE-60K",
+  "volume": "1 Box Pack (Multi-Vial Course + Oral Boosters)"
+},
   {
     id: 23,
     name: "Japan Beauty Booster",

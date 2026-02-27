@@ -2332,7 +2332,7 @@ const AboutView = ({ navigateTo }) => {
                    We direct all our activities to cater to the expectations of our customers by providing them with excellent quality products as per their gratification. Since 2013, we have focused on building long-term relationships by being responsive, easy to reach, and dependable.
                  </p>
                  <p>
-                   For our accomplishment story, we are deeply grateful to Arhan, whose continual backing and direction have been instrumental in attaining our exponential development in the current market.
+                   For our accomplishment story, we are deeply grateful to Arish, whose continual backing and direction have been instrumental in attaining our exponential development in the current market.
                  </p>
               </div>
               <div className="mt-8 pt-8 border-t border-gray-100 grid grid-cols-2 gap-6">

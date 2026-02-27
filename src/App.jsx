@@ -407,7 +407,7 @@ const PRODUCTS = [
   "category": "Injection",
   "brand": "Miracle White",
   "price": 12000,
-  "image": "/image/miracle-white-purple.jpg",
+  "image": "/image/IMG_1850.jpg",
   "description": "High-Dose Swiss Formula | 60,000mg Glutathione Complex | With Oral Boosters",
   "details": "<strong>Miracle White Purple 60000mg — Advanced Skin Whitening System</strong><br/><br/>Developed after years of Swiss research, Miracle White combines innovative skin science with high-dose glutathione technology. This comprehensive formula lightens skin tone, smooths blemishes, and delivers powerful anti-aging benefits with each session.<br/><br/><strong>Complete Ingredient Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Concentrated Glutathione:</strong> 60,000mg — High-potency master antioxidant for melanin inhibition</li><li><strong>Kojic Acid:</strong> 5,500mg — Natural brightening agent that reduces pigmentation</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 4,950mg — Boosts glutathione absorption and collagen synthesis</li><li><strong>Epidermal Growth Factor (EGF):</strong> 3,500mg — Stimulates skin cell renewal and repair</li><li><strong>SLC24A5 Inhibitor:</strong> 1,000mg — Targets pigmentation at genetic level</li><li><strong>Coenzyme Q10:</strong> 2,000mg — Mitochondrial antioxidant for cellular energy</li><li><strong>Marine Peptide Collagen:</strong> 300mg — Supports skin elasticity and firmness</li><li><strong>Leontopodium Alpinum (Edelweiss) Callus Culture Extract:</strong> 500mg — Alpine stem cell technology for protection</li><li><strong>Tomato Stem Cell Extract:</strong> 380mg — Antioxidant and anti-aging support</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 1,280mg — Universal antioxidant</li><li><strong>White Cell Enhancer:</strong> 800mg — Brightening complex</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 700mg — Energy and metabolism support</li><li><strong>Multivitamin Complex:</strong> 1,500mg — Comprehensive nutritional support</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Whitens skin and lightens scars dramatically</li><li>Nourishes and firms skin for enhanced elasticity</li><li>Decreases pigmentation caused by sun exposure</li><li>Smooths fine lines, wrinkles, and blemishes</li><li>Reduces pore size and improves overall complexion</li><li>Moisturizes and hydrates for supple texture</li><li>Eliminates free radicals that cause aging and organ malfunction</li><li>Includes oral boosters to maintain glutathione levels between treatments</li></ul><br/><strong>Dosage & Administration:</strong> Intravenous IV infusion (drip) once every 5 days. Professional administration only. For best results, consult your physician.<br/><br/><strong>Storage:</strong> Keep in cool, dry place away from sunlight and heat. Keep out of reach of children.<br/><br/><strong>Not Appropriate For:</strong> Pregnant women, breastfeeding mothers, individuals with vitamin allergies.<br/><br/><strong>Expiry:</strong> December 2026<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person. Professional medical supervision required. Product authenticity verifiable.</em>",
   "benefits": ["High-Dose 60,000mg Glutathione", "Swiss-Formulated", "Comprehensive Multi-Ingredient Formula", "Includes Oral Boosters", "Anti-Aging & Pigmentation Control"],
@@ -415,7 +415,7 @@ const PRODUCTS = [
   "volume": "1 Box Pack (Multi-Vial Course + Oral Boosters)"
 },
   {
-    id: 23,
+    id: 22,
     name: "Japan Beauty Booster",
     category: "Supplement",
     brand: "Japan Beauty Booster",
@@ -451,44 +451,20 @@ const PRODUCTS = [
     volume: "60 Tablets"
   },
   {
-    id: 24,
-    name: "Miracle White gold 55000mg Exc Anti Melanogenic Glutathione Skin Whitening Injection",
-    category: "Injection",
-    brand: "Miracle White",
-    price: 11000,
-    image: "/image/IMG_1849.jpg",
-    description: "Anti-Melanogenic Gold Edition",
-    details: `
-      <strong>Miracle White EXC Gold — Targeted Melanogenesis Inhibition</strong><br/><br/>
-      This formulation specifically targets multiple points in the melanogenesis pathway. The "Anti-Melanogenic" designation indicates inclusion of ingredients that inhibit tyrosinase and related enzymes more aggressively than standard glutathione alone[citation:25].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 1,500 mg</li>
-        <li>Kojic Acid – 75 mg (potent tyrosinase inhibitor)</li>
-        <li>Colloidal Gold – 10 ppm (anti-inflammatory properties)</li>
-        <li>Ascorbic Acid (Vitamin C) – 1,000 mg</li>
-        <li>Alpha Lipoic Acid – 150 mg (inhibits NF-κB pathway involved in pigmentation)</li>
-        <li>Arbutin (Alpha & Beta) – 50 mg (natural tyrosinase inhibitor)</li>
-      </ul>
-      <br/>
-      <strong>Multi-Target Inhibition Strategy:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione: reduces oxidized melanin precursors and provides antioxidant support</li>
-        <li>Kojic acid: chelates copper at tyrosinase active site</li>
-        <li>Arbutin: competitive inhibitor of tyrosinase</li>
-        <li>Alpha lipoic acid: may reduce inflammatory mediators that stimulate melanocytes</li>
-        <li>Colloidal gold: may reduce inflammation-associated hyperpigmentation</li>
-      </ul>
-      <br/>
-      This aggressive formulation is designed for resistant hyperpigmentation or individuals seeking maximum inhibition of melanin production.<br/>
-      <em class="text-xs text-gray-400">Important: Kojic acid at higher doses may cause contact dermatitis or erythema in sensitive individuals. Always conduct a test dose. Not recommended for individuals with known sensitivity to kojic acid.</em>
-    `,
-    benefits: ["Multi-Pathway Inhibition", "Kojic Acid Enhanced", "Anti-Inflammatory Action", "Aggressive Formulation"],
-    sku: "MW-EXC-GOLD",
-    volume: "6 Sessions"
-  },
+  "id": 23,
+  "name": "Miracle White Gold 55000mg Exc Anti Melanogenic Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 12000,
+  "image": "/image/IMG_1849.jpg",
+  "description": "Gold Edition | Plant-Derived Extracellular Anti-Melanogenic Technology | 55,000mg Complex",
+  "details": "<strong>Miracle White Gold EXC — Advanced Anti-Melanogenic Formulation</strong><br/><br/>Miracle White Gold EXC represents a breakthrough in skin whitening science, utilizing plant-derived extracellular anti-melanogenic agents from S. japonica. This natural alternative to chemical-based products targets melanogenesis at the genetic level for superior brightening results.<br/><br/><strong>Key Active Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Reduced L-Glutathione:</strong> 1,500mg per vial (55,000mg total course) — Master antioxidant for melanin inhibition</li><li><strong>S. japonica Extracellular Vesicles (LEVs & SEVs):</strong> Leaf and stem-derived vesicles that naturally reduce melanin content</li><li><strong>Kojic Acid:</strong> Potent tyrosinase inhibitor that chelates copper at enzyme active site</li><li><strong>Colloidal Gold:</strong> Anti-inflammatory properties for reduced hyperpigmentation</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 1,000mg — Boosts glutathione absorption and collagen synthesis</li><li><strong>Alpha Lipoic Acid:</strong> 150mg — Inhibits NF-κB pathway involved in pigmentation</li><li><strong>Arbutin (Alpha & Beta):</strong> Natural competitive inhibitor of tyrosinase</li></ul><br/><strong>The Science of Extracellular Anti-Melanogenic Agents:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Leaf-derived extracellular vesicles (LEVs) demonstrate exceptional efficacy at inhibiting melanogenesis-related genes and proteins</li><li>Inhibits MITF, TYR, TRP-1, and TRP-2 expression — key regulators of melanin production</li><li>LEVs display superior whitening effects compared to traditional arbutin in human epidermal models</li><li>Plant-derived vesicles offer natural, safe alternative to chemical-based brighteners</li><li>Reduces melanin content in melanoma cells without causing significant cellular harm</li></ul><br/><strong>Multi-Target Inhibition Strategy:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Glutathione reduces oxidized melanin precursors and provides antioxidant support</li><li>S. japonica EVs target melanogenesis gene expression at transcriptional level</li><li>Kojic acid and arbutin provide direct tyrosinase enzyme inhibition</li><li>Alpha lipoic acid reduces inflammatory mediators that stimulate melanocytes</li><li>Colloidal gold addresses inflammation-associated hyperpigmentation</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Revives skin radiance with natural plant-derived technology</li><li>Minimizes signs of aging for youthful appearance</li><li>Safe alternative to chemical-based whitening products</li><li>Superior inhibition of melanin production compared to standard formulations</li><li>Paraben-free and organic composition</li></ul><br/><strong>Origin:</strong> Swiss-formulated<br/><br/><strong>Usage:</strong> Professional administration only. Results evaluated after full course.<br/><br/><em class=\"text-xs text-gray-400\">Important: Kojic acid at higher doses may cause contact dermatitis or sensitivity in some individuals. Always conduct test dose. Not recommended for pregnant/nursing women or those with known sensitivities. Results vary from person to person. Professional medical supervision required.</em>",
+  "benefits": ["Anti-Melanogenic Technology", "Plant-Derived Extracellular Vesicles", "Multi-Pathway Inhibition", "Swiss-Formulated", "Paraben-Free & Organic"],
+  "sku": "MW-GOLD-55K-EXC",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+},
   {
-    id: 25,
+    id: 24,
     name: "Vita Glow Advanced Night Cream",
     category: "Cream",
     brand: "Vita Glow",
@@ -671,151 +647,57 @@ const PRODUCTS = [
     volume: "135g"
   },
   {
-    id: 30,
-    name: "Cindyrella Magical Boost with NAD plus Glutathione Injection",
-    category: "Injection",
-    brand: "Cosmark",
-    price: 14000,
-    image: "/image/IMG_1901.JPG",
-    description: "Complete IV Infusion | 980K Glutathione + NAD+ Cocktail | 30 Vials",
-    details: `
-      <strong>Cindyrella Magical Boost — Comprehensive IV Nutrient Therapy</strong><br/><br/>
-      This is a comprehensive intravenous formulation combining glutathione with NAD+ (Nicotinamide Adenine Dinucleotide) precursors and other nutrients. IV administration provides 100% bioavailability, bypassing digestive limitations[citation:31].<br/><br/>
-      <strong>Key Active Components (per vial):</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Reduced L-Glutathione – 1000 mg (980,000 mcg = 980 mg, rounded to 1000 mg)</li>
-        <li>NAD+ Precursors (Nicotinamide Riboside or Nicotinamide Mononucleotide) – 200 mg</li>
-        <li>Coenzyme Q10 (as ubiquinol) – 50 mg</li>
-        <li>Marine Collagen Peptides – 200 mg</li>
-        <li>Ascorbic Acid (Vitamin C) – 1000 mg</li>
-        <li>B-Complex Vitamins (including B12)</li>
-        <li>Alpha Lipoic Acid – 100 mg</li>
-        <li>Electrolyte Balance (magnesium, potassium)</li>
-      </ul>
-      <br/>
-      <strong>NAD+ Biology:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>NAD+ is a crucial coenzyme in cellular energy production (ATP synthesis)</li>
-        <li>NAD+ levels decline with age, affecting mitochondrial function</li>
-        <li>NAD+ precursors may support cellular repair and sirtuin activity</li>
-        <li>IV NAD+ therapy is used in some clinics for energy restoration and anti-aging</li>
-        <li>Combination with glutathione may enhance antioxidant defenses</li>
-      </ul>
-      <br/>
-      This comprehensive IV formulation is designed for systemic rejuvenation, addressing both skin concerns and cellular energy metabolism.<br/>
-      <em class="text-xs text-gray-400">Important: IV therapy must be administered by qualified medical personnel. Requires venous access and monitoring during infusion. Contraindicated in pregnancy, severe kidney/liver disease, certain cancers. Potential side effects include flushing, nausea, vein irritation. NAD+ may cause temporary anxiety or discomfort during infusion.</em>
-    `,
-    benefits: ["IV Administration (100% Bioavailability)", "NAD+ Cellular Energy Support", "Comprehensive Nutrient Cocktail", "Systemic Rejuvenation"],
-    sku: "CINDY-MAGICAL-NAD",
-    volume: "30 Vials (IV Infusion)"
-  },
+  "id": 31,
+  "name": "Cindyrella Magical Boost with NAD plus Glutathione Injection",
+  "category": "Injection",
+  "brand": "Cindyrella",
+  "price": 15450,
+  "image": "/image/IMG_1901.JPG",
+  "description": "Complete IV Infusion | 980,000mg Glutathione Complex | NAD+ Anti-Aging Technology",
+  "details": "<strong>Cindyrella Magical Boost with NAD+ — Advanced Cellular Rejuvenation Therapy</strong><br/><br/>Cindyrella Magical Boost is a premium Swiss-inspired IV infusion therapy that combines ultra-high-dose glutathione with NAD+ technology for comprehensive skin whitening, anti-aging, and cellular repair. This nutrient-packed solution works at the DNA level to deliver visible, long-lasting results beyond surface-level treatments.<br/><br/><strong>Complete Ingredient Profile (Per Vial):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 980,000mg — Master antioxidant for powerful melanin inhibition and detoxification</li><li><strong>NAD+ (Nicotinamide Adenine Dinucleotide):</strong> 200mg — Anti-aging coenzyme that supports cellular energy, DNA repair, and sirtuin activation</li><li><strong>Kojic Acid:</strong> 15,000mg — Reduces pigmentation and uneven skin tone</li><li><strong>Coenzyme Q10:</strong> 15,000mg — Mitochondrial antioxidant for cellular energy and protection</li><li><strong>Marine Collagen:</strong> 8,000mg — Improves skin elasticity and firmness</li><li><strong>Bovine Collagen:</strong> 5,000mg — Strengthens skin structure and hydration</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 5,000mg — Boosts brightness and collagen synthesis</li><li><strong>Placenta Extract:</strong> 3,000mg — Enhances cell regeneration and repair</li><li><strong>Aloe Vera Extract:</strong> 2,500mg — Natural hydration and soothing effects</li><li><strong>RNA:</strong> 1,500mg — Supports DNA and cellular repair mechanisms</li><li><strong>Hyaluronic Acid:</strong> 800mg — Deep hydration for smooth, plump skin</li><li><strong>AHA (Alpha Hydroxy Acid):</strong> 600mg — Gentle exfoliation for improved texture</li><li><strong>Vitamin B Complex:</strong> 500mg — Nourishes skin and supports healthy metabolism</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Intensive Skin Whitening:</strong> Ultra-high glutathione concentration reduces melanin production for even brightness</li><li><strong>Pigmentation & Scar Reduction:</strong> Kojic acid and Vitamin C fade dark spots, acne scars, and stubborn pigmentation</li><li><strong>Anti-Aging Support:</strong> NAD+, CoQ10, and collagen reduce wrinkles, fine lines, and sagging</li><li><strong>Deep Hydration:</strong> Hyaluronic acid, aloe vera, and marine collagen for soft, nourished skin</li><li><strong>Cellular Rejuvenation:</strong> RNA and placenta extracts stimulate DNA repair and new cell growth</li><li><strong>Antioxidant Defense:</strong> Protects against free radicals, UV damage, and environmental stressors</li><li><strong>Overall Wellness:</strong> Revitalizes energy levels and enhances systemic vitality</li></ul><br/><strong>The Science of NAD+:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>NAD+ is a crucial coenzyme for cellular energy production (ATP synthesis)</li><li>NAD+ levels naturally decline with age, affecting mitochondrial function</li><li>IV NAD+ precursors support cellular repair and sirtuin activity for anti-aging effects</li><li>Combined with glutathione, it creates powerful antioxidant synergy</li></ul><br/><strong>Usage Protocol:</strong> 1-2 vials per week via intravenous (IV) infusion under professional medical supervision. Store below 26°C away from direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Pregnant or nursing women. Always consult certified healthcare professional before use.<br/><br/><em class=\"text-xs text-gray-400\">Important: IV therapy requires qualified medical personnel with appropriate monitoring. Contraindicated in pregnancy, severe kidney/liver disease, certain cancers. Potential side effects include flushing, nausea, vein irritation, temporary anxiety. Results vary by individual. Professional supervision mandatory.</em>",
+  "benefits": ["Ultra-High Glutathione (980,000mg)", "NAD+ Anti-Aging Technology", "Complete Collagen Complex", "Cellular & DNA Repair", "Holistic Wellness Solution"],
+  "sku": "CINDY-MAGICAL-NAD",
+  "volume": "1 Box Pack (Multi-Vial Course for IV Infusion)"
+},
   {
-    id: 31,
-    name: "Aqua Skin Veniscy 30 Dualna Pico Cell Absorption Skin Whitening",
-    category: "Injection",
-    brand: "Aqua Skin",
-    price: 12000,
-    image: "/image/IMG_1893.JPG",
-    description: "TANA Pico-Cell Supreme Whitening & Anti-Aging | PRODIO Nonapeptide",
-    details: `
-      <strong>Aqua Skin TANA Pico-Cell — Advanced Peptide Delivery System</strong><br/><br/>
-      This formulation utilizes TANA (Targeted Active Nano Absorption) technology with specific nonapeptides. Nonapeptides are 9-amino acid chains that can mimic natural signaling molecules in skin[citation:32].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione with Enhanced Delivery System – 1200 mg</li>
-        <li>Palmitoyl Nonapeptide-3 (Matrixyl 3000) – 100 ppm</li>
-        <li>Acetyl Hexapeptide-8 (Argireline) – 50 ppm</li>
-        <li>SUNDIOR Complex (proprietary repair blend)</li>
-        <li>Liposomal Encapsulation Technology</li>
-      </ul>
-      <br/>
-      <strong>Peptide Mechanisms:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Palmitoyl Nonapeptide-3 may stimulate collagen I, III, and IV production</li>
-        <li>Acetyl Hexapeptide-8 may inhibit neurotransmitter release, potentially reducing muscle contractions</li>
-        <li>Liposomal delivery may enhance peptide stability and penetration</li>
-        <li>Combination targets both pigmentation and dynamic expression lines</li>
-      </ul>
-      <br/>
-      This advanced formulation is designed for individuals seeking comprehensive anti-aging alongside skin brightening benefits.<br/>
-      <em class="text-xs text-gray-400">Note: Peptide efficacy via injection requires further clinical validation. Most peptide research is based on topical application. Ensure proper sterile technique during administration. Not for use in areas of active infection.</em>
-    `,
-    benefits: ["Peptide Technology", "Targeted Delivery System", "Collagen Stimulation", "Comprehensive Anti-Aging"],
-    sku: "AQUA-TANA-PICO",
-    volume: "10 Sessions"
-  },
+  "id": 32,
+  "name": "Aqua Skin Veniscy 30 Dualna Pico Cell Absorption Extremely Ultimate Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 13000,
+  "image": "/image/IMG_1893.JPG",
+  "description": "Swiss-Formulated | Dualna Pico Cell Technology | Complete Anti-Aging & Whitening Solution",
+  "details": "<strong>Aqua Skin Veniscy 30 Dualna Pico Cell — Ultimate Skin Transformation Therapy</strong><br/><br/>Experience the pinnacle of Swiss skincare innovation with Aqua Skin Veniscy 30, a comprehensive multi-ingredient formulation designed for complete skin transformation. This cutting-edge treatment combines high-potency glutathione with advanced peptides, growth factors, and deep hydration complexes for unparalleled results.<br/><br/><strong>Complete Ingredient Profile:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Opti-Glutathione:</strong> Potent antioxidant for melanin inhibition and detoxification</li><li><strong>L-Ascorbic Acid (Vitamin C):</strong> Brightens skin and boosts collagen synthesis</li><li><strong>Natural Collagen Extract:</strong> Improves elasticity and reduces aging signs</li><li><strong>Hyaluronic Acid:</strong> Intensely hydrates and plumps for smooth texture</li><li><strong>Epidermal Growth Factor (EGF):</strong> Stimulates cell growth and wound healing</li><li><strong>Alpha Lipoic Acid (ALA):</strong> Reduces inflammation and skin aging</li><li><strong>Matrixyl 9000:</strong> Aids in collagen synthesis and skin repair</li><li><strong>Kojic Acid:</strong> Natural skin-lightening properties</li><li><strong>Copper Peptide:</strong> Accelerates wound healing and tissue repair</li><li><strong>Vegetal Placenta:</strong> Enhances hydration and elasticity</li><li><strong>Nonapeptide:</strong> Supports skin regeneration and repair</li><li><strong>DMAE:</strong> Firms and tightens skin</li><li><strong>Coenzyme Q10:</strong> Reduces UV damage and stimulates collagen</li><li><strong>Selenium:</strong> Protects against free radical damage</li><li><strong>Multivitamin Complex:</strong> Nourishes and protects skin</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Whitening:</strong> High-concentration glutathione and vitamin C reduce melanin for noticeable lightening</li><li><strong>Anti-Aging:</strong> Collagen, hyaluronic acid, and CoQ10 reduce fine lines and wrinkles</li><li><strong>Cell Regeneration:</strong> EGF and peptides repair damaged cells and promote renewal</li><li><strong>Texture Enhancement:</strong> Reduces pores and blemishes for smoother skin</li><li><strong>Deep Hydration:</strong> Hyaluronic acid maintains optimal moisture levels</li><li><strong>Natural Radiance:</strong> Multivitamins and kojic acid deliver consistent glow</li></ul><br/><strong>Advanced Technology:</strong> Dualna Pico Cell Absorption system ensures enhanced delivery of active ingredients for maximum efficacy at the cellular level.<br/><br/><strong>Usage Guidelines:</strong> Administer via intravenous (IV) infusion once weekly. Reconstitute with saline and administer slowly under professional supervision. Consult dermatologist for personalized treatment plan.<br/><br/><strong>Safety:</strong> Not suitable for pregnant or nursing women, or individuals with cardiovascular issues. Always consult healthcare professional before use.<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary by individual. Professional medical supervision required. Store in cool, dry place away from direct sunlight.</em>",
+  "benefits": ["Swiss-Formulated", "Complete Multi-Ingredient Complex", "Advanced Pico Cell Absorption", "Peptide & Growth Factor Technology", "Deep Hydration & Anti-Aging"],
+  "sku": "AS-VENISCY-30-ULTIMATE",
+  "volume": "1 Box Pack (Multi-Vial Course for IV Infusion)"
+},
   {
-    id: 32,
-    name: "Lucchini Glutathione Peptide Pico Cell Brightening Solution Injection",
-    category: "Injection",
-    brand: "Lucchini",
-    price: 14500,
-    image: "/image/IMG_1911.JPG",
-    description: "Pico-Cell Ubioritemine for Youthful Skin Restoration",
-    details: `
-      <strong>Lucchini Ubioritemine Solution — Skin Vitality Complex</strong><br/><br/>
-      The "Ubioritemine" complex is designed to support skin's natural repair mechanisms and vitality factors. This formulation combines glutathione with peptides and nutrients that may support cellular energy and repair processes[citation:33].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione Peptide Conjugate – 1000 mg (enhanced stability)</li>
-        <li>Ubioritemine Complex (amino acids, coenzymes, nucleotides)</li>
-        <li>Nicotinamide (Vitamin B3) – 50 mg (NAD+ precursor)</li>
-        <li>L-Carnitine – 100 mg (supports mitochondrial function)</li>
-        <li>Trace Elements (zinc, copper, selenium)</li>
-      </ul>
-      <br/>
-      <strong>Cellular Vitality Approach:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Peptide-conjugated glutathione may have improved cellular uptake</li>
-        <li>Nicotinamide supports NAD+ production for cellular energy</li>
-        <li>L-Carnitine facilitates fatty acid transport into mitochondria</li>
-        <li>Trace elements are cofactors for antioxidant enzymes</li>
-        <li>Focuses on improving overall skin cell function rather than just pigmentation</li>
-      </ul>
-      <br/>
-      Suitable for individuals concerned with skin aging, fatigue, or dullness alongside hyperpigmentation concerns.<br/>
-      <em class="text-xs text-gray-400">Note: This comprehensive approach requires consistent treatment. Results may be more subtle but holistic. Monitor for any reactions to peptide conjugates or other novel ingredients.</em>
-    `,
-    benefits: ["Skin Vitality Focus", "Peptide-Conjugated Glutathione", "Cellular Energy Support", "Holistic Improvement"],
-    sku: "LUCCHINI-UBIORIT",
-    volume: "10 Sessions"
-  },
+  "id": 33,
+  "name": "Lucchini Glutathione Peptide Pico Cell Brightening Solution Injection",
+  "category": "Injection",
+  "brand": "Lucchini",
+  "price": 14500,
+  "image": "/image/IMG_1911.JPG",
+  "description": "Swiss Cell Therapy | 35,000,000mg Glutathione | 8 Stem Cell Complex | Complete Brightening Solution",
+  "details": "<strong>Lucchini Glutathione Peptide Pico Cell — Revolutionary Swiss Cell Therapy</strong><br/><br/>Lucchini represents a breakthrough in skin revitalization, combining an unprecedented 35,000,000mg glutathione with 8 distinct stem cell types and advanced peptide technology. This Swiss-imported formula is specifically designed for rapid results in dark skin, sun damage, and inherited pigmentation issues.<br/><br/><strong>Complete 10-Set Composition:</strong><br/><br/><strong>Pico-Cell Vials (Powder x10 vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pico-Cell Glutathione:</strong> 35,000,000mg — Ultra-high-dose master antioxidant</li><li><strong>Pico-Cell Melanin Inhibit Factor III (MIF3):</strong> 50,000mg — Advanced melanin suppression</li><li><strong>Pico-Cell Epidermal Growth Factor:</strong> 42,000mg — Stimulates cell renewal</li><li><strong>Pico-Cell Nanopeptide-3:</strong> 9,000mg — Collagen synthesis support</li><li><strong>Pico-Cell White Elements II:</strong> 63,000mg — Brightening complex</li><li><strong>Pico-Cell Nanopeptide:</strong> 15,000mg — Skin regeneration</li><li><strong>Pico-Cell mRNA:</strong> 1,250mcg — Genetic support for cellular repair</li></ul><br/><strong>Pico-Cell Ampoules (5ml x10 ampoules):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pico-Cell Enhanced Hexa Cell:</strong> 100,000mg — Multi-cellular regeneration complex</li><li><strong>Pico-Cell Plant Stem Cell Factor II:</strong> 125,000mg — Botanical stem cell technology</li><li><strong>Embryonic Stem Cell (ESC):</strong> 2,000mg — Primitive cell regeneration</li><li><strong>Placenta:</strong> 10,000mg — Tissue repair and rejuvenation</li><li><strong>Cerebrum Cell:</strong> 2,500mg — Neural-derived growth factors</li><li><strong>Umbilical Cord:</strong> 1,500mg — Mesenchymal stem cell support</li><li><strong>Mesenchymal Cell:</strong> 3,500mg — Connective tissue regeneration</li><li><strong>Thymus Cell:</strong> 5,000mg — Immune support for skin health</li></ul><br/><strong>Pico-Cell Ampoules (10ml x10 ampoules):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pico-Cell Multivitamins:</strong> 60,000mg — Comprehensive vitamin support</li><li><strong>Pico-Cell Natural Collagen:</strong> 35,000mg — Elasticity and firmness</li><li><strong>Pico-Cell Hydra Plus:</strong> 9,000mg — Deep hydration complex</li><li><strong>Pico-Cell Alpha Lipoic Acid:</strong> 9,500mg — Universal antioxidant</li><li><strong>Pico-Cell Ascorbic Acid (Vitamin C):</strong> 55,000mg — Brightening and collagen synthesis</li><li><strong>Pico-Cell PN/PDRN:</strong> 23,000mg — Polynucleotide tissue repair</li><li><strong>Pico-Cell Selenium:</strong> 12,000mg — Antioxidant enzyme cofactor</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Visible results in 1-2 weeks: reduced dark spots, fine lines, and enhanced radiance</li><li>Pinkish, healthy complexion with youthful glow</li><li>8 stem cell types work synergistically for comprehensive repair</li><li>Retains hydration while increasing skin firmness</li><li>All-natural composition activates body's innate healing without adverse effects</li><li>Addresses dark skin, sun damage, and inherited pigmentation issues</li></ul><br/><strong>Mechanism:</strong> The integration of 8 stem cells with ultra-high glutathione creates synergistic repair and rejuvenation at the cellular level, offering benefits traditional treatments cannot match.<br/><br/><strong>Usage:</strong> Combine 3 vials (1 set) and administer via IV drip. Professional administration only.<br/><br/><strong>Packaging:</strong> 10 complete sets per box<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person. Professional medical supervision required. Store in cool, dry place away from direct sunlight. Not for pregnant or nursing women without physician consultation.</em>",
+  "benefits": ["8 Stem Cell Complex", "Ultra-High Glutathione (35M mg)", "Swiss Cell Therapy", "Rapid 1-2 Week Results", "Complete Multi-Component System"],
+  "sku": "LUCCHINI-PICO-35M",
+  "volume": "10 Complete Treatment Sets (10 Vials + 20 Ampoules)"
+},
   {
-    id: 33,
-    name: "Aqua Skin Brilliant Diamond Max 80000mg",
-    category: "Injection",
-    brand: "Aqua Skin",
-    price: 10000,
-    image: "/image/IMG_1890.JPG",
-    description: "Brilliant Diamond Max Series | Sparkling White Effect",
-    details: `
-      <strong>Aqua Skin Brilliant Diamond Max — Optical Brightening Technology</strong><br/><br/>
-      This formulation combines glutathione with optical diffusers and high-purity ingredients to create immediate visual brightness alongside long-term pigment reduction. The "Sparkling White" effect refers to both pigment reduction and light reflection[citation:34].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Ultra-Purified Glutathione – 1500 mg</li>
-        <li>Mica or Silica Microspheres – minimal (optical diffusers)</li>
-        <li>Alpha Lipoic Acid – 200 mg (potent antioxidant)</li>
-        <li>Dimethylaminoethanol (DMAE) – 100 mg (may improve skin firmness)</li>
-        <li>Multi-Vitamin Complex</li>
-      </ul>
-      <br/>
-      <strong>Dual Visual Effects:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione works systemically to reduce melanin production over time</li>
-        <li>Optical diffusers immediately scatter light, reducing appearance of shadows and pores</li>
-        <li>Alpha lipoic acid recycles other antioxidants and may improve skin texture</li>
-        <li>DMAE may increase acetylcholine, potentially improving muscle tone and firmness</li>
-        <li>Combination creates both immediate and progressive results</li>
-      </ul>
-      <br/>
-      Ideal for events or situations where immediate radiance is desired alongside long-term improvement.<br/>
-      <em class="text-xs text-gray-400">Note: Optical effects are temporary and will diminish as microspheres are naturally exfoliated. The true brightening effects from glutathione require consistent treatment over several sessions.</em>
-    `,
-    benefits: ["Immediate Optical Brightening", "High-Purity Glutathione", "Dual Action (Immediate & Long-Term)", "Skin Firmness Support"],
-    sku: "AQUA-DIAMOND-MAX80",
-    volume: "10 Sessions"
-  },
+  "id": 34,
+  "name": "Aqua Skin Brilliant Diamond Max 80000mg",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 10000,
+  "image": "/image/IMG_1890.JPG",
+  "description": "Sparkling White System | 80,000mg Glutathione | Complete 10-Session Course",
+  "details": "<strong>Aqua Skin Brilliant Diamond Max — Premium Sparkling White Therapy</strong><br/><br/>Aqua Skin Brilliant Diamond Max is a comprehensive 10-session skin whitening system that combines ultra-high-dose glutathione with essential brightening and anti-aging components. Trusted by spas worldwide, this Swiss-formulated treatment reduces melanin production for spotless, radiant skin while preventing future wrinkles and signs of aging.<br/><br/><strong>Complete Composition (10 Sessions):</strong><br/><br/><strong>Ultra-filtration Complexion Vials (10 Vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 80,000mg total — Master antioxidant for melanin inhibition</li><li><strong>Coenzyme Q10:</strong> 2,500mg — Mitochondrial protection and anti-aging</li><li><strong>Fibroblast Growth Factor:</strong> 2,500mg — Stimulates collagen production</li><li><strong>ALA Alpha Lipoic Acid:</strong> 1,850mg — Universal antioxidant</li><li><strong>Amino Acid Complex:</strong> 2,300mg — Skin protein synthesis</li><li><strong>Mineral Bio-active Factor:</strong> 1,200mg — Essential mineral support</li></ul><br/><strong>ULTRA-FILTRATE 5ml Ampoules (10 Ampoules):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ascorbic Acid (Vitamin C):</strong> 6,500mg — Brightening and collagen synthesis</li><li><strong>Natural Collagen Extract:</strong> 2,800mg — Elasticity and firmness</li><li><strong>Hyaluronic Acid:</strong> 3,200mg — Deep hydration and plumping</li><li><strong>Epidermal Growth Factor (EGF):</strong> 2,000mg — Cell renewal and repair</li></ul><br/><strong>ULTRA-FILTRATE 2ml Ampoules (10 Ampoules):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Multivitamin Complex:</strong> 3,500mg — Comprehensive nutritional support</li><li><strong>Copper Peptide:</strong> 800mg — Wound healing and tissue repair</li><li><strong>Kojic Acid:</strong> 900mg — Natural tyrosinase inhibitor</li><li><strong>Vegetal Placenta:</strong> 2,200mg — Hydration and elasticity enhancement</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Lightens skin tone and reduces scars dramatically</li><li>Improves skin elasticity and firmness</li><li>Deeply moisturizes and hydrates for plump texture</li><li>Reduces pigmentation from sun exposure</li><li>Smooths fine lines, wrinkles, and blemishes</li><li>Suppresses acne, pimples, and breakouts</li><li>Minimizes pores and enhances overall complexion</li><li>Eliminates free radicals that cause organ and brain dysfunction</li><li>Prevents premature aging</li><li>Suitable for all body areas including face, lips, and fingernails</li></ul><br/><strong>Usage Protocol:</strong> Intravenous IV infusion (drip) once weekly or as prescribed by dermatologist. Reconstitute powder vial with 100ml-500ml saline, gently shake until fully dissolved, and administer via slow IV route.<br/><br/><strong>Storage:</strong> Store in cool, dry place away from sunlight.<br/><br/><strong>Not Suitable For:</strong> Pregnant women, breastfeeding mothers, individuals with vitamin allergies, or patients with cardiovascular problems. Always consult dermatologist before use.<br/><br/><strong>Expiry:</strong> June 2029<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person based on individual metabolism. Professional medical supervision required. No overdose cases reported; high-dose glutathione's primary effect is whitening.</em>",
+  "benefits": ["80,000mg High-Dose Glutathione", "Complete 10-Session System", "Swiss-Formulated", "Anti-Aging & Acne Control", "Deep Hydration Complex"],
+  "sku": "AQUA-DIAMOND-MAX-80K",
+  "volume": "1 Box Pack (10 Vials + 10 x 5ml Ampoules + 10 x 2ml Ampoules)"
+},
    {
   "id": 35,
   "name": "Glutax 2000000GX DualNA Premium ReCombined Cell Injection",
@@ -843,244 +725,96 @@ const PRODUCTS = [
   "volume": "1 Box Pack (14 Sessions + Oral Booster)"
 },
   {
-    id: 37,
-    name: "iskin Radianz Blue NAD+",
-    category: "Injection",
-    brand: "iSkin",
-    price: 13500,
-    image: "/image/IMG_1951.jpg",
-    description: "Future Skin-Tech | Advanced Cellular Renewal",
-    details: `
-      <strong>iSkin Future Skin-Tech — Next Generation Bio-Revitalization</strong><br/><br/>
-      This minimalist blue edition from iSkin focuses on the "Future Skin-Tech" platform, utilizing advanced delivery systems to ensure maximum absorption of active ingredients. It is designed to reset the skin's biological age through deep cellular hydration and repair[citation:38].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Concentrated L-Glutathione – High purity grade</li>
-        <li>DNA/RNA Complex – Supports cellular repair mechanisms</li>
-        <li>Epidermal Growth Factors (EGF) – Promotes tissue regeneration</li>
-        <li>Hyaluronic Acid Complex – Multi-depth hydration</li>
-        <li>Pro-Vitamin B5 & E – Barrier strengthening</li>
-      </ul>
-      <br/>
-      <strong>Tech-Driven Skincare:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Focuses on biomimetic ingredients that replicate natural skin components</li>
-        <li>Advanced stabilization technology prevents oxidation of active ingredients</li>
-        <li>Designed for "Glass Skin" clarity and texture refinement</li>
-      </ul>
-      <br/>
-      A premium choice for those seeking the reputable iSkin Swiss/German formulation standards in a concentrated maintenance therapy.<br/>
-      <em class="text-xs text-gray-400">Note: This product emphasizes skin quality and texture alongside brightening. Results are best seen with consistent weekly applications.</em>
-    `,
-    benefits: ["Future Skin-Tech", "Cellular Reset", "Deep Hydration", "Swiss Formulation"],
-    sku: "ISKIN-BLUE-TECH",
-    volume: "10 Sets"
-  },
+  "id": 38,
+  "name": "iSkin Radianz Blu Cell with NAD Glutathione Injection",
+  "category": "Injection",
+  "brand": "iSkin",
+  "price": 19000,
+  "image": "/image/IMG_1951.jpg",
+  "description": "Swiss-Formulated NAD+ & Glutathione Complex | Picomized Technology for Cellular Renewal",
+  "details": "<strong>iSkin Radianz Blu Cell — Advanced NAD+ Cellular Renewal Therapy</strong><br/><br/>Discover the future of skincare with iSkin Radianz Blu Cell, a Swiss-formulated injection that combines picomized NAD+ with high-potency glutathione and marine cellular extracts. This advanced treatment rejuvenates, protects, and brightens skin from within, addressing the root causes of aging for healthier, glowing complexion.<br/><br/><strong>Key Picomized Ingredients & Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Picomized NAD+:</strong> Boosts cellular energy, repairs DNA, and reduces fine lines for youthful glow</li><li><strong>Picomized Glutathione:</strong> Potent antioxidant that detoxifies skin, strengthens immunity, and brightens tone</li><li><strong>Picomized Marine Cellular Extracts:</strong> Stimulate collagen production, enhancing firmness and reducing wrinkles</li><li><strong>Picomized Phytowhite Tripeptide:</strong> Brightens and hydrates for smooth, refreshed, radiant skin</li><li><strong>Picomized Mineral Silicate:</strong> Detoxifies and strengthens skin while improving nutrient absorption</li></ul><br/><strong>Why Choose iSkin Radianz Blu Cell:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Advanced Formulation:</strong> Picomized NAD+ and Mineral Silicate work synergistically to renew, detoxify, and protect</li><li><strong>Scientifically Proven:</strong> Clinical studies demonstrate noticeable improvements in texture, tone, and elasticity</li><li><strong>Comprehensive Care:</strong> Rejuvenates, brightens, detoxifies, and protects in one complete treatment</li><li><strong>Maximum Absorption:</strong> IV/infusion delivery ensures optimal bioavailability for superior results</li><li><strong>Innovative Picomized Technology:</strong> Ensures deep ingredient penetration for exceptional skincare benefits</li></ul><br/><strong>Safety Information:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>For intravenous (IV) or infusion use only under professional supervision</li><li>Normal detoxification reaction: slight greenish tint in urine or stool</li><li>Paraben-free and organic formulation</li></ul><br/><strong>Origin:</strong> Made in Switzerland<br/><br/><strong>Packaging:</strong> 1 Box Pack (complete multi-vial course)<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person. Professional medical supervision required. Not for pregnant or nursing women without physician consultation. Store in cool, dry place away from direct sunlight.</em>",
+  "benefits": ["Picomized NAD+ Technology", "Swiss-Formulated", "Cellular Renewal & DNA Repair", "Detoxification & Brightening", "Maximum Absorption via IV"],
+  "sku": "ISKIN-RADIANZ-NAD",
+  "volume": "1 Box Pack (Multi-Vial Course for IV Infusion)"
+},
   {
-    id: 38,
-    name: "Aqua Skin Veniscy 138 TriNA Pico-Cell",
-    category: "Injection",
-    brand: "Aqua Skin/Veniscy",
-    price: 12500,
-    image: "/image/IMG_2001.jpg",
-    description: "TriNA Pico-Cell Pro Max Absorption | Matrixyl 9000",
-    details: `
-      <strong>Aqua Skin Veniscy 138 — High-Performance Peptide Matrix</strong><br/><br/>
-      The 138th iteration of the famous collaboration between Aqua Skin and Veniscy introduces "TriNA Pico-Cell" technology. This formulation is heavily fortified with peptides (Matrixyl 9000) and high-dose glutathione for aggressive anti-aging and whitening[citation:39].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Ultimate Glutathione – 18,000,000 mg (Nano-concentration)</li>
-        <li>Nonapeptide & Matrixyl 9000 – Potent anti-aging peptide complex</li>
-        <li>Vegetal Placenta – Plant-derived bio-stimulants</li>
-        <li>DMAE (Dimethylaminoethanol) – Skin firming agent</li>
-        <li>Pro Coenzyme Q10 – Mitochondrial energy support</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li><strong>Matrixyl 9000:</strong> Signals fibroblasts to produce significantly more collagen</li>
-        <li><strong>TriNA Pico-Cell:</strong> Ensures ingredients penetrate the cell wall efficiently</li>
-        <li><strong>DMAE & ALA:</strong> Provide an immediate lifting and tightening effect</li>
-      </ul>
-      <br/>
-      This is a "Pro Max" absorption formula, ideal for users who have hit a plateau with standard injections.<br/>
-      <em class="text-xs text-gray-400">Clinical Note: The high peptide content makes this excellent for mature skin showing signs of sagging or deep wrinkles.</em>
-    `,
-    benefits: ["Matrixyl 9000 Peptides", "TriNA Pico-Cell", "Lifting Effect", "Aggressive Whitening"],
-    sku: "AS-VENISCY-138",
-    volume: "10 Sets"
-  },
+  "id": 39,
+  "name": "Aqua Skin Veniscy 138 TriNa Picocell Pro Max Glutathione Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin/Veniscy",
+  "price": 11000,
+  "image": "/image/IMG_2001.jpg",
+  "description": "TriNa Picocell Pro Max Technology | Matrixyl 9000 Peptides | High-Concentration Glutathione",
+  "details": "<strong>Aqua Skin Veniscy 138 TriNa Picocell Pro Max — Advanced Peptide Matrix for Aggressive Whitening & Anti-Aging</strong><br/><br/>The Aqua Skin Veniscy 138 represents the pinnacle of the renowned collaboration between Aqua Skin and Veniscy, featuring TriNa Picocell Pro Max absorption technology. This high-performance formulation is designed for individuals seeking a non-surgical method to enhance skin radiance, lighten complexion, and achieve dramatic anti-aging results through IV infusion.<br/><br/><strong>Complete Composition (Per Box Pack):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ultimate Glutathione (Nano-Concentrated):</strong> 18,000,000 mg — Ultra-high potency master antioxidant for maximum melanin inhibition and detoxification</li><li><strong>Matrixyl 9000 & Nonapeptide Complex:</strong> Potent anti-aging peptides that signal fibroblasts to significantly increase collagen production</li><li><strong>Vegetal Placenta:</strong> Plant-derived bio-stimulants for enhanced cell regeneration</li><li><strong>DMAE (Dimethylaminoethanol):</strong> Skin firming agent providing immediate lifting and tightening effects</li><li><strong>Pro Coenzyme Q10:</strong> Mitochondrial energy support for cellular vitality</li><li><strong>Alpha Lipoic Acid (ALA):</strong> Universal antioxidant for comprehensive protection</li></ul><br/><strong>Advanced TriNa Picocell Mechanism:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>TriNa Pico-Cell Technology:</strong> Ensures active ingredients penetrate the cell wall efficiently for maximum bioavailability</li><li><strong>Matrixyl 9000:</strong> A sophisticated peptide complex that stimulates collagen I, III, and IV production</li><li><strong>DMAE & ALA Synergy:</strong> Provides both immediate skin firming and long-term antioxidant protection</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Lightens and brightens skin tone dramatically</li><li>Provides powerful anti-aging effects, reducing wrinkles and fine lines</li><li>Promotes fair and radiant complexion through enhanced melanin inhibition</li><li>Stimulates new skin cell growth for fresh, vibrant appearance</li><li>Improves skin texture and hydration for smooth, plump feel</li><li>Increases skin tightness and elasticity</li><li>Repairs damaged skin and clears acne</li><li>Ideal for users who have plateaued with standard injections</li><li>Safe alternative to cosmetic surgery or laser treatments</li><li>Particularly effective in regions with limited sun exposure</li></ul><br/><strong>Safety Profile:</strong> Paraben-free and organic formulation. Devoid of harmful side effects when professionally administered. Free from skin irritation concerns.<br/><br/><strong>Usage Protocol:</strong> IV infusion administration only, under professional medical supervision. Results evaluated after full course of treatment.<br/><br/><em class=\"text-xs text-gray-400\">Clinical Note: The high peptide content makes this formulation excellent for mature skin showing signs of sagging or deep wrinkles. Results vary from person to person. Professional medical supervision required. Not for pregnant or nursing women without physician consultation.</em>",
+  "benefits": ["High-Concentration Glutathione (18M mg)", "Matrixyl 9000 Peptide Complex", "TriNa Picocell Absorption Technology", "Comprehensive Anti-Aging", "Skin Firming & Hydration"],
+  "sku": "AS-VENISCY-138-PROMAX",
+  "volume": "1 Box Pack (Multi-Vial Course for IV Infusion)"
+},
   {
-    id: 39,
-    name: "Miracle White 80,000",
-    category: "Injection",
-    brand: "Miracle White",
-    price: 11800,
-    image: "/image/IMG_1954.jpg",
-    description: "Signature Radiance | Integral Whitening Care",
-    details: `
-      <strong>Miracle White Signature — The All-in-One Perfector</strong><br/><br/>
-      Miracle White "Signature Radiance Integral Care" is designed as a complete solution covering the three pillars of skin aesthetics: Whitening, Moisturizing, and Antioxidant protection. It uses an "exclusive combination" to smooth skin tone to perfection[citation:40].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Nano-Concentrated Glutathione – Rapid absorption formula</li>
-        <li>Integral Whitening Complex – Kojic Acid + Ascorbic Acid synergy</li>
-        <li>Epidermal Repair Factors – Smooths rough texture</li>
-        <li>Thioctic Acid (ALA) – Universal antioxidant</li>
-        <li>Multi-Vitamin Cocktail – For overall skin health</li>
-      </ul>
-      <br/>
-      <strong>Integral Care Approach:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Treats hyperpigmentation at the source (melanocyte inhibition)</li>
-        <li>Provides deep dermal hydration to reflect light (Radiance effect)</li>
-        <li>Creates a protective antioxidant shield against pollution</li>
-      </ul>
-      <br/>
-      Suitable for those starting their journey or looking for a reliable, balanced whitening treatment without overly aggressive peeling agents.<br/>
-      <em class="text-xs text-gray-400">Note: "Integral Care" implies a holistic approach. It is formulated to be gentle enough for sensitive skin while delivering visible radiance.</em>
-    `,
-    benefits: ["Signature Formula", "Integral Care", "Sensitive Skin Friendly", "Radiance Booster"],
-    sku: "MW-SIGNATURE",
-    volume: "6 Sets"
-  },
+  "id": 40,
+  "name": "Miracle White 80000mg Glutathione Injection White Box",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 11500,
+  "image": "/image/IMG_1954.jpg",
+  "description": "SLC24A5 Melanin Inhibitor Technology | 80,000mg High-Dose Glutathione | Anti-Aging Complex",
+  "details": "<strong>Miracle White 80000mg White Box — Advanced SLC24A5 Targeted Whitening System</strong><br/><br/>Embark on your skin perfection journey with Miracle White 80,000mg, a revolutionary skin whitening injection that surpasses ordinary skincare routines. This advanced Swiss-formulated treatment combines ultra-high-dose glutathione with SLC24A5 melanin inhibitor technology for comprehensive skin transformation—delivering not just a lighter complexion but complete skin rejuvenation.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>SLC24A5 Inhibitor:</strong> Advanced melanin-regulating compound that precisely manages melanin levels at the genetic level, preventing hyperpigmentation and ensuring clear, even skin tone</li><li><strong>Nano-Concentrated Glutathione:</strong> 80,000mg high-dose master antioxidant for maximum melanin inhibition and detoxification</li><li><strong>Integral Whitening Complex:</strong> Kojic Acid + Ascorbic Acid synergy for enhanced brightening</li><li><strong>Epidermal Repair Factors:</strong> Smooth rough texture and promote cell renewal</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> Universal antioxidant for comprehensive protection</li><li><strong>Multi-Vitamin Cocktail:</strong> Complete nutritional support for overall skin health</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Exceptional Skin Whitening:</strong> Attain radiant, even complexion with potent glutathione and SLC24A5 inhibition</li><li><strong>Enhanced Anti-Aging:</strong> Increases collagen production and improves skin elasticity for rejuvenated appearance</li><li><strong>Quick Results:</strong> Visible transformation within days of treatment</li><li><strong>Acne & Dark Spot Reduction:</strong> Effectively eliminates acne, reduces dark spots, and brightens overall complexion</li><li><strong>Comprehensive Skin Transformation:</strong> Reduces dullness, balances skin tone, delivers unmatched luminosity</li><li><strong>Antioxidant Protection:</strong> Creates protective shield against environmental pollution and free radicals</li></ul><br/><strong>Beyond Whitening — Anti-Aging Innovation:</strong><br/>Miracle White 80,000mg extends beyond mere whitening, incorporating powerful anti-aging properties that boost collagen synthesis and improve skin elasticity, leading to a truly rejuvenated and youthful appearance.<br/><br/><strong>Usage Protocol:</strong> Professional administration only. Quick-absorbing formula delivers noticeable results in under one week. For best results, adhere to usage instructions and consult dermatologist for specific skin concerns.<br/><br/><strong>Expiry Date:</strong> 12/2027<br/><br/><strong>Origin:</strong> Made in Switzerland<br/><br/><em class=\"text-xs text-gray-400\">Note: \"Integral Care\" approach treats hyperpigmentation at source while providing deep hydration and antioxidant protection. Formulated to be gentle enough for sensitive skin while delivering visible radiance. Results vary from person to person. Professional medical supervision required.</em>",
+  "benefits": ["SLC24A5 Melanin Inhibitor", "80,000mg High-Dose Glutathione", "Swiss-Formulated", "Anti-Aging & Collagen Boost", "Visible Results in Days"],
+  "sku": "MW-WHITEBOX-80K",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+},
   {
-    id: 40,
-    name: "Biocell Revital Pro",
-    category: "Injection",
-    brand: "Biocell",
-    price: 10500,
-    image: "/image/IMG_1999.jpg",
-    description: "Renovation with Glutathione 150 Million mg",
-    details: `
-      <strong>Biocell Revital Pro — Genetic & Cellular Renovation</strong><br/><br/>
-      Manufactured in Switzerland, Biocell Revital Pro boasts a massive 150,000,000mg (150 Million) glutathione designation. It features a unique "Renovation" complex including Argan Stem Cells and Chromosome signaling factors to rejuvenate skin at the genetic level[citation:41].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione (Nano Extract) – 150,000,000 mg designation</li>
-        <li>Argan Stem Cell – Vitalizes dermal stem cells</li>
-        <li>Chromosome & Q10 – Genetic protection and energy</li>
-        <li>Citrus Aurantium Extract – Natural skin brightener</li>
-        <li>Collagen (Natural) – 100,000 mg</li>
-      </ul>
-      <br/>
-      <strong>Revital Technology:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li><strong>Argan Stem Cells:</strong> Known to improve skin density and reduce wrinkle depth</li>
-        <li><strong>Aminox Essential Amino Acids:</strong> Provides the building blocks for new protein synthesis</li>
-        <li><strong>High-Dose Collagen:</strong> Restores elasticity and bounce to the skin</li>
-      </ul>
-      <br/>
-      This formula is particularly strong on "renovation"—meaning it is excellent for repairing sun-damaged or aged skin.<br/>
-      <em class="text-xs text-gray-400">Important: The "150 Million" figure refers to the molecular scale/potency of the proprietary complex, not physical weight. Requires professional administration.</em>
-    `,
-    benefits: ["Argan Stem Cells", "Genetic Renovation", "High-Dose Designation", "Swiss Quality"],
-    sku: "BIO-REVITAL-PRO",
-    volume: "10 Sets"
-  },
+  "id": 41,
+  "name": "Biocell Revital Pro Renovation With Glutathione 150,000,000 mg Injection",
+  "category": "Injection",
+  "brand": "Biocell",
+  "price": 10000,
+  "image": "/image/IMG_1999.jpg",
+  "description": "Swiss-Formulated | 150 Million mg Glutathione Complex | Argan Stem Cell Technology",
+  "details": "<strong>Biocell Revital Pro Renovation — Genetic-Level Cellular Renewal</strong><br/><br/>Discover the power of Swiss biotechnology with Biocell Revital Pro, a comprehensive skin renovation treatment featuring a massive 150,000,000mg glutathione complex. This potent antioxidant-rich formula combines vitamin C, argan stem cells, and chromosome signaling factors to neutralize environmental toxins, illuminate complexion, and rejuvenate skin at the genetic level.<br/><br/><strong>Complete Composition (10 Injection Sets per Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>GLUTblanc Nano Extract Glutathione:</strong> 150,000,000mg designation — Ultra-high potency master antioxidant for skin lightening and systemic detoxification</li><li><strong>Argan Stem Cell:</strong> Vitalizes dermal stem cells to improve skin density and reduce wrinkle depth</li><li><strong>Collagen (Natural):</strong> 100,000mg — Essential for skin elasticity and firmness</li><li><strong>Ascorbic Acid (Vitamin C):</strong> Brightens skin, reduces melanin pigmentation, and detoxifies</li><li><strong>Aminox Essential Amino Acid Complex:</strong> Supports cell growth, repair, and nutrient uptake</li><li><strong>Hyaluronic Acid:</strong> Maintains skin moisture for plump, supple complexion</li><li><strong>Chromosome Complex:</strong> Specialized ingredient for genetic-level skin health support</li><li><strong>Coenzyme Q10:</strong> Potent antioxidant that reduces signs of aging</li><li><strong>Hesperidin:</strong> Protects skin cells from oxidative damage</li><li><strong>Solution Collagen d'extrit:</strong> Enhances skin elasticity and firmness</li><li><strong>Citrus Aurantium Extract:</strong> Natural skin brightener</li><li><strong>NaOH:</strong> pH adjuster</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Illumination:</strong> Reduces dark spots and uneven tone for brighter complexion</li><li><strong>Cellular Revitalization:</strong> Collagen, hyaluronic acid, and amino acids rejuvenate skin cells</li><li><strong>Anti-Aging:</strong> Combats free radicals, reducing wrinkles and fine lines</li><li><strong>Antioxidant Protection:</strong> Shields skin from oxidative damage and environmental toxins</li><li><strong>Immune Support:</strong> Enhances overall immune function while promoting skin lightening</li><li><strong>Deep Hydration:</strong> Hyaluronic acid retains moisture for plump, supple skin</li><li><strong>Firming & Tightening:</strong> Promotes elasticity for youthful appearance</li><li><strong>Skin Repair:</strong> Minimizes appearance of scars and blemishes</li><li><strong>Acne Reduction:</strong> May reduce breakouts and improve skin clarity</li></ul><br/><strong>Renovation Technology:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Argan Stem Cells:</strong> Plant-derived stem cells that improve skin density and reduce wrinkle depth</li><li><strong>Chromosome Signaling:</strong> Genetic-level support for cellular repair and renewal</li><li><strong>Aminox Essential Amino Acids:</strong> Building blocks for new protein synthesis</li><li><strong>High-Dose Collagen:</strong> Restores elasticity and bounce to aging or sun-damaged skin</li></ul><br/><strong>Usage Guidelines:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Consult healthcare professional or dermatologist before starting treatment</li><li>Administer Intramuscularly (IM) or Intravenously (IV) under professional supervision</li><li>Each injection session consists of 2 ampoules + 1 vial</li><li>Dosage and frequency determined by provider based on skin condition</li><li>Use high-SPF sunscreen and maintain regular skincare routine post-treatment</li></ul><br/><strong>Packaging:</strong> 1 Box contains 10 complete Injection Sets (10 vials + 20 ampoules)<br/><br/><strong>Origin:</strong> Made in Switzerland<br/><br/><em class=\"text-xs text-gray-400\">Important: The \"150 Million mg\" designation refers to the molecular scale/potency of the proprietary complex, not physical weight. Results vary from person to person. Professional medical supervision required. Contact healthcare provider immediately if unusual reactions occur.</em>",
+  "benefits": ["150M mg Glutathione Complex", "Argan Stem Cell Technology", "Swiss-Formulated", "Genetic-Level Renovation", "Complete 10-Session System"],
+  "sku": "BIO-REVITAL-PRO-150M",
+  "volume": "1 Box Pack (10 Vials + 20 Ampoules)"
+},
   {
-    id: 41,
-    name: "NC24 90,000 Glutathione Injection",
-    category: "Injection",
-    brand: "NC24",
-    price: 11000,
-    image: "/image/nc2490k.jpg",
-    description: "NC24™ Advanced Whitening | 90,000mg Glutathione",
-    details: `
-      <strong>NC24 90,000 — Advanced Whitening Formula</strong><br/><br/>
-      NC24 90,000 is a high-potency glutathione injection designed for effective skin lightening and antioxidant protection. The formula combines glutathione with complementary agents to enhance its efficacy[citation:42].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione – 900 mg per vial (90,000 mg designation)</li>
-        <li>Alpha Lipoic Acid – 100 mg (antioxidant synergy)</li>
-        <li>Vitamin C – 500 mg (enhances glutathione recycling)</li>
-        <li>Collagen Peptides – 200 mg (skin structure support)</li>
-        <li>Multi-Vitamin Blend</li>
-      </ul>
-      <br/>
-      <strong>Whitening Mechanism:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
-        <li>Alpha lipoic acid regenerates other antioxidants, enhancing overall effect</li>
-        <li>Vitamin C supports collagen synthesis and skin brightening</li>
-        <li>Collagen peptides improve skin texture and elasticity</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking a balanced approach to skin lightening with added antioxidant benefits.<br/>
-      <em class="text-xs text-gray-400">Note: The "90,000" designation refers to the potency level of the formulation, not the actual weight of glutathione. Consistent treatments yield best results.</em>
-    `,
-    benefits: ["Advanced Whitening", "Antioxidant Synergy", "Skin Structure Support", "Balanced Formula"],
-    sku: "NC24-90000",
-    volume: "10 Sets"
-  },
-  {    
-    id: 42,
-    name: "L-carnitine 20g",
-    category: "injection",
-    brand: "Ratiopharma",
-    price: 5000,
-    image: "/image/lcar20mg.jpg",
-    description: "L-Carnitine 20g Injection | Fat Metabolism Support",
-    details: `
-      <strong>Ratiopharma L-Carnitine 20g Injection — Fat Metabolism Enhancer</strong><br/><br/>
-      This injectable L-Carnitine formulation is designed to support fat metabolism and energy production. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:43].<br/><br/>
-      <strong>Key Features:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Carnitine Injection – 20 grams per vial</li>
-        <li>Supports Fatty Acid Oxidation</li>
-        <li>Enhances Energy Production</li>
-        <li>May Aid in Weight Management</li>
-        <li>Rapid Absorption via Injection</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Carnitine transports long-chain fatty acids into mitochondria</li>
-        <li>Facilitates the conversion of fat into usable energy (ATP)</li>
-        <li>May improve exercise performance and recovery</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking to enhance their metabolic health and support weight management efforts.<br/>
-      <em class="text-xs text-gray-400">Important: This product should be administered by a healthcare professional. Consult with a healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>
-    `,
-    benefits: ["Fat Metabolism Support", "Rapid Absorption", "Energy Production", "Weight Management Support"],
-    sku: "RATIO-LCARNITINE-20G",
-    volume: "20g Injection"
-  },
-  {    
-    id: 43,
-    name: "L-carnitine 35g",
-    category: "injection",
-    brand: "Ratiopharma",
-    price: 8500,
-    image: "/image/lcar35mg.jpg",
-    description: "L-Carnitine 35g Injection | Enhanced Fat Metabolism",
-    details: `
-      <strong>Ratiopharma L-Carnitine 35g Injection — Advanced Fat Metabolism Therapy</strong><br/><br/>
-      This injectable L-Carnitine formulation is designed for rapid absorption and enhanced fat metabolism. L-Carnitine plays a crucial role in transporting fatty acids into the mitochondria for oxidation[citation:44].<br/><br/>
-      <strong>Key Features:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>High-Dose L-Carnitine Injection – 35 grams per vial</li>
-        <li>Supports Fatty Acid Oxidation</li>
-        <li>Enhances Energy Production</li>
-        <li>May Aid in Weight Management</li>
-        <li>Rapid Absorption via Injection</li>
-      </ul>
-      <br/>
-      <strong>Mechanism of Action:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>L-Carnitine transports long-chain fatty acids into mitochondria</li>
-        <li>Facilitates the conversion of fat into usable energy (ATP)</li>
-        <li>May improve exercise performance and recovery</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking a more immediate effect on metabolic health and weight management.<br/>
-      <em class="text-xs text-gray-400">Important: This product should be administered by a healthcare professional. Consult with a healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>
-    `,
-    benefits: ["Enhanced Fat Metabolism", "Rapid Absorption", "Energy Production", "Weight Management Support"],
-    sku: "RATIO-LCARNITINE-35G",
-    volume: "35g Injection"
-  },
+  "id": 43,
+  "name": "NC24 90000mg Japan Ultra Sense Complexion",
+  "category": "Injection",
+  "brand": "NC24",
+  "price": 11000,
+  "image": "/image/nc2490k.jpg",
+  "description": "Japanese-Formulated | 90,000mg Ultra Sense Complexion | Complete Anti-Aging & Whitening System",
+  "details": "<strong>NC24 90000mg Japan Ultra Sense Complexion — Advanced Japanese Whitening Technology</strong><br/><br/>NC24 Japan 90000mg Ultra Sense Complexion represents the pinnacle of Japanese-formulated glutathione therapy. This comprehensive 10-session system combines high-potency glutathione with essential antioxidants, growth factors, and multivitamins to deliver rapid skin brightening, anti-aging benefits, and overall complexion transformation. Dermatologically tested and proven safe, it delivers visible results within weeks.<br/><br/><strong>Complete Composition (10 Sessions):</strong><br/><br/><strong>SET A Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ultra Filtration Glutathione:</strong> 90,000mg total (90:1 concentrate / 1000mg per vial) — 5 vials (20ml each) of high-potency master antioxidant for maximum melanin inhibition</li><li><strong>Thiotic Acids (Alpha Lipoic Acid):</strong> 1000mg/5ml — 5 ampoules of universal antioxidant for enhanced glutathione recycling</li><li><strong>Epidermal Growth Factor (EGF):</strong> 1500mcg/2ml — 5 ampoules of cell-renewing growth factors for skin regeneration</li></ul><br/><strong>SET B Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Lyophilization Multivitamin Complex:</strong> 50,000mg/25ml — 5 vials of comprehensive nutritional support for overall skin health</li><li><strong>Ascorbic Acids (Vitamin C):</strong> 1250mg/5ml — 5 ampoules for brightening and collagen synthesis</li><li><strong>Coenzyme Q10 (CoQ10):</strong> 900mg/2ml — 5 ampoules for mitochondrial energy and anti-aging protection</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Whitening & Brightening:</strong> Reduces melanin production for radiant, even complexion</li><li><strong>Anti-Aging:</strong> Reduces wrinkles, fine lines, and signs of aging</li><li><strong>Acne & Pimple Reduction:</strong> Clears breakouts and prevents future blemishes</li><li><strong>Pore Minimization:</strong> Refines and reduces visible pore size</li><li><strong>Scar Healing:</strong> Promotes healing of existing scars and blemishes</li><li><strong>Collagen Stimulation:</strong> Boosts natural collagen production for firmness</li><li><strong>Detoxification:</strong> Eliminates toxins and reduces oxidative stress</li><li><strong>Dark Spot Reduction:</strong> Lightens hyperpigmentation and melasma</li><li><strong>Immune System Support:</strong> Enhances overall body immunity</li><li><strong>Skin Firming & Lifting:</strong> Improves elasticity and tightness</li><li><strong>Cell Repair:</strong> Repairs damaged skin cells for healthy regeneration</li><li><strong>Smoothing:</strong> Softens rough skin texture for smooth, glowing appearance</li></ul><br/><strong>Mechanism:</strong> The Japanese formula works synergistically to boost collagen production, reduce oxidative stress, and inhibit melanin synthesis. Skin appears brighter, healthier, and more radiant within weeks of consistent use.<br/><br/><strong>Usage Protocol:</strong> Administer intravenously (IV) only. Mix contents with 200ml saline solution and IV drip for 30-45 minutes. Recommended frequency: once every 4-6 days. Professional medical supervision required.<br/><br/><strong>Expiry Date:</strong> December 2027<br/><br/><strong>Not Suitable For:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Breastfeeding mothers</li><li>Women during menstruation</li><li>Individuals with vitamin allergies</li><li>Patients with cardiovascular problems</li></ul><br/><strong>Origin:</strong> Made in Japan<br/><br/><em class=\"text-xs text-gray-400\">Note: The \"90,000mg\" designation refers to the total glutathione potency across all vials. Dermatologically tested and proven safe. Results vary from person to person. Professional medical supervision required. Store in cool, dry place away from direct sunlight.</em>",
+  "benefits": ["Japanese-Formulated", "90,000mg High-Potency Glutathione", "Complete 10-Session Dual-Set System", "Anti-Aging & Acne Control", "Dermatologically Tested"],
+  "sku": "NC24-90000-JP-ULTRA",
+  "volume": "1 Box Pack (5 Vials SET A + 5 Ampoules SET A + 5 Vials SET B + 5 Ampoules SET B)"
+},
+  {
+  "id": 44,
+  "name": "Ratiopharm L Carnitine 20 Gram Weight & Fat Loss Injection",
+  "category": "Injection",
+  "brand": "Ratiopharm",
+  "price": 10000,
+  "image": "/image/lcar20mg.jpg",
+  "description": "German-Formulated | 20g High-Dose L-Carnitine | Fat Metabolism & Weight Management",
+  "details": "<strong>Ratiopharm L-Carnitine 20g — Advanced Fat Metabolism Injection</strong><br/><br/>Ratiopharm L-Carnitine 20g is a German-formulated high-dose injection designed to boost your body's natural fat-burning process. This powerful formula helps transform body fat into usable energy, making it easier to achieve weight loss goals while enhancing overall health and vitality. Suitable for both men and women struggling with excess weight or obesity.<br/><br/><strong>Complete Composition (10 Injection Sets per Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Carnitine plus CLA Complex:</strong> 20g/10ml per set — High-concentration fat-metabolizing agent</li><li>Lab-tested formula designed for safe and effective fat burning</li><li>Paraben-free and organic composition</li></ul><br/><strong>Mechanism of Action:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>L-Carnitine transports long-chain fatty acids into mitochondria for oxidation</li><li>Facilitates conversion of stored fat into usable energy (ATP)</li><li>CLA (Conjugated Linoleic Acid) supports body's natural fat-burning process</li><li>Reduces fatigue caused by lactic acid buildup during exercise</li><li>Improves exercise performance and endurance</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Weight Loss & BMI Reduction:</strong> Sheds extra pounds and decreases body mass index</li><li><strong>Prevents New Fat Buildup:</strong> Helps maintain lean figure by preventing additional fat accumulation</li><li><strong>Fat Breakdown Acceleration:</strong> Hastens decomposition of fat cells in the body</li><li><strong>Metabolism Boost:</strong> Amplifies metabolic rate for enhanced calorie burning</li><li><strong>Fat Reduction:</strong> Actively diminishes existing body fat</li><li><strong>Blocks Fat Production:</strong> Prevents formation of new fat cells</li><li><strong>Energy Booster:</strong> Provides vigor and vitality for daily tasks</li><li><strong>Muscle Tone Enhancement:</strong> Strengthens muscles for firmer, tighter appearance</li><li><strong>Organ Health Optimization:</strong> Enhances function of brain, liver, kidneys, and heart</li><li><strong>Blood Sugar Stabilization:</strong> Helps regulate glucose levels</li><li><strong>Blood Pressure Control:</strong> Assists in regulating blood pressure and reducing stress</li><li><strong>Fertility Boost:</strong> Supports reproductive health in both men and women</li><li><strong>Improved Brain Function:</strong> Supports optimal cognitive performance</li></ul><br/><strong>Safety Profile:</strong> Lab-tested formula focused on safe fat burning without known side effects when administered properly.<br/><br/><strong>Usage Protocol:</strong> For professional administration only (IM/IV). Consult healthcare provider for personalized dosage based on weight loss goals and health status. Typically administered as part of a comprehensive weight management program including diet and exercise.<br/><br/><strong>Packaging:</strong> 1 Box contains 10 complete Injection Sets<br/><br/><strong>Origin:</strong> Made in Germany<br/><br/><em class=\"text-xs text-gray-400\">Important: Results vary from person to person. Professional medical supervision required. Not suitable for pregnant or nursing women without physician consultation. Store in cool, dry place away from direct sunlight. Consult healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>",
+  "benefits": ["German-Formulated", "20g High-Dose L-Carnitine", "Fat Metabolism Support", "Energy & Performance Boost", "Comprehensive 10-Session System"],
+  "sku": "RATIO-LCARNITINE-20G",
+  "volume": "1 Box Pack (10 Injection Sets)"
+},
+  {
+  "id": 45,
+  "name": "Ratiopharm L Carnitine 35g Weight Loss and Fat Loss Injection",
+  "category": "Injection",
+  "brand": "Ratiopharm",
+  "price": 11000,
+  "image": "/image/lcar35mg.jpg",
+  "description": "German-Formulated | 35g High-Dose L-Carnitine + CLA | Advanced Fat Metabolism Therapy",
+  "details": "<strong>Ratiopharm L-Carnitine 35g — Enhanced Fat Metabolism & Weight Loss Injection</strong><br/><br/>Ratiopharm L-Carnitine 35g is a German-formulated high-dose injection combining L-Carnitine with Conjugated Linoleic Acid (CLA) for rapid body shaping and weight management. This powerful formula accelerates fat burning by transporting fatty acids into mitochondria for energy conversion, making it an effective option for individuals seeking enhanced weight loss results and improved athletic performance.<br/><br/><strong>Key Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Carnitine:</strong> 35g high-dose — Essential amino acid that transports fatty acids into cells for energy production</li><li><strong>Conjugated Linoleic Acid (CLA):</strong> Naturally occurring fatty acid that may boost metabolism and fat burning</li></ul><br/><strong>Mechanism of Action:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>L-Carnitine transports long-chain fatty acids into mitochondria for oxidation</li><li>Facilitates conversion of stored fat into usable energy (ATP)</li><li>CLA supports metabolic rate enhancement and fat breakdown</li><li>Reduces fatigue by minimizing lactic acid buildup during exercise</li><li>Improves exercise performance, endurance, and recovery</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Accelerated Fat Burning:</strong> High-dose L-Carnitine speeds up fatty acid transfer to mitochondria for rapid fat oxidation</li><li><strong>Weight Loss Support:</strong> Helps shed excess pounds when combined with diet and exercise</li><li><strong>Enhanced Athletic Performance:</strong> Boosts energy levels and improves endurance during workouts</li><li><strong>Muscle Definition:</strong> Promotes fat loss while supporting lean muscle development</li><li><strong>Metabolism Boost:</strong> Amplifies metabolic rate for increased calorie burning</li><li><strong>Prevents Fat Accumulation:</strong> Helps block formation of new fat cells</li><li><strong>Energy Production:</strong> Provides sustained vitality for daily activities</li></ul><br/><strong>Safety Profile:</strong> Paraben-free and organic formulation. Lab-tested for safety with no known side effects when properly administered.<br/><br/><strong>Usage Protocol:</strong> For professional administration only (IM/IV). Consult healthcare provider for personalized dosage based on weight loss goals and health status. Best results achieved as part of comprehensive weight management program including balanced diet and regular exercise.<br/><br/><strong>Packaging:</strong> 1 Box contains multiple injection sets<br/><br/><strong>Origin:</strong> Made in Germany<br/><br/><em class=\"text-xs text-gray-400\">Important: Results vary from person to person. Professional medical supervision required. Not suitable for pregnant or nursing women without physician consultation. Store in cool, dry place away from direct sunlight. Consult healthcare provider before starting any new treatment, especially if you have underlying health conditions.</em>",
+  "benefits": ["German-Formulated", "35g High-Dose L-Carnitine", "CLA-Enhanced Formula", "Accelerated Fat Burning", "Athletic Performance Support"],
+  "sku": "RATIO-LCARNITINE-35G",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+},
   {
   "id": 44,
   "name": "Relumins 3500mg Glutathione Set MAX with Vitamin C & Boosters",
@@ -1095,40 +829,18 @@ const PRODUCTS = [
   "volume": "5 Vials + 5 Ampules + 30 Capsules"
 },
   {
-    id: 45,
-    name: "Miracle white 18k",
-    category: "Injection",
-    brand: "Miracle White",
-    price: 15000,
-    image: "/image/Miraclewhite18K.jpg",
-    description: "Miracle White 18K Gold Series | Luxurious Skin Brightening",
-    details: `
-      <strong>Miracle White 18K — Luxurious Skin Brightening Formula</strong><br/><br/>
-      Miracle White 18K Gold Series is a premium skin brightening injection that combines high-dose glutathione with colloidal gold particles. The inclusion of gold is believed to enhance skin radiance and provide anti-inflammatory benefits[citation:46].<br/><br/>
-      <strong>Key Active Components:</strong><br/>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione – 1000 mg per vial</li>
-        <li>Colloidal Gold Particles – 18K purity</li>
-        <li>Vitamin C – 500 mg (enhances glutathione recycling)</li>
-        <li>Alpha Lipoic Acid – 100 mg (antioxidant synergy)</li>
-        <li>Multi-Vitamin Blend</li>
-      </ul>
-      <br/>
-      <strong>Luxurious Brightening Mechanism:</strong>
-      <ul class="list-disc pl-5 mt-2 space-y-1">
-        <li>Glutathione inhibits tyrosinase, reducing melanin synthesis</li>
-        <li>Colloidal gold may enhance skin radiance and reduce inflammation</li>
-        <li>Vitamin C supports collagen synthesis and skin brightening</li>
-        <li>Alpha lipoic acid regenerates other antioxidants, enhancing overall effect</li>
-      </ul>
-      <br/>
-      Ideal for individuals seeking a luxurious and effective skin brightening treatment with added anti-inflammatory benefits.<br/>
-      <em class="text-xs text-gray-400">Note: The inclusion of colloidal gold is primarily for its purported skin benefits. Consult with a healthcare professional before starting any new treatment.</em>
-    `,
-    benefits: ["Luxurious Formula", "Colloidal Gold", "Skin Radiance", "Anti-Inflammatory Benefits", "High-Dose Glutathione"],
-    sku: "MW-18K-GOLD",
-    volume: "10 Sets"
-  }
+  "id": 46,
+  "name": "Miracle White Pro White 18K 180000mg Glutathione Injection",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 14000,
+  "image": "/image/Miraclewhite18K.jpg",
+  "description": "Swiss-Formulated | 180,000mg High-Dose Glutathione | EGF & Stem Cell Complex",
+  "details": "<strong>Miracle White Pro White 18K — Advanced Skin Brightening & Anti-Aging Therapy</strong><br/><br/>Elevate your skin's health with Miracle White Pro White 18K, a premium Swiss-formulated glutathione injection featuring 180,000mg of high-quality ingredients. This superior formulation combines revolutionary Epidermal Growth Factor (EGF), argan stem cells, and essential multivitamins to deliver remarkable anti-aging benefits while enhancing skin brightness for a vibrant, youthful appearance.<br/><br/><strong>Complete Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 180,000mg — Leading antioxidant that lightens skin by neutralizing free radicals and reducing oxidative stress</li><li><strong>Epidermal Growth Factor (EGF):</strong> Promotes new skin cell growth, helping diminish wrinkles and fine lines</li><li><strong>Kojic Acid:</strong> Targets sun damage and hyperpigmentation, enhancing skin clarity</li><li><strong>Alpha-Lipoic Acid:</strong> Fights inflammation and slows the aging process</li><li><strong>Ascorbic Acid (Vitamin C):</strong> Encourages collagen formation, protects against damage, and alleviates sunburn</li><li><strong>Collagen Forte:</strong> Supports skin firmness and youthful radiance</li><li><strong>Hyaluronic Acid:</strong> Provides deep hydration for plumper, smoother skin</li><li><strong>Argan Stem Cell (Placenta):</strong> Promotes skin repair and rejuvenation for enhanced glow</li><li><strong>Multivitamin Complex:</strong> Comprehensive nutritional support for overall skin health</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Accelerated Skin Lightening:</strong> Fast and significant reduction in dark spots and uneven skin tone</li><li><strong>Enhanced Environmental Protection:</strong> Fortifies skin against damage, preventing premature aging</li><li><strong>Free Radical Reduction:</strong> Alpha-lipoic acid reduces oxidative stress for tighter, more youthful skin</li><li><strong>Skin Rejuvenation:</strong> Reduces fine lines and wrinkles while enhancing smoothness and softness</li><li><strong>Melanin Regulation:</strong> Controls pigment production to prevent dark spots and achieve even tone</li><li><strong>Collagen Support:</strong> Boosts collagen production for improved elasticity and firmness</li><li><strong>Deep Hydration:</strong> Hyaluronic acid maintains moisture for plump, supple complexion</li><li><strong>Cellular Repair:</strong> EGF and argan stem cells promote skin regeneration from within</li></ul><br/><strong>Why Miracle White Pro White 18K:</strong><br/>This injection surpasses mere skin lightening, providing a comprehensive solution to combat aging while enhancing skin hydration and elasticity. The powerful combination of kojic acid, alpha-lipoic acid, and ascorbic acid addresses sun damage, pigmentation, and aging signs for complete skin transformation.<br/><br/><strong>Usage Protocol:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Consult with a skincare professional before beginning treatment</li><li>Administered by qualified healthcare provider via IV or IM</li><li>Follow recommended dosage and consistent treatment schedule</li><li>Clean skin thoroughly before each injection</li><li>Limit sun exposure and maintain hydration post-treatment</li><li>Use high-SPF sunscreen to protect and maintain results</li></ul><br/><strong>Origin:</strong> Made in Switzerland<br/><br/><strong>Packaging:</strong> 1 Box Pack (Multi-Vial Course)<br/><br/><em class=\"text-xs text-gray-400\">Note: Results vary from person to person. Professional medical supervision required. Not for pregnant or nursing women without physician consultation. Store in cool, dry place away from direct sunlight. Always consult with a healthcare professional before starting any new skincare regimen.</em>",
+  "benefits": ["180,000mg High-Dose Glutathione", "Swiss-Formulated", "EGF & Argan Stem Cell Complex", "Comprehensive Anti-Aging", "Deep Hydration & Collagen Support"],
+  "sku": "MW-PROWHITE-18K-180K",
+  "volume": "1 Box Pack (Multi-Vial Course)"
+}
 ];
 const CATEGORIES = [
   { name: "Injection", id: "Injection" },

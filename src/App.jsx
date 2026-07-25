@@ -159,7 +159,7 @@ const PRODUCTS = [
   "volume": "1 Box Pack (4 Vials + 8 Ampoules per Session)"
 },
  {
-  "id": 9,
+  "id": 4,
   "name": "Cindyrella Celebrity Drip with NAD plus Glutathione Injection",
   "category": "Injection",
   "brand": "Cindyrella",
@@ -330,7 +330,7 @@ const PRODUCTS = [
   {
   "id": 17,
   "name": "Hyaron Sodium Hyaluronate Prefilled Mesotherapy Injection",
-  "category": "Mesotherapy",
+  "category": "Injection",
   "brand": "Dongkook",
   "price": 13000,
   "image": "/image/IMG_1838.jpg",
@@ -792,7 +792,7 @@ const PRODUCTS = [
   {
   "id": 44,
   "name": "Ratiopharm L Carnitine 20 Gram Weight & Fat Loss Injection",
-  "category": "Injection",
+  "category": "Weight",
   "brand": "Ratiopharm",
   "price": 10000,
   "image": "/image/lcar20mg.jpg",
@@ -805,7 +805,7 @@ const PRODUCTS = [
   {
   "id": 45,
   "name": "Ratiopharm L Carnitine 35g Weight Loss and Fat Loss Injection",
-  "category": "Injection",
+  "category": "weight",
   "brand": "Ratiopharm",
   "price": 11000,
   "image": "/image/lcar35mg.jpg",
@@ -814,19 +814,6 @@ const PRODUCTS = [
   "benefits": ["German-Formulated", "35g High-Dose L-Carnitine", "CLA-Enhanced Formula", "Accelerated Fat Burning", "Athletic Performance Support"],
   "sku": "RATIO-LCARNITINE-35G",
   "volume": "1 Box Pack (Multi-Vial Course)"
-},
-  {
-  "id": 44,
-  "name": "Relumins 3500mg Glutathione Set MAX with Vitamin C & Boosters",
-  "category": "Injection",
-  "brand": "Relumins",
-  "price": 17500,
-  "image": "/image/Relumins3500.jpg",
-  "description": "FDA Registered Skin Whitening System | 3000mg L-Glutathione + 500mg Vitamin C + Oral Boosters",
-  "details": "<strong>Relumins 3500mg Glutathione — Complete Skin Whitening System</strong><br/><br/>Relumins is an FDA-registered skin whitening brand offering a comprehensive Glutathione system combining high-dose injectables with oral boosters to maintain elevated levels between treatments.<br/><br/><strong>Complete Set Includes:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione (Reduced):</strong> 3000mg per vial (5 vials) — Inhibits melanin synthesis by blocking tyrosine oxidation and tyrosinase activity.</li><li><strong>Vitamin C:</strong> 500mg per ampule (5 ampules) — Enhances absorption, boosts collagen for skin firming.</li><li><strong>Glutathione Booster Capsules:</strong> 30 veggie caps — Maintains high GSH levels between treatments.</li></ul><br/><strong>Booster Key Actives:</strong> NAC 200mg, Alpha Lipoic Acid 150mg, L-Methionine 100mg, Vitamin E 100 IU, Vitamin B 5mg, Selenomethionine 200mcg — Work synergistically to enhance natural glutathione production and recycling.<br/><br/><strong>Usage Protocol:</strong> Administer IV/IM once weekly. For oral use: Mix Vitamin C solution with Glutathione powder, take 1ml twice daily for 2.5 days, then 1-day break. Take 1 Booster capsule daily. Evaluate results every 3 months. Maintenance: 800mg oral Glutathione with boosters daily.<br/><br/><strong>Safety:</strong> Consult physician if pregnant/nursing. Not for chemotherapy patients. Expiry: 01/2028.<br/><br/><em class=\"text-xs text-gray-400\">Results vary by individual. Professional supervision recommended.</em>",
-  "benefits": ["FDA Registered Brand", "3000mg L-Glutathione per Vial", "Complete System with Oral Boosters", "Melanin Synthesis Inhibition", "Skin Firming & Rejuvenation"],
-  "sku": "REL-3500-MAX",
-  "volume": "5 Vials + 5 Ampules + 30 Capsules"
 },
   {
   "id": 46,
@@ -840,7 +827,1217 @@ const PRODUCTS = [
   "benefits": ["180,000mg High-Dose Glutathione", "Swiss-Formulated", "EGF & Argan Stem Cell Complex", "Comprehensive Anti-Aging", "Deep Hydration & Collagen Support"],
   "sku": "MW-PROWHITE-18K-180K",
   "volume": "1 Box Pack (Multi-Vial Course)"
-}
+},
+{
+  "id": 47,
+  "name": "Zaguta Japan Skin Whitening Glutathione Injection",
+  "category": "Injection",
+  "brand": "Zaguta",
+  "price": 12500,
+  "image": "/image/zaguta_glutathione.jpeg",
+  "description": "600,000mg Strength | Skin Whitening & Anti-Aging | Glutathione + Vitamin Complex",
+  "details": "<strong>Zaguta Japan Skin Whitening Glutathione Injection — High-Potency Cellular Rejuvenation</strong><br/><br/>This powerful injection combines glutathione with natural herbs and minerals to revitalize skin cells, prevent premature wrinkles, and maintain a fresh, youthful appearance. Formulated with high-strength active ingredients, it targets multiple signs of aging and uneven skin tone.<br/><br/><strong>Key Components:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (600,000mg Strength):</strong> Master antioxidant that inhibits melanin synthesis and reduces oxidative stress</li><li><strong>Vitamin Complex:</strong> Essential vitamins to support skin health and brightening effects</li><li><strong>Amino Acids:</strong> Building blocks for collagen and elastin, improving skin texture</li><li><strong>Natural Herbal & Mineral Blend:</strong> Enhances cellular renewal and reduces stretch marks</li></ul><br/><strong>The Science:</strong> Zaguta Glutathione works by neutralizing free radicals, converting dark melanin to lighter pigments, and supporting liver detoxification pathways. The high 600,000mg concentration delivers rapid results when administered as a full treatment course of 6 sessions.<br/><br/><strong>Usage & Application:</strong> Professional intravenous or intramuscular administration only. Standard treatment course: 6 sessions as advised by a qualified practitioner. Results vary based on individual metabolism and baseline pigmentation.<br/><br/><strong>Precautions:</strong> Consult a doctor before use, especially if you have sensitive skin or known allergies to any ingredients. Not recommended during pregnancy or breastfeeding without medical approval. Side effects may include mild injection site reactions.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: This product is for professional use only. Individual results may vary. Always purchase from licensed suppliers and verify product authenticity.</em>",
+  "benefits": [
+    "Skin Whitening",
+    "Antioxidant Protection",
+    "Skin Lightening",
+    "Anti-Aging",
+    "Revitalizes Skin Cells",
+    "Prevents Premature Wrinkles"
+  ],
+  "sku": "ZAGUTA-600000MG-JP",
+  "volume": "1 Box (Ampoules)"
+},
+{
+  "id": 48,
+  "name": "Fivita 900000 Sensation Glutathione Whitening Injection",
+  "category": "Injection",
+  "brand": "Fivita",
+  "price": 12960,
+  "image": "/image/fivita_900000_sensation.jpeg",
+  "description": "900,000mg Micro Glutathione | USA-Made | Skin Whitening, Anti-Aging & Scar Reduction | 8-Session Course",
+  "details": "<strong>Fivita 900000 Sensation Glutathione Injection — Ultra-High Potency Advanced Formula</strong><br/><br/>Manufactured by Dermatech Laboratories (USA), this premium glutathione injection combines 900,000mg of micro glutathione with a proprietary blend of skin-brightening, anti-aging, and collagen-stimulating ingredients. Designed for IV infusion only, it delivers rapid and noticeable results in skin tone improvement.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Micro Glutathione (900,000mg):</strong> Ultra-high concentration master antioxidant</li><li><strong>Pro Coenzyme Q10 (95,000mg):</strong> Cellular energy and anti-aging support</li><li><strong>White Crystalize Elements (24,000mg):</strong> Skin brightening complex</li><li><strong>Hyaluronic Acid (3,900mg) + Premium Collagen (5,000mg):</strong> Deep hydration and skin elasticity</li><li><strong>Kojic Acid (2,000mg) + Alpha Lipoic Acid (2,500mg):</strong> Melanin inhibition and antioxidant synergy</li><li><strong>Matrixyl 9000 (3,500mg):</strong> Peptide for wrinkle reduction</li><li><strong>Stem Cell Growth Factor (4,500mg):</strong> Cellular regeneration</li><li><strong>Thioctic Acid, DMAE, Acetyl-Tyrosine, Multivitamin, Amino Acids, Glycine, Lycopene, Adenosine, L-Cysteine, R-Lipoic Acid</strong></li></ul><br/><strong>Benefits:</strong> Skin whitening & brightening, anti-aging, acne/pimple reduction, pore minimization, scar healing, collagen stimulation, detoxification, lightening of dark spots.<br/><br/><strong>Manufacturer:</strong> Dermatech Laboratories, 1825 E 18th St., Williamsville, New York 14221, USA.<br/><strong>Importer:</strong> Super Advanced General Trading Company LLC.<br/><strong>Packer/Seller:</strong> IMBMS (Dealers Bazaar Group).<br/><strong>Origin:</strong> Made in USA. GMP Certified.<br/><br/><strong>Dosage & Course:</strong> IV only, once or twice per week. Full course: 8 sessions.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, women during menstruation, individuals allergic to any vitamins, patients with cardiovascular problems, persons below 18 years of age.<br/><br/><strong>Important Notice:</strong> Please consult a dermatologist before placing an order for glutathione IV infusion injections or capsules, as results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: FSSAI License No. 11223999000312. Professional use only. Individual results may vary. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening",
+    "Anti-Aging",
+    "Reduce Acne / Pimples",
+    "Minimize Pores",
+    "Healing of Scars",
+    "Stimulate Collagen",
+    "Detoxification",
+    "Lightening Dark Spots"
+  ],
+  "sku": "FIVITA-900K-USA",
+  "volume": "1 Box (8 Sessions Course)"
+},
+{
+  "id": 49,
+  "name": "FIVITA 9900000 Sensation Whitening Glutathione Injection",
+  "category": "Injection",
+  "brand": "Fivita",
+  "price": 13300,
+  "image": "/image/fivita_9900000_sensation.jpeg",
+  "description": "9,900,000mg Ultra-High Potency | USA-Made | Skin Whitening, Anti-Aging & Scar Reduction | 8-Session Course",
+  "details": "<strong>FIVITA 9900000 Sensation Glutathione Injection — Unmatched Skin Renewal Formula</strong><br/><br/>Manufactured by Dermatech Laboratories (USA), this ultra-high potency injection delivers 9,900,000mg of micro glutathione combined with powerful skin brighteners, anti-aging peptides, and deep hydration complexes. Esteemed by beauty experts and celebrities, it unlocks a luminous, even skin tone.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Micro Glutathione (9,900,000mg):</strong> Ultra-concentrated master antioxidant</li><li><strong>Thioctic Acid:</strong> Potent antioxidant and anti-inflammatory</li><li><strong>Kojic Acid:</strong> Natural melanin inhibitor</li><li><strong>Hyaluronic Acid & Collagen:</strong> Deep hydration and skin elasticity</li><li><strong>Pro Coenzyme Q10, Matrixyl 9000, DMAE:</strong> Anti-aging and wrinkle reduction</li><li><strong>White Crystalize Elements, Multivitamins, Amino Acids, Glycine, Lycopene, Adenosine, L-Cysteine, R-Lipoic Acid, Stem Cell Growth Factors</strong></li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Bright, uniform skin tone – eliminates pigmentation</li><li>Renewed, youthful look – firmer, smoother skin with fewer wrinkles</li><li>Clear, radiant complexion – reduced acne and visible clarity</li><li>Healing of scars, detoxification, collagen stimulation</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Country of Origin: USA<br/>Packaging Qty: 1 Box Pack (8 Sessions)<br/>Paraben Free & Organic: Yes<br/>Expiry Date: December 2029<br/><br/><strong>Usage & Dosage:</strong> IV administration only, once or twice weekly as advised by a medical professional. Full course: 8 sessions.<br/><br/><strong>Not Suitable For:</strong> Individuals under 18 years, patients with cardiovascular problems, pregnant or nursing women, persons with allergy to any vitamins.<br/><br/><strong>Manufacturer:</strong> Dermatech Laboratories, USA.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Results may vary from person to person. Consult a licensed healthcare provider before starting any new skincare regimen. Professional use only.</em>",
+  "benefits": [
+    "Bright, Uniform Skin Tone",
+    "Renewed & Youthful Look",
+    "Clear & Radiant Complexion",
+    "Reduces Acne & Scars",
+    "Collagen Stimulation",
+    "Detoxification",
+    "Deep Hydration"
+  ],
+  "sku": "FIVITA-9900000-USA",
+  "volume": "1 Box Pack (8 Sessions)"
+},
+
+  {
+  "id": 50,
+  "name": "Relumins 3500mg Glutathione Set MAX with Vitamin C & Boosters",
+  "category": "Injection",
+  "brand": "Relumins",
+  "price": 17500,
+  "image": "/image/Relumins3500.jpg",
+  "description": "FDA Registered Skin Whitening System | 3000mg L-Glutathione + 500mg Vitamin C + Oral Boosters",
+  "details": "<strong>Relumins 3500mg Glutathione — Complete Skin Whitening System</strong><br/><br/>Relumins is an FDA-registered skin whitening brand offering a comprehensive Glutathione system combining high-dose injectables with oral boosters to maintain elevated levels between treatments.<br/><br/><strong>Complete Set Includes:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione (Reduced):</strong> 3000mg per vial (5 vials) — Inhibits melanin synthesis by blocking tyrosine oxidation and tyrosinase activity.</li><li><strong>Vitamin C:</strong> 500mg per ampule (5 ampules) — Enhances absorption, boosts collagen for skin firming.</li><li><strong>Glutathione Booster Capsules:</strong> 30 veggie caps — Maintains high GSH levels between treatments.</li></ul><br/><strong>Booster Key Actives:</strong> NAC 200mg, Alpha Lipoic Acid 150mg, L-Methionine 100mg, Vitamin E 100 IU, Vitamin B 5mg, Selenomethionine 200mcg — Work synergistically to enhance natural glutathione production and recycling.<br/><br/><strong>Usage Protocol:</strong> Administer IV/IM once weekly. For oral use: Mix Vitamin C solution with Glutathione powder, take 1ml twice daily for 2.5 days, then 1-day break. Take 1 Booster capsule daily. Evaluate results every 3 months. Maintenance: 800mg oral Glutathione with boosters daily.<br/><br/><strong>Safety:</strong> Consult physician if pregnant/nursing. Not for chemotherapy patients. Expiry: 01/2028.<br/><br/><em class=\"text-xs text-gray-400\">Results vary by individual. Professional supervision recommended.</em>",
+  "benefits": ["FDA Registered Brand", "3000mg L-Glutathione per Vial", "Complete System with Oral Boosters", "Melanin Synthesis Inhibition", "Skin Firming & Rejuvenation"],
+  "sku": "REL-3500-MAX",
+  "volume": "5 Vials + 5 Ampules + 30 Capsules"
+},
+{
+  "id": 51,
+  "name": "Core Switzerland SLC24A5 Inhibitors Glutathione Injection",
+  "category": "Injection",
+  "brand": "Core Switzerland SLC24A5",
+  "price": 14200,
+  "image": "/image/core_switzerland_slc24a5.jpeg",
+  "description": "Revolutionary SLC24A5 Inhibitor Technology | Swiss-Made | Glutathione + Natural Extracts | Radiant, Even-Toned Complexion | 4 Sessions",
+  "details": "<strong>Core Switzerland SLC24A5 Inhibitors Glutathione Injection — Groundbreaking Swiss Skincare Innovation</strong><br/><br/>Meticulously crafted in pristine Swiss laboratories, this elite skin whitening solution combines revolutionary SLC24A5 inhibitor technology with high-concentration glutathione and natural extracts. It targets hyperpigmentation, uneven skin tone, and dark spots at the genetic level.<br/><br/><strong>Unparalleled Whitening Technology — SLC24A5 Inhibition:</strong><br/>The SLC24A5 gene is a crucial determinant in skin pigmentation. Our cutting-edge formula modulates melanin production by regulating this pathway, resulting in visibly lighter, more radiant skin without compromising natural complexion integrity.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>High-Concentration Glutathione:</strong> Master antioxidant for skin brightening, detoxification, and cellular rejuvenation</li><li><strong>SLC24A5 Inhibitors:</strong> Target and modulate melanin synthesis at the genetic level</li><li><strong>Ascorbic Acid (Vitamin C):</strong> Brightens skin, reduces fine lines, combats dark spots, boosts collagen production</li><li><strong>Kojic Acid:</strong> Natural skin lightener that reduces hyperpigmentation and age spots</li><li><strong>Collagen:</strong> Integral to skin elasticity and hydration, reduces wrinkles and fine lines</li><li><strong>Multivitamin Blend:</strong> Nourishes skin and fortifies natural barrier</li></ul><br/><strong>Comprehensive Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Reduced pigmentation and dark spots – clear, even complexion</li><li>Anti-aging properties – firm, supple skin with diminished signs of aging</li><li>UV protection – shields against harmful UV rays</li><li>Hydrating and nourishing – maintains moisture without dryness or irritation</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Country of Origin: Switzerland<br/>Packaging: 1 Box Pack (4 sessions per box)<br/>Paraben Free & Organic: Yes<br/>Suitable for all skin types<br/><br/><strong>Usage:</strong> Professional administration only. Results evaluated after full course. Maintenance protocol recommended after achieving desired tone.<br/><br/><strong>Safety & Quality:</strong> Formulated with highest quality ingredients, adhering to stringent Swiss safety standards. Free from harmful chemicals.<br/><br/><strong>Eco-Conscious Packaging:</strong> Sustainable, eco-friendly packaging reflecting environmental commitment.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Gene modulation in cosmetics is an emerging field with limited long-term safety data. For experimental use under strict medical supervision only. Not for pregnant/nursing women. Results vary by individual. Thorough informed consent required.</em>",
+  "benefits": [
+    "Reduced Pigmentation & Dark Spots",
+    "Anti-Aging Properties",
+    "UV Protection",
+    "Hydrating & Nourishing",
+    "Skin Brightening & Even Tone",
+    "Detoxification",
+    "Collagen Boosting"
+  ],
+  "sku": "CORE-SWISS-SLC24A5-4S",
+  "volume": "1 Box Pack (4 Sessions)"
+},
+{
+  "id": 52,
+  "name": "Cindyrella Supreme Drip Glutathione Injection",
+  "category": "Injection",
+  "brand": "Cindyrella",
+  "price": 15000,
+  "image": "/image/cindyrella_supreme_drip.jpeg",
+  "description": "Advanced IV Drip Therapy | South Korean | Glutathione + CoQ10 + Collagen + NAD+ | Skin Whitening, Anti-Aging & Detox | 1 Box",
+  "details": "<strong>Cindyrella Supreme Drip Glutathione Injection — All-in-One Skin Rejuvenation & Detoxification</strong><br/><br/>This powerful IV drip delivers high doses of glutathione, coenzyme Q10, collagen, NAD+, and other vital nutrients directly into the bloodstream for maximum effectiveness. It works faster and deeper than topical creams or oral supplements, providing quick and dramatic results — brightening skin, smoothing wrinkles, and eliminating toxins.<br/><br/><strong>How It Works:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Reduces melanin production to lighten skin and even out complexion</li><li>Firms skin and enhances elasticity for a youthful, plump look</li><li>Detoxifies the body and liver to remove harmful substances</li><li>Minimizes fine lines, wrinkles, and sagging skin</li><li>Strengthens the immune system and promotes overall health</li></ul><br/><strong>Key Ingredients & Their Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (800,000 mg):</strong> Ultimate skin-lightening and detoxifying antioxidant</li><li><strong>Coenzyme Q10 (5,000 mg):</strong> Powerhouse for anti-aging and improved hydration</li><li><strong>Hydrolyzed Collagen (140,000 mg):</strong> Keeps skin firm, hydrated, and wrinkle-free</li><li><strong>Vitamin C (10,000 mg):</strong> Enhances skin brightness and boosts collagen production</li><li><strong>Alpha Lipoic Acid (1,000 mg):</strong> Smooths skin texture and reduces fine lines</li><li><strong>NAD+ (2,500 mg):</strong> Repairs skin damage and slows aging</li><li><strong>Stem Cells & Plant Extracts:</strong> Help regenerate skin and improve texture</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Cindyrella<br/>Place of Origin: South Korea<br/>Packaging: 1 Box<br/>Form: IV Drip / Injection<br/><br/><strong>Benefits:</strong><br/>Whitens and brightens skin naturally, reduces fine lines and wrinkles, deeply hydrates and nourishes, detoxifies the liver and eliminates acne-causing toxins, strengthens immune system and boosts energy.<br/><br/><strong>Treatment Process:</strong><br/>Administered intravenously for effective absorption and rapid results. Your doctor will advise on proper dosage based on your needs.<br/><br/><strong>Who Should Consider:</strong><br/>Anyone wanting skin whitening and anti-aging benefits, people with pigmentation issues, wrinkles, and dull skin, individuals seeking immediate noticeable results, anyone wanting a detox boost and overall health improvement.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results vary by individual. Consult a qualified healthcare provider before use.</em>",
+  "benefits": [
+    "Whitens and brightens skin naturally",
+    "Reduces fine lines and wrinkles",
+    "Deeply hydrates and nourishes the skin",
+    "Detoxifies the liver and eliminates acne-causing toxins",
+    "Strengthens the immune system and boosts energy",
+    "Firms skin and enhances elasticity"
+  ],
+  "sku": "CINDY-SUPREME-DRIP-SK",
+  "volume": "1 Box"
+},
+{
+  "id": 53,
+  "name": "Cindyrella Power Drip Glutathione Injection for Skin Whitening (10 Sessions) - Lyophilized Powder",
+  "category": "Injection",
+  "brand": "Cindyrella",
+  "price": 12500,
+  "image": "/image/cindyrella_power_drip.jpeg",
+  "description": "Nano 800,000mg Glutathione | Lyophilized Powder | IV Drip with CoQ10, Collagen, Placenta, Apple Stem Cell & Vitamins | 10 Sessions",
+  "details": "<strong>Cindyrella Power Drip/Injection — Your Skin's New Secret Weapon</strong><br/><br/>Experience the ultimate rejuvenation with Power Drip, a high-dose lyophilized powder blend crafted to boost energy, brighten skin, and enhance overall wellness. Packed with 800,000mg of Glutathione for powerful detoxification and whitening, plus CoQ10 for cellular energy, and a double boost of Marine Collagen and Collagen to restore skin elasticity and glow. Infused with Placenta and Apple Stem Cell to promote regeneration, plus a potent mix of Vitamin C, Vitamin B Complex, and Vitamin E to support immunity, metabolism, and radiant skin.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (Nano 800,000mg):</strong> Powerful detoxification and skin whitening</li><li><strong>CoQ10 (10,000mg):</strong> Cellular energy and anti-aging</li><li><strong>Marine Collagen (80,000mg) + Collagen (70,000mg):</strong> Restores skin elasticity and glow</li><li><strong>Placenta (25,000mg):</strong> Promotes regeneration</li><li><strong>Apple Stem Cell (10,000mg):</strong> Supports skin renewal</li><li><strong>Vitamin C (5,000mg):</strong> Brightening and immunity</li><li><strong>Vitamin E (1,000mg):</strong> Antioxidant protection</li><li><strong>Vitamin B Complex (B1, B3, B5, B6, B12) 500mg total:</strong> Metabolism support</li></ul><br/><strong>Product Specifications:</strong><br/>Strength: Nano 800,000 mg<br/>Brand: Cindyrella<br/>Form: Lyophilized Powder<br/>Packaging Type: Combi pack<br/>Route of Administration: IV Use Only<br/>Usage/Application: Skin Whitening<br/>Availability: In Stock<br/><br/><strong>Course:</strong> 10 Sessions per pack<br/><br/><strong>Benefits:</strong> Ultimate skin rejuvenation, powerful detoxification, skin brightening and whitening, restores elasticity and glow, promotes cell regeneration, boosts energy and immunity, supports metabolism, radiant skin from within.<br/><br/><strong>Shipping Information:</strong> Ships from Bengaluru. Price excludes taxes.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Verification of drug license & valid prescription is strongly advised before dealing in medicines. Professional medical supervision required. Results vary by individual.</em>",
+  "benefits": [
+    "Powerful Detoxification",
+    "Skin Whitening & Brightening",
+    "Restores Skin Elasticity & Glow",
+    "Promotes Cell Regeneration",
+    "Boosts Energy & Immunity",
+    "Anti-Aging & Cellular Energy",
+    "Supports Metabolism",
+    "Radiant Skin from Within"
+  ],
+  "sku": "CINDY-POWER-DRIP-10S",
+  "volume": "10 Sessions (Lyophilized Powder)"
+},
+{
+  "id": 54,
+  "name": "Bio Rae Complexion 12 Skin Whitening Injections",
+  "category": "Injection",
+  "brand": "Bio Rae",
+  "price": 18000,
+  "image": "/image/bio_rae_complexion_12.jpeg",
+  "description": "Premium Korean Skin Whitening System | Glutathione + EGF + Stem Cell Extract | 4 Sessions | Anti-Aging, Pigmentation & Scar Healing",
+  "details": "<strong>Bio Rae Complexion 12 — Premium Skin Whitening System</strong><br/><br/>An updated variation of the renowned Complexion 8, Bio Rae Complexion 12 is a premium skin whitening system with assured results. Trusted by many Indians and celebrities, this comprehensive treatment repairs and prevents skin issues quickly and effectively — from skincare, skin smoothing, anti-aging, eczema prevention, firming skin, to pigmentation avoidance.<br/><br/>Contains a small amount of Selenium to increase metabolism for faster scar healing and better skin. The DNA Skin Whitening IV injection delivers one of the quickest whitening effects at a standard price.<br/><br/><strong>Complete 4-Session Kit (Each session includes all below):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 50,000 mg (15 ml Vial)</li><li><strong>Epidermal Growth Factor (EGF) with RNA:</strong> 1,500 mg (15 ml Vial)</li><li><strong>Vitamin B Complex:</strong> 1,250 mg (7 ml Vial)</li><li><strong>Amino Acids DNA Complex:</strong> 1,250 mg (7 ml Vial)</li><li><strong>Coenzyme Q10:</strong> 1,250 mg (7 ml Vial)</li><li><strong>Celergen Stem Cell Extract:</strong> 50,000 I.U (7 ml Vial)</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 5,000 mg (10 ml Ampoule)</li><li><strong>Tranexamic Acids:</strong> 500 mg (5 ml Ampoule)</li><li><strong>Alpha Lipoic Acid (ALA):</strong> 250 mg (5 ml Ampoule)</li><li><strong>Selenium:</strong> 0.35 mcg (2 ml Ampoule)</li><li><strong>Natural Collagen Extract:</strong> 0.75 mcg (2 ml Ampoule)</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 2,000 mcg (2 ml Ampoule)</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Whiten skin and lighten marks</li><li>Smooth skin treatment, brighten and provide nourishment</li><li>Improve skin elasticity</li><li>Lighten pigmentation from sun exposure</li><li>Suppress acne blemishes</li><li>Restore collagen formation, anti-black spots, pigmentation, freckles</li><li>Smooth and soften skin, improve fine lines</li><li>Inhibit melanin generation (brown pigment)</li><li>Moisturize and hydrate, soothe pores, enhance elasticity</li><li>Anti-aging and reduce wrinkles</li><li>Boost skin complexion and oils</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Bio Rae<br/>Form: Injection<br/>Strength: 50,000<br/>Country of Origin: Korea<br/>Packaging Qty: 1 Box Pack<br/>Packaging Type: Vial & Ampoule<br/>Dose: Once a week<br/><br/><strong>Not Suitable For:</strong><br/>Patients with cardiovascular problems, breastfeeding women, allergy to any vitamins, pregnant women.<br/><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Results vary by individual metabolism.</em>",
+  "benefits": [
+    "Whiten Skin & Lighten Marks",
+    "Improve Skin Elasticity",
+    "Lighten Pigmentation from Sun Exposure",
+    "Suppress Acne Blemishes",
+    "Restore Collagen Formation",
+    "Inhibit Melanin Generation",
+    "Moisturize & Hydrate",
+    "Anti-Aging & Reduce Fine Lines"
+  ],
+  "sku": "BIO-RAE-COMPLEXION-12-4S",
+  "volume": "1 Box Pack (4 Sessions - Complete Kit)"
+},
+{
+  "id": 55,
+  "name": "Bio Swiss Mixing White V6 Pro Glutathione Whitening Injection",
+  "category": "Injection",
+  "brand": "Bio Swiss",
+  "price": 12200,
+  "image": "/image/bio_swiss_mixing_white_v6_pro.jpeg",
+  "description": "Powerful Swiss Whitening Injection | Pico-Glutathione + CoQ10 + Ultra Celergen SCF VI | 4 Sessions | Brightening, Anti-Aging & Scar Healing",
+  "details": "<strong>Bio Swiss Mixing White V6 Pro Glutathione Whitening Injection — Nutrient-Rich Swiss Formula</strong><br/><br/>This powerful, nutrient-rich whitening injection transforms your skin by visibly improving skin color, hydration, firmness, wrinkles, elasticity, lines, age spots, pigmentation, and the appearance of spots. Made in Switzerland with paraben-free and organic composition.<br/><br/><strong>Composition (Per Box — 4 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pico-Glutathione:</strong> 16,000mg (Vial x 4) — Ultra-pure whitening antioxidant</li><li><strong>Ultra Celergen SCF VI:</strong> 3,800mg, 5ml (Ampoule x 4) — Stem cell growth factors for regeneration</li><li><strong>Multivitamins with Collagen:</strong> 5,000mg, 20ml (Ampoule x 4) — Nourishment and elasticity</li><li><strong>Power B Complex:</strong> (Vial x 4) — Energy and metabolism support</li><li><strong>Co-enzyme Q10:</strong> 500mg (Vial x 4) — Cellular anti-aging and hydration</li></ul><br/>Each set contains 3 Vials + 2 Ampoules. 4 sets per box.<br/><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Professional skin whitening and brightening (recommended once every 4 days)</li><li>Lightening dark spots</li><li>Anti-aging and rejuvenation</li><li>Reduces acne, pimples, acne pits and scars</li><li>Minimizes large pores and regulates oily skin</li><li>Healing of scars</li><li>Stimulates collagen production</li><li>Body detoxification</li><li>Protects skin from UV rays</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Bio Swiss<br/>Form: Injection<br/>Country of Origin: Switzerland<br/>Packaging Qty: 1 Box Pack (4 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening<br/>Expiry: November 2026<br/><br/><strong>Not Suitable For:</strong><br/>Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Treatment Course:</strong> 1 box is good for 2 weeks of treatment (one session every 4 days).<br/><br/><strong>Shipping:</strong> Free shipping and Cash On Delivery available in India.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Results may vary from person to person and depend on individual metabolism. Professional medical supervision recommended.</em>",
+  "benefits": [
+    "Professional Skin Whitening & Brightening",
+    "Lightening Dark Spots",
+    "Anti-Aging & Rejuvenation",
+    "Reduces Acne, Pimples & Scars",
+    "Minimizes Large Pores & Regulates Oily Skin",
+    "Stimulates Collagen Production",
+    "Body Detoxification",
+    "UV Protection"
+  ],
+  "sku": "BIO-SWISS-V6-PRO-4S",
+  "volume": "1 Box Pack (4 Sessions, 3 Vials + 2 Ampoules per set)"
+},
+{
+  "id": 56,
+  "name": "Mixing White Diamond Complexion 12 Glutathione and Vitamin C Injections",
+  "category": "Injection",
+  "brand": "Swissmed",
+  "price": 11500,
+  "image": "/image/mixing_white_diamond_complexion_12.jpeg",
+  "description": "Upgraded Swiss Formula | 10 Sessions | Glutathione + Vitamin C + Collagen | Rosy-White Radiance, Pigmentation Control & Anti-Aging",
+  "details": "<strong>Mixing White Diamond Complexion 12 — Upgraded & Refined Swiss Formula</strong><br/><br/>Experience the revitalized MIXING WHITE DIAMOND COMPLEXION 12, a sophisticated formula derived from the original Mixing White, designed to deliver a rosy-white radiance. Made in Switzerland, paraben-free and organic.<br/><br/><strong>Key Ingredients (Per Box — 10 Sets):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione:</strong> 12,000,000mg — Master antioxidant for skin whitening</li><li><strong>DNA Repair Glutathione:</strong> 2,000,000mg — Cellular repair and rejuvenation</li><li><strong>L-Ascorbic Acid (Vitamin C):</strong> 150,000mg — Brightening and collagen support</li><li><strong>Natural Collagen:</strong> 50,000mg — Elasticity and hydration</li><li><strong>M-Tranexamic Acid:</strong> 30,000mg — Reduces pigmentation and dark spots</li><li><strong>Genistein Enzyme Complex:</strong> 20,000mg — Soy-derived antioxidant</li><li><strong>RNA Selenium:</strong> 10,000mg — Metabolism and scar healing</li><li><strong>N-Acetyl Cysteine (NAC):</strong> 5,000mg — Glutathione precursor</li><li><strong>High Alpha Lipoic Acid:</strong> 5,000mg — Antioxidant and anti-aging</li><li><strong>Niacin (Vitamin B3):</strong> 5,000mg — Skin barrier support</li></ul><br/><strong>Advantages & Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Effectively tackles dark skin concerns</li><li>Perfect for naturally dark and dry skin types</li><li>Restores skin elasticity for a youthful look</li><li>Regulates excessive melanin production throughout the body</li><li>Visible results within 2 to 3 weeks of usage</li><li>Minimizes dark spots from acne and sun exposure</li><li>Enhances memory with Cobalamin</li><li>Promotes deep sleep for optimal growth hormone production</li><li>Maximum protection against free radicals, preventing early aging</li><li>Reduces darkness intensity</li><li>Eradicates persistent sunspots, freckles, and age spots</li><li>Prevents future skin pigmentation issues</li><li>Brightens overall complexion</li><li>Maintains a blemish-free appearance</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Swissmed<br/>Form: Injection<br/>Country of Origin: Switzerland<br/>Packaging Qty: 1 Box Pack (10 Sessions)<br/>Packaging: 10 Sets/Box (10 Vials + 10 Ampoules)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results may vary from person to person and depend on individual metabolism. Professional medical supervision recommended.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Rosy-White Radiance",
+    "Regulates Excessive Melanin Production",
+    "Minimizes Dark Spots (Acne & Sun)",
+    "Restores Skin Elasticity",
+    "Visible Results in 2-3 Weeks",
+    "Anti-Aging & Free Radical Protection",
+    "Eradicates Sunspots, Freckles & Age Spots",
+    "Brightens Overall Complexion",
+    "Blemish-Free Appearance"
+  ],
+  "sku": "SWISSMED-MWDC12-10S",
+  "volume": "1 Box Pack (10 Sessions, 10 Vials + 10 Ampoules)"
+},
+{
+  "id": 57,
+  "name": "Evgenis Totipotent Embryonic Stem-Cell (ETESC) Injection - 1200mg Stem Cell/Whitening",
+  "category": "Injection",
+  "brand": "Evgenis",
+  "price": 28500,
+  "image": "/image/evgenis_totipotent_embryonic_stemcell.jpeg",
+  "description": "Next-Generation Skin Regeneration | 1200mg Totipotent Stem Cell Formula | Cellular Renewal, Anti-Aging & Skin Repair",
+  "details": "<strong>Evgenis Totipotent Embryonic Stem-Cell (ETESC) Injection — Advanced Aesthetic Skin Regeneration</strong><br/><br/>Evgenis Totipotent is a next-generation skin regeneration and rejuvenation formulation designed to support cellular renewal, skin repair, and overall skin vitality. Inspired by the concept of totipotency—the ability of cells to regenerate and renew—this advanced aesthetic solution enhances skin quality at a deep, biological level. Developed for professional aesthetic and advanced skincare applications, it focuses on restoring skin strength, resilience, and youthful appearance, making it ideal for treatments targeting aging, damaged, or stressed skin.<br/><br/><strong>Key Features:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Advanced cell-regeneration–focused formulation</li><li>Designed to support skin renewal and repair mechanisms</li><li>Improves skin texture, tone, and elasticity</li><li>Supports collagen and extracellular matrix activity</li><li>Suitable for professional aesthetic protocols</li><li>High-quality formulation with consistent performance</li></ul><br/><strong>Benefits of Evgenis Totipotent:</strong><br/>Works by supporting the skin's natural regenerative processes, helping revive dull and aging skin while improving overall skin structure and appearance:<br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Enhanced skin regeneration and renewal</li><li>Improved firmness and elasticity</li><li>Reduction in fine lines and early signs of aging</li><li>Improved skin texture and smoothness</li><li>Revitalized, healthier-looking skin</li><li>Supports long-term skin quality improvement</li></ul><br/><strong>Common Professional Applications:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Facial skin rejuvenation</li><li>Skin quality improvement treatments</li><li>Anti-aging protocols</li><li>Post-procedure skin recovery (as professionally indicated)</li><li>Advanced aesthetic skin therapies</li></ul><br/>Evgenis Totipotent is suitable for all skin types and can be incorporated into customized aesthetic treatment plans depending on individual skin needs.<br/><br/><strong>Product Specifications:</strong><br/>Form: Stem Cell/Whitening Injection<br/>Manufacturer: Evgenis<br/>Strength: 1200mg<br/>Availability: In Stock<br/><br/><strong>Shipping Information:</strong> Ships from Bengaluru. Price excludes taxes.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional aesthetic use only. Results vary by individual. Consultation with a qualified healthcare provider is recommended before use.</em>",
+  "benefits": [
+    "Enhanced Skin Regeneration & Renewal",
+    "Improved Firmness & Elasticity",
+    "Reduction in Fine Lines & Early Aging Signs",
+    "Improved Skin Texture & Smoothness",
+    "Revitalized, Healthier-Looking Skin",
+    "Supports Long-Term Skin Quality Improvement"
+  ],
+  "sku": "EVGENIS-ETESC-1200",
+  "volume": "Single Injection (1200mg)"
+},
+{
+  "id": 58,
+  "name": "Swismed Mixing White Pink Glow Glutathione Injection",
+  "category": "Injection",
+  "brand": "Swissmed",
+  "price": 10000,
+  "image": "/image/swismed_mixing_white_pink_glow.jpeg",
+  "description": "Advanced Swiss Skin Therapy | 8 Sessions | Glutathione + Collagen + Rose Stem Cell + CoQ10 | Whitening, Anti-Aging & DNA Regeneration",
+  "details": "<strong>Mixing White Pink Glow Regeneration — Advanced Swiss Skin Whitening & Anti-Aging Therapy</strong><br/><br/>Dreaming of brighter, youthful, and flawless skin? Mixing White Pink Glow Regeneration by SwissMed is a premium Swiss skin therapy that goes beyond ordinary creams and serums. Developed with cutting-edge biotechnology, it delivers visible results in skin whitening, rejuvenation, and anti-aging within a short period.<br/><br/>Unlike regular skincare products that work only on the surface, Mixing White Pink Glow acts at the DNA and cellular level. With the combined power of Glutathione, Collagen, Vitamin C, Stem Cells, and Coenzyme Q10, it helps repair damage, boost collagen production, and enhance skin elasticity.<br/><br/><strong>Premium Ingredients (Per Box — 8 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione:</strong> 100,000,000 mg — Master antioxidant for whitening and detoxification</li><li><strong>L-Ascorbic Acid (Vitamin C):</strong> 200,000 mg — Brightness, collagen production, UV protection</li><li><strong>Natural Collagen:</strong> 200,000 mg — Firmness, elasticity, and hydration</li><li><strong>RNA Selenium:</strong> 100,000 mg — Cellular protection and renewal</li><li><strong>DNA Repair Genetic:</strong> 100,000 mg — Stimulates regeneration for youthful skin</li><li><strong>Rose Stem Cell:</strong> 100,000 mg — Revitalizes skin, smoothness and vitality</li><li><strong>Coenzyme Q10:</strong> 100,000 mg — Potent antioxidant against oxidative stress and aging</li><li><strong>Cobalamin (Vitamin B12):</strong> 100,000 mg — Nourishes skin, aids repair and texture</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Accelerated Skin Whitening:</strong> High-strength L-Glutathione reduces melanin for lighter, even tone</li><li><strong>Dark Spot Reduction:</strong> Fades acne scars, pigmentation, discoloration; improves UV defense</li><li><strong>Anti-Aging Properties:</strong> Rose Stem Cells, peptides, CoQ10 minimize wrinkles, fine lines</li><li><strong>DNA Regeneration:</strong> Supports collagen formation for firmer, smoother, hydrated skin</li><li><strong>Powerful Antioxidant Shield:</strong> Protects against pollution, sun exposure, premature damage</li><li><strong>Skin Rejuvenation:</strong> Leaves skin soft, plump, naturally radiant with improved texture</li></ul><br/><strong>Product Specifications:</strong><br/>Brand Name: Swissmed<br/>Place of Origin: Made in Switzerland<br/>Key Ingredients: Glutathione & Vitamin C<br/>Packaging: 1 Box (8 Sessions)<br/>Expiry: December 2029<br/><br/><strong>Usage & Storage:</strong><br/>Recommended usage: Twice per week via intramuscular (IM) or intravenous (IV) methods. Professional medical supervision required. Store below 26°C, away from direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Pregnant or breastfeeding women. Always consult a qualified professional before starting treatment.<br/><br/><strong>Why Choose Mixing White Pink Glow?</strong> Swiss innovation with advanced nanotechnology. Works at cellular/DNA level for long-lasting transformation. Combines whitening, anti-aging, and skin repair in one therapy.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Results may vary from person to person and depend on individual metabolism. Professional medical supervision recommended. For external use by licensed practitioners only.</em>",
+  "benefits": [
+    "Accelerated Skin Whitening",
+    "Dark Spot & Pigmentation Reduction",
+    "Anti-Aging (Wrinkles & Fine Lines)",
+    "DNA Regeneration & Collagen Support",
+    "Powerful Antioxidant Protection",
+    "Skin Rejuvenation & Hydration"
+  ],
+  "sku": "SWISSMED-PINK-GLOW-8S",
+  "volume": "1 Box (8 Sessions)"
+},
+{
+  "id": 59,
+  "name": "NC24 280000mg Ultra PDRN Miracle 10 Sessions Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "NC24",
+  "price": 11480,
+  "image": "/image/nc24_ultra_pdrn_miracle.jpeg",
+  "description": "Ultra PDRN Formula | 280,000mg Glutathione + PDRN + Fibroblast Growth Factor | Made in Japan | 10 Sessions | Skin Whitening & Anti-Aging",
+  "details": "<strong>NC24 280000mg Ultra PDRN Miracle Skin Whitening Injection — Highest Quality High-Dose Formula</strong><br/><br/>The No. 1 choice of spas and skin clinics worldwide, this advanced Japanese formulation combines ultra-concentrated glutathione with PDRN (Polydeoxyribonucleotide) and growth factors for comprehensive skin whitening, anti-aging, and cellular repair.<br/><br/><strong>Complete Kit Contents (10 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>5 Vials — Ultra Concentrated Glutathione:</strong> 280,000mg</li><li><strong>5 Vials — PDRN (Polydeoxyribonucleotide):</strong> 700mg (tissue repair and regeneration)</li><li><strong>10 Ampoules (10ml each) — Refined Cranberry Extract + Ascorbic Acid:</strong> 5,500mg</li><li><strong>10 Ampoules (10ml each) — Thioctic Acid:</strong> 2,400mg</li><li><strong>10 Ampoules (10ml each) — Fibroblast Growth Factor (FGF):</strong> 2,250mg</li><li><strong>10 Ampoules (5ml each) — DNA CollaPro:</strong> 1,500mg</li><li><strong>10 Ampoules (5ml each) — Coenzyme Q10 (CoQ10):</strong> 1,800mg</li><li><strong>5 Vials — Multivitamin Complex:</strong> 80,000mg</li></ul><br/><strong>Key Features & Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Highest quality L-Glutathione formula for effective skin whitening</li><li>PDRN promotes tissue repair, regeneration, and anti-inflammatory effects</li><li>Fibroblast Growth Factor stimulates collagen and elastin production</li><li>Addresses skin discoloration, anti-aging, and free radical damage</li><li>Helps prevent wrinkles and brightens dark circles</li><li>All-natural formula — no harmful chemicals</li><li>Boosts melanin regulation for healthy, glowing skin</li></ul><br/><strong>Product Specifications:</strong><br/>Manufacturer: NC Bio Laboratories Pte. Ltd.<br/>Origin Country: Japan<br/>Importer: Super Advanced General Trading Company LLC<br/>Packer/Seller: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/><br/><strong>Recommended Dosage:</strong> Intravenous (IV) Infusion (Drip) once a week. Consult your doctor for better results.<br/><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Important Note:</strong> Results depend on individual metabolism. Consult a dermatologist before placing an order for glutathione IV infusion injections.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Individual results may vary. Verify product authenticity before use.</em>",
+  "benefits": [
+    "Ultra-Concentrated Glutathione Whitening",
+    "PDRN Tissue Repair & Regeneration",
+    "Anti-Aging & Wrinkle Prevention",
+    "Brightens Dark Circles",
+    "Collagen & Elastin Stimulation",
+    "Detoxification & Free Radical Protection",
+    "Healthy, Glowing Skin"
+  ],
+  "sku": "NC24-ULTRA-PDRN-10S-JP",
+  "volume": "10 Sessions Complete Kit (Vials + Ampoules)"
+},
+{
+  "id": 60,
+  "name": "Kosdaq Cindella Luthione Vitamin C 1200mg Skin Whitening Set",
+  "category": "Injection",
+  "brand": "Kosdaq",
+  "price": 17000,
+  "image": "/image/kosdaq_cindella_luthione.jpeg",
+  "description": "KFDA Certified | 1200mg | Fair to Pink Complexion | Glutathione + Thioctic Acid + Vitamin C | Liver Detox & Anti-Aging",
+  "details": "<strong>Kosdaq Cindella Luthione Vitamin C 1200mg Skin Whitening Set — Your Dream Fair to Pink Complexion</strong><br/><br/>Achieve your dream fair to pink complexion with Cindella 1200mg KFDA Skin Whitening Injections Set. Say goodbye to all skin blemishes including acne, wrinkles, pigments, freckles and dark spots. This Korean import uses a multi-pronged approach — not just surface work, but also detoxifies your body and liver for permanent inside-out transformation.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Fair to pink complexion from dark and brown skin</li><li>Detoxifies liver, improves blood circulation, metabolism and energy levels</li><li>Fights cold, obesity, edema – makes you physically healthy</li><li>Forms healthier daily habits and regulates appetite</li><li>Produces Alpha-lipoic acid and Glutathione (slows down with age)</li><li>Skin turns soft, elastic, smooth, shiny, radiant, glowing with even tone</li></ul><br/><strong>Powerful Antioxidant Action:</strong><br/>Alpha-lipoic Acid is 400 times more effective than Vitamins C and E as an antioxidant. It suppresses formation of harmful active oxygen that damages cells, causes diseases and aging. Along with Glutathione, Vitamins C, E and Coenzyme Q, it effectively fights active oxygen production while improving metabolism and energy levels. The lipolysis process regulates digestion, appetite and burns unnecessary fat.<br/><br/><strong>Renewing Skin Cells:</strong><br/>Cindella injections renew damaged skin cells, repair wounds and scars, leaving permanently soft, smooth, elastic and shiny skin. Encourages sufficient collagen production for internal and external health. Alpha-lipoic Acid performs liver detoxification for proper digestion, assimilation and unhindered blood circulation.<br/><br/><strong>Reverse Aging & Saccharification Prevention:</strong><br/>Naturally slows down aging while forming healthier habits. Encourages production of white/red blood cells and improved blood circulation. Sagging and dead skin cells renew naturally, replaced by firm, lifted skin. Also prevents saccharification of proteins (process that transforms proteins into sugars and toxins which block capillaries).<br/><br/><strong>Product Specifications:</strong><br/>Strength: 1200 mg<br/>Brand: Kosdaq<br/>Composition: Glutathione, Thioctic Acid, Vitamin C<br/>Packaging Type: Combipack<br/>Route of Administration: IV Use Only<br/>Origin: Korean Import (KFDA certified)<br/><br/><strong>Dosage:</strong><br/>Treatment phase: Once every 4 days for ten weeks<br/>Maintenance phase: Once every two weeks or every month<br/><br/><strong>Characteristics:</strong><br/>No recovery period<br/>Best results with diet, therapy, and exercise<br/>Can be performed with other skin whitening procedures<br/><br/><strong>Note:</strong> Results may vary from person to person.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Verification of drug license & valid prescription strongly advised. Professional medical supervision required. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Fair to Pink Complexion",
+    "Liver Detoxification",
+    "Improved Blood Circulation & Metabolism",
+    "Anti-Aging & Reverse Aging",
+    "Renews Damaged Skin Cells",
+    "Collagen Production Boost",
+    "Removes Acne, Wrinkles, Pigments, Freckles, Dark Spots"
+  ],
+  "sku": "KOSDAQ-CINDELLA-1200",
+  "volume": "1 Box (Combipack Set)"
+},
+{
+  "id": 61,
+  "name": "NouveauxIV GSW Glutathione Super Whitening Injection",
+  "category": "Injection",
+  "brand": "NouveauxIV",
+  "price": 13340,
+  "image": "/image/nouveauxiv_gsw_glutathione.jpeg",
+  "description": "High-Dose IV Formula | 95,000mg Glutathione + 50,000mg Vitamin C | Deep Detox, Brightening & Anti-Aging | 10 Sessions",
+  "details": "<strong>NouveauxIV GSW Glutathione Super Whitening Injection — Powerful IV Skin Transformation</strong><br/><br/>Experience fast and effective results with this premium high-dose IV formula designed for deep skin detox and intense whitening. Works from within to promote glowing, spotless, and radiant skin. Intravenous delivery ensures nutrients absorb directly into the bloodstream for quicker effects.<br/><br/><strong>Ingredients & Strengths:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 95,000mg — Master antioxidant for whitening and detoxifying</li><li><strong>Vitamin C:</strong> 50,000mg — Boosts skin clarity and immunity, enhances Glutathione absorption</li><li><strong>Ascorbic Acid:</strong> 15,000mg — Supports collagen formation and fights oxidative stress</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Advanced Skin Brightening:</strong> High-strength Glutathione reduces melanin and enhances natural glow</li><li><strong>Promotes Even-Toned Skin:</strong> Targets pigmentation, blemishes, and tanning for smooth, uniform complexion</li><li><strong>Deep Skin Detox:</strong> Flushes out toxins and free radicals, improving texture and tone</li><li><strong>Youthful, Firm Skin:</strong> Vitamin C and Ascorbic Acid support collagen production and reduce fine lines</li><li><strong>Fast Visible Results:</strong> Intravenous delivery for quicker effects — most users notice changes after 5–6 sessions</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Liquid solution for IV use only<br/>Pack Size: 1 Box — 10 Sessions (20 ampoules of 5ml each)<br/>FSSAI License: 21223009000196<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved<br/><br/><strong>Dosage & Usage:</strong> Recommended 1 injection every 4–5 days. Always consult a trained medical professional for administration.<br/><br/><strong>Safety:</strong> Safe when administered by a certified professional. Follow dosage recommendations.<br/><br/><strong>Shipping:</strong> Home delivery available all over India.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Results may vary based on individual skin type and lifestyle. Professional medical supervision required. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Advanced Skin Brightening",
+    "Promotes Even-Toned Skin",
+    "Deep Skin Detoxification",
+    "Youthful, Firm Skin",
+    "Reduces Fine Lines & Signs of Aging",
+    "Fast Visible Results"
+  ],
+  "sku": "NOUVEAUXIV-GSW-10S",
+  "volume": "1 Box (10 Sessions, 20 ampoules of 5ml each)"
+},
+{
+  "id": 62,
+  "name": "Mixing White Bio X2 Regeneration Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Mixing White",
+  "price": 9500,
+  "image": "/image/mixing_white_bio_x2_regeneration.jpeg",
+  "description": "DNA Regeneration & Glisodin SOD | Swiss Innovation | 7 Sessions | Whitening Antioxidant, UV Defense & Anti-Aging",
+  "details": "<strong>Mixing White Bio X2 Regeneration — Advanced Swiss Skin DNA Regeneration Therapy</strong><br/><br/>Innovation from SwissMed Switzerland — an advanced system for skin DNA generation, enhancing elasticity, smoothing and moisturizing, reversing aging, and enhancing harmful UV defense due to its unique properties. SwissMed continues to bring innovations in the world of beauty with multiple skin rejuvenation therapy.<br/><br/><strong>Compositions (7 Sets per Box — 7 Ampoules + 7 Vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>DNA Nano Glutathione:</strong> 1,680,000mg</li><li><strong>Glisodin SOD:</strong> 230,000mg — Superoxide dismutase antioxidant</li><li><strong>Genistin Enzyme Complex:</strong> 120,000mg</li><li><strong>Collagen Peptide:</strong> For firmness and elasticity</li><li><strong>Gamma-Tocopherol, Cholecalciferol, Ascorbic Acid, Calcium, Zinc, Selenium</strong></li></ul><br/><strong>Benefits of Mixing White Bio X2 Regeneration:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Accelerates whitening of the skin</li><li>Reduces dark spots with enhanced UV protection</li><li>Rapid whitening and brightening of skin tone</li><li>Promotes skin rejuvenation</li><li>DNA regeneration produces collagen to firm and moisturize skin</li><li>Powerful antioxidant with anti-aging properties for youthful looking skin</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Mixing White<br/>Form: Injection<br/>Country of Origin: Switzerland<br/>Packaging Qty: 1 Box Pack (7 Sessions — 7 amps and 7 vials)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Whitening & Antioxidant<br/>Manufacturer: SwissMed<br/><br/><strong>Recommended Dosage:</strong> Administered twice a week intravenously (IV), then can reduce to 1 injection every 2 weeks for maintenance.<br/><br/><strong>Not Suitable For:</strong> Pregnant women, breastfeeding/nursing women, allergy to any vitamins, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results may vary from person to person. Professional medical supervision required.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Accelerates Skin Whitening",
+    "Reduces Dark Spots & UV Protection",
+    "Rapid Brightening of Skin Tone",
+    "Skin Rejuvenation",
+    "DNA Regeneration & Collagen Production",
+    "Powerful Antioxidant & Anti-Aging"
+  ],
+  "sku": "MIXWHITE-BIO-X2-7S",
+  "volume": "1 Box Pack (7 Sessions — 7 Ampoules + 7 Vials)"
+},
+{
+  "id": 63,
+  "name": "Cindyrella Magical Mystical Drip with NAD+ (7 Sets)",
+  "category": "Injection",
+  "brand": "Cindyrella Magical",
+  "price": 13800,
+  "image": "/image/cindyrella_mystical_drip_nad.jpeg",
+  "description": "NAD+ Enhanced IV Drip | 850,000mg Glutathione + Stem Cell + Placenta + Collagen Complex | 7 Sets | Skin Radiance, Anti-Aging & Immune Boost",
+  "details": "<strong>Cindyrella Magical Mystical Drip with NAD+ — A Symphony of Health and Beauty</strong><br/><br/>This powerful concoction combines glutathione, lipoic acid, stem cell extract, placental extracts, and collagen peptides for a comprehensive beauty and wellness regimen. Each set includes vials and ampoules with drip or push set accessories (PNSS water, syringe, butterfly).<br/><br/><strong>Complete 7-Set Composition (7 vials + 14 ampoules per set — total 7 sets):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 850,000mg</li><li><strong>Lipoic Acid:</strong> 5,000mg</li><li><strong>Cysteine:</strong> 2,500mg</li><li><strong>Coenzyme Q10 (Q10):</strong> 5,000mg</li><li><strong>Collagen Powder:</strong> 2,000mg</li><li><strong>Hexapeptide:</strong> 1,500mg</li><li><strong>Collagen Peptide:</strong> 5,000mg</li><li><strong>Stem Cell Extract:</strong> 1,000mg</li><li><strong>Vegetable Placenta:</strong> 500mg</li><li><strong>Placenta:</strong> 250mg</li><li><strong>Marine Collagen:</strong> 2,800mg</li><li><strong>Vitamin C:</strong> 5,000mg</li><li><strong>Vitamin D:</strong> 1,800mg</li></ul><br/><strong>Included Accessories (per set):</strong><br/><strong>Drip Set:</strong> 50ml PNSS Water Macroset, Syringe and Butterfly<br/><strong>Push Set:</strong> 5ml Sterile Water, Syringe and Butterfly<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Radiance:</strong> Glutathione and Collagen promote radiant skin, combating oxidative stress while providing structural support</li><li><strong>Anti-Aging Power:</strong> Q10 and Stem Cell Extract stimulate cell regeneration and combat signs of aging</li><li><strong>Immune Boost:</strong> Vitamin C and Vitamin D fortify the body against illnesses</li><li><strong>Cellular Repair:</strong> Lipoic Acid and Cysteine play crucial role in cell regeneration</li><li><strong>Collagen Boost:</strong> Collagen Peptide, Marine Collagen, and Hexapeptide support healthy joints, hair, and nails</li><li><strong>Placental Power:</strong> Vegetable Placenta and Placenta promote smoother complexion and reduce blemishes</li><li><strong>Complete Nutrition:</strong> Comprehensive nutritional boost for overall health</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Cindyrella Magical<br/>Form: IV Drip / Injection with NAD+<br/>Packaging: 7 Sets (7 vials + 14 ampoules per set, total 7 sets)<br/><br/><strong>Authenticity Notice:</strong> WE DO NOT HAVE ANY AUTHORIZED DISTRIBUTORS/SELLERS IN AUSTRALIA, UK, US, VIETNAM, INDIA, JEDDAH, THAILAND OR IN ANY COUNTRY. For guaranteed authenticity, Cindyrella products should only come from the Philippines and be shipped directly to your country.<br/><br/><strong>Usage:</strong> Professional administration only. Consult a qualified healthcare provider before use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Results vary by individual. This is a holistic approach to well-being. Ensure product authenticity by purchasing only from Philippines-based authorized channels.</em>",
+  "benefits": [
+    "Skin Radiance",
+    "Anti-Aging Power",
+    "Immune Boost",
+    "Cellular Repair",
+    "Collagen Boost for Joints, Hair & Nails",
+    "Placental Rejuvenation",
+    "Complete Nutritional Support"
+  ],
+  "sku": "CINDY-MYSTICAL-NAD-7S",
+  "volume": "7 Sets (7 vials + 14 ampoules per set + drip/push accessories)"
+},
+{
+  "id": 64,
+  "name": "Shirayuki Japan Glutathione Skin Whitening Injection 180000mg",
+  "category": "Injection",
+  "brand": "Shirayuki",
+  "price": 29850,
+  "image": "/image/shirayuki_japan_glutathione.jpeg",
+  "description": "Premium Japanese Whitening Injection | 180,000mg Glutathione + Kojic Acid + Hyaluronic Acid + DNA/RNA | 40 Sessions | Anti-Aging & Pigmentation Control",
+  "details": "<strong>Shirayuki Japan Glutathione Injection 180000mg — Cutting-Edge Beauty Solution</strong><br/><br/>Transform your skin with this premium whitening and anti-aging treatment from Japan. Packed with Glutathione, Kojic Acid, Hyaluronic Acid, DNA & RNA extracts, and essential vitamins, this formula reduces dark spots, evens skin tone, and enhances hydration for a glowing complexion. Dermatologically tested for visible results.<br/><br/><strong>Ingredients & Strengths:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 180,000mg — Powerful antioxidant for whitening and detoxification</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 10,000mg — Boosts collagen production and brightens skin</li><li><strong>Kojic Acid:</strong> 5,000mg — Reduces pigmentation and dark spots</li><li><strong>Amino Acids (10%):</strong> Improves skin repair and elasticity</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 1,000mg — Anti-aging antioxidant</li><li><strong>Tranexamic Acid:</strong> 1,000mg — Controls hyperpigmentation</li><li><strong>Collagen Extract:</strong> 2,000mg — Enhances firmness and smoothness</li><li><strong>Hyaluronic Acid:</strong> 300mg — Deeply hydrates and plumps skin</li><li><strong>AHA (Alpha Hydroxy Acid):</strong> 800mg — Exfoliates dead skin cells</li><li><strong>Vitamin B2 & B6:</strong> 500mg — Nourishes and revitalizes skin</li><li><strong>DNA & RNA Extracts:</strong> 1,000mg — Repairs and rejuvenates skin cells</li><li><strong>Antioxidants:</strong> 1,000mg — Protects against environmental damage</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin Whitening — lighter, even skin tone</li><li>Anti-Aging — reduces wrinkles and fine lines</li><li>Dark Spot Reduction — fades blemishes and scars</li><li>Hydration Boost — long-lasting moisture</li><li>Collagen Support — improves elasticity and firmness</li><li>Pigmentation Control — lightens stubborn pigmentation</li><li>Antioxidant Protection — shields from free radical damage</li><li>Skin Rejuvenation — DNA/RNA repair and revitalization</li><li>Glowing Complexion — radiant and youthful</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Country of Origin: Japan<br/>Packaging: 1 Box — 40 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Injectable product — consult a certified professional for administration. Visible improvements within 4-6 weeks of regular use.<br/><br/><strong>Safety:</strong> Dermatologically tested and safe when used as directed by a professional. Suitable for all skin types, including sensitive skin.<br/><br/><strong>FAQs:</strong> Results are long-lasting with proper maintenance and healthy skincare routine. Minimally uncomfortable when administered by a professional.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Individual results may vary.</em>",
+  "benefits": [
+    "Skin Whitening",
+    "Anti-Aging",
+    "Dark Spot Reduction",
+    "Hydration Boost",
+    "Collagen Support",
+    "Pigmentation Control",
+    "Antioxidant Protection",
+    "Skin Rejuvenation",
+    "Glowing Complexion"
+  ],
+  "sku": "SHIRAYUKI-JP-180K-40S",
+  "volume": "1 Box (40 Sessions)"
+},
+{
+  "id": 65,
+  "name": "GLUTANEX Glutenex Injection for Skin Whitening",
+  "category": "Injection",
+  "brand": "GLUTANEX",
+  "price": 22500,
+  "image": "/image/glutanex_injection.jpeg",
+  "description": "Powerful Antioxidant IV Drip | Glutathione 1200mg + Vitamin C + Thioctic Acid | 10 Injection Sets | Melanin Suppressor & Anti-Aging",
+  "details": "<strong>GLUTANEX Glutenex Injection — The Most Powerful Whitening Antioxidant IV Drip Available Today</strong><br/><br/>This advanced formulation harnesses the strength of the world's three most potent antioxidants in optimal dosages, promising powerful anti-aging benefits for the skin while bolstering internal health. Works as a formidable melanin suppressor with complementary ingredients that extend glutathione effects and enhance absorption.<br/><br/><strong>Key Ingredients per Set (1 ampoule + 2 vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 1200mg — Master antioxidant and melanin suppressor</li><li><strong>Vitamin C:</strong> 10g / 20mL — Enhances glutathione absorption and boosts collagen</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 300mg — Extends and amplifies glutathione effects, boosts natural production</li></ul><br/><strong>Synergistic Action:</strong> Glutathione suppresses melanin formation. Thioctic acid (Liponex-300) extends glutathione effects and boosts its natural production. Vitamin C (Asconex) significantly enhances glutathione absorption and utility within the body while providing anti-aging benefits by combating free radicals.<br/><br/><strong>Packing:</strong> 1 Box including 10 Injection Sets (1 injection set = 1 ampoule + 2 vials)<br/><br/><strong>Usage & Dosage:</strong> Intravenous (IV) Infusion (Drip). 1 set per week for first 2 months, then reduce to 1 set every 2 weeks for maintenance. Please consult with a dermatologist before taking the injection.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding and pregnant women, women during menstruation, allergy to any vitamins, patients with cardiovascular problems.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Verification of drug license & valid prescription strongly advised. Professional medical supervision required. Results vary by individual.</em>",
+  "benefits": [
+    "Powerful Skin Whitening",
+    "Anti-Aging & Free Radical Protection",
+    "Melanin Suppression",
+    "Enhanced Glutathione Absorption",
+    "Boosts Natural Glutathione Production",
+    "Internal Health Support"
+  ],
+  "sku": "GLUTANEX-1200-10SET",
+  "volume": "1 Box (10 Injection Sets — 10 Ampoules + 20 Vials)"
+},
+{
+  "id": 66,
+  "name": "NC24 Ultra 9000000mg Sense Complexion Injection",
+  "category": "Injection",
+  "brand": "NC24",
+  "price": 10400,
+  "image": "/image/nc24_ultra_9000000mg_sense.jpeg",
+  "description": "Ultra-High Potency Japanese Formula | 9,000,000mg Glutathione + EGF + CoQ10 | Skin Whitening, Anti-Aging & Complexion Enhancement | 7 Sessions",
+  "details": "<strong>NC24 Ultra 9000000mg Sense Complexion Injection — New日本 SAKURA Edition</strong><br/><br/>Manufactured by NC Bio Laboratories Pte. Ltd. (Japan), this ultra-high potency injection delivers 9,000,000mg of ultrafiltration glutathione combined with epidermal growth factor, coenzyme Q10, and multivitamin complex for comprehensive skin whitening and rejuvenation.<br/><br/><strong>Complete Kit — 7 Sessions (Set A + Set B):</strong><br/><br/><strong>SET A (7 ampoules + 7 vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ultrafiltration Glutathione (900:1 / 10,000mg per vial):</strong> 9,000,000mg total — Ultra-concentrated master antioxidant</li><li><strong>Thioctic Acid:</strong> 1,000mg, 5ml x 7 ampoules — Anti-aging antioxidant</li><li><strong>Epidermal Growth Factor (EGF):</strong> 15,000mcg, 2ml x 7 ampoules — Cellular regeneration and repair</li></ul><br/><strong>SET B (7 ampoules + 7 vials):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Ascorbic Acid (Vitamin C):</strong> 25,000mg, 5ml x 7 ampoules — Brightening and collagen support</li><li><strong>Coenzyme Q10 (CoQ10):</strong> 7,000mg, 2ml x 7 ampoules — Cellular energy and anti-aging</li><li><strong>Lyophilization Multivitamin Complex:</strong> 50,000mg, 25ml x 7 vials — Comprehensive nourishment</li></ul><br/><strong>Key Benefits:</strong> Skin whitening, complexion enhancement, anti-aging, cellular regeneration, antioxidant protection, collagen stimulation.<br/><br/><strong>Product Specifications:</strong><br/>Manufacturer: NC Bio Laboratories Pte. Ltd.<br/>Origin Country: Japan<br/>Importer: Super Advanced General Trading Company LLC<br/>Packer/Seller: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/>Use: 18+ above<br/><br/><strong>Not Suitable For:</strong><br/>Breastfeeding women, women during menstruation, allergy to any vitamins, patients with cardiovascular problems, persons below 18 years of age.<br/><br/><strong>Important Notice:</strong> Please consult a dermatologist before placing an order for glutathione IV infusion injections, as results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Individual results may vary. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Ultra-High Potency Skin Whitening",
+    "Complexion Enhancement",
+    "Anti-Aging & Cellular Regeneration",
+    "Antioxidant Protection",
+    "Collagen Stimulation",
+    "Glutathione + EGF + CoQ10 Synergy"
+  ],
+  "sku": "NC24-ULTRA-9M-SAKURA-7S",
+  "volume": "7 Sessions (Set A + Set B — 7 vials + 14 ampoules total)"
+},
+{
+  "id": 67,
+  "name": "Complette Gold 5000000 mg Injection",
+  "category": "Injection",
+  "brand": "Complette Gold",
+  "price": 9000,
+  "image": "/image/complette_gold_5million.jpeg",
+  "description": "Ultra-High Strength Glutathione Formula | 5,000,000mg | Skin Brightening, Anti-Aging & Cellular Repair | Collagen + Vitamin C + Alpha Lipoic Acid",
+  "details": "<strong>Complette Gold Dual Effect Cell Plus Glutathione Injection — Advanced Skin Brightening & Anti-Aging Formula</strong><br/><br/>Enriched with ultra-high strength glutathione (5,000,000mg), collagen, Vitamin C, and Alpha Lipoic Acid, this professional-grade injection promotes whitening, detoxification, and cellular repair. It revitalizes skin tone, reduces pigmentation, and enhances radiance when administered under medical supervision.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 5,000,000mg — Master antioxidant for whitening and detoxification</li><li><strong>Collagen:</strong> Supports skin firmness and elasticity</li><li><strong>Vitamin C:</strong> Brightening and collagen synthesis</li><li><strong>Alpha Lipoic Acid:</strong> Potent anti-aging antioxidant</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin brightening and whitening</li><li>Anti-aging and cellular repair</li><li>Detoxification</li><li>Reduces pigmentation and dark spots</li><li>Enhances skin radiance</li><li>Revitalizes skin tone</li></ul><br/><strong>Product Specifications:</strong><br/>Strength: 5,000,000 mg<br/>Manufacturer: Complette International Laboratories<br/>Packaging Type: Box<br/>Form: Injection<br/>Usage/Application: Skin Whitening<br/>Availability: In Stock<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional use only. Administer under medical supervision. Results vary by individual. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Skin Brightening & Whitening",
+    "Anti-Aging",
+    "Detoxification",
+    "Reduces Pigmentation",
+    "Cellular Repair",
+    "Enhances Skin Radiance"
+  ],
+  "sku": "COMPLETTE-GOLD-5M",
+  "volume": "1 Box"
+},
+{
+  "id": 68,
+  "name": "Neutro Skin Promegranate Whitening Injection",
+  "category": "Injection",
+  "brand": "Neutro Skin",
+  "price": 7999,
+  "image": "/image/neutro_skin_promegranate.jpeg",
+  "description": "Pomegranate Extract Whitening Injection | Skin Brightening & Even Tone | Doctor Prescription Required | Suitable for All Skin Types",
+  "details": "<strong>Neutro Skin Promegranate Whitening Injection — Radiant Skin with Pomegranate Power</strong><br/><br/>This liquid injection is formulated with pomegranate extract, known for its natural skin brightening and antioxidant properties. Designed for use under medical supervision, it helps achieve a more radiant and even skin tone. Suitable for all skin types.<br/><br/><strong>Key Features:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Pomegranate extract for whitening and brightening effects</li><li>Liquid drug type injection</li><li>Recommended for doctor prescription use only</li><li>Suitable for all skin types</li></ul><br/><strong>Dosage & Administration:</strong><br/>Administered every 5 days once. Must be prescribed and supervised by a qualified dermatologist or healthcare professional.<br/><br/><strong>Storage Instructions:</strong><br/>Store in a cool and dry place to maintain efficacy.<br/><br/><strong>Ideal For:</strong><br/>Individuals looking to achieve a more radiant, even skin tone with professional guidance.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Prescription only. Professional medical supervision required. Results vary by individual.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening",
+    "Pomegranate Extract Antioxidants",
+    "Radiant & Even Skin Tone",
+    "Suitable for All Skin Types"
+  ],
+  "sku": "NEUTRO-POMEGRANATE-1",
+  "volume": "1 Bottle"
+},
+{
+  "id": 69,
+  "name": "Rition 5000mg Glutathione 10 Session Injection",
+  "category": "Injection",
+  "brand": "Rition",
+  "price": 23800,
+  "image": "/image/rition_5000mg_glutathione.jpeg",
+  "description": "Italian Mega Dose Pure Glutathione | 5000mg IV Drip | 10 Sessions | Skin Whitening with Ishigaki Amino Premium White | Pinkish-White Result",
+  "details": "<strong>Rition 5000mg Glutathione Injection — The Newest & Most Powerful Pure Glutathione from Italy</strong><br/><br/>Manufactured by PIAM Farmaceutici SPA (Genova, Italy) — a trusted glutathione manufacturer. This is the only authentic mega-dose of glutathione in the market for IV Drip infusion. Specially formulated for IV DRIP, it delivers strong and powerful results. Combined with Ishigaki Amino Premium White for an even pinkish-white result — the perfect replacement for Tad 5000.<br/><br/><strong>Product Specifications:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione Strength:</strong> 5000mg</li><li><strong>Course:</strong> 10 Sessions</li><li><strong>Form:</strong> IV Drip Infusion</li><li><strong>Origin Country:</strong> Italy</li><li><strong>Manufacturer:</strong> PIAM Farmaceutici SPA – Via Fieschi 8/7, I-16121 Genova, Italy</li><li><strong>Importer:</strong> Super Advanced General Trading Company LLC</li><li><strong>Packer/Seller:</strong> IMBMS (Dealers Bazaar Group)</li><li><strong>FSSAI License:</strong> 11223999000312</li><li><strong>Certification:</strong> GMP Certified</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Pure, mega-dose glutathione for maximum efficacy</li><li>Skin whitening and brightening</li><li>Pinkish-white complexion with Ishigaki Amino Premium White</li><li>Powerful antioxidant and detoxification</li><li>Specially formulated for IV drip infusion</li></ul><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><strong>Important Notice:</strong> Please consult a dermatologist before placing an order for glutathione IV infusion injections, as results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. For IV use only. Results vary by individual. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Pure Mega-Dose Glutathione (5000mg)",
+    "Skin Whitening & Brightening",
+    "Pinkish-White Complexion",
+    "Powerful Antioxidant & Detoxification",
+    "Italian Pharmaceutical Grade"
+  ],
+  "sku": "RITION-5000-10S-IT",
+  "volume": "10 Sessions (IV Drip Kit)"
+},
+{
+  "id": 70,
+  "name": "Neutro Skin Pomegranate Glutathione Whitening",
+  "category": "Injection",
+  "brand": "Neutro",
+  "price": 8800,
+  "image": "/image/neutro_skin_pomegranate.jpeg",
+  "description": "Pomegranate Antioxidant & Whitening Formula | French-Made | 6 Sessions | Glutathione + EGF + CoQ10 | Moisturizing, Melanin Control & Anti-Aging",
+  "details": "<strong>Neutro Skin Pomegranate Glutathione Whitening — Antioxidant Magic of Pomegranate</strong><br/><br/>Discover the secret to radiant, firm, and even-toned skin with this unique formula from France. Rich in polyphenols, pomegranate offers triple the antioxidant content of red wine and green tea, combating free radicals, shielding cells from harm, and alleviating inflammation.<br/><br/><strong>Key Components (Per Bottle — 6 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pomegranate Extract & Glutathione:</strong> 12,000mg — Antioxidant powerhouse for skin brightening</li><li><strong>Epidermal Growth Factor (EGF):</strong> 300mg — Cellular regeneration</li><li><strong>Coenzyme Q10:</strong> 150mg — Anti-aging and energy</li><li><strong>Kojic Acid:</strong> 300mg — Melanin inhibition</li><li><strong>Vegetal Placenta:</strong> 20mg — Skin rejuvenation</li><li><strong>Natural Collagen Extract:</strong> 250mg — Firmness and elasticity</li><li><strong>Vitamin C (L'Ascorbic Acid):</strong> 600mg — Brightening and collagen support</li><li><strong>Vitamin E:</strong> 150mg — Antioxidant protection</li></ul><br/><strong>Innovative Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Moisturizing:</strong> Deeply hydrates and revitalizes skin</li><li><strong>Melanin Control:</strong> Reduces melanin spread in the skin</li><li><strong>Anti-Aging:</strong> Visibly reduces fine lines and pores</li></ul><br/><strong>Advantages:</strong> Powerful antioxidant effects, enhances skin brightness and fairness, delays aging signs, boosts immunity, supports liver health, promotes skin cell renewal, increases collagen for improved elasticity, minimizes sun-induced pigmentation, reduces facial lines and wrinkles, controls acne and refines pores.<br/><br/><strong>Product Specifications:</strong><br/>Brand: Neutro<br/>Form: Injection<br/>Country of Origin: France<br/>Packaging Qty: 1 Bottle Pack (6 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening<br/><br/><strong>Dosage & Method:</strong><br/>1 vial twice weekly sub-lingually or as per doctor's advice. For maintenance, 1 vial every 10-15 days. Consult for IM or IV use.<br/><br/><strong>Not Recommended For:</strong> Breastfeeding women, women during menstruation, those allergic to vitamins, individuals with heart problems. Not suitable during chemotherapy due to Glutathione's properties.<br/><br/><strong>Note:</strong> Results may vary from person to person. Professional medical supervision recommended.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Powerful Antioxidant Effects",
+    "Enhances Skin Brightness & Fairness",
+    "Delays Aging Signs",
+    "Boosts Immunity & Liver Health",
+    "Promotes Skin Cell Renewal",
+    "Increases Collagen & Elasticity",
+    "Minimizes Sun-Induced Pigmentation",
+    "Reduces Fine Lines & Wrinkles",
+    "Controls Acne & Refines Pores",
+    "Deeply Moisturizes"
+  ],
+  "sku": "NEUTRO-POMEGRANATE-6S-FR",
+  "volume": "1 Bottle Pack (6 Sessions)"
+},
+{
+  "id": 71,
+  "name": "Dr James Glutathione Injection 1500mg Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Dr James",
+  "price": 6900,
+  "image": "/image/dr_james_glutathione_1500mg.jpeg",
+  "description": "FDA-Approved USA-Made | 1500mg Reduced L-Glutathione | Skin Whitening, Anti-Aging & Scar Reduction | 5 Sessions",
+  "details": "<strong>Dr. James Glutathione Injection — Advanced Skin Whitening & Anti-Aging Therapy</strong><br/><br/>Trusted worldwide, this USA-made, FDA-approved skin whitening therapy offers a safe, effective, and fast way to achieve brighter, youthful, and even-toned skin. Designed with the purest ingredients, it whitens the skin while nourishing, repairing, and rejuvenating from within.<br/><br/>Unlike creams or serums that work only on the surface, Dr. James Glutathione Injection works at the cellular level to reduce melanin production, improve skin clarity, and restore youthful glow.<br/><br/><strong>Powerful Ingredients (Per Session):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Reduced L-Glutathione:</strong> 1500mg — Master antioxidant for advanced whitening and detoxification</li><li><strong>Vitamin C:</strong> 1000mg — Boosts Glutathione efficiency, brightens skin, promotes collagen production</li><li><strong>Alpha Lipoic Acid:</strong> 300mg — Strong antioxidant that reduces signs of aging and improves smoothness</li><li><strong>Nano Collagen:</strong> 200mg — Enhances elasticity, firmness, and hydration</li><li><strong>Epidermal Growth Factor (EGF):</strong> 100mg — Accelerates skin healing, reduces scars, promotes regeneration</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin Whitening & Brightening — natural pinkish glow</li><li>Anti-Aging Support — fights wrinkles, fine lines, early aging signs</li><li>Scar & Pigmentation Reduction — fades acne scars, dark spots, uneven patches</li><li>Clear, Smooth Skin — reduces acne and pimples by lowering oxidative stress</li><li>Skin Rejuvenation & Glow — restores hydration, improves elasticity, promotes cellular repair</li><li>Quick Visible Results — noticeable improvement within a few sessions</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Dr James<br/>Form: Injection<br/>Country of Origin: USA<br/>Packaging Qty: 1 Box Pack (5 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening<br/>Expiry: December 2028<br/><br/><strong>Recommended Dosage:</strong> Administered under professional medical supervision only. Mix ampoule with vial, add sterile water, inject via IV or butterfly syringe as advised by a doctor.<br/><br/><strong>FAQs:</strong> Suitable for both men and women, all skin types. Visible improvements within 5–10 sessions. Helps with acne and pigmentation.<br/><br/><strong>Note:</strong> Results may vary from person to person. Professional medical supervision required.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: FDA-approved formulation. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening (Pinkish Glow)",
+    "Anti-Aging Support",
+    "Scar & Pigmentation Reduction",
+    "Clear, Smooth Skin (Reduces Acne)",
+    "Skin Rejuvenation & Glow",
+    "Quick Visible Results"
+  ],
+  "sku": "DRJAMES-1500-5S-USA",
+  "volume": "1 Box Pack (5 Sessions)"
+},
+{
+  "id": 72,
+  "name": "Neutro Skin Avocado & Apple Stem Cell Glutathione Injection",
+  "category": "Injection",
+  "brand": "Neutro",
+  "price": 10500,
+  "image": "/image/neutro_skin_avocado_apple.jpeg",
+  "description": "Avocado & Apple Stem Cell Enriched | French-Made | 4 Sessions | Skin Whitening, Anti-Aging & Deep Nourishment",
+  "details": "<strong>Neutro Skin Avocado & Apple Stem Cell Glutathione Injection — Revolutionary Whitening & Rejuvenation</strong><br/><br/>This innovative formula combines the power of glutathione with the nourishing benefits of avocado and apple stem cells. It targets pigmentation, promotes even skin tone, and enhances skin radiance. Infused with antioxidants, it helps combat free radicals, leaving your skin looking youthful and vibrant. Made in France.<br/><br/><strong>Ingredients (Per Box — 4 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione Avocado Extract:</strong> 3,600mg</li><li><strong>Epidermal Growth Factor (EGF):</strong> 1,500mg</li><li><strong>Kojic Acid:</strong> 5,000mg</li><li><strong>Hyaluronic Acid:</strong> 1,000mg</li><li><strong>Collagen Extract:</strong> 3,000mg</li><li><strong>Apple Stem Cell Extract:</strong> 500mg</li><li><strong>Multivitamin:</strong> 800mg</li><li><strong>Selenium:</strong> 500mg</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 1,200mg</li><li><strong>Coenzyme Q10:</strong> 620mg</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Brightens skin complexion effectively</li><li>Reduces dark spots and hyperpigmentation</li><li>Promotes an even skin tone</li><li>Enhances skin elasticity and firmness</li><li>Provides antioxidant protection against free radicals</li><li>Nourishes and hydrates skin deeply</li><li>Revitalizes dull and tired skin</li><li>Supports collagen production for youthful skin</li><li>Helps reduce signs of aging</li><li>Safe for all skin types (including sensitive)</li><li>Improves overall skin texture</li><li>Provides radiant, luminous glow</li><li>Protects against environmental damage</li><li>Fast-acting with visible results</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Country of Origin: France<br/>Packaging: 1 Box (4 Sessions)<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Visible improvements within a few weeks. Results can last several months depending on skin type and aftercare. Regular maintenance treatments prolong effects.<br/><br/><strong>FAQs:</strong> Safe for all skin types. Can be combined with other skincare treatments — consult a dermatologist.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Individual results may vary.</em>",
+  "benefits": [
+    "Brightens Skin Complexion",
+    "Reduces Dark Spots & Hyperpigmentation",
+    "Promotes Even Skin Tone",
+    "Enhances Elasticity & Firmness",
+    "Antioxidant Protection",
+    "Deep Nourishment & Hydration",
+    "Revitalizes Dull Skin",
+    "Supports Collagen Production",
+    "Reduces Signs of Aging",
+    "Improves Skin Texture",
+    "Radiant & Luminous Glow"
+  ],
+  "sku": "NEUTRO-AVOCADO-APPLE-4S-FR",
+  "volume": "1 Box (4 Sessions)"
+},
+{
+  "id": 73,
+  "name": "Nouveaux IV Picomized Phytowhite Hexa Peptide Collagen Drink",
+  "category": "Injection",
+  "brand": "Nouveaux IV",
+  "price": 23100,
+  "image": "/image/nouveaux_iv_phytowhite_collagen_drink.jpeg",
+  "description": "Oral Collagen Drink | Picomized Hydrolyzed Collagen + Phytowhite Complex + Hexa Peptides | Hydration, Brightening & Anti-Aging",
+  "details": "<strong>Nouveaux IV Picomized Phytowhite Hexa Peptide Collagen Drink — Advanced Oral Beauty Supplement</strong><br/><br/><strong>Important:</strong> This is an oral collagen drink – NOT an injectable solution.<br/><br/>Boost skin radiance with this advanced formula that promotes hydration, brightening, and anti-aging from within. The picomized technology ensures optimal absorption of active ingredients.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Picomized Hydrolyzed Collagen Peptides:</strong> Ultra-absorbable collagen for skin elasticity and firmness</li><li><strong>Phytowhite Complex (Glutathione + Botanical Extracts):</strong> Natural skin brightening and antioxidant protection</li><li><strong>Hexa Peptides:</strong> Supports collagen synthesis and reduces fine lines</li><li><strong>Hyaluronic Acid:</strong> Deep hydration and plumping effect</li><li><strong>Coenzyme Q10 (CoQ10):</strong> Cellular energy and anti-aging</li><li><strong>Vitamins C & E:</strong> Powerful antioxidants for skin protection and glow</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin brightening and even tone</li><li>Deep hydration and moisture retention</li><li>Anti-aging and wrinkle reduction</li><li>Improves skin elasticity and firmness</li><li>Antioxidant protection against free radicals</li><li>Supports collagen production from within</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Oral Collagen Drink (Liquid)<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/><br/><strong>Usage:</strong> Consume as directed on packaging. For best results, use consistently as part of daily skincare routine.<br/><br/><strong>Important Notice:</strong> Please consult a dermatologist before placing an order for any skin brightening supplements, as results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: This is a dietary supplement, not a substitute for a balanced diet. Results may vary. Store in a cool, dry place.</em>",
+  "benefits": [
+    "Skin Brightening & Even Tone",
+    "Deep Hydration",
+    "Anti-Aging & Wrinkle Reduction",
+    "Improves Elasticity & Firmness",
+    "Antioxidant Protection",
+    "Collagen Production Support"
+  ],
+  "sku": "NOUVEAUX-PHYTOWHITE-DRINK",
+  "volume": "Single Pack (Oral Collagen Drink)"
+},
+{
+  "id": 74,
+  "name": "Miracle White Advance 50000mg Glutathione Skin Whitening Injections",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 12449,
+  "image": "/image/miracle_white_advance_50000mg.jpeg",
+  "description": "Ultra-High Potency Swiss Formula | 50,000mg Glutathione + EGF + CoQ10 | 6 Sessions | Dramatic Skin Whitening, Anti-Aging & Collagen Synthesis",
+  "details": "<strong>Miracle White Advance 50000mg Glutathione Skin Whitening Injections — Revolutionary Whitening & Anti-Aging Formula</strong><br/><br/>Experience the ultimate in skin whitening with this unprecedented 50,000mg glutathione formula. Clinically proven to dramatically reduce melanin production and reveal a brighter, more radiant complexion. Rich in antioxidants, it shields skin from environmental stressors and promotes collagen synthesis for a smoother, more youthful appearance.<br/><br/>With EGF (Epidermal Growth Factor) and multivitamins, this latest Miracle White formula includes anti-aging properties. Kojic acid lightens sun damage, age spots, and scars with antimicrobial benefits. Alpha-lipoic acid reduces inflammation and skin aging.<br/><br/><strong>Ingredients Composition (Per Box — 6 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Coenzyme Q10:</strong> 50,000mg — Protects skin from environmental exposure, reduces stress and toxins</li><li><strong>Nano Concentrated Glutathione:</strong> 50,000mg — Reduces oxidative stress, improves toxic impurities, promotes healthy brighter skin</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 250mg — Reduces redness and inflammation, smooths texture</li><li><strong>Kojic Acid:</strong> 2,600mg — Safe skin lightener, reduces pigmentation</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 2,800mg — Reduces fine lines, wrinkles, dark spots; boosts collagen</li><li><strong>Epidermal Growth Factor (EGF):</strong> 1,800mg — Boosts collagen, reduces melanin production, faster whitening</li><li><strong>Multivitamin:</strong> 700mg — Calms skin, eliminates wrinkles and sagging, maintains firmness and elasticity</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 700mg — Antioxidant for youthful skin tone and texture</li><li><strong>Melanin Inhibitor:</strong> 500mg — Reduces melanin formation for bright, glowing skin</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Whitening and lightening of skin tone</li><li>Removes dark spots and scars</li><li>Boosts collagen production for elasticity</li><li>Minimizes pores and prevents acne</li><li>Anti-aging — reduces fine lines and signs of aging</li><li>Repair of damaged skin and regeneration of new cells</li><li>Enhances skin texture, moisturizes</li><li>Fair, radiant, lifted, tighter, youthful-looking skin</li><li>Eliminates skin blemishes</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Switzerland<br/>Packaging: 1 Box (6 Sessions)<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/>Tags: Anti-Aging, Antioxidant, Skin Whitening<br/><br/><strong>Usage:</strong> Professional administration only. Results depend on individual metabolism. Consult a dermatologist before use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results may vary. For external use by licensed practitioners only.</em>",
+  "benefits": [
+    "Dramatic Skin Whitening & Lightening",
+    "Removes Dark Spots & Scars",
+    "Boosts Collagen Production",
+    "Minimizes Pores & Prevents Acne",
+    "Anti-Aging — Reduces Fine Lines",
+    "Repairs Damaged Skin & Regenerates Cells",
+    "Enhances Skin Texture & Moisturizes",
+    "Fair, Radiant, Youthful-Looking Skin",
+    "Eliminates Skin Blemishes"
+  ],
+  "sku": "MIRACLE-WHITE-ADV-50000-6S",
+  "volume": "1 Box (6 Sessions)"
+},
+{
+  "id": 75,
+  "name": "Biocell Renovation with Gluta 12000000mg Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Biocell",
+  "price": 12480,
+  "image": "/image/biocell_renovation_gluta.jpeg",
+  "description": "Ultra-High Strength 12,000,000mg Glutathione | 10 Sets | Collagen + Hyaluronic Acid + CoQ10 + Argan Stem Cell | Skin Whitening & Cellular Renovation",
+  "details": "<strong>Biocell Renovation with Gluta 12000000mg — Transformative Cellular Renovation Injection</strong><br/><br/>This advanced formula combines ultra-high strength GLUTblanc (Nano Extract 12,000,000mg glutathione) with a comprehensive blend of collagen, amino acids, hyaluronic acid, stem cells, and coenzyme Q10 for complete skin whitening and cellular renovation.<br/><br/><strong>Key Ingredients (Per 10-Set Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>GLUTblanc (Nano Extract Glutathione):</strong> 12,000,000mg — Ultra-concentrated master antioxidant for intense whitening</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 50,000mg — Brightening and collagen support</li><li><strong>Solution Collagen d'Extrit:</strong> 40,000mg — Skin elasticity and firmness</li><li><strong>Aminox Essential Amino Acids:</strong> 50,000mg — Cellular repair and renewal</li><li><strong>Hesperidin:</strong> 40,000mg — Bioflavonoid antioxidant</li><li><strong>Hyaluronic Acid:</strong> 40,000mg — Deep hydration and plumping</li><li><strong>Argan Stem Cell (Placenta):</strong> 20,000mg — Regeneration and rejuvenation</li><li><strong>Chromosome:</strong> 20,000mg — Cellular level support</li><li><strong>Coenzyme Q10:</strong> 60,000mg — Anti-aging and cellular energy</li><li><strong>Collagen:</strong> Included in complex</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection (I.M. / I.V.)<br/>Packaging: 10 Sets Injection per Box<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/><br/><strong>Preparation:</strong> Dissolve glutathione in 5-10 ml sterile water before administration.<br/><br/><strong>Usage:</strong> Professional intramuscular or intravenous administration only. Consult a dermatologist before use.<br/><br/><strong>Important Notice:</strong> Results depend on individual body metabolism. Not recommended for pregnant/breastfeeding women, those with vitamin allergies, or cardiovascular patients.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Verify product authenticity. Individual results may vary.</em>",
+  "benefits": [
+    "Ultra-High Strength Skin Whitening",
+    "Cellular Renovation & Repair",
+    "Deep Hydration with Hyaluronic Acid",
+    "Collagen Boost for Elasticity",
+    "Anti-Aging with CoQ10",
+    "Stem Cell Regeneration",
+    "Antioxidant Protection"
+  ],
+  "sku": "BIOCELL-RENOVATION-12M-10S",
+  "volume": "10 Sets Injection (I.M./I.V.)"
+},
+{
+  "id": 76,
+  "name": "Glutanex Glow Skin Booster and Mesotherapy Solution by Nexus Pharma",
+  "category": "Injection",
+  "brand": "Nexus Pharma",
+  "price": 13950,
+  "image": "/image/glutanex_glow_skin_booster.jpeg",
+  "description": "Korean Advanced Skin Booster Vials | Glutathione + PDRN + Peptides | Brightening, Hydration & Anti-Aging | 5 x 4mL | Mesotherapy or Topical Use",
+  "details": "<strong>Glutanex Glow By Nexus Pharma — Professional Skin Brightening & Rejuvenation</strong><br/><br/>Glutanex Glow is a high-performance skin booster vials developed by Nexus Pharma, a trusted name in Korean medical skincare. Designed for instant glow and long-term skin transformation, this advanced mesotherapy solution combines Glutathione and PDRN to brighten, hydrate, and visibly rejuvenate your skin. Suitable for all skin types, including sensitive or aging skin.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> Powerful antioxidant that detoxifies skin and brightens dull, uneven tones</li><li><strong>PDRN (Polydeoxyribonucleotide):</strong> DNA-based repair molecule that promotes tissue regeneration and skin elasticity</li><li><strong>Peptides & Growth Factors (Acetyl Hexapeptide-8, Sh-Oligopeptides, Octapeptides):</strong> Reduce fine lines and improve skin vitality</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Instant Radiance & Skin Brightening — inhibits melanin, reduces pigmentation</li><li>Tighter, Smoother Skin Texture — refines pores</li><li>Anti-Aging & Skin Repair — stimulates collagen production, enhances firmness and elasticity</li><li>Intensive Hydration — locks in moisture, strengthens skin barrier</li><li>Regenerative Power — aids cell turnover and skin renewal</li></ul><br/><strong>Product Specifications:</strong><br/>Pack Size: 1 Box — 5 vials × 4 mL each (Total 20 mL)<br/>Form: Lightweight, fast-absorbing vials serum<br/>Country of Origin: South Korea<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Application Methods:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Topical:</strong> Apply 2–3 drops to cleansed face and gently massage until absorbed</li><li><strong>Professional Use:</strong> Suitable for microneedling (MTS), derma pen, or mesotherapy sessions (3 mL recommended per session)</li></ul><br/><strong>Storage:</strong> Store between 1–30°C in a dry place, protect from direct sunlight. For external use only.<br/><br/><strong>FAQs:</strong> Use 1–2 times per week. Visible glow after first application. Safe for sensitive skin. Not for IV use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Dermatologist-tested. For external professional or home use. Results may vary.</em>",
+  "benefits": [
+    "Instant Radiance & Skin Brightening",
+    "Tighter, Smoother Skin Texture",
+    "Anti-Aging & Skin Repair",
+    "Intensive Hydration",
+    "Regenerative Power (Cell Turnover)"
+  ],
+  "sku": "GLUTANEX-GLOW-5X4ML",
+  "volume": "5 vials × 4 mL (Total 20 mL)"
+},
+{
+  "id": 77,
+  "name": "Glutax 2500 GS Elixir Essence Skin Whitening Injection 12 Sessions",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 14499,
+  "image": "/image/glutax_2500gs_elixir_essence.jpeg",
+  "description": "Italian-Made Whitening Injection | Glutathione + EGF + Collagen + CoQ10 | 12 Sessions | Reduces Melanin, Firms Skin, Anti-Aging & UV Protection",
+  "details": "<strong>Glutax 2500 GS Elixir Essence Glutathione Skin Whitening Injection — Premium Italian Formula</strong><br/><br/>Regardless of age and gender, people desire soft, plump, spotless skin. Glutax 2500 GS has the power to reduce melanin and make skin spotless. Recognized worldwide as one of the best spa and skin whitening injection products, it contains a high amount of L-Glutathione along with Vitamin C to restore good skin texture. The effectiveness of Glutathione has been approved by pathologists in Italy.<br/><br/><strong>Complete Kit (12 Sessions — 12 Vials + 24 Ampoules):</strong><br/><br/><strong>12 Vials:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 2500g</li><li><strong>EGF (Epidermal Growth Factor):</strong> 2000mg</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 3000mg</li><li><strong>Liptocin:</strong> 500mg</li><li><strong>Kojic Acid:</strong> 500mg</li><li><strong>Pro Coenzyme Q10:</strong> 600mg</li><li><strong>Cinnamomum Subavenium Extract:</strong> 350mg</li></ul><br/><strong>12 Ampoules (5ml) — Thioctic Acid 800mg + Multivitamins 3500mg + Collagen 900mg + Selenium 600mg</strong><br/><br/><strong>12 Ampoules (2ml) — Vitamin B1 100mg + Vitamin B6 50mg + Vitamin B12 1000mcg + Recombined 800mg + Grape, Apple, Argan Fruit, Rose Placenta Extract</strong><br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Nourishes and firms the skin</li><li>Whitens skin and lightens scars</li><li>Boosts collagen production and enhances elasticity</li><li>Moisturizes, hydrates, firms, smoothens, and softens skin</li><li>Reduces pigmentation caused by sun exposure</li><li>Smoothens fine lines and wrinkles</li><li>Suppresses acne, blemishes, pimples</li><li>Minimizes pores and improves complexion</li><li>Removes excess free radicals</li><li>Prevents aging and acts as anti-wrinkle</li><li>UV protection — resists UV damage and collagen destruction</li><li>Antioxidant and detoxifier</li><li>Brighter, smoother, flawless whole-body complexion</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Italy<br/>Packaging: 1 Box (12 Sessions — 12 Vials + 24 Ampoules)<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Results depend on individual metabolism. Consult a dermatologist before use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Individual results may vary. For licensed use only.</em>",
+  "benefits": [
+    "Nourishes & Firms Skin",
+    "Whitens Skin & Lightens Scars",
+    "Boosts Collagen & Elasticity",
+    "Moisturizes & Hydrates",
+    "Reduces Sun-Induced Pigmentation",
+    "Smoothens Fine Lines & Wrinkles",
+    "Suppresses Acne & Blemishes",
+    "Minimizes Pores",
+    "UV Protection",
+    "Antioxidant & Detoxifier",
+    "Flawless Whole-Body Complexion"
+  ],
+  "sku": "GLUTAX-2500GS-ELIXIR-12S-IT",
+  "volume": "12 Sessions (12 Vials + 24 Ampoules)"
+},
+{
+  "id": 78,
+  "name": "Glutax 75GX TCRP Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 15870,
+  "image": "/image/glutax_75gx_tcrp.jpeg",
+  "description": "Advanced Tri-Cell Repair Power (TCRP) Technology | High-Dose Glutathione | 14 Sessions | Intense Skin Brightening, Anti-Aging & Cellular Detox",
+  "details": "<strong>Glutax 75GX TCRP Glutathione Skin Whitening Injection — Next-Generation Skin Transformation</strong><br/><br/>Want brighter, flawless, and youthful skin? Meet Glutax 75GX TCRP, the next-generation glutathione skin whitening injection infused with advanced Tri-Cell Repair Power (TCRP) technology and high-dose glutathione. This revolutionary injectable treatment is the ultimate choice for a smooth, even-toned, and radiant complexion. Formulated for visible transformation, it works deep within skin layers to reduce pigmentation, reverse aging signs, and restore natural glow with medical-grade skin science.<br/><br/><strong>What is Glutax 75GX TCRP?</strong><br/>A premium glutathione skin whitening injection treatment designed with Tri-Cell Repair Power – a breakthrough in skin regeneration. It delivers a powerful blend of glutathione and skin-rejuvenating agents to detoxify the body, brighten skin tone, and boost cellular repair. Goes beyond fairness – offering hydration, elasticity, anti-aging support, and full-body skin clarity.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Intense Skin Brightening:</strong> Targets melanin production, visibly brightening skin tone and fading stubborn pigmentation</li><li><strong>Reduces Dark Spots and Hyperpigmentation:</strong> Brightens blemishes, sun spots, and uneven patches for smooth complexion</li><li><strong>Youth-Boosting Effects:</strong> Firms sagging skin, minimizes fine lines, improves skin elasticity</li><li><strong>Deep Hydration Support:</strong> Enhances skin moisture retention for soft, supple, dewy skin</li><li><strong>Detoxification at Cellular Level:</strong> Flushes out toxins and impurities, promoting skin clarity and healthier glow</li><li><strong>Accelerates Skin Repair:</strong> Boosts collagen regeneration and heals damaged tissues for long-lasting radiance</li><li><strong>Protection from Environmental Damage:</strong> Shields skin from pollution, sun damage, and free radicals using potent antioxidants</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection (IV or IM)<br/>Packaging: 1 Box — 14 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/>Origin: Imported<br/><br/><strong>Dosage & How to Use:</strong><br/>Recommended Usage: 1 whitening injection per week under medical supervision<br/>Treatment Cycle: 14 sessions recommended for full visible results<br/>Post-Treatment Maintenance: 1 injection every 15–20 days to maintain skin glow and clarity<br/><br/><strong>Pro Tip:</strong> Drink plenty of water, follow a nutrient-rich diet, and avoid direct sun exposure during treatment phase for best results.<br/><br/><strong>Why It Stands Out:</strong> Advanced TCRP technology for faster skin repair and enhanced absorption. High glutathione strength for visible whitening and detox benefits. Safe, certified formulation trusted by skincare professionals worldwide. No harmful preservatives or additives.<br/><br/><strong>FAQs:</strong> Suitable for all skin types including sensitive. Initial glow seen after 3–4 sessions; full transformation after 14 sessions. Safe for long-term use when administered by trained professional.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Administer under medical supervision. Results depend on individual metabolism. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Intense Skin Brightening",
+    "Reduces Dark Spots & Hyperpigmentation",
+    "Youth-Boosting (Firms Sagging Skin, Minimizes Fine Lines)",
+    "Deep Hydration Support",
+    "Cellular Detoxification",
+    "Accelerates Skin Repair & Collagen Regeneration",
+    "Protection from Environmental Damage"
+  ],
+  "sku": "GLUTAX-75GX-TCRP-14S",
+  "volume": "1 Box (14 Sessions)"
+},
+{
+  "id": 79,
+  "name": "Glutax 990000GH DualNA Hydra Skin Whitening Injection 4 Sessions",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 11180,
+  "image": "/image/glutax_990000gh_dualna_hydra.jpeg",
+  "description": "Italian DualNA Hydra Formula | 990,000g Glutathione + DNA/RNA Complex + Stem Cells | 4 Sessions | Deep Whitening, Cellular Repair & Anti-Aging",
+  "details": "<strong>Glutax 990000GH DualNA Hydra Skin Whitening Injection — Advanced Italian Skin Science</strong><br/><br/>Manufactured by Derma Medical Skin Sciences (Italy), this premium injection combines ultra-high strength glutathione with DNA/RNA Hydra technology, stem cell extracts, and growth factors. It effectively combats glutathione accumulation disorders, neutralizes free radicals, and provides comprehensive skin whitening, detoxification, and anti-aging benefits.<br/><br/><strong>Key Ingredients (per 4-session box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>DNA/RNA Hydra Glutathione:</strong> 990,000g — Ultra-concentrated master antioxidant for intense whitening</li><li><strong>DNA/RNA Hydra Multivitamin:</strong> 180,000mg — Comprehensive skin nourishment</li><li><strong>DNA/RNA Epidermal Growth Factor (EGF):</strong> 12,500mg — Cellular regeneration and repair</li><li><strong>DNA/RNA Hydra Collagen Extract:</strong> 9,000mg — Skin firmness and elasticity</li><li><strong>DNA/RNA Alfa Lipoic Acid:</strong> 9,000mg — Anti-aging antioxidant</li><li><strong>DNA/RNA Hydra White Elements:</strong> 5,800mg — Skin brightening complex</li><li><strong>DNA/RNA Hydra Selenio (Selenium):</strong> 5,000mg — Antioxidant and metabolism support</li><li><strong>DNA/RNA Recombined Stemcell (Multi Fruits & Plants Stemcell Extract):</strong> 1,880mg — Skin rejuvenation and renewal</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Effective skin whitening and lightening</li><li>Combats harmful effects of excessive glutathione accumulation</li><li>Powerful antioxidant neutralizes oxygen free radicals</li><li>Prevents cataracts, neurodegenerative diseases (Alzheimer's, Parkinson's)</li><li>Slows aging process and delays signs of aging</li><li>Protects eyes from age-related diseases</li><li>No pain, no side effects — safe alternative to expensive laser therapies</li><li>Also available as oral supplement (consult doctor)</li></ul><br/><strong>Product Specifications:</strong><br/>Manufacturer: Derma Medical Skin Sciences — Via K. Marx 18, Noverasco di Opera MI 20090, Italy<br/>Country of Origin: Italy<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/>Treatment: 4 Sessions per box<br/><br/><strong>Usage:</strong> Professional IV administration. Glutathione treatments are generally given twice a day for about two weeks. Do not use without consulting a doctor. Not for those allergic to glutathione or with pacemakers.<br/><br/><strong>Important Notice:</strong> Please consult a dermatologist before placing an order for glutathione IV infusion injections, as results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results vary by individual. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Intense Skin Whitening",
+    "Powerful Antioxidant & Detoxification",
+    "Anti-Aging & Delays Signs of Aging",
+    "Cellular Repair & Regeneration (DNA/RNA + EGF)",
+    "Collagen Boost for Firmness",
+    "Protects Against Neurodegenerative Diseases",
+    "Safe & Painless — No Side Effects"
+  ],
+  "sku": "GLUTAX-990000GH-DUALNA-4S-IT",
+  "volume": "4 Sessions (1 Box)"
+},
+{
+  "id": 80,
+  "name": "Bihaku Japan Premium Glutathione 10,000mg Injection",
+  "category": "Injection",
+  "brand": "Bihaku Japan",
+  "price": 16000,
+  "image": "/image/bihaku_japan_glutathione.jpeg",
+  "description": "Japanese High-Potency Formula | 10,000mg Glutathione + NAD + EGF | Skin Whitening, Anti-Aging & Cellular Repair | Professional-Grade Treatment",
+  "details": "<strong>Bihaku Japan Premium Glutathione 10,000mg Injection — Advanced Japanese Skincare Technology</strong><br/><br/>Inspired by modern Japanese skincare technology, this high-performance injectable formula provides deep skin whitening, anti-aging benefits, and cellular repair. Unlike topical creams that work only on the surface, this treatment works from within the body, targeting the root causes of skin damage for long-lasting improvements.<br/><br/>This professional-grade treatment is widely used in aesthetic procedures to improve skin clarity, reduce pigmentation, and enhance overall skin health at a cellular level.<br/><br/><strong>Powerful Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 10,000mg — Brightens skin, inhibits melanin production, detoxifies the body</li><li><strong>NAD (Nicotinamide Adenine Dinucleotide):</strong> 5,000mg — Supports cellular repair and energy production</li><li><strong>EGF (Epidermal Growth Factor):</strong> 1,800mg — Stimulates collagen production and skin renewal</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 20,000mg — Enhances glow, boosts immunity, collagen support</li><li><strong>Alpha Lipoic Acid:</strong> 500mg — Protects against free radical damage</li><li><strong>Stem Cells:</strong> 50,000 IU — Supports regeneration and repair</li><li><strong>Placenta Extract:</strong> 800mg — Improves hydration and elasticity</li><li><strong>Natural Collagen:</strong> 980mg — Strengthens skin structure</li><li><strong>Tranexamic Acid:</strong> 500mg — Reduces pigmentation and melasma</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Skin Whitening & Brightening:</strong> Reduces pigmentation, dark spots, and uneven skin tone for a brighter, more radiant complexion</li><li><strong>Anti-Aging Support:</strong> Minimizes wrinkles and fine lines while improving skin firmness and elasticity</li><li><strong>Detoxification:</strong> Glutathione acts as a natural detoxifier, protecting skin from oxidative stress and environmental damage</li><li><strong>Improved Skin Texture:</strong> Smoother, softer, more hydrated skin with regular use</li><li><strong>Collagen Boosting:</strong> EGF and collagen extracts enhance skin structure and firmness</li><li><strong>Cellular Repair:</strong> Promotes deep skin healing and regeneration for long-term results</li></ul><br/><strong>Why Choose Bihaku Japan:</strong> High potency (10,000mg Glutathione) for stronger results. Multi-action approach combining whitening, anti-aging, detox, and repair. Faster internal results than topical products. Professional-grade with reliable outcomes.<br/><br/><strong>Usage & Application:</strong> Intended for professional use only. Administered by trained medical professionals. Frequency depends on individual skin needs.<br/><br/><strong>Suitable For:</strong> Individuals with dull/uneven skin tone, pigmentation or dark spots, those seeking anti-aging solutions, anyone wanting brighter, glowing skin or advanced skin repair and detox.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Consult a dermatologist before use. Results depend on individual metabolism. Professional medical supervision required.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening",
+    "Anti-Aging Support (Wrinkles & Fine Lines)",
+    "Detoxification & Oxidative Stress Protection",
+    "Improved Skin Texture & Hydration",
+    "Collagen Boosting",
+    "Cellular Repair & Regeneration"
+  ],
+  "sku": "BIHAKU-JP-10000-1BX",
+  "volume": "1 Box"
+},
+{
+  "id": 81,
+  "name": "NC24 Ultra PDRN Advance Japan 300,000mg Glutathione Injection",
+  "category": "Injection",
+  "brand": "NC24",
+  "price": 12000,
+  "image": "/image/nc24_ultra_pdrn_advance_300k.jpeg",
+  "description": "Japanese Advanced Regeneration Therapy | 300,000mg Glutathione + PDRN + CoQ10 | 5 Sessions | Skin Whitening, Anti-Aging & Cellular Repair",
+  "details": "<strong>NC24 Ultra PDRN Miracle Advance Japan — Premium Glutathione Skin Whitening & Regeneration Therapy</strong><br/><br/>Developed using advanced Japanese technology, this clinically developed formula combines high-strength Glutathione, PDRN, DNA Collagen, Coenzyme Q10, and a multivitamin complex. It targets pigmentation, dullness, uneven skin tone, fine lines, and skin damage, working deep within the skin to promote cellular repair, detoxification, and long-lasting skin rejuvenation.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Intense Skin Whitening:</strong> High-dose Glutathione reduces melanin production</li><li><strong>Skin Repair & Regeneration:</strong> PDRN and DNA components promote deep cellular repair</li><li><strong>Anti-Aging & Wrinkle Reduction:</strong> Minimizes fine lines, wrinkles, and sagging skin</li><li><strong>Collagen Boosting:</strong> Enhances collagen production for firmness and elasticity</li><li><strong>Improves Skin Texture & Tone:</strong> Smoothens rough skin and evens tone</li><li><strong>Powerful Antioxidant Protection:</strong> Shields from free radicals and pollution</li><li><strong>Radiant & Glowing Skin:</strong> Enhances natural glow</li></ul><br/><strong>Key Ingredients (Per 5-Session Pack):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (Ultra Concentrated):</strong> 300,000mg — Master antioxidant for whitening and detox</li><li><strong>PDRN (Polydeoxyribonucleotide):</strong> 1,000mg — Tissue repair and skin regeneration</li><li><strong>DNA Sodium & DNA Collagen:</strong> 2,000mg — Cellular repair and collagen synthesis</li><li><strong>Coenzyme Q10 (CoQ10):</strong> 2,000mg — Anti-aging, protects skin cells</li><li><strong>Multivitamin Complex:</strong> 100,000mg — Nourishes skin, improves complexion</li><li><strong>Fresh Cranberry Extract + Ascorbic Acid:</strong> 6,000mg — Brightening, boosts antioxidant effects</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 3,000mg — Improves skin metabolism and antioxidant protection</li><li><strong>Fibroblast Growth Factor (FGF):</strong> 2,750mg — Stimulates collagen production and skin regeneration</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Country of Origin: Japan<br/>Packaging: 1 Pack (5 Sessions)<br/>Usage: Strictly for professional use only — administer under clinical supervision.<br/><br/><strong>Storage:</strong> Store in cool, dry place away from heat and direct sunlight.<br/><br/><strong>Why Choose NC24:</strong> High-potency multi-ingredient formula combining whitening, anti-aging, and regeneration in one treatment. Ideal for clinics and individuals seeking advanced skin transformation.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: For professional use only. Consult a dermatologist before use. Results depend on individual metabolism. Professional medical supervision required.</em>",
+  "benefits": [
+    "Intense Skin Whitening",
+    "Skin Repair & Regeneration",
+    "Anti-Aging & Wrinkle Reduction",
+    "Collagen Boosting",
+    "Improves Skin Texture & Tone",
+    "Powerful Antioxidant Protection",
+    "Radiant & Glowing Skin"
+  ],
+  "sku": "NC24-PDRN-ADV-300K-5S-JP",
+  "volume": "1 Pack (5 Sessions)"
+},
+{
+  "id": 82,
+  "name": "Biocell Max Pro Renovation with Glutathione Injection",
+  "category": "Injection",
+  "brand": "Biocell",
+  "price": 13790,
+  "image": "/image/biocell_max_pro_renovation.jpeg",
+  "description": "Ultra-Potent Formula | 100,000,000mg Glutathione + Hyaluronic Acid + CoQ10 + Stem Cells | 10 Sessions | Skin Whitening, Anti-Aging & Deep Hydration",
+  "details": "<strong>Biocell Max Pro Renovation with Glutathione Injection — Revolutionary Skincare Solution</strong><br/><br/>Crafted for those who dream of fairer, brighter, and more youthful skin, this high-dose injectable formula is infused with 100,000,000mg of Glutathione. Designed with advanced nano-technology and enriched with potent antioxidants, Biocell Max Pro works from the inside out to enhance natural beauty — safely, effectively, and visibly.<br/><br/><strong>Key Ingredients (Per 10-Session Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 100,000,000mg — Ultimate antioxidant for skin whitening and detoxification</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 100,000mg — Brightens skin and boosts collagen</li><li><strong>Coenzyme Q10:</strong> 100,000mg — Energizes skin cells and fights aging</li><li><strong>Hyaluronic Acid:</strong> 50,000mg — Deep hydration and moisture retention</li><li><strong>Collagen Solution:</strong> 50,000mg — Improves skin firmness and elasticity</li><li><strong>Citrus Aurantium Extract:</strong> 50,000mg — Natural brightening and anti-inflammatory</li><li><strong>Aminox (Essential Amino Acids):</strong> 50,000mg — Cellular nourishment</li><li><strong>Growth Hormone:</strong> 30,000mg — Revives skin's natural youth and vitality</li><li><strong>Argan Stem Cells:</strong> 30,000mg — Regenerates damaged skin, protects from toxins</li><li><strong>Hesperidin:</strong> 5,000mg — Boosts circulation, reduces discoloration</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Boosts natural glow — targets melanin, brightens dull skin</li><li>Reduces dark spots, pigmentation, blemishes, and uneven tone</li><li>Powerful anti-aging effects — firms skin, softens fine lines, promotes elasticity</li><li>Deep hydration & moisture lock with Hyaluronic Acid</li><li>Detoxifies the body — cleanses toxins, improves skin clarity</li><li>Faster skin repair & cell renewal with stem cells and CoQ10</li><li>Protects from pollution, stress, and environmental damage with potent antioxidants</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection (IV or IM)<br/>Packaging: 1 Box — 10 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/>Technology: Swiss technology, safe certified formulation<br/><br/><strong>Dosage & How to Use:</strong><br/>Recommended Usage: 1 set per week (IV or IM as advised by skin specialist)<br/>Full Cycle: Complete 10 sessions for noticeable, long-lasting results<br/>Maintenance: One injection every 15–20 days post-completion<br/><br/><strong>Pro Tips:</strong> Follow a clean diet, hydrate well, and avoid sun exposure during treatment for best results.<br/><br/><strong>Why It Stands Out:</strong> Ultra-high Glutathione strength (100 million mg) for fast visible results. No harmful additives — only pure active ingredients. Trusted by dermatologists and celebrities worldwide. Perfect for Indian skin tones and climate.<br/><br/><strong>FAQs:</strong> Suitable for all skin types. Most users notice improvements within 3–4 sessions; full glow after 10 sessions. Safe for long-term use when recommended by professionals.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results depend on individual metabolism. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Boosts Natural Glow",
+    "Reduces Dark Spots & Pigmentation",
+    "Powerful Anti-Aging Effects",
+    "Deep Hydration & Moisture Lock",
+    "Detoxifies the Body",
+    "Faster Skin Repair & Cell Renewal",
+    "Protects from Pollution & Stress"
+  ],
+  "sku": "BIOCELL-MAX-PRO-10S",
+  "volume": "1 Box (10 Sessions)"
+},
+{
+  "id": 84,
+  "name": "Bio Rae Nano Complexion 18 Skin Whitening Glutathione Injection",
+  "category": "Injection",
+  "brand": "Bio Rae",
+  "price": 16750,
+  "image": "/image/bio_rae_nano_complexion_18.jpeg",
+  "description": "Korea's No.1 Advanced Nano Technology Injectables | 180,000mg Nano Glutathione + SLC24A5 Inhibitor | Skin Whitening, Anti-Aging & Cellular Renewal | 4 Sessions",
+  "details": "<strong>Bio-Rae Nano Complexion 18 — Korea's No.1 Advanced Skin Whitening & Anti-Aging Injectable Therapy</strong><br/><br/>Developed by Bio-Rae Cosmo Aesthetic Ltd., Korea, this premium whitening system uses Nano technology for faster absorption and visible transformation. It combines 18 powerful active ingredients that work at the DNA and cellular level to rejuvenate, whiten, and repair the skin from within.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Advanced Skin Whitening:</strong> Nano Glutathione (180,000 mg) + SLC24A5 Inhibitor reduce melanin and brighten skin tone</li><li><strong>Anti-Aging & Firmness:</strong> Nano Collagen Peptides and Cerlegen Stem Cells smooth wrinkles, restore elasticity, prevent sagging</li><li><strong>Pigmentation & Dark Spot Reduction:</strong> Kojic Acid and Tranexamic Acid (TXA) fade acne marks, sun damage, hyperpigmentation</li><li><strong>Hydration & Radiance:</strong> Hyaluronic and Ascorbic Acids provide deep moisture for soft, glowing skin</li><li><strong>Cellular Renewal:</strong> Growth Factors, Stem Cells, and Amino Acids enhance cellular repair and tissue regeneration</li><li><strong>Powerful Antioxidant Defense:</strong> Coenzyme Q10 and Vitamin Complexes neutralize free radicals and protect against UV stress</li><li><strong>Even Complexion:</strong> Pearl White Elements and Nano White Cell Enhancers deliver a clear, smooth, flawless tone</li></ul><br/><strong>Premium Ingredients (Per Set — 18 Nano-Formulated Compounds):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Concentrated Glutathione:</strong> 180,000 mg — Master antioxidant for whitening and detoxification</li><li><strong>Nano Ascorbic Acid (Vitamin C):</strong> 8,000 mg — Brightness and collagen production</li><li><strong>Nano Epidermal Growth Factor (N-EGF):</strong> 3,500 mg — Stimulates skin regeneration</li><li><strong>Nano Cyanocobalamin (N-VB12):</strong> 2,500 mg — Improves skin tone and repair</li><li><strong>Amino Acids & DNA Complex:</strong> 2,500 mg — Supports cell renewal and structure</li><li><strong>Premium Pearl White Elements:</strong> 2,500 mg — Natural luminosity</li><li><strong>SLC24A5 Inhibitor:</strong> 2,400 mg — Reduces melanin synthesis for fairer tone</li><li><strong>Coenzyme Q10:</strong> 2,200 mg — Cellular energy, delays aging</li><li><strong>Nano Alpha Lipoic Acid (N-ALA):</strong> 2,000 mg — Fights free radicals and inflammation</li><li><strong>Vitamin B Complex:</strong> 1,250 mg — Maintains skin health and glow</li><li><strong>Premium Cerlegen Stem Cell Extract:</strong> 1,250 mg — Boosts regeneration and youthfulness</li><li><strong>Nano Leontopodium Alpinum Callus Extract (LACCE):</strong> 1,100 mg — UV protection and antioxidant benefits</li><li><strong>Nano Pico-cell:</strong> 1,000 mg — Enhances DNA rejuvenation</li><li><strong>Natural Peptide Collagen:</strong> 650 mg — Improves firmness and smoothness</li><li><strong>Tranexamic Acid (TXA):</strong> 600 mg — Reduces pigmentation and redness</li><li><strong>Nano Bakuchiol Extract:</strong> 800 mg — Natural retinol alternative for smoother texture</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection (IV or IM)<br/>Packaging: 1 Box — 4 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/>Origin: South Korea<br/><br/><strong>Dosage & How to Use:</strong><br/>Recommended: 1–2 sessions per week under professional medical supervision.<br/><br/><strong>Not Suitable For:</strong> Pregnant or breastfeeding women. Always consult a certified medical professional before use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional use only. Results depend on individual metabolism. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Advanced Skin Whitening",
+    "Anti-Aging & Firmness",
+    "Pigmentation & Dark Spot Reduction",
+    "Hydration & Radiance",
+    "Cellular Renewal",
+    "Powerful Antioxidant Defense",
+    "Even Complexion"
+  ],
+  "sku": "BIO-RAE-NANO-18-4S",
+  "volume": "1 Box (4 Sessions)"
+},
+{
+  "id": 85,
+  "name": "Glutax 22000000gs Extremely Tremendous White Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 11999,
+  "image": "/image/glutax_22000000gs_extreme_white.jpeg",
+  "description": "Ultra-High Potency Italian Formula | 22,000,000mg Nano Glutathione + Sakura + Grape Seed | 10 Sessions | Pink-White Radiance, Melanin Reduction & Deep Hydration",
+  "details": "<strong>Glutax 22000000gs Extremely Tremendous White Glutathione Injection — Ultimate Pink-White Asian Glow</strong><br/><br/>The ultimate in white, pink, Japanese-style radiance. This premium Glutax formula contains 22 million milligrams of nano glutathione combined with sakura seed extract (considered an elixir in Japan) and powerful skin-brightening actives. Made in Italy, it delivers a luminous, even-toned complexion with protective benefits against sun damage.<br/><br/><strong>Ingredients Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Glutathione:</strong> 22,000,000 mg — Ultra-concentrated master antioxidant</li><li><strong>Alpha Lipoic Acid:</strong> 200,000 mg — Potent antioxidant precursor</li><li><strong>Growth Factor:</strong> 100,000 mg — Cellular regeneration</li><li><strong>Grape Seed Extract:</strong> 100,000 mg — Creates pinkish glow like newborn skin</li><li><strong>Sakura Extract:</strong> 100,000 mg — White-pink radiance, Japanese beauty secret</li><li><strong>Multivitamin:</strong> 100,000 mg — Comprehensive skin nourishment</li><li><strong>Pro Coenzyme Q10:</strong> 10,000 mg — Anti-aging and cellular energy</li><li><strong>RNA HA:</strong> 10,000 mg — Deep hydration at cellular level</li><li><strong>Natural Collagen:</strong> 50,000 mg — Firmness and elasticity</li><li><strong>Selenium:</strong> 50,000 mg — Immune system support</li><li><strong>Kojic Acid:</strong> 50,000 mg — Melanin inhibition</li><li><strong>RNA White Cells:</strong> 50,000 mg — Brightening complex</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Whitens skin color and reduces dark marks</li><li>Produces collagen for skin lightening and resiliency</li><li>Deep hydration — holds water in skin for long-lasting moisture</li><li>Smoothens fine lines and wrinkles (anti-aging)</li><li>Suppresses acne, blemishes, pimples; reduces pores</li><li>Repairs damaged skin and regenerates new cells</li><li>Enhances skin texture, lifts and tightens skin</li><li>Fair, radiant, youthful-looking complexion</li><li>Eliminates skin blemishes</li><li>Includes sun protection to prevent darkening</li><li>Boosts metabolism, detoxifies, supports immune system</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Italy<br/>Packaging: 1 Box — 10 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved<br/><br/><strong>How to Use:</strong> Reconstitute powder vial with 100ml-500ml saline for injection via IV. Recommended dosage: Intravenous infusion once a week. Follow dermatologist prescription.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Whitens Skin & Reduces Dark Marks",
+    "Boosts Collagen & Elasticity",
+    "Deep Hydration & Moisture Retention",
+    "Smoothens Fine Lines & Wrinkles",
+    "Suppresses Acne, Blemishes & Pores",
+    "Repairs Damage & Regenerates Cells",
+    "Fair, Radiant, Youthful Complexion",
+    "Sun Protection & Antioxidant Defense"
+  ],
+  "sku": "GLUTAX-22M-EXTREME-10S-IT",
+  "volume": "1 Box (10 Sessions)"
+},
+{
+  "id": 86,
+  "name": "JM Prowhite NMN5000 Complexion 12 Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "JM Prowhite",
+  "price": 19120,
+  "image": "/image/jm_prowhite_nmn5000_complexion12.jpeg",
+  "description": "Revolutionary Korean Skin Whitening Treatment | NMN5000 + High-Dose Glutathione + EGF + Stem Cells | 4 Sessions | Brightening, Anti-Aging & Pigmentation Reduction",
+  "details": "<strong>JM Prowhite NMN5000 Complexion 12 Glutathione Skin Whitening Injection — Advanced Korean Skincare Innovation</strong><br/><br/>This revolutionary skincare treatment helps achieve a brighter, more even skin tone by combining high-dose glutathione with essential nutrients to combat signs of aging, hyperpigmentation, and skin dullness. Made in South Korea, it addresses acne, blemishes, fine lines, and promotes a smoother, clearer, more luminous complexion.<br/><br/><strong>Key Ingredients (Per 4-Session Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>High-Dose Glutathione:</strong> Potent antioxidant that detoxifies and brightens the skin</li><li><strong>NMN5000 (Nicotinamide Mononucleotide):</strong> Supports cellular energy and anti-aging</li><li><strong>Epidermal Growth Factor (EGF):</strong> Promotes cell renewal and repair</li><li><strong>Vitamin B Complex:</strong> Nourishes skin, improves texture and tone</li><li><strong>Amino Acids & DNA Complex:</strong> Strengthens skin's natural defenses, boosts rejuvenation</li><li><strong>Celergen Stem Cell Extract:</strong> Anti-aging and skin regeneration properties</li><li><strong>Coenzyme Q10 & Alpha Lipoic Acid (ALA):</strong> Potent antioxidants that protect and energize skin</li><li><strong>Ascorbic Acid (Vitamin C) & Tranexamic Acid:</strong> Brighten skin tone and fight hyperpigmentation</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Achieves a brighter, more even skin tone</li><li>Reduces scars, pigmentation, and dark spots</li><li>Revitalizes skin texture — smoother and clearer</li><li>Enhances skin elasticity, reduces fine lines and wrinkles</li><li>Minimizes pores for a flawless complexion</li><li>Combats signs of aging, reveals youthful glow</li><li>Hydrates and nourishes skin, improves overall health</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: South Korea<br/>Packaging: 1 Box — 4 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Start with weekly sessions under professional medical supervision. Adjust frequency based on skin's response and skincare professional's advice. Results vary — many users report visible improvements within a few weeks.<br/><br/><strong>FAQs:</strong> Suitable for all skin types including sensitive. Not a permanent solution — maintain consistent skincare routine. Can be used with other skincare products. Natural, non-invasive treatment.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Results depend on individual metabolism.</em>",
+  "benefits": [
+    "Brighter, More Even Skin Tone",
+    "Reduces Scars, Pigmentation & Dark Spots",
+    "Revitalizes Skin Texture",
+    "Enhances Elasticity, Reduces Fine Lines & Wrinkles",
+    "Minimizes Pores",
+    "Combats Signs of Aging",
+    "Hydrates & Nourishes Skin"
+  ],
+  "sku": "JM-PROWHITE-NMN5000-4S-KR",
+  "volume": "1 Box (4 Sessions)"
+},
+{
+  "id": 87,
+  "name": "Tatio Active Dx 12G Japan Glutathione Injections",
+  "category": "Injection",
+  "brand": "Tatio Active",
+  "price": 10800,
+  "image": "/image/tatio_active_dx_12g.jpeg",
+  "description": "Japanese High-Dosage Formula | 12G Glutathione Complex | 5 Sessions | Skin Whitening, Anti-Aging, Scar Reduction & UV Protection",
+  "details": "<strong>Tatio Active DX Injection 12G — Top-Quality Japanese Glutathione Skin Bleaching Formula</strong><br/><br/>This high-dosage formula provides effective results and is highly recommended by day spas and skin centers worldwide. With an added oral booster, it helps maintain high levels of Glutathione in the body even between treatment sessions. The powerful blend includes Glutathione, Collagen, Vitamin C, Vitamin B2, Placenta, Vitamin E, and Elastin.<br/><br/><strong>Key Ingredients (per 5-session pack):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione (12G):</strong> Master antioxidant for skin whitening and detoxification</li><li><strong>Collagen:</strong> Improves skin firmness and elasticity</li><li><strong>Vitamin C:</strong> Brightening and collagen synthesis</li><li><strong>Vitamin B2:</strong> Supports skin health and metabolism</li><li><strong>Placenta Extract:</strong> Promotes regeneration and rejuvenation</li><li><strong>Vitamin E:</strong> Antioxidant protection and moisturizing</li><li><strong>Elastin:</strong> Enhances skin elasticity and resilience</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Nourishes and firms the skin</li><li>Lightens scars and pigmentation caused by sun exposure</li><li>Produces collagen and enhances skin elasticity</li><li>Moisturizes and hydrates the skin</li><li>Reduces fine lines and wrinkles</li><li>Acts as anti-aging — activates cells and rejuvenates skin</li><li>Improves skin lightening, firming, and whitening</li><li>Improves metabolism</li><li>Protective layer against UV damage and collagen destruction, preventing sun pigmentation, wrinkles, and premature aging</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Tatio Active<br/>Form: Injection<br/>Country of Origin: Japan<br/>Packaging Qty: 1 Box Pack (5 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione, Collagen, Vitamin C, Vitamin B2, Placenta, Vitamin E, Elastin<br/>Usage/Application: Skin Whitening<br/><br/><strong>Administration:</strong> Intravenous (IV) or Intramuscular (IM).<br/><br/><strong>Recommended Dosage:</strong> Twice a week for a maximum of two months to achieve desired complexion, then reduce to one or two injections per month or as prescribed by a doctor. Consult a dermatologist before use, especially if you have any medical history.<br/><br/><strong>Suitable For:</strong> Commercial, clinical, personal, or hospital use.<br/><br/><strong>Note:</strong> Results may vary from person to person.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Nourishes & Firms Skin",
+    "Lightens Scars & Sun-Induced Pigmentation",
+    "Produces Collagen & Enhances Elasticity",
+    "Deep Moisturization & Hydration",
+    "Reduces Fine Lines & Wrinkles",
+    "Anti-Aging & Cellular Rejuvenation",
+    "Improves Skin Lightening & Whitening",
+    "UV Protection & Prevents Premature Aging"
+  ],
+  "sku": "TATIO-ACTIVE-DX-12G-5S-JP",
+  "volume": "1 Box Pack (5 Sessions)"
+},
+{
+  "id": 88,
+  "name": "Aqua Skin Glyco White Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 12800,
+  "image": "/image/aqua_skin_glyco_white.jpeg",
+  "description": "Swiss-Made Glycolic & Glutathione Formula | Gradual Even-Toned Whitening | Enriched with Stem Cells, EGF & Hyaluronic Acid",
+  "details": "<strong>Aqua Skin Glyco White Skin Whitening Injection — Effective & Safe Swiss Whitening Solution</strong><br/><br/>Manufactured by Skinnic lab Suisse (Geneva, Switzerland), this advanced formula combines Glyco-Glutathione with glycolic acid, stem cells, growth factors, and essential nutrients to provide gradual, even-toned whitening results while enhancing natural beauty.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glyco-Glutathione:</strong> Advanced whitening and detoxification</li><li><strong>Ultra Glycolic Acid:</strong> Exfoliates and brightens skin texture</li><li><strong>L-Ascorbic Acid (Vitamin C):</strong> Collagen support and antioxidant</li><li><strong>Epidermal Growth Factor (EGF):</strong> Cellular regeneration and repair</li><li><strong>Hyaluronic Acid:</strong> Deep hydration and plumping</li><li><strong>Natural Collagen Extract:</strong> Firmness and elasticity</li><li><strong>Alpha Lipoic Acid (ALA) & Thioctic Acid:</strong> Potent anti-aging antioxidants</li><li><strong>Co-Enzyme Pro Q10:</strong> Cellular energy and skin vitality</li><li><strong>Dual DNA & RNA Extract + Selenium:</strong> Cellular repair and antioxidant defense</li><li><strong>Combined Fruit Stem Cell:</strong> Regeneration and rejuvenation</li><li><strong>Kojic Acid:</strong> Melanin inhibition and spot fading</li><li><strong>Nano-Peptide:</strong> Collagen stimulation and firming</li><li><strong>Ultra Pico-Cell & Cyanocobalamin (B12):</strong> Skin renewal and tone improvement</li><li><strong>Ginkgo Biloba Extract:</strong> Circulation and antioxidant protection</li><li><strong>Glyco White Elements & Multivitamin:</strong> Comprehensive brightening and nourishment</li></ul><br/><strong>Benefits:</strong> Gradual even-toned whitening, safe and effective formulation, skin brightening, hydration, anti-aging, cellular repair, collagen boost, pigmentation reduction, improved elasticity and firmness.<br/><br/><strong>Product Specifications:</strong><br/>Manufacturer: Skinnic lab Suisse — Rue Jacques Grosselin 8, 1121 Geneva 26, Switzerland<br/>Country of Origin: Switzerland<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/><br/><strong>Usage:</strong> Professional administration only (IV infusion). Consult a dermatologist before use. Results depend on individual body metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Verify product authenticity. Individual results may vary.</em>",
+  "benefits": [
+    "Gradual Even-Toned Whitening",
+    "Skin Brightening",
+    "Deep Hydration",
+    "Anti-Aging & Cellular Repair",
+    "Collagen Boost & Firmness",
+    "Pigmentation Reduction"
+  ],
+  "sku": "AQUA-GLYCO-WHITE-SWISS",
+  "volume": "1 Box (Professional Use)"
+},
+{
+  "id": 89,
+  "name": "Filorga Gold Series Fresh Glutathione 2000000mg Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Filorga Gold Series",
+  "price": 11499,
+  "image": "/image/filorga_gold_series_glutathione.jpeg",
+  "description": "Luxury Premium Formula | 2,000,000mg Glutathione | Neutralizes Free Radicals, Inhibits Melanin | 5 Sessions | Brighter, Even-Toned Complexion",
+  "details": "<strong>Filorga Gold Series Fresh Glutathione Injection — The Epitome of Beauty & Elegance</strong><br/><br/>Indulge in the luxury of radiant, glowing skin with this premium formula boasting an impressive 2,000,000mg of glutathione. It works to neutralize free radicals and inhibit melanin production, resulting in a brighter, more even-toned complexion with reduced dark spots and hyperpigmentation. Experience the ultimate in skin whitening and brightening.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Powerful antioxidant neutralizes free radicals</li><li>Inhibits melanin production for skin whitening</li><li>Reduces dark spots and hyperpigmentation</li><li>Promotes brighter, even-toned complexion</li><li>Luxury premium formula for radiant, glowing skin</li><li>Anti-aging support</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Packaging: 1 Box — 5 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Consult a dermatologist before use. Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Individual results may vary. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Powerful Free Radical Neutralization",
+    "Melanin Inhibition for Whitening",
+    "Reduces Dark Spots & Hyperpigmentation",
+    "Brighter, Even-Toned Complexion",
+    "Radiant & Glowing Skin",
+    "Anti-Aging Support"
+  ],
+  "sku": "FILORGA-GOLD-2M-5S",
+  "volume": "1 Box (5 Sessions)"
+},
+{
+  "id": 90,
+  "name": "Glutax 20000GR Sirna Voluntary White",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 10500,
+  "image": "/image/glutax_20000gr_sirna_voluntary_white.jpeg",
+  "description": "Upgraded Italian Formula | 20,000mg Glutathione | 10 Sessions | Advanced Skin Lightening, Collagen Maintenance, Anti-Aging & Wound Healing",
+  "details": "<strong>Glutax 20000GR Sirna Voluntary White — Upgraded Version of Best-Selling Glutax 2000GS</strong><br/><br/>This Italian-made injection acts to fix damaged skin cells and maintain existing collagen in the body. Available at a reasonable discounted price, it delivers advanced skin lightening, anti-aging benefits, and comprehensive skin rejuvenation.<br/><br/><strong>Key Ingredients:</strong> Glutathione (20,000mg), Selenium, Multivitamins, and collagen-supporting complexes.<br/><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Advanced skin lightening and nourishing</li><li>Improves aging, protects skin from acne</li><li>Minimizes dark spots and dark circles under eyes</li><li>Softens the skin, produces flexible, smooth, healthy, glowing skin</li><li>Prevents acne and eliminates stains</li><li>Anti-aging and anti-wrinkle</li><li>Boosts healing of wounds</li><li>Takes care of damaged skin cells</li><li>Maintains existing collagen in the body</li></ul><br/><strong>Characteristics:</strong><br/>Skin whitening lightens pigmentation and freckles, produces collagen and elastin. Makes skin firm by reducing melanin production. Solid antioxidants help prevent wrinkles, fine lines, and sagging, improving skin moisture level. Selenium helps secure skin against sunlight damage with skin smoothing and rejuvenation benefits.<br/><br/><strong>Product Specifications:</strong><br/>Brand: Glutax<br/>Form: Injection<br/>Strength: 20,000mg<br/>Country of Origin: Italy<br/>Packaging Type: Box (Vial & Ampoule)<br/>Dose: Every 4 days once<br/>Packaging Qty: 1 Box Pack — 10 Sessions<br/>Expiry Date: December 2025<br/><br/><strong>How to Use:</strong><br/>1) Mix contents of one vial, one small ampule, one big ampule.<br/>2) Administer by slow IV push once every 4 days. Drink plenty of water 1-2 hours before. Use of sterile water is optional. Administration should be done by an IV certified professional.<br/><br/><strong>Recommended Dosage:</strong> Maximum two treatments per week or every four days via IV / IM / Dripping. Results can be seen as fast as 1-2 weeks; perfect results need 2-3 months of treatment. Then reduce to 1 injection every 2 weeks for maintenance.<br/><br/><strong>Important Note:</strong> Do not use if pregnant, breastfeeding, or has existing heart or kidney condition. Guaranteed authentic.<br/><br/><strong>Note:</strong> Results may vary from person to person.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Advanced Skin Lightening & Nourishing",
+    "Improves Aging & Protects from Acne",
+    "Minimizes Dark Spots & Dark Circles",
+    "Softens Skin, Produces Healthy Glowing Skin",
+    "Prevents Acne & Eliminates Stains",
+    "Anti-Aging & Anti-Wrinkle",
+    "Boosts Wound Healing",
+    "Maintains Existing Collagen"
+  ],
+  "sku": "GLUTAX-20000GR-SIRNA-10S-IT",
+  "volume": "1 Box Pack (10 Sessions)"
+},
+{
+  "id": 91,
+  "name": "Glutax 8800000gs Supreme Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 12740,
+  "image": "/image/glutax_8800000gs_supreme.jpeg",
+  "description": "Revolutionary Pico Cell Technology | 4 Sessions | Skin Whitening, Anti-Aging & Improved Elasticity | Made in Italy",
+  "details": "<strong>Glutax 8800000gs Supreme Glutathione Skin Whitening Injection — Advanced Pico Cell Technology</strong><br/><br/>This revolutionary skincare solution harnesses the power of glutathione combined with advanced Pico Cell technology to deliver unparalleled results. The injection delivers glutathione deep into the skin, where it rejuvenates and revitalizes. Perfect for individuals looking to achieve a brighter, smoother, and more youthful complexion.<br/><br/><strong>Key Ingredients:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> Master antioxidant for whitening and detoxification</li><li><strong>Pico Cell Technology:</strong> Enhanced deep skin delivery for better absorption</li><li><strong>Vitamin C:</strong> Brightening and collagen support</li><li><strong>Vitamin E:</strong> Antioxidant protection and moisturizing</li><li><strong>Glycerin:</strong> Hydration and skin softening</li><li><strong>Hyaluronic Acid:</strong> Deep moisture retention and plumping</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin whitening and brightening</li><li>Improved skin texture and tone</li><li>Anti-aging benefits — reduces fine lines and wrinkles</li><li>Improved skin elasticity and firmness</li><li>Enhanced skin radiance</li><li>Neutralizes free radicals and reduces oxidative stress</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Italy<br/>Packaging: 1 Box — 4 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Consult a dermatologist before use. Results depend on individual metabolism.<br/><br/><strong>Storage:</strong> Follow manufacturer's instructions, keep out of reach of children.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Individual results may vary. Verify product authenticity before purchase.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening",
+    "Improved Skin Texture & Tone",
+    "Anti-Aging (Fine Lines & Wrinkles)",
+    "Improved Elasticity & Firmness",
+    "Enhanced Skin Radiance",
+    "Neutralizes Free Radicals"
+  ],
+  "sku": "GLUTAX-8800000GS-4S-IT",
+  "volume": "1 Box (4 Sessions)"
+},
+{
+  "id": 92,
+  "name": "Filorga Paris Fresh Glutathione 500000mg Whitening Injection",
+  "category": "Injection",
+  "brand": "Filorga",
+  "price": 6200,
+  "image": "/image/filorga_paris_fresh_glutathione_500000mg.jpeg",
+  "description": "French Premium Anti-Aging Whitening Injection | 500,000mg Pure Glutathione + Vitamin C + CoQ10 + Collagen | 5 Sessions",
+  "details": "<strong>Filorga Paris Fresh Glutathione 500000mg Whitening Injection — Premium French Skincare Innovation</strong><br/><br/>Filorga, a highly esteemed skincare brand based in France, is known for its anti-aging properties. With cutting-edge technology and advanced formulas, the brand aims to rejuvenate and restore aging skin. Taking inspiration from aesthetic medicine, Filorga has earned a longstanding reputation as a premium skincare brand in the beauty industry worldwide.<br/><br/>The Filorga anti-aging skincare line addresses wrinkles, fine lines, loss of firmness, and uneven skin tone. Its products contain high-quality, medical-grade ingredients including hyaluronic acid, vitamin C, and retinol, facilitating healthy skin regeneration and collagen production. Over 60 countries currently sell Filorga products, recommended and trusted by dermatologists and skincare professionals around the world.<br/><br/><strong>Composition (Per Box — 5 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Pure Glutathione:</strong> 500,000mg — Master antioxidant for whitening and detoxification</li><li><strong>Vitamin C:</strong> 10,000mg — Brightening, collagen synthesis, antioxidant</li><li><strong>Coenzyme Q10:</strong> Included — Cellular energy and anti-aging</li><li><strong>Collagen:</strong> Included — Skin firmness and elasticity</li><li><strong>Grape Seed Extract:</strong> Included — Potent antioxidant, improves circulation</li><li><strong>Mixed Berry Blend:</strong> Included — Additional antioxidant support</li><li><strong>Evening Primrose Oil:</strong> 10,000mg — Nourishing, anti-inflammatory, skin hydration</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Provides long-lasting results with minimal daily attention</li><li>Can be used with most common medications without adverse interactions</li><li>Affordable compared to other costly treatment options</li><li>Anti-aging — reduces wrinkles, fine lines, loss of firmness</li><li>Improves uneven skin tone</li><li>Promotes healthy skin regeneration and collagen production</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Filorga<br/>Form: Injection<br/>Country of Origin: France<br/>Packaging Qty: 1 Box Pack (5 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening & Anti-Aging<br/><br/><strong>Dosage Recommendations:</strong> Administer one vial once or twice a week. For maintenance, one vial every two weeks or monthly as needed.<br/><br/><strong>Suitability:</strong> Suitable for all ages and ethnicities, both men and women. Most customers are typically twenties or older. Children with skin issues can also benefit.<br/><br/><strong>Note:</strong> Results may vary from person to person.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision recommended. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Long-Lasting Whitening Results",
+    "Anti-Aging (Reduces Wrinkles & Fine Lines)",
+    "Improves Uneven Skin Tone & Firmness",
+    "Promotes Skin Regeneration & Collagen Production",
+    "Affordable Premium Treatment",
+    "Suitable for All Ages & Ethnicities"
+  ],
+  "sku": "FILORGA-PARIS-500K-5S-FR",
+  "volume": "1 Box Pack (5 Sessions)"
+},
+{
+  "id": 93,
+  "name": "Miracle White Green Tru White Transform Glutathione 25000mg",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 12499,
+  "image": "/image/miracle_white_green_tru_white.jpeg",
+  "description": "Swiss SLC24A5 Gene-Targeted Formula | 25,000mg Nano Glutathione | 6 Sessions | Melanin Suppression, Deep Hydration & Wrinkle-Free Skin",
+  "details": "<strong>Miracle White Green Tru White Transform Glutathione 25000mg — Advanced SLC24A5 Gene-Targeted Whitening Innovation</strong><br/><br/>This newest formulation targets the SLC24A5 gene (solute carrier family 24 member 5), a protein that has a significant impact on natural skin color variation. It contains a high amount of glutathione which blocks melanin production, lightening darker areas such as armpits, dark circles, spots, and scars. Made in Switzerland with natural ingredients, safe for all skin types.<br/><br/><strong>Ingredients (Per 6-Session Box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Concentrated Glutathione:</strong> 25,000mg — Blocks melanin production for fairer, brighter skin</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 3,500mg — Essential for collagen production, tight and healthy skin</li><li><strong>Kojic Acid:</strong> 3,200mg — Reduces pigmentation and dark spots</li><li><strong>Epidermal Growth Factor (EGF):</strong> 2,300mg — Stimulates skin regeneration and repair</li><li><strong>Coenzyme Q10:</strong> 800mg — Cellular energy and anti-aging</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 850mg — Potent antioxidant</li><li><strong>Multivitamin:</strong> 900mg — Nourishes skin, minimizes pores</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 350mg — Improves skin tone</li><li><strong>Botanical Extract:</strong> 755mg — Antioxidant and anti-inflammatory</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Visibly fades dark spots for luminous, bright, fair skin</li><li>Deeply hydrates, renews, and conditions skin</li><li>Brightens, firms, and evens skin tone and texture</li><li>Reduces skin roughness, provides intense hydration</li><li>Wrinkle-free & younger-looking skin</li><li>Powerful antioxidants protect skin cells from oxidative damage</li><li>Prevents damage from sun exposure and harmful UV rays</li><li>Suppresses formation of acne</li><li>Minimizes pores and improves skin complexity</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection (IM or IV)<br/>Country of Origin: Switzerland<br/>Packaging: 1 Box — 6 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Each 5ml + 2ml with 1 vial per day. Interval of 5-7 days between injections. Professional administration recommended.<br/><br/><strong>Suitability:</strong> Safe for all skin types including sensitive. Suitable for ages 16 years and above, all genders.<br/><br/><strong>Results:</strong> Noticeable results within 20 days (3 sessions).<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results depend on individual metabolism. Consult a dermatologist before use.</em>",
+  "benefits": [
+    "Fades Dark Spots for Luminous Fair Skin",
+    "Deep Hydration & Skin Renewal",
+    "Brightens, Firms & Evens Skin Tone",
+    "Wrinkle-Free & Younger-Looking Skin",
+    "Powerful Antioxidant Protection",
+    "UV Damage Prevention",
+    "Suppresses Acne Formation",
+    "Minimizes Pores"
+  ],
+  "sku": "MIRACLE-WHITE-GREEN-25K-6S",
+  "volume": "1 Box (6 Sessions)"
+},
+{
+  "id": 94,
+  "name": "Aqua Skin Pure Gold Pro Max Beyond Glutathione Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 12499,
+  "image": "/image/aqua_skin_pure_gold_pro_max_beyond.jpeg",
+  "description": "Swiss Advanced TriNA Pico-Cell Technology | 50,000,000mg Glutathione | 30 Sessions | Skin Whitening, Anti-Aging, Collagen Boost & Acne-Free Radiance",
+  "details": "<strong>Aqua Skin Pure Gold Pro Max Beyond Glutathione Injection — Luxury Radiant, Flawless & Acne-Free Skin</strong><br/><br/>An advanced solution for dull and aging skin, this premium Swiss formulation uses TriNA Pico-Cell technology for fast absorption and maximum efficacy. Whether you're looking to lighten dark spots, reduce wrinkles, or enhance natural beauty, these injections offer a comprehensive solution for all your skincare needs. Transform your complexion and unlock your skin's true potential.<br/><br/><strong>Key Ingredients (TriNA Pico-Cell Enhanced):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 50,000,000 mg — Ultra-potent antioxidant for deep whitening and detoxification</li><li><strong>Vitamin C (Ascorbic Acid):</strong> 180,000 mg — Brightening, collagen synthesis</li><li><strong>Collagen Extract:</strong> 65,000 mg — Firmness and elasticity</li><li><strong>Epidermal Growth Factor (EGF):</strong> 50,000 mg — Cellular regeneration and repair</li><li><strong>Coenzyme Q10:</strong> 30,000 mg — Anti-aging and skin energy</li><li><strong>Hyaluronic Acid:</strong> 12,000 mg — Deep hydration and plumping</li><li><strong>Grape Seed Extract:</strong> 10,000 mg — Potent antioxidant</li><li><strong>Polypodium Leucotomos:</strong> 7,500 mg — UV protection and anti-inflammatory</li><li><strong>Kojic Acid:</strong> 7,000 mg — Melanin inhibition, spot fading</li><li><strong>Alpha Lipoic Acid (ALA):</strong> 5,000 mg — Anti-aging antioxidant</li><li><strong>Heterotrimeric Protein:</strong> 5,400 mg — Cellular support</li><li><strong>DMAE (Dimethylaminoethanol):</strong> 3,500 mg — Skin firming</li><li><strong>Selenium:</strong> 3,000 mg — Immune and antioxidant support</li><li><strong>Beta Hydroxy Acids (BHA):</strong> 2,800 mg — Exfoliation and pore cleansing</li><li><strong>AHA (Alpha Hydroxy Acids):</strong> 2,500 mg — Skin resurfacing</li><li><strong>TriNA Pico-Cell Extract:</strong> 5,408 mcg — Advanced delivery technology</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Skin whitening and even skin tone</li><li>Boosts collagen production for wrinkle-free, youthful skin</li><li>Anti-aging properties and immune system boost</li><li>Deep hydration, nourishment, and radiant complexion</li><li>Detoxification and reduction of dark circles</li><li>Oil control and cell regeneration</li><li>Fast absorption and effective stretch mark reduction</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Switzerland<br/>Packaging: 1 Box — 30 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Results vary — many users notice improvements within 4-6 weeks of regular use. Suitable for all skin types.<br/><br/><strong>FAQs:</strong> Can be combined with other skincare treatments after consulting a dermatologist. Results can be long-lasting with regular maintenance.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Results depend on individual metabolism.</em>",
+  "benefits": [
+    "Skin Whitening",
+    "Even Skin Tone",
+    "Collagen Production",
+    "Wrinkle-Free Skin",
+    "Youthful & Attractive Skin",
+    "Anti-Aging Properties",
+    "Immune System Boost",
+    "Hydration & Nourishment",
+    "More Radiant Complexion",
+    "Detoxification",
+    "Reduction of Dark Circles",
+    "Oil Control",
+    "Cell Regeneration",
+    "Fast Absorption",
+    "Effective Stretch Mark Reduction"
+  ],
+  "sku": "AQUA-PUREGOLD-PROMAX-30S",
+  "volume": "1 Box (30 Sessions)"
+},
+{
+  "id": 95,
+  "name": "Glutax 42000000gs Supreme Pico Cell Glutathione Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 11500,
+  "image": "/image/glutax_42000000gs_supreme_pico_cell.jpeg",
+  "description": "Ultra-High Potency Italian PicoCell Technology | 6 Sessions | Skin Brightening, Collagen Boost, Deep Hydration & Anti-Aging",
+  "details": "<strong>Glutax 42000000gs Supreme PicoCell Glutathione Injection — Advanced Skin Rejuvenation</strong><br/><br/>If you're seeking a path to vibrant, rejuvenated skin, this sophisticated treatment offers a promising solution. Formulated with advanced PicoCell technology and ultra-high strength glutathione, it delivers comprehensive skin benefits from revitalization to deep moisturization. Made in Italy, paraben-free and organic.<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Revitalizing Effect:</strong> Rejuvenates skin, enhancing youthful radiance</li><li><strong>Enhanced Skin Tone:</strong> Reduces melanin, brightens and evens complexion</li><li><strong>Collagen Boost:</strong> Stimulates collagen production for firmer, youthful skin</li><li><strong>Deep Moisturization:</strong> Hydrates thoroughly for soft, smooth skin</li><li><strong>Sun Damage Protection:</strong> Guards against UV-induced harm and pigmentation</li><li><strong>Wrinkle & Fine Line Reduction:</strong> Lessens visible signs of aging</li><li><strong>Acne & Pore Reduction:</strong> Combats acne and shrinks pores for clearer, smoother skin</li><li><strong>Overall Health Benefit:</strong> Potent antioxidant shields body from free radical damage</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Glutax<br/>Form: Injection<br/>Country of Origin: Italy<br/>Packaging Qty: 1 Box Pack (6 Sessions)<br/>Paraben Free & Organic: Yes<br/>Key Ingredients: Glutathione<br/>Usage/Application: Skin Whitening<br/>Expiry Date: August 2026<br/><br/><strong>Usage Instructions:</strong> Administered intravenously (IV). Take twice weekly for two months for best results. Maintenance doses can be reduced to once or twice monthly as recommended by a healthcare provider.<br/><br/><strong>Who Should Use:</strong> Appropriate for individual users, skincare professionals, and as a component of hospital skincare routines.<br/><br/><strong>Safety:</strong> Generally safe for most, but consult a healthcare provider before beginning, especially if you have pre-existing health conditions.<br/><br/><strong>Note:</strong> Results may vary from person to person.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Individual metabolism affects results.</em>",
+  "benefits": [
+    "Revitalizing Effect & Youthful Radiance",
+    "Enhanced Skin Tone & Melanin Reduction",
+    "Collagen Boost for Firmer Skin",
+    "Deep Moisturization & Softness",
+    "Sun Damage & Pigmentation Protection",
+    "Reduces Wrinkles & Fine Lines",
+    "Combats Acne & Shrinks Pores",
+    "Powerful Antioxidant Protection"
+  ],
+  "sku": "GLUTAX-42M-PICOCELL-6S-IT",
+  "volume": "1 Box Pack (6 Sessions)"
+},
+{
+  "id": 96,
+  "name": "Vesco Pharma Glutathione Booster Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Vesco Pharma",
+  "price": 3240,
+  "image": "/image/vesco_pharma_glutathione_booster.jpeg",
+  "description": "Liposomal Delivery Matrix Technology | Skin Whitening & Anti-Aging | 10 Ampoules | Made in Thailand",
+  "details": "<strong>Vesco Pharma Glutathione Booster Injection — Innovative Skincare Solution with Liposomal Delivery Matrix Technology</strong><br/><br/>This advanced formula is renowned not only for skin whitening but also for its anti-aging properties. Each ingredient contributes uniquely to skin health and beauty, utilizing liposomal technology for enhanced absorption and deep skin penetration.<br/><br/><strong>Ingredients Composition (Per Box — 10 Ampoules):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Liposomal Vitamin C (1000mg):</strong> Brightens skin, reduces dark spots and melanin production, enhances firmness, reduces fine lines</li><li><strong>N-Acetyl-L-Cysteine (NAC) (300mg):</strong> Boosts skin luminosity and texture, reduces pigmentation and age spots, enhances resilience against oxidative stress</li><li><strong>Alpha Lipoic Acid (ALA) (300mg):</strong> Potent anti-aging agent, reduces wrinkles and fine lines, minimizes pores, evens skin tone</li><li><strong>Milk Thistle (200mg):</strong> Detoxifying properties, improves skin elasticity and hydration, reduces visibility of age spots</li><li><strong>L-Glycine (100mg):</strong> Repairs damaged skin, prevents aging signs, aids in melanin regulation for skin lightening</li><li><strong>Selenium (100mg):</strong> Preserves skin health, prevents premature aging, maintains firmness and elasticity, helps achieve even skin tone</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Liposomal Vitamin C — Brightens, fights aging, evens tone for perfect glow</li><li>L-Glycine — Repairs and rejuvenates for youthful, vibrant look</li><li>N-Acetyl-L-Cysteine — Defends against aging, enhances glow, reduces pigmentation</li><li>Alpha Lipoic Acid — Smoothens wrinkles, refines texture, lightens skin naturally</li><li>Milk Thistle — Detoxifies and firms, offers naturally youthful radiant skin</li><li>Selenium — Preserves firmness and elasticity, reveals brighter even complexion</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Packaging: 1 Box — 10 Ampoules<br/>Country of Origin: Thailand<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Precautions:</strong> If you have any skin allergy, please consult your doctor before use. Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision recommended. Consult a dermatologist before use. Individual results may vary.</em>",
+  "benefits": [
+    "Skin Whitening & Brightening",
+    "Anti-Aging & Wrinkle Reduction",
+    "Reduces Dark Spots & Pigmentation",
+    "Improves Skin Firmness & Elasticity",
+    "Detoxifies & Hydrates Skin",
+    "Enhances Skin Luminosity & Texture",
+    "Minimizes Pores"
+  ],
+  "sku": "VESCO-GLUTATHIONE-BOOSTER-10A",
+  "volume": "1 Box (10 Ampoules)"
+},
+{
+  "id": 97,
+  "name": "Glutax 23000GK DNA Glutokines Skin Whitening 4 Sessions Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 9300,
+  "image": "/image/glutax_23000gk_dna_glutokines.jpeg",
+  "description": "Italian DNA Glutokines Formula | 23,000g DNA GSH + EGF + Alpha Lipoic Acid | 4 Sessions | Skin Whitening, Anti-Aging & Acne Reduction",
+  "details": "<strong>Glutax 23000GK DNA Glutokines Injection — Advanced Italian DNA Skin Whitening Formula</strong><br/><br/>Manufactured by Derma Medical Skin Sciences (Italy), this premium injection combines DNA Glutokines (DNA GSH + Energy Active Cytokines) with powerful skin-rejuvenating ingredients. The Glutax business was founded in 1956 and is regarded worldwide as a leading firm for nutrition supplements, with scientifically proven products highly suggested by doctors and health specialists.<br/><br/><strong>Key Ingredients (per 4-session box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>High Grade DNA Glutokines:</strong> 23,000g (DNA GSH + Energy Active Cytokines) — Advanced glutathione with cellular energy support</li><li><strong>Epidermal Growth Factor (EGF):</strong> 3,200mg — Stimulates collagen production and skin renewal</li><li><strong>Alpha Lipoic Acid:</strong> 1,800mg — Potent antioxidant, reduces aging signs</li><li><strong>Kojic Acid:</strong> 1,200mg — Melanin inhibition and spot fading</li><li><strong>Oxygenox:</strong> 920mg (Oxygen Skin Supply) — Enhances skin oxygenation and vitality</li><li><strong>Multivitamin:</strong> 5,000mg — Comprehensive skin nourishment</li><li><strong>Natural Collagen:</strong> 2,000mg — Firmness and elasticity</li><li><strong>Selenium:</strong> 1,800mg — Antioxidant and immune support</li><li><strong>DNA Marine White Elements:</strong> 1,500mg — Brightening complex</li><li><strong>DNA Vegetal Placenta:</strong> 330mg — Regeneration and rejuvenation</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Antioxidant properties detoxify body, eliminate free toxins and radicals</li><li>Replenishes nutrients, enhances skin and face health</li><li>Shrinks large pores to make them invisible</li><li>Eliminates hyperpigmentation (dark spots, acne spots, scars, age spots)</li><li>Gives skin radiant glow with smooth, soft, shiny, elastic texture</li><li>Cures pimples, acne, freckles, and other skin blemishes</li><li>Prevents premature aging and wrinkles for youthful, healthy appearance</li><li>Protects skin from sun and environmental damages</li></ul><br/><strong>Product Specifications:</strong><br/>Manufacturer: Derma Medical Skin Sciences — Via K. Marx 18, Noverasco di Opera MI 20090, Italy<br/>Country of Origin: Italy<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/>Packaging: 1 Box (4 Sessions)<br/><br/><strong>Recommended Dosage:</strong> Intravenous IV Infusion (Drip) once a week. For better results, consult your doctor.<br/><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify product authenticity.</em>",
+  "benefits": [
+    "Detoxifies Body & Eliminates Free Radicals",
+    "Replenishes Nutrients & Enhances Skin Health",
+    "Shrinks Large Pores",
+    "Eliminates Hyperpigmentation (Spots & Scars)",
+    "Radiant Glow — Smooth, Soft, Shiny, Elastic Skin",
+    "Cures Acne, Pimples, Freckles & Blemishes",
+    "Prevents Premature Aging & Wrinkles",
+    "Protects from Sun & Environmental Damage"
+  ],
+  "sku": "GLUTAX-23000GK-DNA-4S-IT",
+  "volume": "4 Sessions (1 Box)"
+},
+{
+  "id": 98,
+  "name": "Bio Rae Complexion 8 Glutathione Skin Whitening 4 Sessions Injection",
+  "category": "Injection",
+  "brand": "Bio Rae",
+  "price": 12600,
+  "image": "/image/bio_rae_complexion_8.jpeg",
+  "description": "Korea's No.1 High-Dose Glutathione Formula | 5000mg Glutathione + Activecell Complex + Vitamins | 4 Sessions | Skin Whitening, Collagen & Elastin Support",
+  "details": "<strong>Bio Rae Complexion 8 Glutathione Skin Whitening Injection — Premium Korean Skin Solution</strong><br/><br/>Considered the number one choice of spas and skin clinics worldwide, Bio Rae Complexion 8 is the highest quality, high-dose glutathione skin whitening formula available today. This advanced injection combines L-Glutathione with Vitamin C, Activecell complex, and essential nutrients to maintain high glutathione levels in your body even when not undergoing treatment.<br/><br/><strong>Complete Kit (4 Sessions — per box):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Glutathione:</strong> 5,000mg (15ml x 4 vials) — Master antioxidant for whitening and detoxification</li><li><strong>Activecell Complex Extract:</strong> 10,000 IU (10ml x 4 vials) — Cellular regeneration and repair</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 5,000mg (5ml x 4 ampoules) — Brightening and collagen synthesis</li><li><strong>Vitamin B Complex:</strong> (2ml x 4 vials) — Nourishes and improves skin texture</li><li><strong>Cyanocobalamin (Vitamin B12):</strong> 2,000mcg (2ml x 4 vials) — Improves skin tone and repair</li><li><strong>Tranexamic Acid:</strong> 1,000mg (5ml x 4 ampoules) — Reduces pigmentation and redness</li><li><strong>Natural Collagen Extract:</strong> 350mg (5ml x 4 vials) — Improves skin firmness and elasticity</li><li><strong>Thioctic Acid (Alpha Lipoic Acid):</strong> 50mg (5ml x 4 ampoules) — Potent anti-aging antioxidant</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>High-dose L-Glutathione for effective skin whitening</li><li>Boosts collagen and elastin production — fights wrinkles, fine lines, age spots</li><li>Improves skin elasticity, clarity, and brightness</li><li>Proper absorption at skin cell level for better results</li><li>Delivers younger-looking, radiant skin</li><li>Combines glutathione with high-quality vitamins and minerals</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Korea<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/><br/><strong>Recommended Dosage:</strong> Intravenous IV Infusion (Drip) once a week. For better results, consult your doctor.<br/><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify product authenticity.</em>",
+  "benefits": [
+    "High-Dose Skin Whitening",
+    "Boosts Collagen & Elastin Production",
+    "Improves Skin Elasticity & Clarity",
+    "Reduces Wrinkles, Fine Lines & Age Spots",
+    "Younger-Looking, Radiant Skin",
+    "Cellular Regeneration & Repair"
+  ],
+  "sku": "BIO-RAE-COMPLEXION-8-4S-KR",
+  "volume": "4 Sessions (1 Box)"
+},
+{
+  "id": 99,
+  "name": "CHP Complexion Hydra Plus Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "CHP",
+  "price": 10999,
+  "image": "/image/chp_complexion_hydra_plus.jpeg",
+  "description": "Swiss Whitening & Brightening Formula | 8000mg Glutathione + EGF + CoQ10 | 6 Sessions | Reduces Pigmentation, Acne & Free Radicals",
+  "details": "<strong>CHP Complexion Hydra Plus Glutathione Skin Whitening Injection — Radiant, Fresh & Healthy Skin</strong><br/><br/>Complexion Hydra Plus (CHP) injection helps in whitening, brightening, and keeping the skin looking fresh. Rich in Glutathione (8000mg), it removes excess free radicals that cause black spots, acne, dull skin, and wrinkles. Made in Switzerland, this product is 100% authentic with barcode verification. Cash on Delivery (COD) and Free Shipping available in India.<br/><br/><strong>Ingredients (Per Box — 6 Sessions):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Hydraplus Glutathione:</strong> 8,000mg — Master antioxidant for whitening and detoxification</li><li><strong>Hydraplus Ascorbic Acid (Vitamin C):</strong> 2,500mg — Brightening and collagen support</li><li><strong>Hydraplus EGF (Epidermal Growth Factor):</strong> 1,500mg — Cellular regeneration and repair</li><li><strong>Hydraplus Coenzyme Q10:</strong> 320mg — Anti-aging and skin energy</li><li><strong>Hydraplus Thioctic Acid (Alpha Lipoic Acid):</strong> 800mg — Potent antioxidant</li><li><strong>Hydraplus Boletus Extract:</strong> 300mg — Antioxidant and skin nourishment</li><li><strong>Hydraplus Cenoplacenta:</strong> 600mg — Placental extract for rejuvenation</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Reduces pigmentation and dark spots</li><li>Protects against free radical damage</li><li>Get glowing, smooth, and softened skin</li><li>Acne/pimple-free skin</li><li>Suitable for all skin types</li><li>Whitens skin and lightens scars</li><li>Suppresses formation of acne, blemishes, pimples</li><li>Improves skin complexion</li><li>Removes excess free radicals</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Switzerland<br/>Packaging: 1 Box — 6 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Dosage:</strong> Once a week (IV administration). Professional supervision required.<br/><br/><strong>Safety Information:</strong> Read label carefully. Keep out of reach of children. Keep container tightly closed. Do not exceed recommended dosage. Store sealed at room temperature (1-30°C).<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify authenticity via barcode.</em>",
+  "benefits": [
+    "Reduces Pigmentation & Dark Spots",
+    "Protects Against Free Radical Damage",
+    "Glowing, Smooth & Softened Skin",
+    "Acne/Pimple-Free Skin",
+    "Whitens Skin & Lightens Scars",
+    "Suppresses Acne, Blemishes & Pimples",
+    "Improves Skin Complexion",
+    "Removes Excess Free Radicals"
+  ],
+  "sku": "CHP-HYDRA-PLUS-6S",
+  "volume": "1 Box (6 Sessions)"
+},
+{
+  "id": 100,
+  "name": "Vesco Pharma Gluta C 1000 Glutathione Skin Whitening Injection",
+  "category": "Injection",
+  "brand": "Vesco Pharma",
+  "price": 4399,
+  "image": "/image/vesco_pharma_gluta_c_1000.jpeg",
+  "description": "Liquid Nano Glutathione + Vitamin C | Made in Thailand | 10 Sessions | Skin Whitening, Anti-Aging, Pigmentation Reduction & Acne Control",
+  "details": "<strong>Vesco Pharma Gluta C 1000 — Potent Antioxidant Skin Whitening Injection</strong><br/><br/>Vesco Pharma Gluta C 1000 is a blend of Liquid Nano Glutathione (1000mg) and Vitamin C (1000mg), administered intramuscularly or intravenously to brighten your skin and give a youthful appearance. This potent antioxidant works by neutralizing free radicals in the skin and body. With advancing age, the body naturally reduces glutathione production, resulting in darker skin. This product provides natural, safe, and effective skin brightening.<br/><br/><strong>Ingredients (1 Box — 10 Ampoules of 5ml):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Liquid Nano Glutathione:</strong> 1000mg — Master antioxidant for whitening and detoxification</li><li><strong>Vitamin C (Ascorbic Acid):</strong> 1000mg — Brightening, collagen synthesis, and immune boost</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Nourishes and firms the skin</li><li>Reduces pigmentation and dark spots</li><li>Protects against free radical damage</li><li>Provides glowing, smooth, and softened skin</li><li>Deeply hydrates the skin</li><li>Anti-aging benefits — fair and radiant complexion</li><li>Regeneration of new cells</li><li>Detoxification and purifying</li><li>Acne/pimple-free skin</li><li>Suitable for all skin types</li><li>Whitens skin and lightens scars</li><li>Suppresses formation of acne, blemishes, pimples</li><li>Improves skin complexion</li><li>Removes excess free radicals</li><li>Minimizes pores and prevents acne</li></ul><br/><strong>Product Specifications:</strong><br/>Brand: Vesco Pharma<br/>Form: Injection (IM or IV)<br/>Country of Origin: Thailand<br/>Packaging: 1 Box — 10 Ampoules (10 Sessions)<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Dosage:</strong> Twice per week under professional medical supervision.<br/><br/><strong>Safety Information:</strong> Read label carefully. Keep out of reach of children. Keep container tightly closed. Do not exceed recommended dosage. Pregnant/lactating women and children with medical conditions should consult a physician before use. Store sealed at room temperature (1-30°C).<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify authenticity via barcode.</em>",
+  "benefits": [
+    "Nourishes & Firms Skin",
+    "Reduces Pigmentation & Dark Spots",
+    "Protects Against Free Radical Damage",
+    "Glowing, Smooth & Softened Skin",
+    "Deep Hydration",
+    "Anti-Aging & Radiant Complexion",
+    "Regeneration of New Cells",
+    "Detoxification & Purifying",
+    "Acne/Pimple-Free Skin",
+    "Whitens Skin & Lightens Scars",
+    "Improves Skin Complexion",
+    "Minimizes Pores & Prevents Acne"
+  ],
+  "sku": "VESCO-GLUTA-C-1000-10A",
+  "volume": "1 Box (10 Ampoules / 10 Sessions)"
+},
+{
+  "id": 101,
+  "name": "Aqua Skin EGF Whitening Pro Q10 Glutathione Skin Whitening 24 Sessions Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 10050,
+  "image": "/image/aqua_skin_egf_whitening_pro_q10_24s.jpeg",
+  "description": "Swiss High-Dose Formula | 3000mg Glutathione + EGF + CoQ10 + Retinol + Hyaluronic Acid | 24 Sessions | Skin Whitening, Anti-Aging & Collagen Boost",
+  "details": "<strong>Aqua Skin EGF Whitening Pro Q10 Glutathione Skin Whitening Injection — No. 1 Choice of Spas & Skin Clinics Worldwide</strong><br/><br/>This high-quality, high-dose glutathione skin whitening formula combines L-Glutathione with Vitamin C, EGF, CoQ10, Retinol, Hyaluronic Acid, and other potent skin-rejuvenating ingredients. It helps maintain high levels of L-Glutathione in your body, even without ongoing skin treatment. Made in Switzerland.<br/><br/><strong>Key Ingredients (24 Sessions Pack):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>L-Glutathione:</strong> 3,000 mg — Master antioxidant for whitening and detoxification</li><li><strong>Pro-Coenzyme Q10:</strong> 1,000 mg — Anti-aging and cellular energy</li><li><strong>Natural Collagen Extract:</strong> 1,000 mg — Skin firmness and elasticity</li><li><strong>Alpha Lipoic Acid (ALA):</strong> 600 mg — Potent antioxidant, reduces aging signs</li><li><strong>L-Ascorbic Acid (Vitamin C):</strong> 500 mg — Brightening and collagen synthesis</li><li><strong>Kojic Acid:</strong> 500 mg — Melanin inhibition, spot fading</li><li><strong>Beta-Hydroxy Acid (Salicylic Acid):</strong> 250 mg — Exfoliation, acne control</li><li><strong>Alpha-Hydroxy Acid (AHA):</strong> 100 mg — Skin resurfacing</li><li><strong>DMAE (Dimethylaminoethanol):</strong> 100 mg — Skin firming</li><li><strong>Copper Peptide:</strong> 50 mg — Wound healing and collagen production</li><li><strong>Hyaluronic Acid:</strong> 10 mg — Deep hydration and plumping</li><li><strong>Retinol:</strong> 10 mg — Anti-aging, wrinkle reduction</li><li><strong>Selenium:</strong> 10 mg — Antioxidant protection</li></ul><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Nourishes and firms the skin</li><li>Whitens and lightens skin tone</li><li>Produces collagen and increases skin elasticity</li><li>Deeply moisturizes and hydrates for smooth, supple skin</li><li>Reduces pigmentation caused by sun exposure</li><li>Smoothens fine lines and wrinkles</li><li>Reduces acne, pimples, and minimizes pores</li><li>Improves skin complexion and removes excess free radicals</li><li>Prevents aging and provides anti-wrinkle effects</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Switzerland<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/>Packaging: 1 Box (24 Sessions)<br/><br/><strong>Recommended Dosage:</strong> Intravenous IV / IM Infusion twice a week. For better results, contact your doctor.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify product authenticity.</em>",
+  "benefits": [
+    "Nourishes & Firms Skin",
+    "Whitens & Lightens Skin Tone",
+    "Produces Collagen & Increases Elasticity",
+    "Deeply Moisturizes & Hydrates",
+    "Reduces Sun-Induced Pigmentation",
+    "Smoothens Fine Lines & Wrinkles",
+    "Reduces Acne, Pimples & Minimizes Pores",
+    "Improves Skin Complexion",
+    "Prevents Aging & Anti-Wrinkle"
+  ],
+  "sku": "AQUA-EGF-PROQ10-24S",
+  "volume": "1 Box (24 Sessions)"
+},
+{
+  "id": 102,
+  "name": "Miracle White Gold Perfection VI Glutathione Injections",
+  "category": "Injection",
+  "brand": "Miracle White",
+  "price": 16200,
+  "image": "/image/miracle_white_gold_perfection_vi.jpeg",
+  "description": "Swiss Anti-Aging Whitening Formula | 60,000mg Nano Glutathione + EGF + CoQ10 | 6 Sessions | Brightens, Firms, Reduces Dark Spots & Wrinkles",
+  "details": "<strong>Miracle White Gold Perfection VI Glutathione Injection — Enhanced Anti-Aging & Whitening Formula</strong><br/><br/>With enhanced EGF and multivitamin content, this newest Miracle White formula brightens skin, makes it smooth, free from dark spots, and provides anti-aging benefits. Kojic acid lightens visible sun damage, age spots, or scars with antimicrobial properties. Alpha-lipoic acid provides strong antioxidant effects, reduces inflammation and skin aging, promotes healthy nerve function, and supports heart health. Made in Switzerland, dermatologically tested with no side effects.<br/><br/><strong>Composition (Per Box — 6 Sessions):</strong><br/><br/><strong>Vial Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Multivitamin Complex CRP:</strong> 5,000mg</li><li><strong>Ascorbic Acid (Vitamin C):</strong> 5,000mg</li><li><strong>Kojic Acid:</strong> 2,500mg</li><li><strong>Epidermal Growth Factor (EGF):</strong> 2,000mg</li><li><strong>Coenzyme Q10:</strong> 1,000mg</li><li><strong>Thioctic Acid:</strong> 600mg</li></ul><br/><strong>Powder Composition:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Nano Concentrated Glutathione:</strong> 60,000mg — Ultra-potent whitening and detoxification</li><li><strong>Alpha Lipoic Acid (ALA):</strong> 5,000mg — Potent anti-aging antioxidant</li></ul><br/><strong>Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Soothes and stabilizes the skin</li><li>Whitens the skin inside and out</li><li>Reduces dull skin and repairs sun-damaged skin</li><li>Removes blemishes, maintains white & smooth skin</li><li>Moisturizes skin, improves firmness and elasticity</li><li>Improves blood circulation and skin cell regeneration (anti-aging factor)</li><li>Proven results in just 21 days (3 sessions)</li></ul><br/><strong>Product Specifications:</strong><br/>Country of Origin: Switzerland<br/>Packaging: 1 Box — 6 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Consult a dermatologist before use.<br/><br/><strong>FAQs:</strong> Results within 21 days (3 sessions). No side effects — naturally sourced glutathione. Results vary by metabolism. Safe for ages 16+ and all genders.<br/><br/><strong>Not Suitable For:</strong> Pregnant/nursing mothers (consult doctor), allergy to any vitamins, cardiovascular patients, chemotherapy patients.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify product authenticity.</em>",
+  "benefits": [
+    "Soothes & Stabilizes Skin",
+    "Whitens Skin Inside & Out",
+    "Reduces Dull Skin & Repairs Sun Damage",
+    "Removes Blemishes, Maintains White & Smooth Skin",
+    "Moisturizes, Improves Firmness & Elasticity",
+    "Improves Blood Circulation & Cell Regeneration"
+  ],
+  "sku": "MIRACLE-WHITE-GOLD-PERFECTION-6S",
+  "volume": "1 Box (6 Sessions)"
+},
+{
+  "id": 103,
+  "name": "Glutax 70000GM Marine White Optimum Skin Whitening 4 Sessions Injection",
+  "category": "Injection",
+  "brand": "Glutax",
+  "price": 9380,
+  "image": "/image/glutax_70000gm_marine_white.jpeg",
+  "description": "Italian Marine-Based Formula | 70,000g Marine Glutathione | 4 Sessions | Anti-Aging, Wrinkle Reduction, Skin Repair & Collagen Replenishment",
+  "details": "<strong>Glutax 70000GM Marine White Optimum Skin Whitening Injection — Advanced Marine-Based Skin Transformation</strong><br/><br/>Manufactured by Derma Medical Skin Sciences (Italy), this high-dose L-Glutathione formula is designed for rapid-acting results. As the leading provider of L-Glutathione in Italy, this product helps achieve the beautiful skin you are dreaming of. Formulated with marine-derived active ingredients for deep cellular repair, whitening, and anti-aging benefits.<br/><br/><strong>Complete Kit (4 Sessions — per box):</strong><br/><br/><strong>4 Vials (20ml):</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Bio-DNA Cellular Marine Complex:</strong> 4,000mg — Cellular repair and regeneration</li><li><strong>Marine Collagen Tri-Peptide:</strong> 2,600mg — Boosts collagen for firmness and elasticity</li><li><strong>Marine Minerals Multivitamins:</strong> 15,000mg — Comprehensive skin nourishment</li></ul><br/><strong>4 Vials — Marine Glutathione S-transferases:</strong> 70,000g — Ultra-concentrated marine-derived glutathione for intense whitening and detoxification<br/><br/><strong>4 Vials — DNA Marine White Elements:</strong> 3,000mg + Marine-D3 500mg — Brightening complex with vitamin D3<br/><br/><strong>4 Vials — Hydro MN Peptide (Marine Cartilage Extract):</strong> 7,200mg — Rich in marine peptides for hydration, elasticity, and repair<br/><br/><strong>Key Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Tremendous anti-aging results — reduces wrinkles by increasing skin tone and elasticity</li><li>Repairs skin, fades scars, and heals dark spots</li><li>Moisturizes skin for a healthy appearance</li><li>Improves skin complexion, evens out pigmentation, fades discoloration, liver spots, freckle spots, and age spots</li><li>Replenishes lost collagen and increases skin elasticity to maintain healthy skin</li><li>Contains Vitamin E (powerful antioxidant), Phytessence Wakame (controls sebum, firms skin), vitamins C and B, organic botanicals and flavones</li><li>Provides long-term protection against sun damage</li><li>Produces collagen, elastin, hyaluronic acid, and amino acids</li></ul><br/><strong>Product Specifications:</strong><br/>Manufacturer: Derma Medical Skin Sciences — Via K. Marx 18, Noverasco di Opera MI 20090, Italy<br/>Country of Origin: Italy<br/>Importer: Super Advanced General Trading Company LLC<br/>Packers: IMBMS (Dealers Bazaar Group)<br/>FSSAI License: 11223999000312<br/>GMP Certified<br/>Packaging: 1 Box (4 Sessions)<br/><br/><strong>Recommended Dosage:</strong> Intravenous IV Infusion (Drip) once a week. For better results, contact your doctor.<br/><br/><strong>Storage:</strong> Keep at room temperature & avoid direct sunlight.<br/><br/><strong>Not Suitable For:</strong> Breastfeeding women, allergy to any vitamins, pregnant women, patients with cardiovascular problems.<br/><br/><strong>Note:</strong> Results depend on individual metabolism.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Consult a dermatologist before use. Verify product authenticity.</em>",
+  "benefits": [
+    "Anti-Aging & Wrinkle Reduction",
+    "Repairs Skin, Fades Scars & Dark Spots",
+    "Deep Moisturization",
+    "Improves Complexion & Evens Pigmentation",
+    "Replenishes Collagen & Increases Elasticity",
+    "Sun Damage Protection",
+    "Reduces Liver Spots, Freckles & Age Spots"
+  ],
+  "sku": "GLUTAX-70000GM-MARINE-4S-IT",
+  "volume": "4 Sessions (1 Box)"
+},
+{
+  "id": 104,
+  "name": "Aqua Skin Vensicy 126 Trina Pico Cell Skin Whitening Glutathione Injection",
+  "category": "Injection",
+  "brand": "Aqua Skin",
+  "price": 13499,
+  "image": "/image/aqua_skin_vensicy_126_trina_pico_cell.jpeg",
+  "description": "Advanced TriNA Pico Cell Technology | Quecto-Glutathione + Nonapeptide + CoQ10 | 10 Sessions | Skin Whitening, Anti-Aging & Collagen Boost",
+  "details": "<strong>Aqua Skin Vensicy 126 Trina Pico Cell Glutathione Injection — Ultimate Non-Surgical Skin Transformation</strong><br/><br/>Experience the ultimate skin transformation with this advanced skin-whitening injection designed to deeply nourish, brighten, and rejuvenate your skin. Formulated with a powerful blend of skin-enhancing ingredients, it works from within to lighten pigmentation, reduce fine lines, and boost overall skin health. Its potent antioxidant properties detoxify the body, promoting a healthier and naturally radiant complexion.<br/><br/><strong>Key Ingredients & Their Skin Benefits:</strong><br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li><strong>Quecto-Glutathione:</strong> Master antioxidant — shields skin from harmful toxins, brightens complexion, evens skin tone</li><li><strong>Nonapeptide:</strong> Anti-aging miracle — smooths fine lines, improves elasticity, promotes firmness</li><li><strong>Coenzyme Pro Q10:</strong> Skin's energy booster — guards against oxidative damage, boosts skin energy, maintains youthful appearance</li><li><strong>Selenium:</strong> Skin protector — strengthens skin health, reduces inflammation, enhances defense against environmental stressors</li><li><strong>DMAE (Dimethylaminoethanol):</strong> Firming agent — improves hydration, enhances elasticity, reduces fine lines and wrinkles</li><li><strong>Multivitamin Complex:</strong> Skin revitalizer — nourishes skin, enhances vitality, boosts overall skin health</li><li><strong>Kojic Acid:</strong> Natural skin brightener — lightens skin, fades dark spots, evens skin tone</li><li><strong>Copper Peptide:</strong> Collagen amplifier — stimulates collagen production, improves firmness, aids in skin repair</li><li><strong>Placenta Extract:</strong> Skin regenerator — enhances texture, reduces scars and blemishes, promotes smoother complexion</li></ul><br/><strong>Why Choose This Advanced Glutathione Injection?</strong><br/>Works internally to detoxify, repair, and brighten the skin, delivering long-lasting visible results unlike topical treatments:<br/><ul class=\"list-disc pl-5 mt-2 space-y-1\"><li>Brightens and evens out skin tone</li><li>Reduces hyperpigmentation, dark spots, and blemishes</li><li>Boosts collagen production for firmer, more youthful skin</li><li>Deeply hydrates and improves skin elasticity</li><li>Minimizes fine lines, wrinkles, and signs of aging</li><li>Detoxifies the body, promoting overall skin health</li><li>Enhances skin regeneration for a naturally glowing complexion</li><li>Suitable for all skin types — safe and effective</li></ul><br/><strong>Product Specifications:</strong><br/>Form: Injection<br/>Packaging: 1 Box — 10 Sessions<br/>Certifications: FDA Approved, GMP Approved, FSSAI Approved (License: 21223009000196)<br/><br/><strong>Usage:</strong> Professional administration only. Consult a dermatologist before use.<br/><br/><em class=\"text-xs text-gray-400\">Disclaimer: Professional medical supervision required. Results depend on individual metabolism. Verify product authenticity.</em>",
+  "benefits": [
+    "Brightens & Evens Skin Tone",
+    "Reduces Hyperpigmentation, Dark Spots & Blemishes",
+    "Boosts Collagen Production",
+    "Deep Hydration & Improved Elasticity",
+    "Minimizes Fine Lines, Wrinkles & Signs of Aging",
+    "Detoxifies Body for Overall Skin Health",
+    "Enhances Skin Regeneration & Natural Glow",
+    "Suitable for All Skin Types"
+  ],
+  "sku": "AQUA-VENSICY-126-10S",
+  "volume": "1 Box (10 Sessions)"
+},
+
 ];
 const CATEGORIES = [
   { name: "Injection", id: "Injection" },
@@ -1113,91 +2310,66 @@ const Navigation = ({ currentPage, setCurrentPage, cartCount, toggleCart, mobile
 };
 const PaymentSuccessView = ({ navigateTo, showToast }) => {
   const [status, setStatus] = useState('processing'); 
+useEffect(() => {
+  const processOrder = async () => {
+    const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
+    const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
+    const queryParams = new URLSearchParams(window.location.search);
+    const orderId = queryParams.get('order_id');
+    const statusParam = queryParams.get('status');
 
-  useEffect(() => {
-    const processOrder = async () => {
-      const storedCart = JSON.parse(localStorage.getItem('temp_cart') || '[]');
-      const storedUser = JSON.parse(localStorage.getItem('temp_user') || '{}');
-      const queryParams = new URLSearchParams(window.location.search);
-      const orderId = queryParams.get('order_id') || 'DEMO-' + Date.now();
+    if (storedCart.length === 0 || statusParam !== 'PAID') {
+      setStatus('error');
+      return;
+    }
 
-      if (storedCart.length === 0) {
-        setStatus('error');
-        return;
-      }
+    // Proceed straight into parsing your EmailJS orchestration routines automatically
+    const orderItemsHTML = storedCart
+      .map(item => `• <b>${item.name}</b> (Brand: ${item.brand}) <br/> Qty: ${item.quantity} | Price: ₹${item.price}`)
+      .join("<br/><br/>");
 
-      // 1) Verify with backend -> Cashfree
-      try {
-        const res = await fetch(`https://cosmatrix-server.onrender.com/api/cashfree/status/${orderId}`);
-        const data = await res.json();
+    const totalAmount = storedCart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
-        // If not paid, don't send email, show error instead
-        if (!data || data.order_status !== 'PAID') {
-          console.warn("Order not PAID, status:", data?.order_status);
-          setStatus('error');
-          return;
-        }
-      } catch (e) {
-        console.error("Status check failed:", e);
-        setStatus('error');
-        return;
-      }
-
-      // 2) Build email content from local storage
-      const orderItemsHTML = storedCart
-        .map(
-          (item) =>
-            `• <b>${item.name}</b> (Brand: ${item.brand}) <br/>&nbsp;&nbsp; Qty: ${item.quantity} | Price: ₹${item.price}`
-        )
-        .join("<br/><br/>");
-
-      const totalAmount = storedCart.reduce(
-        (sum, item) => sum + item.price * item.quantity,
-        0
-      );
-
-      const emailParams = {
-        customer_name: storedUser.name,
-        customer_email: storedUser.email || "Not Provided",
-        customer_phone: storedUser.phone,
-        shipping_address: storedUser.address,
-        order_items: orderItemsHTML,
-        total_amount: totalAmount.toLocaleString(),
-        payment_id: orderId,
-        order_id: orderId,
-      };
-
-      try {
-        if (!window.emailjs) {
-          const script = document.createElement("script");
-          script.src =
-            "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
-          script.async = true;
-          document.body.appendChild(script);
-          await new Promise((resolve) => (script.onload = resolve));
-        }
-
-        await window.emailjs.send(
-          EMAILJS_SERVICE_ID,
-          EMAILJS_TEMPLATE_ID,
-          emailParams,
-          EMAILJS_PUBLIC_KEY
-        );
-
-        localStorage.removeItem("temp_cart");
-        localStorage.removeItem("temp_user");
-        setStatus("sent");
-        showToast("Order confirmed and email sent!", "success");
-      } catch (error) {
-        console.error("Email Failed:", error);
-        setStatus("error");
-        showToast("Payment successful but email failed.", "error");
-      }
+    const emailParams = {
+      customer_name: storedUser.name,
+      customer_email: storedUser.email || "Not Provided",
+      customer_phone: storedUser.phone,
+      shipping_address: storedUser.address,
+      order_items: orderItemsHTML,
+      total_amount: totalAmount.toLocaleString(),
+      payment_id: orderId,
+      order_id: orderId,
     };
 
-    processOrder();
-  }, []);
+    try {
+      if (!window.emailjs) {
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js";
+        script.async = true;
+        document.body.appendChild(script);
+        await new Promise((resolve) => (script.onload = resolve));
+      }
 
+      await window.emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        emailParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      localStorage.removeItem("temp_cart");
+      localStorage.removeItem("temp_user");
+      setStatus("sent");
+      showToast("Order confirmed and email sent!", "success");
+    } catch (error) {
+      console.error("Email processing anomaly detected:", error);
+      setStatus("error");
+      showToast("Payment processed successfully; inventory logging failed.", "error");
+    }
+  };
+
+  processOrder();
+}, []);
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#fbfbfb] text-center px-4">
       {status === "processing" && (
@@ -1685,31 +2857,41 @@ const HomeView = ({ navigateTo, addToCart, setShopFilter }) => {
 };
 
 const ShopView = ({ navigateTo, addToCart, filter, setFilter, brandFilter, setBrandFilter, searchQuery, setSearchQuery }) => {
-  // REMOVED: const [brandFilter, setBrandFilter] = useState('All Brands'); <-- This was the bug
   const [viewMode, setViewMode] = useState('grid');
-  const [sortBy, setSortBy] = useState('featured'); 
+  const [sortBy, setSortBy] = useState('featured');
 
+  // Normalised filtering – case‑insensitive and trimmed
   const filteredProducts = PRODUCTS.filter(p => {
-    const matchesCategory = filter === 'All' || p.category === filter;
-    const matchesBrand = brandFilter === 'All Brands' || p.brand === brandFilter;
-    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          p.brand.toLowerCase().includes(searchQuery.toLowerCase());
+    const productCategory = (p.category || '').trim().toLowerCase();
+    const currentFilter = filter.toLowerCase();
+    const matchesCategory = filter === 'All' || productCategory === currentFilter;
+
+    const productBrand = (p.brand || '').trim().toLowerCase();
+    const currentBrand = brandFilter === 'All Brands' ? 'allbrands' : brandFilter.trim().toLowerCase();
+    const matchesBrand = brandFilter === 'All Brands' || productBrand === currentBrand;
+
+    const search = searchQuery.trim().toLowerCase();
+    const matchesSearch = search === '' ||
+      p.name.toLowerCase().includes(search) ||
+      p.description.toLowerCase().includes(search) ||
+      p.brand.toLowerCase().includes(search);
+
     return matchesCategory && matchesBrand && matchesSearch;
   }).sort((a, b) => {
-      if (sortBy === 'price-asc') return a.price - b.price;
-      if (sortBy === 'price-desc') return b.price - a.price;
-      return 0; // featured
+    if (sortBy === 'price-asc') return a.price - b.price;
+    if (sortBy === 'price-desc') return b.price - a.price;
+    return 0;
   });
 
-  // Helper for category buttons
   const CategoryButton = ({ name, active, onClick }) => (
-    <button 
-        onClick={onClick}
-        className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center justify-between group ${active ? 'bg-black text-white font-medium' : 'text-gray-600 hover:bg-gray-50'}`}
+    <button
+      onClick={onClick}
+      className={`w-full text-left px-4 py-2.5 rounded-lg text-sm transition-all flex items-center justify-between group ${
+        active ? 'bg-black text-white font-medium' : 'text-gray-600 hover:bg-gray-50'
+      }`}
     >
-        {name}
-        {active && <Check size={14} className="text-[#E8A0BF]" />}
+      {name}
+      {active && <Check size={14} className="text-[#E8A0BF]" />}
     </button>
   );
 
@@ -1717,185 +2899,290 @@ const ShopView = ({ navigateTo, addToCart, filter, setFilter, brandFilter, setBr
     <div className="animate-fade-in bg-[#fbfbfb] min-h-screen pb-24">
       {/* HERO */}
       <div className="bg-black text-white py-8 px-6 text-center relative overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none"></div>
-    <div className="relative z-10 max-w-4xl mx-auto">
-        {/* Removed 'mb-4' so the text sits perfectly centered in the thinner strip */}
-        <h1 className="font-serif text-4xl md:text-6xl animate-slide-up" style={{animationDelay: '0.1s'}}>The Collection</h1>
-    </div>
-</div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none"></div>
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="font-serif text-4xl md:text-6xl animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            The Collection
+          </h1>
+        </div>
+      </div>
 
       {/* MOBILE CATEGORY SCROLL */}
       <div className="lg:hidden sticky top-20 z-30 bg-white border-b border-gray-100 py-3 px-4 shadow-sm overflow-x-auto flex gap-3 scrollbar-hide">
-          <button 
-              onClick={() => { setFilter('All'); setBrandFilter('All Brands'); }}
-              className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${filter === 'All' && brandFilter === 'All Brands' ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200'}`}
+        <button
+          onClick={() => { setFilter('All'); setBrandFilter('All Brands'); }}
+          className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${
+            filter === 'All' && brandFilter === 'All Brands'
+              ? 'bg-black text-white border-black'
+              : 'bg-white text-gray-600 border-gray-200'
+          }`}
+        >
+          All
+        </button>
+        {CATEGORIES.map(cat => (
+          <button
+            key={cat.id}
+            onClick={() => { setFilter(cat.name); setBrandFilter('All Brands'); }}
+            className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${
+              filter === cat.name ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200'
+            }`}
           >
-              All
+            {cat.name}
           </button>
-          {CATEGORIES.map(cat => (
-              <button 
-                  key={cat.id}
-                  onClick={() => { setFilter(cat.name); setBrandFilter('All Brands'); }}
-                  className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-medium border transition-colors ${filter === cat.name ? 'bg-black text-white border-black' : 'bg-white text-gray-600 border-gray-200'}`}
-              >
-                  {cat.name}
-              </button>
-          ))}
+        ))}
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 lg:py-12">
         <div className="flex flex-col lg:flex-row gap-12">
-            
-            {/* SIDEBAR (Desktop) */}
-            <aside className="hidden lg:block w-64 shrink-0 space-y-10 sticky top-32 h-[calc(100vh-8rem)] overflow-y-auto pr-4 scrollbar-hide">
-                {/* Search */}
-                <div>
-                    <h3 className="font-serif text-lg mb-4">Search</h3>
-                    <div className="relative">
-                        <input 
-                            type="text" 
-                            placeholder="Product name..." 
-                            value={searchQuery} 
-                            onChange={(e) => setSearchQuery(e.target.value)} 
-                            className="w-full pl-3 pr-8 py-2 bg-transparent border-b border-gray-200 text-sm outline-none focus:border-black transition-colors" 
-                        />
-                        <Search className="absolute right-0 top-2 text-gray-400" size={16} />
-                    </div>
-                </div>
-
-                {/* Categories */}
-                <div>
-                    <h3 className="font-serif text-lg mb-4">Categories</h3>
-                    <div className="space-y-1">
-                        <CategoryButton name="View All" active={filter === 'All'} onClick={() => { setFilter('All'); setBrandFilter('All Brands'); }} />
-                        {CATEGORIES.map(cat => (
-                            <CategoryButton key={cat.id} name={cat.name} active={filter === cat.name} onClick={() => { setFilter(cat.name); setBrandFilter('All Brands'); }} />
-                        ))}
-                    </div>
-                </div>
-
-                {/* Brands */}
-                <div>
-                    <h3 className="font-serif text-lg mb-4">Brands</h3>
-                    <div className="space-y-2 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
-                        <label className="flex items-center gap-3 cursor-pointer group">
-                            <div className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${brandFilter === 'All Brands' ? 'bg-black border-black' : 'border-gray-300 group-hover:border-gray-400'}`}>
-                                {brandFilter === 'All Brands' && <Check size={10} className="text-white" />}
-                            </div>
-                            <input type="radio" name="brand" className="hidden" checked={brandFilter === 'All Brands'} onChange={() => { setBrandFilter('All Brands'); setFilter('All'); }} />
-                            <span className={`text-sm ${brandFilter === 'All Brands' ? 'text-black font-medium' : 'text-gray-600'}`}>All Brands</span>
-                        </label>
-                        {BRANDS_LIST.filter(b => b !== "All Brands").map(brand => (
-                            <label key={brand} className="flex items-center gap-3 cursor-pointer group">
-                                <div className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${brandFilter === brand ? 'bg-black border-black' : 'border-gray-300 group-hover:border-gray-400'}`}>
-                                    {brandFilter === brand && <Check size={10} className="text-white" />}
-                                </div>
-                                <input type="radio" name="brand" className="hidden" checked={brandFilter === brand} onChange={() => { setBrandFilter(brand); setFilter('All'); }} />
-                                <span className={`text-sm ${brandFilter === brand ? 'text-black font-medium' : 'text-gray-600'}`}>{brand}</span>
-                            </label>
-                        ))}
-                    </div>
-                </div>
-            </aside>
-
-            {/* MAIN CONTENT */}
-            <div className="flex-1 min-w-0">
-                {/* Sort & Count Bar */}
-                <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
-                    <p className="text-sm text-gray-500"><span className="font-medium text-black">{filteredProducts.length}</span> Results</p>
-                    
-                    <div className="flex items-center gap-4">
-                        <div className="relative group">
-                            <div className="flex items-center gap-2 text-sm font-medium cursor-pointer">
-                                Sort by: <span className="text-gray-500 capitalize">{sortBy.replace('-', ' ')}</span> <ChevronDown size={14} />
-                            </div>
-                            <div className="absolute right-0 top-full pt-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all z-20">
-                                <div className="bg-white border border-gray-100 shadow-xl rounded-lg p-1 w-40 flex flex-col">
-                                    <button onClick={() => setSortBy('featured')} className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${sortBy === 'featured' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'}`}>Featured</button>
-                                    <button onClick={() => setSortBy('price-asc')} className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${sortBy === 'price-asc' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'}`}>Price: Low to High</button>
-                                    <button onClick={() => setSortBy('price-desc')} className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${sortBy === 'price-desc' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'}`}>Price: High to Low</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
-                        <div className="hidden md:flex gap-1">
-                            <button onClick={() => setViewMode('grid')} className={`p-1.5 rounded ${viewMode === 'grid' ? 'text-black bg-gray-100' : 'text-gray-400 hover:text-gray-600'}`}><Grid size={16}/></button>
-                            <button onClick={() => setViewMode('list')} className={`p-1.5 rounded ${viewMode === 'list' ? 'text-black bg-gray-100' : 'text-gray-400 hover:text-gray-600'}`}><List size={16}/></button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* PRODUCTS GRID */}
-                <div className={`grid gap-6 ${viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1'}`}>
-                    {filteredProducts.length > 0 ? (
-                        filteredProducts.map(product => (
-                        <div 
-                            key={product.id} 
-                            className={`group cursor-pointer bg-white rounded-xl overflow-hidden border border-transparent hover:border-gray-100 hover:shadow-2xl transition-all duration-500 ${viewMode === 'list' ? 'flex gap-6 p-4 border-gray-100' : ''}`} 
-                            onClick={() => navigateTo('product', product)}
-                        >
-                            <div className={`relative bg-[#f8f8f8] overflow-hidden ${viewMode === 'list' ? 'w-32 h-32 rounded-lg shrink-0' : 'aspect-square'}`}>
-                                <img loading="lazy" src={product.image} alt={product.name} className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105" />
-                                
-                                {viewMode === 'grid' && (
-                                    <div className="absolute top-3 left-3 right-3 flex justify-between items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <span className="bg-white/90 backdrop-blur text-[9px] px-2 py-1 rounded font-bold tracking-wider uppercase shadow-sm">{product.brand}</span>
-                                    </div>
-                                )}
-                                {product.price > 12000 && viewMode === 'grid' && (
-                                     <div className="absolute top-3 right-3 bg-[#E8A0BF] text-white text-[8px] px-2 py-1 rounded font-bold tracking-wider uppercase shadow-sm">Best Seller</div>
-                                )}
-
-                                {/* Quick Add Overlay (Desktop) */}
-                                {viewMode === 'grid' && (
-                                    <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out hidden md:block bg-gradient-to-t from-black/60 to-transparent pt-12">
-                                        <button 
-                                            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
-                                            className="w-full bg-white text-black py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors shadow-lg flex items-center justify-center gap-2 rounded-lg"
-                                        >
-                                            <ShoppingBag size={14} /> Add to Cart
-                                        </button>
-                                    </div>
-                                )}
-                            </div>
-
-                            <div className={`${viewMode === 'list' ? 'flex-1 flex flex-col justify-center' : 'pt-4 pb-2 px-2'}`}>
-                                <div className="text-gray-400 text-[9px] font-bold tracking-widest uppercase mb-1.5">{product.category}</div>
-                                <h3 className={`font-serif text-gray-900 leading-tight ${viewMode === 'list' ? 'text-xl mb-2' : 'text-base mb-2 line-clamp-2 min-h-[2.5em]'}`}>{product.name}</h3>
-                                <div className="flex items-center justify-between mt-auto">
-                                    <p className="text-base font-medium font-serif">₹{product.price.toLocaleString()}</p>
-                                    {/* Mobile/Grid Icon Add */}
-                                    <button 
-                                        className="md:hidden w-8 h-8 bg-black text-white rounded-full flex items-center justify-center active:scale-95"
-                                        onClick={(e) => { e.stopPropagation(); addToCart(product); }}
-                                    >
-                                        <Plus size={16} />
-                                    </button>
-                                </div>
-                                {viewMode === 'list' && (
-                                    <div className="mt-4 flex gap-3">
-                                        <button 
-                                            className="bg-black text-white px-6 py-2 text-xs font-bold uppercase tracking-wider rounded hover:bg-gray-800 transition-colors"
-                                            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
-                                        >
-                                            Add to Cart
-                                        </button>
-                                        <button className="text-xs font-medium border border-gray-200 px-4 py-2 rounded hover:border-black transition-colors">View Details</button>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-                        ))
-                    ) : (
-                        <div className="col-span-full py-32 text-center">
-                            <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-300"><Search size={36} /></div>
-                            <h3 className="text-xl font-serif text-gray-900 mb-2">No matches found</h3>
-                            <p className="text-gray-500 text-sm mb-6">Try adjusting your filters or search query.</p>
-                            <button onClick={() => {setSearchQuery(''); setBrandFilter('All Brands'); setFilter('All');}} className="text-[#E8A0BF] text-sm font-medium hover:text-black transition-colors underline underline-offset-4">Clear all filters</button>
-                        </div>
-                    )}
-                </div>
+          {/* SIDEBAR (Desktop) */}
+          <aside className="hidden lg:block w-64 shrink-0 space-y-10 sticky top-32 h-[calc(100vh-8rem)] overflow-y-auto pr-4 scrollbar-hide">
+            {/* Search */}
+            <div>
+              <h3 className="font-serif text-lg mb-4">Search</h3>
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Product name..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-3 pr-8 py-2 bg-transparent border-b border-gray-200 text-sm outline-none focus:border-black transition-colors"
+                />
+                <Search className="absolute right-0 top-2 text-gray-400" size={16} />
+              </div>
             </div>
+
+            {/* Categories */}
+            <div>
+              <h3 className="font-serif text-lg mb-4">Categories</h3>
+              <div className="space-y-1">
+                <CategoryButton
+                  name="View All"
+                  active={filter === 'All'}
+                  onClick={() => { setFilter('All'); setBrandFilter('All Brands'); }}
+                />
+                {CATEGORIES.map(cat => (
+                  <CategoryButton
+                    key={cat.id}
+                    name={cat.name}
+                    active={filter === cat.name}
+                    onClick={() => { setFilter(cat.name); setBrandFilter('All Brands'); }}
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* Brands */}
+            <div>
+              <h3 className="font-serif text-lg mb-4">Brands</h3>
+              <div className="space-y-2 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
+                <label className="flex items-center gap-3 cursor-pointer group">
+                  <div
+                    className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${
+                      brandFilter === 'All Brands' ? 'bg-black border-black' : 'border-gray-300 group-hover:border-gray-400'
+                    }`}
+                  >
+                    {brandFilter === 'All Brands' && <Check size={10} className="text-white" />}
+                  </div>
+                  <input
+                    type="radio"
+                    name="brand"
+                    className="hidden"
+                    checked={brandFilter === 'All Brands'}
+                    onChange={() => { setBrandFilter('All Brands'); setFilter('All'); }}
+                  />
+                  <span className={`text-sm ${brandFilter === 'All Brands' ? 'text-black font-medium' : 'text-gray-600'}`}>
+                    All Brands
+                  </span>
+                </label>
+                {BRANDS_LIST.filter(b => b !== "All Brands").map(brand => (
+                  <label key={brand} className="flex items-center gap-3 cursor-pointer group">
+                    <div
+                      className={`w-4 h-4 border rounded flex items-center justify-center transition-colors ${
+                        brandFilter === brand ? 'bg-black border-black' : 'border-gray-300 group-hover:border-gray-400'
+                      }`}
+                    >
+                      {brandFilter === brand && <Check size={10} className="text-white" />}
+                    </div>
+                    <input
+                      type="radio"
+                      name="brand"
+                      className="hidden"
+                      checked={brandFilter === brand}
+                      onChange={() => { setBrandFilter(brand); setFilter('All'); }}
+                    />
+                    <span className={`text-sm ${brandFilter === brand ? 'text-black font-medium' : 'text-gray-600'}`}>
+                      {brand}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
+          </aside>
+
+          {/* MAIN CONTENT */}
+          <div className="flex-1 min-w-0">
+            {/* Sort & Count Bar */}
+            <div className="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+              <p className="text-sm text-gray-500">
+                <span className="font-medium text-black">{filteredProducts.length}</span> Results
+              </p>
+
+              <div className="flex items-center gap-4">
+                <div className="relative group">
+                  <div className="flex items-center gap-2 text-sm font-medium cursor-pointer">
+                    Sort by: <span className="text-gray-500 capitalize">{sortBy.replace('-', ' ')}</span>{' '}
+                    <ChevronDown size={14} />
+                  </div>
+                  <div className="absolute right-0 top-full pt-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all z-20">
+                    <div className="bg-white border border-gray-100 shadow-xl rounded-lg p-1 w-40 flex flex-col">
+                      <button
+                        onClick={() => setSortBy('featured')}
+                        className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${
+                          sortBy === 'featured' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'
+                        }`}
+                      >
+                        Featured
+                      </button>
+                      <button
+                        onClick={() => setSortBy('price-asc')}
+                        className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${
+                          sortBy === 'price-asc' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'
+                        }`}
+                      >
+                        Price: Low to High
+                      </button>
+                      <button
+                        onClick={() => setSortBy('price-desc')}
+                        className={`text-left px-3 py-2 text-sm rounded hover:bg-gray-50 ${
+                          sortBy === 'price-desc' ? 'font-medium text-[#E8A0BF]' : 'text-gray-600'
+                        }`}
+                      >
+                        Price: High to Low
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div className="h-4 w-px bg-gray-200 hidden md:block"></div>
+                <div className="hidden md:flex gap-1">
+                  <button
+                    onClick={() => setViewMode('grid')}
+                    className={`p-1.5 rounded ${viewMode === 'grid' ? 'text-black bg-gray-100' : 'text-gray-400 hover:text-gray-600'}`}
+                  >
+                    <Grid size={16} />
+                  </button>
+                  <button
+                    onClick={() => setViewMode('list')}
+                    className={`p-1.5 rounded ${viewMode === 'list' ? 'text-black bg-gray-100' : 'text-gray-400 hover:text-gray-600'}`}
+                  >
+                    <List size={16} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* PRODUCTS GRID */}
+            <div className={`grid gap-6 ${viewMode === 'grid' ? 'grid-cols-2 sm:grid-cols-2 lg:grid-cols-3' : 'grid-cols-1'}`}>
+              {filteredProducts.length > 0 ? (
+                filteredProducts.map(product => (
+                  <div
+                    key={product.id}
+                    className={`group cursor-pointer bg-white rounded-xl overflow-hidden border border-transparent hover:border-gray-100 hover:shadow-2xl transition-all duration-500 ${
+                      viewMode === 'list' ? 'flex gap-6 p-4 border-gray-100' : ''
+                    }`}
+                    onClick={() => navigateTo('product', product)}
+                  >
+                    <div
+                      className={`relative bg-[#f8f8f8] overflow-hidden ${
+                        viewMode === 'list' ? 'w-32 h-32 rounded-lg shrink-0' : 'aspect-square'
+                      }`}
+                    >
+                      <img
+                        loading="lazy"
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
+                      />
+
+                      {viewMode === 'grid' && (
+                        <div className="absolute top-3 left-3 right-3 flex justify-between items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="bg-white/90 backdrop-blur text-[9px] px-2 py-1 rounded font-bold tracking-wider uppercase shadow-sm">
+                            {product.brand}
+                          </span>
+                        </div>
+                      )}
+                      {product.price > 12000 && viewMode === 'grid' && (
+                        <div className="absolute top-3 right-3 bg-[#E8A0BF] text-white text-[8px] px-2 py-1 rounded font-bold tracking-wider uppercase shadow-sm">
+                          Best Seller
+                        </div>
+                      )}
+
+                      {/* Quick Add Overlay (Desktop) */}
+                      {viewMode === 'grid' && (
+                        <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out hidden md:block bg-gradient-to-t from-black/60 to-transparent pt-12">
+                          <button
+                            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
+                            className="w-full bg-white text-black py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors shadow-lg flex items-center justify-center gap-2 rounded-lg"
+                          >
+                            <ShoppingBag size={14} /> Add to Cart
+                          </button>
+                        </div>
+                      )}
+                    </div>
+
+                    <div className={`${viewMode === 'list' ? 'flex-1 flex flex-col justify-center' : 'pt-4 pb-2 px-2'}`}>
+                      <div className="text-gray-400 text-[9px] font-bold tracking-widest uppercase mb-1.5">
+                        {product.category}
+                      </div>
+                      <h3
+                        className={`font-serif text-gray-900 leading-tight ${
+                          viewMode === 'list' ? 'text-xl mb-2' : 'text-base mb-2 line-clamp-2 min-h-[2.5em]'
+                        }`}
+                      >
+                        {product.name}
+                      </h3>
+                      <div className="flex items-center justify-between mt-auto">
+                        <p className="text-base font-medium font-serif">₹{product.price.toLocaleString()}</p>
+                        {/* Mobile/Grid Icon Add */}
+                        <button
+                          className="md:hidden w-8 h-8 bg-black text-white rounded-full flex items-center justify-center active:scale-95"
+                          onClick={(e) => { e.stopPropagation(); addToCart(product); }}
+                        >
+                          <Plus size={16} />
+                        </button>
+                      </div>
+                      {viewMode === 'list' && (
+                        <div className="mt-4 flex gap-3">
+                          <button
+                            className="bg-black text-white px-6 py-2 text-xs font-bold uppercase tracking-wider rounded hover:bg-gray-800 transition-colors"
+                            onClick={(e) => { e.stopPropagation(); addToCart(product); }}
+                          >
+                            Add to Cart
+                          </button>
+                          <button className="text-xs font-medium border border-gray-200 px-4 py-2 rounded hover:border-black transition-colors">
+                            View Details
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="col-span-full py-32 text-center">
+                  <div className="w-20 h-20 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-6 text-gray-300">
+                    <Search size={36} />
+                  </div>
+                  <h3 className="text-xl font-serif text-gray-900 mb-2">No matches found</h3>
+                  <p className="text-gray-500 text-sm mb-6">Try adjusting your filters or search query.</p>
+                  <button
+                    onClick={() => { setSearchQuery(''); setBrandFilter('All Brands'); setFilter('All'); }}
+                    className="text-[#E8A0BF] text-sm font-medium hover:text-black transition-colors underline underline-offset-4"
+                  >
+                    Clear all filters
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -3053,41 +4340,86 @@ export default function CosmatrixApp() {
     setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item));
   };
 
-  const handlePayment = async (customerDetails) => {
-    // Payment logic same as before...
-    const total = cart.reduce((t, item) => t + item.price * item.quantity, 0);
-    localStorage.setItem("temp_cart", JSON.stringify(cart));
-    localStorage.setItem("temp_user", JSON.stringify(customerDetails));
+  const handlePayment = async (shippingDetails) => {
+  try {
+    const orderId = "COS-" + Date.now();
+    const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-    try {
-      const orderId = "ORD_" + Date.now();
-      const response = await fetch(
-        "https://cosmatrix-server.onrender.com/api/cashfree/pay",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: customerDetails.name,
-            mobile: customerDetails.phone,
-            amount: total,
-            orderId,
-          }),
-        }
-      );
-      const data = await response.json();
-      if (data.success && data.payment_url) {
-        window.location.href = data.payment_url;
-      } else {
-        showToast("Payment failed. Try again.", "error");
-      }
-    } catch (err) {
-      console.error("Payment error:", err);
-      if (window.confirm("Backend unreachable. Simulate successful payment?")) {
-        navigateTo("success");
-        setCartOpen(false);
-      }
+    // 1. Create Razorpay Order on backend
+    const response = await fetch("https://cosmatrix-server.onrender.com/api/razorpay/order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        amount: totalAmount,
+        orderId: orderId,
+      }),
+    });
+
+    const orderData = await response.json();
+
+    if (!orderData.success) {
+      showToast("Could not generate payment transaction session.", "error");
+      return;
     }
-  };
+
+    // Temporarily save cart and user parameters for the context recovery sequence
+    localStorage.setItem("temp_cart", JSON.stringify(cart));
+    localStorage.setItem("temp_user", JSON.stringify(shippingDetails));
+
+    // 2. Configure and Open the Razorpay Overlay Checkbox Modal Setup
+    const options = {
+      key: "rzp_test_yourKeyId", // Paste your Public Key ID directly here or inject via environment config
+      amount: orderData.amount,
+      currency: "INR",
+      name: "Cosmatrix International",
+      description: "Premium Skincare Formulations Sourcing Order",
+      image: "/image/Cosmatrix.jpg",
+      order_id: orderData.order_id,
+      handler: async function (razorpayResponse) {
+        // This execution callback executes automatically when the user processes transaction frames
+        try {
+          const verifyRes = await fetch("https://cosmatrix-server.onrender.com/api/razorpay/verify", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              razorpay_order_id: razorpayResponse.razorpay_order_id,
+              razorpay_payment_id: razorpayResponse.razorpay_payment_id,
+              razorpay_signature: razorpayResponse.razorpay_signature
+            }),
+          });
+
+          const verifyData = await verifyRes.json();
+          if (verifyData.success) {
+            // Re-route processing state over to structural success routes matching current view paths
+            window.location.href = `/order-success?order_id=${razorpayResponse.razorpay_order_id}&status=PAID`;
+          } else {
+            showToast("Payment verification failed.", "error");
+          }
+        } catch (err) {
+          console.error("Verification processing failed:", err);
+          showToast("Network processing issues encountered during validation.", "error");
+        }
+      },
+      prefill: {
+        name: shippingDetails.name,
+        email: shippingDetails.email,
+        contact: shippingDetails.phone,
+      },
+      notes: {
+        address: shippingDetails.address,
+      },
+      theme: {
+        color: "#E8A0BF", // Theme synchronization with client asset profiles
+      },
+    };
+
+    const rzp = new window.Razorpay(options);
+    rzp.open();
+  } catch (error) {
+    console.error("Checkout initiation process break encountered:", error);
+    showToast("Checkout transaction initialization process context failed.", "error");
+  }
+};
 
   const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);
   return (
@@ -3103,6 +4435,7 @@ export default function CosmatrixApp() {
         <meta property="og:type" content={currentPage === 'product' ? 'product' : 'website'} />
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content="https://shaatrading.in/image/Cosmatrix.jpg" />
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

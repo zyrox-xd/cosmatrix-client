@@ -1,5 +1,17 @@
 # Getting Started with Create React App
 
+## Razorpay configuration
+
+Set the Razorpay public Key ID in the Vite environment before running or building the app:
+
+```env
+VITE_RAZORPAY_KEY_ID=rzp_test_yourKeyId
+```
+
+For local development, put this in `.env.local` (ignored by Git). Configure the same variable in the deployment environment. Use the public Key ID only; keep the Razorpay Key Secret on the payment backend.
+
+The checkout calls the configured Cosmatrix API at `https://cosmatrix-server.onrender.com/api/razorpay`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

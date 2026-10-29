@@ -6,6 +6,111 @@ import { ShoppingBag, Menu, X, Instagram, Facebook, Linkedin, ArrowRight, Trash2
 const EMAILJS_SERVICE_ID = "service_f4a32p2";
 const EMAILJS_TEMPLATE_ID = "template_80rehng";
 const EMAILJS_PUBLIC_KEY = "cdc4JC6h-iGdLJOCC";
+const RAZORPAY_API_URL = "https://cosmatrix-server.onrender.com/api/razorpay";
+const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
+
+const loadRazorpayScript = () => {
+  if (typeof window !== "undefined" && window.Razorpay) {
+    return Promise.resolve(true);
+  }
+
+  return new Promise((resolve) => {
+    let script = document.querySelector('script[src="https://checkout.razorpay.com/v1/checkout.js"]');
+
+    if (!script) {
+      script = document.createElement("script");
+      script.src = "https://checkout.razorpay.com/v1/checkout.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    script.addEventListener("load", () => resolve(Boolean(window.Razorpay)), { once: true });
+    script.addEventListener("error", () => resolve(false), { once: true });
+  });
+};
+
+const handleRazorpayCheckout = async (formData, cart, totalAmount, showToast) => {
+  if (!RAZORPAY_KEY_ID) {
+    showToast("Razorpay is not configured. Please contact support.", "error");
+    return;
+  }
+
+  const scriptLoaded = await loadRazorpayScript();
+  if (!scriptLoaded) {
+    showToast("Razorpay SDK failed to load. Check your internet connection.", "error");
+    return;
+  }
+
+  try {
+    const response = await fetch(`${RAZORPAY_API_URL}/order`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        amount: totalAmount,
+        orderId: `COS-${Date.now()}`,
+      }),
+    });
+
+    const orderData = await response.json();
+    if (!response.ok || !orderData.success) {
+      showToast("Could not generate payment transaction session.", "error");
+      return;
+    }
+
+    const options = {
+      key: RAZORPAY_KEY_ID,
+      amount: orderData.amount,
+      currency: orderData.currency || "INR",
+      name: "Cosmatrix International",
+      description: "Premium Skincare Formulations Sourcing Order",
+      image: "/image/Cosmatrix.jpg",
+      order_id: orderData.order_id,
+      handler: async (razorpayResponse) => {
+        try {
+          const verifyResponse = await fetch(`${RAZORPAY_API_URL}/verify`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              razorpay_order_id: razorpayResponse.razorpay_order_id,
+              razorpay_payment_id: razorpayResponse.razorpay_payment_id,
+              razorpay_signature: razorpayResponse.razorpay_signature,
+            }),
+          });
+          const verifyData = await verifyResponse.json();
+
+          if (!verifyResponse.ok || !verifyData.success) {
+            showToast("Payment verification failed.", "error");
+            return;
+          }
+
+          localStorage.setItem("temp_cart", JSON.stringify(cart));
+          localStorage.setItem("temp_user", JSON.stringify(formData));
+          window.location.href = `/order-success?order_id=${encodeURIComponent(razorpayResponse.razorpay_order_id)}&status=PAID`;
+        } catch (error) {
+          console.error("Verification processing failed:", error);
+          showToast("Network processing issues encountered during validation.", "error");
+        }
+      },
+      prefill: {
+        name: formData.name,
+        email: formData.email,
+        contact: formData.phone,
+      },
+      notes: {
+        address: formData.address,
+      },
+      theme: {
+        color: "#E8A0BF",
+      },
+    };
+
+    const payment = new window.Razorpay(options);
+    payment.open();
+  } catch (error) {
+    console.error("Checkout initialization failed:", error);
+    showToast("Checkout transaction initialization failed.", "error");
+  }
+};
 
 /* --- Data & Constants --- */
 const BRANDS_LIST = [
@@ -2488,7 +2593,7 @@ const CartDrawer = ({ isOpen, onClose, cart, updateQuantity, removeFromCart, che
                             <textarea name="address" placeholder="Address" value={formData.address} onChange={handleInputChange} className="w-full p-2 border border-gray-200 rounded focus:border-[#E8A0BF] outline-none resize-none"/>
                         </div>
                         <Button className="w-full" onClick={() => checkout(formData)} disabled={!isFormValid}>
-                            Pay ₹{total.toLocaleString()}
+Pay ₹{total.toLocaleString()} via Razorpay
                         </Button>
                     </div>
                 )}
@@ -4340,86 +4445,10 @@ export default function CosmatrixApp() {
     setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item));
   };
 
-  const handlePayment = async (shippingDetails) => {
-  try {
-    const orderId = "COS-" + Date.now();
+  const handlePayment = (shippingDetails) => {
     const totalAmount = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
-    // 1. Create Razorpay Order on backend
-    const response = await fetch("https://cosmatrix-server.onrender.com/api/razorpay/order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        amount: totalAmount,
-        orderId: orderId,
-      }),
-    });
-
-    const orderData = await response.json();
-
-    if (!orderData.success) {
-      showToast("Could not generate payment transaction session.", "error");
-      return;
-    }
-
-    // Temporarily save cart and user parameters for the context recovery sequence
-    localStorage.setItem("temp_cart", JSON.stringify(cart));
-    localStorage.setItem("temp_user", JSON.stringify(shippingDetails));
-
-    // 2. Configure and Open the Razorpay Overlay Checkbox Modal Setup
-    const options = {
-      key: "rzp_test_yourKeyId", // Paste your Public Key ID directly here or inject via environment config
-      amount: orderData.amount,
-      currency: "INR",
-      name: "Cosmatrix International",
-      description: "Premium Skincare Formulations Sourcing Order",
-      image: "/image/Cosmatrix.jpg",
-      order_id: orderData.order_id,
-      handler: async function (razorpayResponse) {
-        // This execution callback executes automatically when the user processes transaction frames
-        try {
-          const verifyRes = await fetch("https://cosmatrix-server.onrender.com/api/razorpay/verify", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              razorpay_order_id: razorpayResponse.razorpay_order_id,
-              razorpay_payment_id: razorpayResponse.razorpay_payment_id,
-              razorpay_signature: razorpayResponse.razorpay_signature
-            }),
-          });
-
-          const verifyData = await verifyRes.json();
-          if (verifyData.success) {
-            // Re-route processing state over to structural success routes matching current view paths
-            window.location.href = `/order-success?order_id=${razorpayResponse.razorpay_order_id}&status=PAID`;
-          } else {
-            showToast("Payment verification failed.", "error");
-          }
-        } catch (err) {
-          console.error("Verification processing failed:", err);
-          showToast("Network processing issues encountered during validation.", "error");
-        }
-      },
-      prefill: {
-        name: shippingDetails.name,
-        email: shippingDetails.email,
-        contact: shippingDetails.phone,
-      },
-      notes: {
-        address: shippingDetails.address,
-      },
-      theme: {
-        color: "#E8A0BF", // Theme synchronization with client asset profiles
-      },
-    };
-
-    const rzp = new window.Razorpay(options);
-    rzp.open();
-  } catch (error) {
-    console.error("Checkout initiation process break encountered:", error);
-    showToast("Checkout transaction initialization process context failed.", "error");
-  }
-};
+    return handleRazorpayCheckout(shippingDetails, cart, totalAmount, showToast);
+  };
 
   const { title, description, jsonLd, keywords, canonical, robots } = getSeoConfig(currentPage, selectedProduct, selectedPost);
   return (
@@ -4435,7 +4464,6 @@ export default function CosmatrixApp() {
         <meta property="og:type" content={currentPage === 'product' ? 'product' : 'website'} />
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content="https://shaatrading.in/image/Cosmatrix.jpg" />
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

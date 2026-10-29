@@ -7,7 +7,7 @@ const EMAILJS_SERVICE_ID = "service_f4a32p2";
 const EMAILJS_TEMPLATE_ID = "template_80rehng";
 const EMAILJS_PUBLIC_KEY = "cdc4JC6h-iGdLJOCC";
 const RAZORPAY_API_URL = "https://cosmatrix-server.onrender.com/api/razorpay";
-const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID;
+const RAZORPAY_KEY_ID = "rzp_live_Tl69x5twNv0cvVS";
 
 const loadRazorpayScript = () => {
   if (typeof window !== "undefined" && window.Razorpay) {
